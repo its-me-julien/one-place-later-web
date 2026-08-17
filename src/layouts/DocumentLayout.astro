@@ -298,6 +298,31 @@ const { frontmatter } = Astro.props;
     color: var(--color-accent-strong);
   }
 
+  .guide-body :global(.guide-declaration) {
+    padding-block: var(--space-5) var(--space-6);
+    border-block: var(--border-default);
+  }
+
+  .guide-body :global(.guide-declaration > p:nth-child(2)) {
+    max-width: 24ch;
+    margin-top: var(--space-4);
+    font-size: var(--text-xl);
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+  }
+
+  .guide-body :global(.guide-declaration__support) {
+    display: grid;
+    gap: var(--space-2);
+    margin-top: var(--space-5);
+    color: var(--color-text-muted);
+  }
+
+  .guide-body :global(.guide-declaration__support p) {
+    margin: 0;
+    line-height: 1.5;
+  }
+
   .guide-body :global(.guide-block) {
     padding-block: var(--space-7);
   }
@@ -379,6 +404,64 @@ const { frontmatter } = Astro.props;
     border-block: var(--border-default);
   }
 
+  .guide-body :global(.guide-contexts) {
+    display: grid;
+  }
+
+  .guide-body :global(.guide-context) {
+    padding-block: var(--space-6);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-context__place) {
+    margin: 0 0 var(--space-2);
+    color: var(--color-accent-strong);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .guide-body :global(.guide-context h3) {
+    max-width: none;
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .guide-body :global(.guide-observation-list) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2) var(--space-4);
+    max-width: none;
+    margin: var(--space-5) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-observation-list li) {
+    position: relative;
+    margin: 0;
+    padding-left: 1rem;
+    font-size: var(--text-sm);
+    line-height: 1.4;
+  }
+
+  .guide-body :global(.guide-observation-list li::before) {
+    position: absolute;
+    top: 0.55em;
+    left: 0;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: var(--color-accent-strong);
+    content: '';
+  }
+
   .guide-body :global(.guide-meaning__column) {
     padding-block: var(--space-6);
   }
@@ -449,6 +532,45 @@ const { frontmatter } = Astro.props;
 
   .guide-body :global(.guide-state-list strong) {
     font-weight: 500;
+  }
+
+  .guide-body :global(.guide-route-examples) {
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-route-example) {
+    padding-block: var(--space-6);
+  }
+
+  .guide-body :global(.guide-route-example + .guide-route-example) {
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-route) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) 0;
+    max-width: none;
+    margin: var(--space-5) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-route li) {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-size: var(--text-base);
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .guide-body :global(.guide-route li:not(:first-child)::before) {
+    margin-inline: var(--space-2);
+    color: var(--color-accent-strong);
+    content: '→';
+    font-weight: 400;
   }
 
   .guide-body :global(.guide-takeaway) {
@@ -525,21 +647,39 @@ const { frontmatter } = Astro.props;
     }
 
     .guide-body :global(.guide-principles),
-    .guide-body :global(.guide-meaning) {
+    .guide-body :global(.guide-meaning),
+    .guide-body :global(.guide-contexts) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .guide-body :global(.guide-principle),
-    .guide-body :global(.guide-meaning__column) {
+    .guide-body :global(.guide-meaning__column),
+    .guide-body :global(.guide-context) {
       padding-right: var(--space-6);
     }
 
     .guide-body :global(.guide-principle + .guide-principle),
-    .guide-body :global(.guide-meaning__column + .guide-meaning__column) {
+    .guide-body :global(.guide-meaning__column + .guide-meaning__column),
+    .guide-body :global(.guide-context + .guide-context) {
       padding-right: 0;
       padding-left: var(--space-6);
       border-top: 0;
       border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-declaration--difference) {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 0.65fr);
+      column-gap: var(--space-7);
+    }
+
+    .guide-body :global(.guide-declaration--difference .guide-label) {
+      grid-column: 1 / -1;
+    }
+
+    .guide-body :global(.guide-declaration__support) {
+      align-content: end;
+      margin-top: var(--space-4);
     }
   }
 </style>

@@ -90,80 +90,122 @@ version: v2.0
 </div>
 </section>
 
----
+<section id="3-the-channel-perspective" class="guide-chapter guide-chapter--perspective" aria-labelledby="channel-perspective-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">03</p>
+<div>
+<h2 id="channel-perspective-title">The Channel Perspective</h2>
+<p class="guide-chapter__summary">One perspective, whether the film happens at home or away.</p>
+</div>
+</header>
 
-## 3. The Channel Perspective
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Point of view</p>
+<p>The channel is built around <strong>lived experience</strong><br />rather than sightseeing.</p>
+</div>
 
-The channel is built around **lived experience rather than sightseeing**.
+<div class="guide-contexts">
+<div class="guide-context">
+<p class="guide-context__place">Korea</p>
+<h3>Depth through familiarity</h3>
+<ul class="guide-observation-list">
+<li>daily routines</li>
+<li>work</li>
+<li>cycling</li>
+<li>hiking</li>
+<li>cafés</li>
+<li>food</li>
+<li>quiet details</li>
+<li>home life</li>
+<li>neighbourhoods</li>
+<li>infrastructure</li>
+<li>seasonal change</li>
+<li>small observations that come from familiarity</li>
+</ul>
+</div>
 
-In Korea, that includes:
+<div class="guide-context">
+<p class="guide-context__place">Travel</p>
+<h3>Discovery through movement</h3>
+<ul class="guide-observation-list">
+<li>journeys</li>
+<li>family</li>
+<li>meals</li>
+<li>roads</li>
+<li>trains</li>
+<li>mornings</li>
+<li>accommodation</li>
+<li>markets</li>
+<li>cafés</li>
+<li>landscapes</li>
+<li>conversations</li>
+<li>frustrations</li>
+<li>waiting</li>
+<li>familiar places seen differently</li>
+<li>the rhythm of moving from one place to another</li>
+</ul>
+</div>
+</div>
 
-daily routines\
-work\
-cycling\
-hiking\
-cafés\
-food\
-quiet details\
-home life\
-neighbourhoods\
-infrastructure\
-seasonal change\
-small observations that come from familiarity
+<div class="guide-takeaway">
+<p class="guide-label">Viewer experience</p>
+<p class="guide-takeaway__statement">They should feel that they have spent time somewhere, <span>not merely seen its attractions.</span></p>
+</div>
+</div>
+</section>
 
-When travelling, that includes:
+<section id="4-what-makes-the-channel-different" class="guide-chapter guide-chapter--difference" aria-labelledby="channel-difference-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">04</p>
+<div>
+<h2 id="channel-difference-title">What Makes the Channel Different</h2>
+<p class="guide-chapter__summary">Movement gives ordinary activities narrative shape.</p>
+</div>
+</header>
 
-journeys\
-family\
-meals\
-roads\
-trains\
-mornings\
-accommodation\
-markets\
-cafés\
-landscapes\
-conversations\
-frustrations\
-waiting\
-familiar places seen differently\
-the rhythm of moving from one place to another
+<div class="guide-chapter__content">
+<div class="guide-declaration guide-declaration--difference">
+<p class="guide-label">Main differentiator</p>
+<p>Everyday life examined<br />through movement.</p>
+<div class="guide-declaration__support">
+<p>We do not simply arrive somewhere and explain it.</p>
+<p>The viewer moves through the experience.</p>
+</div>
+</div>
 
-The viewer should feel that they have spent time somewhere, not merely seen its attractions.
+<div class="guide-route-examples">
+<div class="guide-route-example">
+<p class="guide-label">A Seoul film</p>
+<ol class="guide-route" aria-label="Apartment to home route">
+<li>Apartment</li>
+<li>street</li>
+<li>Han River</li>
+<li>café</li>
+<li>home</li>
+</ol>
+</div>
 
----
+<div class="guide-route-example">
+<p class="guide-label">A travel film</p>
+<ol class="guide-route" aria-label="Family home to evening route">
+<li>Family home</li>
+<li>village</li>
+<li>road</li>
+<li>market</li>
+<li>lunch</li>
+<li>coast</li>
+<li>evening</li>
+</ol>
+</div>
+</div>
 
-## 4. What Makes the Channel Different
-
-The main differentiator is:
-
-### **Everyday life examined through movement**
-
-We do not simply arrive somewhere and explain it.
-
-The viewer moves through the experience.
-
-Examples:
-
-Apartment\
-→ street\
-→ Han River\
-→ café\
-→ home
-
-Or:
-
-Family home\
-→ village\
-→ road\
-→ market\
-→ lunch\
-→ coast\
-→ evening
-
-Movement gives ordinary activities narrative shape.
-
-The journey from one environment to another can be as meaningful as the destination.
+<div class="guide-takeaway">
+<p class="guide-label">Working principle</p>
+<p class="guide-takeaway__statement">The journey from one environment to another <span>can be as meaningful as the destination.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
