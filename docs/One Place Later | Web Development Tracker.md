@@ -38,6 +38,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 - One generated, site-owned hero image is processed through Astro’s image pipeline.
 - Pretendard Variable is loaded as a pinned dynamic subset, with system-font fallbacks.
 - The shared BrandMark component keeps the name as the logo and pairs it with a bespoke, rounded route glyph; the glyph stays secondary until an interactive state introduces Route Red.
+- `one-place-later-square-mark.svg` is the compact mark for favicon, avatar, and profile contexts; the full wordmark remains the primary identity.
 - The reusable site masthead keeps navigation compact: an editorial About link and one clear Carbon YouTube destination.
 - The reusable footer is a restrained Carbon end-mark: a short brand line, Seoul location, and explicitly external social destinations.
 - The visual source of truth is the web brand guidelines; the creative-direction document governs voice and editorial choices.
@@ -73,6 +74,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Footer | Reworked the reusable footer into a compact editorial closing frame with YouTube and Instagram destinations. | Release record |
 | 2026-08-17 | Identity | Consolidated the wordmark and route glyph into a reusable BrandMark component for a consistent, accessible logo across the site. | Release record |
 | 2026-08-17 | Homepage language | Shifted the visible hero title to Hangul while retaining the English wordmark as the site identity. | Release record |
+| 2026-08-17 | Identity | Added a square route-glyph mark for compact digital contexts and made it the site favicon. | Release record |
 
 ---
 
