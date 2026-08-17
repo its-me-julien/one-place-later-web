@@ -51,7 +51,7 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
   }
 
   .arrow-mark {
-    width: 2.5rem;
+    width: 2.75rem;
     height: auto;
     transition: transform var(--motion-base) var(--ease-standard);
   }
@@ -92,6 +92,31 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 
   nav a:hover span {
     transform: translate(2px, -2px);
+  }
+
+  @media (max-width: 24rem) {
+    .inner {
+      gap: var(--space-1);
+    }
+
+    .brand {
+      gap: 0.25rem;
+      font-size: var(--text-xs);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .arrow-mark {
+      width: 2.25rem;
+    }
+
+    ul {
+      gap: var(--space-3);
+    }
+
+    nav a {
+      font-size: var(--text-xs);
+    }
   }
 
   @media (min-width: 40rem) {
