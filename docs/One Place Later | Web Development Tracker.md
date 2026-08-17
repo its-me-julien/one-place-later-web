@@ -28,8 +28,8 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | Branch | `main` |
 | Hosting | Cloudflare Worker with static Astro assets |
 | Worker | `one-place-later-web` |
-| Public video destination | [YouTube @OnePlaceLater](https://www.youtube.com/@OnePlaceLater) |
-| Latest release | 2026-08-17 · Worker version `56f7ecbf-3853-43f7-8d60-7a5f9e36e957` |
+| Public destinations | [YouTube @OnePlaceLater](https://www.youtube.com/@OnePlaceLater) · [Instagram @oneplacelater](https://www.instagram.com/oneplacelater) |
+| Release process | Push `main`, then run `npm run deploy` |
 
 ## Technical Baseline
 
@@ -45,7 +45,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 | Route | Status | Purpose | Current scope |
 | --- | --- | --- | --- |
-| `/` | Live | Editorial home for the channel | Sticky navigation, full-screen Seoul hero, short channel introduction, YouTube link, footer. No video embed yet. |
+| `/` | Live | Editorial home for the channel | Sticky navigation, full-screen Seoul hero, short channel introduction, YouTube link, and footer destinations for YouTube and Instagram. No video embed yet. |
 | `/films` | Planned | Permanent archive of films | Build only when there is enough film content to browse. |
 | `/films/[slug]` | Planned | Permanent home for an individual film | Editorial context, poster-first YouTube playback, stills, and previous/next-film navigation. |
 | `/about` | Planned | Additional creator and channel context | Add only when the homepage introduction is no longer sufficient. |
