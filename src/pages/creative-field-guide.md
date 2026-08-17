@@ -1436,69 +1436,122 @@ version: v2.0
 </header>
 
 <div class="guide-chapter__content">
-<div class="guide-orientation-questions">
-<p class="guide-label">The viewer should understand</p>
-<ol>
-<li><span>01</span>Where are we?</li>
-<li><span>02</span>Where are we going?</li>
-<li><span>03</span>Why are we going there?</li>
-<li><span>04</span>Is this transit or destination?</li>
-<li><span>05</span>When did the location change?</li>
-</ol>
+<div class="guide-orientation-principle">
+<p class="guide-label">Orientation should answer</p>
+<div>
+<p>Where are we?</p>
+<p>Where are we going?</p>
+<p>What changed?</p>
+</div>
+<span>Then disappear.</span>
 </div>
 
-<div class="guide-location-cards" aria-label="Location card examples">
+<div class="guide-orientation-specimens">
+<header>
+<p class="guide-label">01 · Location cards</p>
+<p>Keep the hierarchy simple. Preserve local spelling when it makes the place more specific.</p>
+</header>
+
+<div class="guide-location-specimens" aria-label="Location card examples">
+<div class="guide-location-card guide-location-card--local">
+<span class="guide-location-card__index">SEOUL · 01</span>
 <div><strong lang="ko">채그로</strong><span>Check Grow</span></div>
+<small>Mapo-gu · Seoul</small>
+</div>
+<div class="guide-location-card guide-location-card--arrival">
+<span class="guide-location-card__index">ARRIVAL · 07:20</span>
 <div><strong>Amsterdam</strong><span>Netherlands</span></div>
-<div><strong>Aix-en-Provence</strong><span>France</span></div>
+<small>One train later →</small>
+</div>
+<div class="guide-location-card guide-location-card--destination">
+<span class="guide-location-card__dot" aria-hidden="true"></span>
+<span class="guide-location-card__index">DESTINATION · 03</span>
+<div><strong>Aix-en-<br />Provence</strong><span>France</span></div>
+</div>
+</div>
 </div>
 
-<div class="guide-orientation-tools">
-<p class="guide-label">Useful tools</p>
-<ul class="guide-observation-list">
-<li>location cards</li><li>road signs</li><li>station signs</li><li>train boards</li>
-<li>restrained maps</li><li>landscape changes</li><li>narration</li><li>time cards</li>
-</ul>
+<div class="guide-orientation-specimens">
+<header>
+<p class="guide-label">02 · Maps</p>
+<p>A map answers one route question: current place, destination, distance or change.</p>
+</header>
+
+<div class="guide-map-specimens">
+<figure class="guide-map-card guide-map-card--seoul">
+<figcaption><span>City → river</span><strong>Gangnam to the Han</strong></figcaption>
+<svg viewBox="0 0 640 300" role="img" aria-labelledby="seoul-map-title">
+<title id="seoul-map-title">Schematic route from Gangnam to the Han River</title>
+<path class="guide-map-card__land" d="M0 34C96 72 108 112 196 114s135-60 233-47c75 10 112 55 211 48v185H0Z" />
+<path class="guide-map-card__water" d="M-20 166C100 113 180 223 304 171s214-1 364-58" />
+<path class="guide-map-card__route" d="M102 248C142 213 178 202 222 188s72-52 118-54 70 26 118 3" />
+<circle class="guide-map-card__origin" cx="102" cy="248" r="8" />
+<circle class="guide-map-card__waypoint" cx="340" cy="134" r="6" />
+<path class="guide-map-card__arrow" d="M444 125l14 12-14 12" />
+<text x="76" y="278">GANGNAM</text>
+<text x="310" y="112">YEOUIDO</text>
+<text x="468" y="126">HAN RIVER</text>
+</svg>
+<div><span>10 km</span><span>From here →</span></div>
+</figure>
+
+<figure class="guide-map-card guide-map-card--journey">
+<figcaption><span>Journey context</span><strong>Three places later</strong></figcaption>
+<div class="guide-journey-map" aria-label="Amsterdam to Brussels to Aix-en-Provence route">
+<div><i aria-hidden="true"></i><span>01</span><strong>Amsterdam</strong><small>Netherlands</small></div>
+<div><i aria-hidden="true"></i><span>02</span><strong>Brussels</strong><small>Belgium</small></div>
+<div><i aria-hidden="true"></i><span>03</span><strong>Aix-en-Provence</strong><small>France</small></div>
+</div>
+<p>Transit becomes part of the story.</p>
+</figure>
+</div>
+</div>
+
+<div class="guide-orientation-specimens">
+<header>
+<p class="guide-label">03 · Time cards</p>
+<p>Use time only when it changes how the viewer reads the moment.</p>
+</header>
+
+<div class="guide-time-cards" aria-label="Time card examples">
+<div class="guide-time-card guide-time-card--clock">
+<span>07:20</span>
+<strong>Amsterdam</strong>
+<small>Arrival</small>
+</div>
+<div class="guide-time-card guide-time-card--daypart">
+<span>Saturday</span>
+<strong>morning</strong>
+<small>Seoul · South Korea</small>
+</div>
+<div class="guide-time-card guide-time-card--day">
+<span>Day</span>
+<strong>06</strong>
+<small>Aix-en-Provence</small>
+</div>
+</div>
+</div>
+
+<div class="guide-orientation-specimens guide-orientation-specimens--states">
+<header>
+<p class="guide-label">04 · Supporting cards</p>
+<p>Use a supporting card when the viewer needs one quiet piece of context.</p>
+</header>
+
+<div class="guide-state-cards">
+<div><span>Route state</span><strong>In transit</strong><small>Amsterdam → Brussels</small></div>
+<div><span>Distance</span><strong>10 km</strong><small>remaining</small></div>
+<div><span>Change</span><strong>35°C → 27°C</strong><small>finally tolerable</small></div>
+</div>
 </div>
 
 <div class="guide-takeaway">
 <p class="guide-label">Orientation rule</p>
 <p class="guide-takeaway__statement">Do not make viewers work to understand the itinerary. <span>Do not turn the vlog into a navigation tutorial.</span></p>
-<p>Preserve local spelling where useful.</p>
+<p>Maps answer a question, time cards mark meaningful change, and every graphic leaves once its job is done.</p>
 </div>
 </div>
 </section>
-
-### Maps
-
-Maps answer a question:
-
-Where are we?
-
-Where are we going?
-
-How far?
-
-What changed?
-
-Then they disappear.
-
-### Time cards
-
-Use when time matters.
-
-Examples:
-
-Saturday morning
-
-Later that afternoon
-
-Day 6
-
-07:20\
-Amsterdam
-
-Do not timestamp everything.
 
 ---
 
