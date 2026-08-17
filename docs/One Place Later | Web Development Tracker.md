@@ -95,6 +95,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Brand assets | Removed the unused Fast and Slow Pace marks, renamed Success to Solution, and added practical route-led editorial signals for Location, Tool, Tip or Info, and Quote with downloadable SVGs. | Release record |
 | 2026-08-17 | Brand assets | Corrected the Bicycle and Car transport silhouettes so both face and move toward the route arrow. | Release record |
 | 2026-08-17 | Brand assets | Rebuilt the four editorial callout marks around one consistent origin dot and route baseline, with distinct route transformations for Location, Tool, Tip or Info, and Quote. | Release record |
+| 2026-08-17 | Brand assets | Redrew the Bicycle transport asset from scratch with a cleaner, mechanically legible right-facing city-bike silhouette. | Release record |
 
 ---
 
