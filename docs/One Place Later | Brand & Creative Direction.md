@@ -315,7 +315,7 @@ Examples:
 
 The written **One Place Later** wordmark is the primary logo.
 
-The bespoke rounded route glyph is the secondary mark. It may accompany the wordmark, or appear alone only where the full name cannot work: favicons, avatars and other constrained square formats.
+The bespoke rounded route glyph is the secondary mark. It may accompany the wordmark, or appear alone only where the full name cannot work: favicons, avatars and other constrained square formats. Across every lockup and compact mark, retain the same low route geometry: Route Red identifies the origin while a surface-aware neutral carries the path—Stone on Paper and softened Paper on Carbon.
 
 The typographic arrow remains a piece of editorial visual grammar. Use it in copy, routes and transitions; do not replace every arrow with the illustrated route glyph.
 

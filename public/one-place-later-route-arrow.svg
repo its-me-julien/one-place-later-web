@@ -4,10 +4,10 @@
   fill="none"
   aria-hidden="true"
 >
-  <circle cx="6" cy="25" r="3.25" fill="#c95c43" />
+  <circle cx="6" cy="25" r="3.25" fill="#923d2d" />
   <path
     d="M14 25h12.5c7 0 8-13 16-13H59m-8.5-8.5L59 12l-8.5 8.5"
-    stroke="#c95c43"
+    stroke="#57544f"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="3.25"

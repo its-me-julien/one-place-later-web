@@ -9,7 +9,22 @@ const { variant = 'compact', tone = 'paper' } = Astro.props;
 
 <span class:list={['brand-mark', `brand-mark--${variant}`, `brand-mark--${tone}`]}>
   <span class="brand-mark__name">One Place <span class="brand-mark__later">Later</span></span>
-  <span class="brand-mark__route" aria-hidden="true"></span>
+  <svg
+    class="brand-mark__route"
+    viewBox="0 0 74 32"
+    fill="none"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <circle class="brand-mark__origin" cx="6" cy="25" r="3.25"></circle>
+    <path
+      class="brand-mark__path"
+      d="M14 25h12.5c7 0 8-13 16-13H59m-8.5-8.5L59 12l-8.5 8.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3.25"
+    ></path>
+  </svg>
 </span>
 
 <style>
@@ -31,13 +46,20 @@ const { variant = 'compact', tone = 'paper' } = Astro.props;
   .brand-mark__route {
     display: block;
     width: 2.9rem;
-    aspect-ratio: 74 / 32;
-    background-color: var(--color-text-muted);
-    -webkit-mask: url('/one-place-later-route-arrow.svg') center / contain no-repeat;
-    mask: url('/one-place-later-route-arrow.svg') center / contain no-repeat;
+    height: auto;
+    overflow: visible;
+    transition: transform var(--motion-base) var(--ease-standard);
+  }
+
+  .brand-mark__origin {
+    fill: var(--color-accent-strong);
+  }
+
+  .brand-mark__path {
+    stroke: var(--color-text-muted);
     transition:
-      background-color var(--motion-base) var(--ease-standard),
-      transform var(--motion-base) var(--ease-standard);
+      opacity var(--motion-base) var(--ease-standard),
+      stroke var(--motion-base) var(--ease-standard);
   }
 
   .brand-mark--display {
@@ -49,14 +71,29 @@ const { variant = 'compact', tone = 'paper' } = Astro.props;
     width: 3.75rem;
   }
 
-  .brand-mark--carbon .brand-mark__route {
-    background-color: var(--color-text-on-dark);
+  .brand-mark--carbon .brand-mark__origin {
+    fill: var(--color-accent);
+  }
+
+  .brand-mark--carbon .brand-mark__path {
+    stroke: var(--color-text-on-dark);
+    opacity: 0.82;
   }
 
   :global(.brand-lockup:hover) .brand-mark__route,
   :global(.brand-lockup:focus-visible) .brand-mark__route {
-    background-color: var(--color-accent-strong);
     transform: translateX(3px);
+  }
+
+  :global(.brand-lockup:hover) .brand-mark__path,
+  :global(.brand-lockup:focus-visible) .brand-mark__path {
+    stroke: var(--color-text);
+    opacity: 1;
+  }
+
+  :global(.brand-lockup:hover) .brand-mark--carbon .brand-mark__path,
+  :global(.brand-lockup:focus-visible) .brand-mark--carbon .brand-mark__path {
+    stroke: var(--color-text-on-dark);
   }
 
   @media (max-width: 24rem) {

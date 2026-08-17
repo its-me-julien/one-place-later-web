@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">One Place Later square mark</title>
-  <desc id="description">A rounded route glyph moving from a red origin point toward an arrow.</desc>
-  <rect width="512" height="512" rx="112" fill="#f2efe7" />
-  <circle cx="106" cy="366" r="36" fill="#c95c43" />
-  <path
-    d="M184 366h56c66 0 68-160 145-160h39m-57-57 57 57-57 57"
-    fill="none"
-    stroke="#c95c43"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="38"
-  />
+  <desc id="description">The One Place Later rounded route mark, with a red origin point and a stone path moving right.</desc>
+  <rect width="512" height="512" rx="96" fill="#f2efe7" />
+  <g transform="translate(42 154) scale(6.75)">
+    <circle cx="6" cy="25" r="3.25" fill="#923d2d" />
+    <path
+      d="M14 25h12.5c7 0 8-13 16-13H59m-8.5-8.5L59 12l-8.5 8.5"
+      fill="none"
+      stroke="#57544f"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3.25"
+    />
+  </g>
 </svg>

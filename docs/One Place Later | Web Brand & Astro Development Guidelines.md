@@ -787,7 +787,7 @@ A typographic arrow is more consistent with the editorial identity.
 
 The written **One Place Later** wordmark is the primary logo.
 
-The bespoke rounded route glyph is the secondary mark. It may sit beside the wordmark, but should appear alone only in constrained formats such as the favicon, avatar or square profile image.
+The bespoke rounded route glyph is the secondary mark. It may sit beside the wordmark, but should appear alone only in constrained formats such as the favicon, avatar or square profile image. Every rendering must preserve the main glyph's proportions and low route silhouette. Route Red identifies the origin; the path uses Stone on Paper and softened Paper on Carbon. Hover or focus may shift the complete glyph slightly and strengthen the neutral path, but the origin remains red.
 
 The route glyph does not replace typographic arrows in links or editorial copy. Both should remain sparse enough to preserve their meaning.
 
