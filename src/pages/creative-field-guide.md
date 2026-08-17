@@ -483,157 +483,184 @@ version: v2.0
 </div>
 </section>
 
----
 
-## 11. The Story Shape
+<section id="11-the-story-shape" class="guide-chapter guide-chapter--story-shape" aria-labelledby="story-shape-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">11</p>
+<div>
+<h2 id="story-shape-title">The Story Shape</h2>
+<p class="guide-chapter__summary">A film needs progression, even when the chapters stay invisible.</p>
+</div>
+</header>
 
-A typical 30 to 45 minute film should have:
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">A typical 30 to 45 minute film</p>
+<p>Give the viewer a reason to continue, <span>then let the experience develop.</span></p>
+</div>
 
-### 1. Hook
+<ol class="guide-story-steps" aria-label="Seven-part story shape">
+<li><strong>Hook</strong><span>Give the viewer a reason to continue.</span></li>
+<li><strong>Orientation</strong><span>Where are we? What are we doing? Why does this particular day matter?</span></li>
+<li><strong>Development</strong><span>Movement, obstacles, observations, interactions, contrast.</span></li>
+<li><strong>Change</strong><span>Something begins to feel different.</span></li>
+<li><strong>Payoff</strong><span>Deliver the experience promised near the beginning.</span></li>
+<li><strong>Resolution</strong><span>Let the film settle.</span></li>
+<li><strong>Final thought</strong><span>Complete the idea rather than summarising the day.</span></li>
+</ol>
 
-Give the viewer a reason to continue.
+<div class="guide-takeaway">
+<p class="guide-label">Rule of thumb</p>
+<p class="guide-takeaway__statement">Not every film needs visible chapters. <span>But every film needs progression.</span></p>
+</div>
+</div>
+</section>
 
-### 2. Orientation
+<section id="12-the-first-minute" class="guide-chapter guide-chapter--first-minute" aria-labelledby="first-minute-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">12</p>
+<div>
+<h2 id="first-minute-title">The First Minute</h2>
+<p class="guide-chapter__summary">Earn attention without fake stakes.</p>
+</div>
+</header>
 
-Where are we?
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Preferred pattern</p>
+<ol class="guide-opening-sequence" aria-label="Opening sequence">
+<li>future glimpse</li>
+<li>short thought</li>
+<li>quiet reset</li>
+<li>real beginning</li>
+</ol>
+<p class="guide-declaration__support">Show enough of the destination, contrast or observation to create curiosity. Then begin properly.</p>
+</div>
 
-What are we doing?
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Within roughly one minute, establish</p>
+<ul class="guide-checklist">
+<li>where we are</li>
+<li>what kind of day or journey this is</li>
+<li>why continuing might be worthwhile</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>long introductions</li>
+<li>channel trailers</li>
+<li>generic cinematic montages</li>
+<li>explaining the whole film before it starts</li>
+<li>fake mystery</li>
+<li>forced enthusiasm</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 
-Why does this particular day matter?
+<section id="13-creator-presence" class="guide-chapter guide-chapter--presence" aria-labelledby="creator-presence-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">13</p>
+<div>
+<h2 id="creator-presence-title">Creator Presence</h2>
+<p class="guide-chapter__summary">Present in the world of the film, without becoming its presenter.</p>
+</div>
+</header>
 
-### 3. Development
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Presence</p>
+<p>This is not a faceless channel. <span>The creator should remain physically present without becoming a presenter.</span></p>
+</div>
 
-Movement, obstacles, observations, interactions, contrast.
+<div class="guide-presence-block">
+<p class="guide-label">Useful forms of presence</p>
+<ul class="guide-observation-list">
+<li>entering frame</li>
+<li>leaving frame</li>
+<li>cycling</li>
+<li>driving</li>
+<li>walking</li>
+<li>cooking</li>
+<li>waiting</li>
+<li>working</li>
+<li>eating</li>
+<li>packing</li>
+<li>navigating</li>
+<li>carrying bags</li>
+<li>reacting</li>
+<li>interacting with your wife</li>
+<li>interacting with family or friends</li>
+<li>reflections</li>
+<li>silhouettes</li>
+<li>self-filmed wides</li>
+<li>natural dialogue</li>
+</ul>
+</div>
 
-### 4. Change
+<div class="guide-direct-camera">
+<div>
+<p class="guide-label">Direct-to-camera rule</p>
+<p>Use it only when speaking directly creates something that cannot be achieved better through:</p>
+<ul class="guide-checklist">
+<li>action</li>
+<li>narration</li>
+<li>natural dialogue</li>
+<li>visual context</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid defaulting to</p>
+<blockquote>“So guys, now we are in…”</blockquote>
+</div>
+</div>
 
-Something begins to feel different.
+<div class="guide-takeaway">
+<p class="guide-label">Viewer experience</p>
+<p class="guide-takeaway__statement">The viewer should feel they are spending time with a person. <span>Not watching anonymous B-roll.</span></p>
+<p>Presence without presenting.</p>
+</div>
+</div>
+</section>
 
-### 5. Payoff
+<section id="14-core-visual-grammar" class="guide-chapter guide-chapter--visual-grammar" aria-labelledby="visual-grammar-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">14</p>
+<div>
+<h2 id="visual-grammar-title">Core Visual Grammar</h2>
+<p class="guide-chapter__summary">A scene should establish, move, specify, locate, then leave.</p>
+</div>
+</header>
 
-Deliver the experience promised near the beginning.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">The fundamental sequence</p>
+<ol class="guide-opening-sequence guide-opening-sequence--grammar" aria-label="Core visual grammar">
+<li>establish</li>
+<li>action</li>
+<li>detail</li>
+<li>perspective</li>
+<li>exit</li>
+</ol>
+</div>
 
-### 6. Resolution
+<ol class="guide-grammar-steps" aria-label="Core visual grammar explained">
+<li><strong>Establish</strong><span>Where are we?</span></li>
+<li><strong>Action</strong><span>What is happening?</span></li>
+<li><strong>Detail</strong><span>What makes this particular moment specific?</span></li>
+<li><strong>Perspective</strong><span>Where are you within the experience?</span></li>
+<li><strong>Exit</strong><span>How does the scene finish and lead somewhere else?</span></li>
+</ol>
 
-Let the film settle.
-
-### 7. Final thought
-
-Complete the idea rather than summarising the day.
-
-Not every film needs visible chapters.
-
-But every film needs progression.
-
----
-
-## 12. The First Minute
-
-The opening must earn attention without fake stakes.
-
-Preferred pattern:
-
-**future glimpse → short thought → quiet reset → real beginning**
-
-Show enough of the destination, contrast or observation to create curiosity.
-
-Then begin properly.
-
-Within roughly one minute, the viewer should understand:
-
-where we are\
-what kind of day or journey this is\
-why continuing might be worthwhile
-
-Avoid:
-
-long introductions\
-channel trailers\
-generic cinematic montages\
-explaining the whole film before it starts\
-fake mystery\
-forced enthusiasm
-
----
-
-## 13. Creator Presence
-
-This is not a faceless channel.
-
-The creator should remain physically present without becoming a presenter.
-
-Useful forms of presence:
-
-entering frame\
-leaving frame\
-cycling\
-driving\
-walking\
-cooking\
-waiting\
-working\
-eating\
-packing\
-navigating\
-carrying bags\
-reacting\
-interacting with your wife\
-interacting with family or friends\
-reflections\
-silhouettes\
-self-filmed wides\
-natural dialogue
-
-The viewer should feel they are spending time with a person.
-
-Not watching anonymous B-roll.
-
-### Direct-to-camera rule
-
-Use direct-to-camera only when speaking directly creates something that cannot be achieved better through:
-
-action\
-narration\
-natural dialogue\
-visual context
-
-Avoid defaulting to:
-
-“So guys, now we are in…”
-
-Presence without presenting.
-
----
-
-## 14. Core Visual Grammar
-
-The fundamental sequence is:
-
-### ESTABLISH → ACTION → DETAIL → PERSPECTIVE → EXIT
-
-#### Establish
-
-Where are we?
-
-#### Action
-
-What is happening?
-
-#### Detail
-
-What makes this particular moment specific?
-
-#### Perspective
-
-Where are you within the experience?
-
-#### Exit
-
-How does the scene finish and lead somewhere else?
-
-The exit matters because it creates the possibility of being:
-
-**one place later**
+<div class="guide-takeaway">
+<p class="guide-label">Why the exit matters</p>
+<p class="guide-takeaway__statement">It creates the possibility of being <span>one place later.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
