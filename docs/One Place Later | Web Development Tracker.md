@@ -58,7 +58,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 - Hero title: **One Place Later**, with **원 플레이스 레이터** as its subtitle and the English wordmark retained in the masthead and footer.
 - Brand line: **Ordinary life, noticed in motion.**
-- Channel focus: routines, food, night rides, small escapes, and the occasional long way round.
+- Channel focus: routines, food, observations, small escapes, and the occasional long way round.
 - No autoplay, background video, film listing, creator-template sections, or technique explanation.
 
 ---
@@ -75,6 +75,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Identity | Consolidated the wordmark and route glyph into a reusable BrandMark component for a consistent, accessible logo across the site. | Release record |
 | 2026-08-17 | Homepage language | Added the Hangul rendering as the hero subtitle while retaining the English title and site wordmark. | Release record |
 | 2026-08-17 | Identity | Added a square route-glyph mark for compact digital contexts and made it the site favicon. | Release record |
+| 2026-08-17 | Homepage language | Replaced `night rides` with `observations` and introduced the route-led Korea sign-off. | Release record |
 
 ---
 

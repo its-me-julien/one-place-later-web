@@ -42,9 +42,13 @@ const heroAlt =
       <div class="copy">
         <h2 id="about-title">
           Based in Seoul, I make films about ordinary life in motion: routines,
-          food, night rides, small escapes, and the occasional long way round.
+          food, observations, small escapes, and the occasional long way round.
         </h2>
-        <p>Korea is home. The rest happens one place later.</p>
+        <p class="route-signoff">
+          <span>Korea is home.</span>
+          <span class="route-signoff__arrow" aria-hidden="true">→</span>
+          <span>The rest happens one place later.</span>
+        </p>
         <a class="youtube-link" href={youtubeUrl} target="_blank" rel="me noopener">
           Watch on YouTube <span aria-hidden="true">↗</span>
         </a>
@@ -137,10 +141,29 @@ const heroAlt =
     letter-spacing: -0.035em;
   }
 
-  .copy > p {
-    max-width: 42ch;
+  .route-signoff {
+    display: flex;
+    max-width: 45ch;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25em 0.5em;
     margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: var(--border-default);
+    color: var(--color-text);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+  }
+
+  .route-signoff span:first-child {
     color: var(--color-text-muted);
+  }
+
+  .route-signoff__arrow {
+    color: var(--color-accent-strong);
+    font-weight: 500;
   }
 
   .youtube-link {
