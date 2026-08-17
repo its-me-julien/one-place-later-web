@@ -153,39 +153,48 @@ unless actual content eventually justifies them.
 
 # 6. Homepage Structure
 
-Recommended homepage:
+The homepage has two intentional states.
+
+## Before the first film
+
+Use the brand-led image hero, a short channel statement and the restrained footer. A location route may caption the image when it is factual, for example:
+
+```text
+Gangnam → Han River
+```
+
+Do not invent a film treatment or add placeholder cards simply to fill this state.
+
+## Once a real film is published
+
+The homepage hero becomes one featured film, not a generic channel introduction.
 
 ```text
 HEADER
 
-LATEST FILM
-large visual
-title
-one-line description
-Watch film →
-
-RECENT FILMS
-editorial grid
+FEATURED FILM
+site-owned poster image
+factual route or location · date
+actual film title
+one-line editorial description
+link to the permanent film page →
 
 SHORT BRAND STATEMENT
-Ordinary life, noticed in motion.
+only if it remains useful beside the film
 
-SELECTED / FEATURED FILMS
-only if enough content exists
-
-ABOUT
-small portrait or environmental image
-short paragraph
-About →
+RECENT FILMS
+introduce only once there are enough real films to form an editorial sequence
 
 FOOTER
 ```
+
+The featured-film hero should be a semantic `<article>` and a single, clear link to `/films/[slug]`. The poster, route and title should describe the actual work; never use `Latest video`, a generic thumbnail card, placeholder metadata or a full YouTube player on the index page. The permanent film page carries the player and its `Watch on YouTube ↗` destination.
 
 Do not create a giant introductory hero saying:
 
 **WELCOME TO ONE PLACE LATER**
 
-The latest film should be the hero.
+When a real film exists, it—not an introductory slogan—should be the hero.
 
 ---
 

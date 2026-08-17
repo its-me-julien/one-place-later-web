@@ -78,13 +78,14 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Homepage language | Replaced `night rides` with `observations` and introduced the route-led Korea sign-off. | Release record |
 | 2026-08-17 | Brand system | Formalized the route glyph as the secondary mark, quieted the masthead, adopted `quiet details`, and stabilized the mobile Korea sign-off. | Release record |
 | 2026-08-17 | Identity | Redrew the square mark from the main route geometry and unified every logo lockup around a Route Red origin with a surface-aware neutral path. | Release record |
+| 2026-08-17 | Homepage direction | Added the factual `Gangnam → Han River` hero caption, tuned the mobile crop to retain the cyclist, and documented the poster-first featured-film hero for the first release. | Release record |
 
 ---
 
 # Next Meaningful Work
 
-1. Add the first real film as content before building the Films archive.
-2. Introduce the film content model and a poster-first, lightweight YouTube component when that film is ready.
+1. Publish the first real film and promote it to the poster-first homepage hero, with an actual title, factual route, and permanent film page.
+2. Introduce the film content model and a lightweight YouTube component on that permanent film page when it is ready.
 3. Build `/films` and `/films/[slug]` together so every listed film has a permanent destination.
 4. Reassess whether a separate About page adds useful context once the channel has a body of work.
 
