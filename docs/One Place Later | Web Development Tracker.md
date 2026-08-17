@@ -55,6 +55,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 ## Homepage Content Baseline
 
+- Hero title: **원 플레이스 레이터**, with the English wordmark retained in the masthead and footer.
 - Brand line: **Ordinary life, noticed in motion.**
 - Channel focus: routines, food, night rides, small escapes, and the occasional long way round.
 - No autoplay, background video, film listing, creator-template sections, or technique explanation.
@@ -71,6 +72,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Navigation | Reworked the reusable masthead around a quiet wordmark, editorial section link, and a single clear YouTube destination. | Release record |
 | 2026-08-17 | Footer | Reworked the reusable footer into a compact editorial closing frame with YouTube and Instagram destinations. | Release record |
 | 2026-08-17 | Identity | Consolidated the wordmark and route glyph into a reusable BrandMark component for a consistent, accessible logo across the site. | Release record |
+| 2026-08-17 | Homepage language | Shifted the visible hero title to Hangul while retaining the English wordmark as the site identity. | Release record |
 
 ---
 
