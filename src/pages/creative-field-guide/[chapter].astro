@@ -1,0 +1,58 @@
+---
+import DocumentLayout from '../../layouts/DocumentLayout.astro';
+import guideSource from '../creative-field-guide.md?raw';
+import { guideChapters, type GuideChapter } from '../../data/guideChapters';
+
+export function getStaticPaths() {
+  return guideChapters.map((chapter) => ({
+    params: { chapter: chapter.slug },
+    props: { chapter },
+  }));
+}
+
+interface Props {
+  chapter: GuideChapter;
+}
+
+const { chapter } = Astro.props;
+const sectionNumbers = new Set(chapter.sections.map((section) => section.number));
+
+const chapterMarkup = guideSource
+  .split(/(?=^<section id="\d+-)/m)
+  .map((block) => block.trim())
+  .filter((block) => {
+    const match = block.match(/^<section id="(\d+)-/);
+    return match ? sectionNumbers.has(Number(match[1])) : false;
+  })
+  .map((block) => block.replace(/\n-{3}\s*$/, '').trim())
+  .map((block) => {
+    if (block.startsWith('<section id="36-')) {
+      return block
+        .replace('<h2 id="brief-title">Pre-Production Brief</h2>', '<h2 id="brief-title">Worked Pre-Production Brief</h2>')
+        .replace(
+          /<\/section>\s*$/,
+          '<p class="guide-cross-reference">Need a blank version? <a href="/creative-field-guide/working-system/#56-the-one-place-later-working-brief">Open the canonical working brief <span aria-hidden="true">→</span></a></p></section>',
+        );
+    }
+
+    if (block.startsWith('<section id="56-')) {
+      return block.replace(
+        '<div class="guide-chapter__content">',
+        '<div class="guide-chapter__content"><p class="guide-cross-reference">Looking for a completed example? <a href="/creative-field-guide/fieldwork-travel/#36-pre-production-brief">See the worked pre-production brief <span aria-hidden="true">→</span></a></p>',
+      );
+    }
+
+    return block;
+  })
+  .join('\n');
+
+const frontmatter = {
+  title: `${chapter.title} | Creative Field Guide | One Place Later`,
+  description: chapter.summary,
+  version: 'v2.0',
+};
+---
+
+<DocumentLayout {frontmatter} {chapter}>
+  <Fragment set:html={chapterMarkup} />
+</DocumentLayout>

@@ -88,6 +88,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Creative Field Guide | Reworked sections 31–35 into a unified continuity-and-return chapter with a timelapse proof strip, closing grammar and final-frame study, outward/return route loops, a recurring-object travel thread, and a scannable thematic field. | Release record |
 | 2026-08-17 | Creative Field Guide | Rebuilt sections 36–40 as a practical field workflow: a filled pre-production brief, ordered filming priorities, a capture-or-stop shot test, a keep-or-cut scene audit, and a selective travel coverage edit. | Release record |
 | 2026-08-17 | Creative Field Guide | Completed sections 41–58 as a coherent closing system spanning trip-scale story planning, edit rescue, publishing identity, brand boundaries and decisions, project/travel references, post-publish learning, the reusable working brief, manifesto and North Star. | Release record |
+| 2026-08-17 | Creative Field Guide | Reorganized the 58-section reference into a focused cover directory and nine chapter routes, with stable legacy anchors, CSS-only mobile and desktop chapter navigation, adjacent-chapter controls, and a clear relationship between the worked example brief and canonical reusable brief. | Release record |
 
 ---
 
