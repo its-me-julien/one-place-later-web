@@ -207,137 +207,154 @@ version: v2.0
 </div>
 </section>
 
----
 
-## 5. The Creator Perspective
+<section id="5-the-creator-perspective" class="guide-chapter guide-chapter--creator" aria-labelledby="creator-perspective-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">05</p>
+<div>
+<h2 id="creator-perspective-title">The Creator Perspective</h2>
+<p class="guide-chapter__summary">A lived point of view, held quietly in the background.</p>
+</div>
+</header>
 
-The creator is:
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">The creator is</p>
+<ol class="guide-life-route" aria-label="Creator perspective">
+<li>French</li>
+<li>previously lived in the UK</li>
+<li>previously lived in Singapore</li>
+<li>now based long-term in South Korea</li>
+<li>married to a Korean wife</li>
+<li>working in digital marketing</li>
+</ol>
+</div>
 
-French\
-previously lived in the UK\
-previously lived in Singapore\
-now based long-term in South Korea\
-married to a Korean wife\
-working in digital marketing
+<div class="guide-perspective-grid">
+<div>
+<p class="guide-label">What this is not</p>
+<ul class="guide-position-list">
+<li>tourist</li>
+<li>lifelong local</li>
+<li>first-time visitor to Europe</li>
+<li>simply a foreigner reacting to Korea</li>
+</ul>
+</div>
+<div class="guide-perspective-grid__statement">
+<p class="guide-label">What this creates</p>
+<p>This creates a useful perspective.</p>
+</div>
+</div>
 
-This creates a useful perspective.
+<div class="guide-takeaway">
+<p class="guide-label">Editorial use</p>
+<p class="guide-takeaway__statement">The creator is someone whose idea of home <span>has moved across several countries.</span></p>
+<p>That perspective should remain subtle. It does not need to become the explicit subject of every film.</p>
+</div>
+</div>
+</section>
 
-Not tourist.
+<section id="6-home-and-travel" class="guide-chapter guide-chapter--modes" aria-labelledby="home-and-travel-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">06</p>
+<div>
+<h2 id="home-and-travel-title">Home and Travel</h2>
+<p class="guide-chapter__summary">Two natural modes, expanding the same world.</p>
+</div>
+</header>
 
-Not lifelong local.
+<div class="guide-chapter__content">
+<div class="guide-modes">
+<section class="guide-mode" aria-labelledby="home-mode-title">
+<p class="guide-label">Home mode</p>
+<h3 id="home-mode-title">Korea</h3>
+<p class="guide-mode__thesis">Depth through familiarity</p>
+<div class="guide-mode__copy">
+<p>You know the city. You can notice small changes, return to the same places, compare seasons, and build recurring locations, objects and routines.</p>
+</div>
+<p class="guide-label">Over time, viewers should recognise</p>
+<ul class="guide-observation-list">
+<li>the apartment</li>
+<li>the bicycle</li>
+<li>Gangnam streets</li>
+<li>the Han</li>
+<li>recurring cafés</li>
+<li>favourite routes</li>
+<li>seasonal patterns</li>
+<li>your wife</li>
+<li>your work habits</li>
+<li>the way you move through Seoul</li>
+</ul>
+<p class="guide-mode__signal">I know this world.</p>
+</section>
 
-Not first-time visitor to Europe.
+<section class="guide-mode" aria-labelledby="away-mode-title">
+<p class="guide-label">Away mode</p>
+<h3 id="away-mode-title">Travel</h3>
+<p class="guide-mode__thesis">Discovery through movement and contrast</p>
+<p class="guide-label">Natural narrative material</p>
+<ul class="guide-observation-list">
+<li>departure</li>
+<li>anticipation</li>
+<li>arrival</li>
+<li>adjustment</li>
+<li>movement</li>
+<li>discovery</li>
+<li>fatigue</li>
+<li>encounters</li>
+<li>changing scenery</li>
+<li>leaving</li>
+<li>returning home</li>
+</ul>
+<p class="guide-mode__copy">The destination is not automatically the story.</p>
+<p class="guide-mode__signal">The story is what happens while moving through it.</p>
+</section>
+</div>
 
-Not simply a foreigner reacting to Korea.
+<div class="guide-takeaway">
+<p class="guide-label">Connection</p>
+<p class="guide-takeaway__statement">Familiarity at home gives departure weight. <span>That makes leaving Korea more meaningful.</span></p>
+</div>
+</div>
+</section>
 
-The creator is someone whose idea of home has moved across several countries.
+<section id="7-the-fundamental-story-rule" class="guide-chapter guide-chapter--story-rule" aria-labelledby="story-rule-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">07</p>
+<div>
+<h2 id="story-rule-title">The Fundamental Story Rule</h2>
+<p class="guide-chapter__summary">Find the reason the film exists before you begin filming.</p>
+</div>
+</header>
 
-That perspective should remain subtle.
+<div class="guide-chapter__content">
+<div class="guide-declaration guide-declaration--rule">
+<p class="guide-label">The rule</p>
+<p>Every vlog needs a reason to exist beyond <span>“This is what I did today.”</span></p>
+</div>
 
-It does not need to become the explicit subject of every film.
+<div class="guide-question">
+<p class="guide-label">Before filming, identify</p>
+<h3>The central question</h3>
+<p class="guide-question__prompt">What are we quietly exploring?</p>
+</div>
 
----
+<ol class="guide-question-list" aria-label="Examples of central questions">
+<li>Can I escape Gangnam without leaving Seoul?</li>
+<li>What happens to Seoul when summer becomes unbearable?</li>
+<li>Why does hiking feel so integrated into city life here?</li>
+<li>Can an ordinary Saturday actually feel restorative?</li>
+<li>What does returning to southern France feel like after living abroad?</li>
+<li>How quickly does the rhythm change once we leave the big cities?</li>
+<li>Can we experience somewhere without turning the day into sightseeing?</li>
+</ol>
 
-## 6. Home and Travel
-
-The channel has two natural modes.
-
-### HOME MODE
-
-#### Korea
-
-The strength of Korea-based films is:
-
-**depth through familiarity**
-
-You know the city.
-
-You can notice small changes.
-
-You can return to the same places.
-
-You can compare seasons.
-
-You can build recurring locations, objects and routines.
-
-Over time, viewers should recognise:
-
-the apartment\
-the bicycle\
-Gangnam streets\
-the Han\
-recurring cafés\
-favourite routes\
-seasonal patterns\
-your wife\
-your work habits\
-the way you move through Seoul
-
-The audience should gradually feel:
-
-**I know this world.**
-
-That makes leaving Korea more meaningful.
-
-### AWAY MODE
-
-#### Travel
-
-The strength of travel is:
-
-**discovery through movement and contrast**
-
-Travel already provides natural narrative material:
-
-departure\
-anticipation\
-arrival\
-adjustment\
-movement\
-discovery\
-fatigue\
-encounters\
-changing scenery\
-leaving\
-returning home
-
-The destination is not automatically the story.
-
-The story is what happens while moving through it.
-
----
-
-## 7. The Fundamental Story Rule
-
-Every vlog needs a reason to exist beyond:
-
-**This is what I did today.**
-
-Before filming, identify:
-
-### The central question
-
-What are we quietly exploring?
-
-Examples:
-
-Can I escape Gangnam without leaving Seoul?
-
-What happens to Seoul when summer becomes unbearable?
-
-Why does hiking feel so integrated into city life here?
-
-Can an ordinary Saturday actually feel restorative?
-
-What does returning to southern France feel like after living abroad?
-
-How quickly does the rhythm change once we leave the big cities?
-
-Can we experience somewhere without turning the day into sightseeing?
-
-The central question does not always need to be spoken.
-
-Its purpose is to guide the film.
+<div class="guide-takeaway">
+<p class="guide-label">How to use it</p>
+<p class="guide-takeaway__statement">The central question does not always need to be spoken. <span>Its purpose is to guide the film.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
