@@ -321,6 +321,21 @@ The typographic arrow remains a piece of editorial visual grammar. Use it in cop
 
 Use both forms sparingly enough that movement remains meaningful.
 
+## Motion and outcome graphics
+
+The same route language can describe editorial tempo and story state without introducing a new icon family.
+
+| State | Route behaviour | Appropriate use |
+| --- | --- | --- |
+| **Fast Pace** | Compressed intervals followed by a decisive rise | Quick departures, dense movement and accelerating sequences |
+| **Slow Pace** | Long spacing with visible pauses | Waiting, observation and moments allowed to settle |
+| **Problem** | A clear interruption changes the expected line | Broken plans, closed access, delay or resistance |
+| **Success** | A continuous route reaches a marked destination | Earned arrival, resolution or a question answered |
+
+Pace is expressed through spacing and rhythm. Outcome is expressed through the behaviour of the route. Route Red remains a small signal: origin, pause, interruption or destination. It must not become a large status colour.
+
+These graphics may be revealed by an edit when timing carries meaning, but should not loop, pulse or animate merely to attract attention. Always pair an unfamiliar state graphic with a text label or enough narrative context that colour is not carrying the meaning alone.
+
 ---
 
 # 12. Colour

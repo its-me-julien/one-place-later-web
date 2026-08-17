@@ -350,8 +350,14 @@ YouTube ↗
 | `one-place-later-square-mark.svg` | Favicon, avatar and constrained square formats |
 | `one-place-later-editorial-arrow.svg` | Standalone Route Red arrow for directional editorial graphics |
 | `one-place-later-route-divider.svg` | Wide route transition or divider with origin and destination movement |
+| `one-place-later-fast-pace.svg` | Compressed route rhythm for acceleration and dense movement |
+| `one-place-later-slow-pace.svg` | Spacious route rhythm with intentional pauses |
+| `one-place-later-problem.svg` | Interrupted route for friction, delay or a broken plan |
+| `one-place-later-success.svg` | Completed route with a marked destination for earned resolution |
 
 Keep SVGs at their native proportions. The editorial arrow and route divider are graphic syntax, not replacement logos.
+
+The four state graphics extend the route language; they are not independent symbols or status icons. Pace comes from spacing. Outcome comes from route behaviour. Keep Route Red limited to the origin, pause, interruption or destination, and pair state graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
 
 ---
 

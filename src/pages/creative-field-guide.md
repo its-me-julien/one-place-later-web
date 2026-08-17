@@ -1053,7 +1053,7 @@ version: v2.0
 <p class="guide-chapter__number" aria-hidden="true">23</p>
 <div>
 <h2 id="graphic-language-title">Brand Graphic Language</h2>
-<p class="guide-chapter__summary">A small editorial syntax for movement, sequence, transition, change and arrival.</p>
+<p class="guide-chapter__summary">A production-ready editorial syntax for identity, movement, pace, friction, change and arrival.</p>
 </div>
 </header>
 
@@ -1113,6 +1113,33 @@ version: v2.0
 </div>
 </div>
 
+<div class="guide-motion-language" aria-labelledby="motion-language-title">
+<div class="guide-motion-language__introduction">
+<p class="guide-label">Motion and outcome</p>
+<h3 id="motion-language-title">One route.<br />Four states.</h3>
+<p>Pace changes the spacing. Story changes the route. Every graphic retains the rounded line and a small Route Red signal.</p>
+</div>
+<div class="guide-motion-language__specimens">
+<figure>
+<img src="/one-place-later-fast-pace.svg" alt="Fast pace route made from compressed forward pulses" width="640" height="240" />
+<figcaption><span>01</span><strong>Fast Pace</strong><small>Compressed intervals and a decisive rise. Use for quick departures, dense movement and accelerating sequences.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-slow-pace.svg" alt="Slow pace route with spacious pauses along the journey" width="640" height="240" />
+<figcaption><span>02</span><strong>Slow Pace</strong><small>Long breathing room and marked pauses. Use for waiting, observing and letting a place settle.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-problem.svg" alt="Problem route interrupted before dropping to an unresolved point" width="640" height="240" />
+<figcaption><span>03</span><strong>Problem</strong><small>An interruption changes the expected line. Use when a plan breaks, access closes or the story meets resistance.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-success.svg" alt="Success route arriving at a clearly marked destination" width="640" height="240" />
+<figcaption><span>04</span><strong>Success</strong><small>A clean route reaches a distinct destination. Use for earned arrival, resolution and a question finally answered.</small></figcaption>
+</figure>
+</div>
+<p class="guide-motion-language__rule"><strong>Do not animate these by default.</strong> In film, reveal the line with the edit: cut, wipe or draw only when timing carries meaning.</p>
+</div>
+
 <div class="guide-colour-field" aria-label="Brand colour reference">
 <div class="guide-colour-field__carbon">
 <p class="guide-label">Carbon</p>
@@ -1146,6 +1173,10 @@ version: v2.0
 <li><a href="/one-place-later-square-mark.svg" download>Square mark <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-editorial-arrow.svg" download>Editorial arrow <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-route-divider.svg" download>Route divider <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-fast-pace.svg" download>Fast Pace route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-slow-pace.svg" download>Slow Pace route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-problem.svg" download>Problem route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-success.svg" download>Success route <span>SVG ↓</span></a></li>
 </ul>
 </div>
 

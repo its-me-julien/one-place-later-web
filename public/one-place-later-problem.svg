@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later problem graphic</title>
+  <desc id="description">A rounded route from a red origin reaches an interruption, drops, and remains unresolved.</desc>
+  <circle cx="36" cy="88" r="10" fill="#923D2D" />
+  <path d="M70 88h176" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <path d="M306 88h78c44 0 48 72 96 72h54" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <path d="M270 64v48M294 64v48" stroke="#C95C43" stroke-width="10" stroke-linecap="round" />
+  <circle cx="550" cy="160" r="8" fill="#F2EFE7" stroke="#C95C43" stroke-width="6" />
+</svg>

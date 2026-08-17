@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later fast pace graphic</title>
+  <desc id="description">A red origin launches three compressed route pulses into a long rounded arrow.</desc>
+  <circle cx="36" cy="176" r="10" fill="#923D2D" />
+  <path d="M70 176h58" stroke="#A9A69E" stroke-width="10" stroke-linecap="round" />
+  <path d="M164 176h76" stroke="#8C8B84" stroke-width="10" stroke-linecap="round" />
+  <path d="M276 176h88c40 0 46-96 96-96h126M550 50l36 30-36 30" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="128" cy="176" r="5" fill="#C95C43" />
+  <circle cx="240" cy="176" r="5" fill="#C95C43" />
+</svg>

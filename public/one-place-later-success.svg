@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later success graphic</title>
+  <desc id="description">A route from a red origin rises cleanly and arrives at a marked destination.</desc>
+  <circle cx="36" cy="176" r="10" fill="#923D2D" />
+  <path d="M70 176h178c48 0 54-96 108-96h184" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <path d="M504 50l36 30-36 30" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="586" cy="80" r="22" fill="#F2EFE7" stroke="#C95C43" stroke-width="8" />
+  <circle cx="586" cy="80" r="7" fill="#923D2D" />
+</svg>

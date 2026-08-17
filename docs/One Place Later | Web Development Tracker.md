@@ -90,6 +90,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Creative Field Guide | Completed sections 41–58 as a coherent closing system spanning trip-scale story planning, edit rescue, publishing identity, brand boundaries and decisions, project/travel references, post-publish learning, the reusable working brief, manifesto and North Star. | Release record |
 | 2026-08-17 | Creative Field Guide | Reorganized the 58-section reference into a focused cover directory and nine chapter routes, with stable legacy anchors, CSS-only mobile and desktop chapter navigation, adjacent-chapter controls, and a clear relationship between the worked example brief and canonical reusable brief. | Release record |
 | 2026-08-17 | Creative Field Guide | Removed the redundant usage introduction from the guide cover so the chapter directory begins immediately beneath the editorial hero. | Release record |
+| 2026-08-17 | Brand assets | Completed the Brand Graphic Language chapter with a unified motion-and-outcome system for Fast Pace, Slow Pace, Problem and Success; added four downloadable SVG assets and documented their production rules. | Release record |
 
 ---
 
