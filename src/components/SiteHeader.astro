@@ -6,7 +6,7 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
   <div class="l-wrapper inner">
     <a class="brand" href="/" aria-label="One Place Later, home">
       <span>One Place Later</span>
-      <img class="arrow-mark" src="/one-place-later-route-arrow.svg" alt="" />
+      <span class="arrow-mark" aria-hidden="true"></span>
     </a>
 
     <nav aria-label="Primary navigation">
@@ -51,12 +51,20 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
   }
 
   .arrow-mark {
+    display: block;
     width: 2.75rem;
-    height: auto;
-    transition: transform var(--motion-base) var(--ease-standard);
+    aspect-ratio: 72 / 28;
+    background-color: var(--color-text-muted);
+    -webkit-mask: url("/one-place-later-route-arrow.svg") center / contain no-repeat;
+    mask: url("/one-place-later-route-arrow.svg") center / contain no-repeat;
+    transition:
+      background-color var(--motion-base) var(--ease-standard),
+      transform var(--motion-base) var(--ease-standard);
   }
 
-  .brand:hover .arrow-mark {
+  .brand:hover .arrow-mark,
+  .brand:focus-visible .arrow-mark {
+    background-color: var(--color-accent-strong);
     transform: translateX(3px);
   }
 

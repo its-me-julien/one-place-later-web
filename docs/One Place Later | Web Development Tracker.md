@@ -37,7 +37,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 - HTML and CSS first: no client-side framework or homepage JavaScript.
 - One generated, site-owned hero image is processed through Astro’s image pipeline.
 - Pretendard Variable is loaded as a pinned dynamic subset, with system-font fallbacks.
-- A rounded Route Red SVG route arrow is the persistent header mark: its origin point and rising path signal direction and transition while the written name remains the identity.
+- A rounded SVG route arrow is integrated with the header wordmark in secondary Stone; its origin point and rising path signal direction and transition, with Route Red reserved for interactive emphasis.
 - The visual source of truth is the web brand guidelines; the creative-direction document governs voice and editorial choices.
 
 ---
