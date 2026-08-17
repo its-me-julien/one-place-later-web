@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later notice or detail graphic</title>
+  <desc id="description">A route from a red origin rises gently to notice one small point, then continues.</desc>
+  <circle cx="36" cy="164" r="10" fill="#923D2D" />
+  <path d="M70 164h160c50 0 52-72 102-72s52 72 102 72h136" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <circle cx="332" cy="92" r="10" fill="#C95C43" />
+</svg>

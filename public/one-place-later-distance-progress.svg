@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later distance or progress strip</title>
+  <desc id="description">A variable route strip with a red origin, one waypoint, destination and editable distance and time values.</desc>
+  <text x="36" y="52" fill="#1A1A18" font-family="Pretendard Variable, Pretendard, Arial, sans-serif" font-size="30" font-weight="500" letter-spacing="-0.6">10 km remaining</text>
+  <text x="604" y="52" fill="#57544F" font-family="Pretendard Variable, Pretendard, Arial, sans-serif" font-size="22" font-weight="500" text-anchor="end">35 min</text>
+  <path d="M46 142h548" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <circle cx="46" cy="142" r="12" fill="#923D2D" />
+  <circle cx="324" cy="142" r="9" fill="#F2EFE7" stroke="#C95C43" stroke-width="6" />
+  <circle cx="594" cy="142" r="12" fill="#57544F" />
+  <text x="46" y="196" fill="#57544F" font-family="Pretendard Variable, Pretendard, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="1.2">FROM HERE</text>
+  <text x="594" y="196" fill="#57544F" font-family="Pretendard Variable, Pretendard, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="1.2" text-anchor="end">DESTINATION</text>
+</svg>

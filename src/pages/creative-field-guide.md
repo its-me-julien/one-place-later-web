@@ -1151,6 +1151,29 @@ version: v2.0
 <p class="guide-motion-language__rule"><strong>Signal once, then get out of the way.</strong> A callout should answer one question and leave before it competes with the scene.</p>
 </div>
 
+<div class="guide-motion-language guide-route-extensions" aria-labelledby="route-extensions-title">
+<div class="guide-motion-language__introduction">
+<p class="guide-label">Recurring route language</p>
+<h3 id="route-extensions-title">Notice.<br />Return.<br />Continue.</h3>
+<p>Three route behaviours support the channel’s recurring ideas without becoming generic interface icons.</p>
+</div>
+<div class="guide-motion-language__specimens">
+<figure>
+<img src="/one-place-later-notice-detail.svg" alt="Route gently deviating toward a small noticed detail before continuing" width="640" height="240" />
+<figcaption><span>01</span><strong>Notice / Detail</strong><small>Marks a gesture, sound, object or environmental change the viewer might otherwise miss.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-return.svg" alt="Route curving back toward its origin without closing the loop" width="640" height="240" />
+<figcaption><span>02</span><strong>Return / Callback</strong><small>Use for returning home or deliberately revisiting an earlier place, object or thought.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-distance-progress.svg" alt="Variable route strip showing an origin, waypoint, destination, distance and travel time" width="640" height="240" />
+<figcaption><span>03</span><strong>Distance / Progress</strong><small>A flexible information strip. Replace the example values with one useful measure such as distance remaining or travel time.</small></figcaption>
+</figure>
+</div>
+<p class="guide-motion-language__rule"><strong>Use behaviour before symbol.</strong> Notice deviates, Return folds back, and Progress advances. Always pair the graphic with specific language.</p>
+</div>
+
 <div class="guide-transport-language" aria-labelledby="transport-language-title">
 <div class="guide-transport-language__introduction">
 <p class="guide-label">Methods of transport</p>
@@ -1219,6 +1242,9 @@ version: v2.0
 <li><a href="/one-place-later-solution.svg" download>Solution route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-tool.svg" download>Tool marker <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-tip-info.svg" download>Tip or Info marker <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-notice-detail.svg" download>Notice or Detail route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-return.svg" download>Return or Callback route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-distance-progress.svg" download>Distance or Progress strip <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-walk.svg" download>Walking route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-bicycle.svg" download>Bicycle route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-rail.svg" download>Rail route <span>SVG ↓</span></a></li>

@@ -2943,6 +2943,29 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
       border-bottom: 0;
     }
 
+    .guide-body :global(.guide-route-extensions .guide-motion-language__specimens) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-route-extensions figure) {
+      padding-inline: var(--space-4);
+      border-right: var(--border-default);
+      border-bottom: 0;
+    }
+
+    .guide-body :global(.guide-route-extensions figure:first-child) {
+      padding-left: 0;
+    }
+
+    .guide-body :global(.guide-route-extensions figure:nth-child(2)) {
+      padding-right: var(--space-4);
+    }
+
+    .guide-body :global(.guide-route-extensions figure:last-child) {
+      padding-right: 0;
+      border-right: 0;
+    }
+
     .guide-body :global(.guide-transport-language__introduction) {
       display: grid;
       grid-template-columns: minmax(10rem, 1fr) minmax(0, 3fr);

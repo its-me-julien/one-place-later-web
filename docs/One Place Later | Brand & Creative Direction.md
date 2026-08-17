@@ -347,6 +347,18 @@ Both signals begin with the same Route Red origin and the same horizontal Stone 
 
 The text label carries the meaning and the mark gives it a recognisable place in the system. Signal once, answer one question, and leave before the callout competes with the scene.
 
+## Recurring route language
+
+Three additional route behaviours express ideas that recur across the films without becoming generic interface icons.
+
+| Behaviour | Route action | Appropriate use |
+| --- | --- | --- |
+| **Notice / Detail** | The line deviates gently toward one small point, then continues | A gesture, sound, object or environmental change viewers might otherwise miss |
+| **Return / Callback** | The route curves back toward its origin without closing into a conventional U-turn | Returning home or deliberately revisiting an earlier place, object or thought |
+| **Distance / Progress** | A variable strip connects an origin, one waypoint and a destination | One useful measure such as distance remaining or travel time |
+
+These are behaviours before symbols: Notice deviates, Return folds back and Progress advances. Always use a clear text label. The Distance / Progress strip is a flexible production component; replace its example values rather than treating it as a fixed icon.
+
 ## Methods of transport
 
 Transport graphics describe how the journey moves. They extend the route syntax and never replace the wordmark or secondary route glyph.

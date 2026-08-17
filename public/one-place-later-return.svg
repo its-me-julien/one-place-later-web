@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later return or callback graphic</title>
+  <desc id="description">A route leaves a red origin, curves back and points toward home without closing the loop.</desc>
+  <circle cx="68" cy="170" r="10" fill="#923D2D" />
+  <path d="M102 170h392c54 0 62-92 4-92H180" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M208 52l-32 26 32 26" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

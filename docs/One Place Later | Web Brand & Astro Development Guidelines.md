@@ -354,6 +354,9 @@ YouTube ↗
 | `one-place-later-solution.svg` | Completed route with a marked destination for a workable answer |
 | `one-place-later-tool.svg` | Route-led tool marker for practical equipment and resources |
 | `one-place-later-tip-info.svg` | Route-led information marker for concise useful context |
+| `one-place-later-notice-detail.svg` | Route deviation for a gesture, sound, object or environmental detail worth noticing |
+| `one-place-later-return.svg` | Returning route for homecoming or a deliberate callback |
+| `one-place-later-distance-progress.svg` | Variable origin, waypoint and destination strip for distance or travel time |
 | `one-place-later-transport-walk.svg` | Human-scale walking route for local transitions and observation |
 | `one-place-later-transport-bicycle.svg` | Bicycle route for effort, terrain and open movement |
 | `one-place-later-transport-rail.svg` | Rail route for subway, metro and train journeys |
@@ -365,6 +368,8 @@ Keep SVGs at their native proportions. The editorial arrow and route divider are
 Problem and Solution extend the route language; they are not independent status icons. Story state comes from route behaviour. Keep Route Red limited to the origin, interruption or destination, and pair both graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
 
 Tool and Tip or Info are editorial signals. Both preserve the same origin position, horizontal route length, stroke weight and neutral colour; only the final route transformation changes. Their labels carry meaning and their graphics create recognition. Each callout should answer one question and leave. Tools should be genuinely relevant; information should be concise and useful.
+
+Notice / Detail, Return / Callback and Distance / Progress are recurring route behaviours rather than generic UI icons. Notice makes one restrained deviation and continues. Return folds back toward its origin without becoming a traffic-style U-turn. Distance / Progress advances through one waypoint and must use real, editable values. Pair all three with specific language; never let the graphic carry meaning alone.
 
 Transport assets use the same rule: the route leads and the vehicle remains secondary. Keep their native proportions, pair them with useful journey context, and do not use any transport asset as a logo. A single entrance or route reveal may support a film edit; looping vehicle animation is not part of the web language.
 
