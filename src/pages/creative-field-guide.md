@@ -358,80 +358,130 @@ version: v2.0
 
 ---
 
-## 8. The Directing Line
+<section id="8-the-directing-line" class="guide-chapter guide-chapter--directing-line" aria-labelledby="directing-line-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">08</p>
+<div>
+<h2 id="directing-line-title">The Directing Line</h2>
+<p class="guide-chapter__summary">One sentence that describes what the film is really doing.</p>
+</div>
+</header>
 
-Every vlog should have one sentence describing what the film is really doing.
+<div class="guide-chapter__content">
+<div class="guide-declaration guide-declaration--directing">
+<p class="guide-label">The creative spine</p>
+<p>Every vlog should have one sentence <span>describing what the film is really doing.</span></p>
+</div>
 
-Example:
+<div class="guide-directing-examples">
+<figure class="guide-directing-example">
+<figcaption>Seoul example</figcaption>
+<blockquote>Follow one ordinary Saturday as Seoul changes from busy Gangnam roads into the open Han River, ending somewhere quiet enough to work and stay awhile.</blockquote>
+</figure>
+<figure class="guide-directing-example">
+<figcaption>Southern France example</figcaption>
+<blockquote>Follow a day moving slowly through southern France, using roads, food and family routines to show how different the pace feels from Seoul.</blockquote>
+</figure>
+</div>
 
-**Follow one ordinary Saturday as Seoul changes from busy Gangnam roads into the open Han River, ending somewhere quiet enough to work and stay awhile.**
+<div class="guide-takeaway">
+<p class="guide-label">Decision filter</p>
+<p class="guide-takeaway__statement">Every major scene should support the directing line. <span>If it does not, question whether it belongs.</span></p>
+</div>
+</div>
+</section>
 
-Or:
+<section id="9-the-surface-and-underneath-rule" class="guide-chapter guide-chapter--underneath" aria-labelledby="surface-underneath-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">09</p>
+<div>
+<h2 id="surface-underneath-title">The Surface and Underneath Rule</h2>
+<p class="guide-chapter__summary">Separate the activity from the idea beneath it.</p>
+</div>
+</header>
 
-**Follow a day moving slowly through southern France, using roads, food and family routines to show how different the pace feels from Seoul.**
+<div class="guide-chapter__content">
+<div class="guide-template">
+<p class="guide-label">Before filming, complete this sentence</p>
+<p>This is a vlog about <span>______</span> on the surface, <br />but underneath it is really about <span>______</span>.</p>
+</div>
 
-The directing line is the creative spine.
+<div class="guide-underneath-examples">
+<div class="guide-underneath-example">
+<p class="guide-label">Cycling to a café</p>
+<p><span>On the surface</span> cycling to a café</p>
+<p><span>Underneath</span> how Seoul changes once you reach the Han</p>
+</div>
+<div class="guide-underneath-example">
+<p class="guide-label">Driving through southern France</p>
+<p><span>On the surface</span> driving through southern France</p>
+<p><span>Underneath</span> how quickly familiar places can change your pace</p>
+</div>
+<div class="guide-underneath-example">
+<p class="guide-label">One day in Brussels</p>
+<p><span>On the surface</span> one day in Brussels</p>
+<p><span>Underneath</span> what happens when a brief stop becomes part of a much longer journey</p>
+</div>
+</div>
 
-Every major scene should support it.
+<div class="guide-takeaway">
+<p class="guide-label">The real subject</p>
+<p class="guide-takeaway__statement">The second blank is where <span>One Place Later lives.</span></p>
+</div>
+</div>
+</section>
 
-If a scene is enjoyable but does not support the directing line, question whether it belongs.
+<section id="10-the-change-of-state" class="guide-chapter guide-chapter--change" aria-labelledby="change-state-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">10</p>
+<div>
+<h2 id="change-state-title">The Change of State</h2>
+<p class="guide-chapter__summary">Every strong episode should contain some form of change.</p>
+</div>
+</header>
 
----
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Look for the shift</p>
+<p>Find the one already present <span>in the experience.</span></p>
+</div>
 
-## 9. The Surface and Underneath Rule
+<ul class="guide-change-list" aria-label="Examples of change of state">
+<li><span>noise</span><span aria-hidden="true">→</span><strong>quiet</strong></li>
+<li><span>stress</span><span aria-hidden="true">→</span><strong>release</strong></li>
+<li><span>heat</span><span aria-hidden="true">→</span><strong>relief</strong></li>
+<li><span>city</span><span aria-hidden="true">→</span><strong>nature</strong></li>
+<li><span>movement</span><span aria-hidden="true">→</span><strong>stillness</strong></li>
+<li><span>crowded</span><span aria-hidden="true">→</span><strong>empty</strong></li>
+<li><span>routine</span><span aria-hidden="true">→</span><strong>discovery</strong></li>
+<li><span>work</span><span aria-hidden="true">→</span><strong>leisure</strong></li>
+<li><span>familiar</span><span aria-hidden="true">→</span><strong>newly noticed</strong></li>
+<li><span>day</span><span aria-hidden="true">→</span><strong>night</strong></li>
+<li><span>expectation</span><span aria-hidden="true">→</span><strong>reality</strong></li>
+<li><span>effort</span><span aria-hidden="true">→</span><strong>reward</strong></li>
+<li><span>home</span><span aria-hidden="true">→</span><strong>travel</strong></li>
+<li><span>transit</span><span aria-hidden="true">→</span><strong>arrival</strong></li>
+<li><span>fast</span><span aria-hidden="true">→</span><strong>slow</strong></li>
+<li><span>planned</span><span aria-hidden="true">→</span><strong>unexpected</strong></li>
+</ul>
 
-Before filming, complete this sentence:
+<div class="guide-change-guidance">
+<p class="guide-label">How it can appear</p>
+<ul>
+<li>Sometimes the change is obvious.</li>
+<li>Sometimes it is subtle.</li>
+<li>Sometimes it is communicated through text.</li>
+<li>Sometimes through narration.</li>
+<li>Often the strongest version is purely visual or sonic.</li>
+</ul>
+</div>
 
-**This is a vlog about ______ on the surface, but underneath it is really about ______.**
-
-Examples:
-
-This is a vlog about cycling to a café on the surface, but underneath it is really about how Seoul changes once you reach the Han.
-
-This is a vlog about driving through southern France on the surface, but underneath it is really about how quickly familiar places can change your pace.
-
-This is a vlog about one day in Brussels on the surface, but underneath it is really about what happens when a brief stop becomes part of a much longer journey.
-
-The second blank is where **One Place Later** lives.
-
----
-
-## 10. The Change of State
-
-Every strong episode should contain some form of change.
-
-Examples:
-
-noise → quiet\
-stress → release\
-heat → relief\
-city → nature\
-movement → stillness\
-crowded → empty\
-routine → discovery\
-work → leisure\
-familiar → newly noticed\
-day → night\
-expectation → reality\
-effort → reward\
-home → travel\
-transit → arrival\
-fast → slow\
-planned → unexpected
-
-The change should not be manufactured.
-
-Find the one already present in the experience.
-
-Sometimes the change is obvious.
-
-Sometimes it is subtle.
-
-Sometimes it is communicated through text.
-
-Sometimes through narration.
-
-Often the strongest version is purely visual or sonic.
+<div class="guide-takeaway">
+<p class="guide-label">Creative restraint</p>
+<p class="guide-takeaway__statement">The change should not be manufactured. <span>Find the one already present in the experience.</span></p>
+</div>
+</div>
+</section>
 
 ---
 

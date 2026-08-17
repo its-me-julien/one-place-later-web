@@ -714,6 +714,165 @@ const { frontmatter } = Astro.props;
     font-size: var(--text-lg);
   }
 
+  .guide-body :global(.guide-declaration--directing > p:nth-child(2)),
+  .guide-body :global(.guide-declaration--change > p:nth-child(2)) {
+    max-width: 24ch;
+  }
+
+  .guide-body :global(.guide-declaration--directing > p:nth-child(2) span),
+  .guide-body :global(.guide-declaration--change > p:nth-child(2) span) {
+    display: block;
+    margin-top: var(--space-2);
+    color: var(--color-text-muted);
+  }
+
+  .guide-body :global(.guide-directing-examples) {
+    display: grid;
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-directing-example) {
+    margin: 0;
+    padding-block: var(--space-6);
+  }
+
+  .guide-body :global(.guide-directing-example + .guide-directing-example) {
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-directing-example figcaption) {
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .guide-body :global(.guide-directing-example blockquote) {
+    max-width: 37rem;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    border: 0;
+    color: var(--color-text);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+  }
+
+  .guide-body :global(.guide-template) {
+    padding-block: var(--space-6);
+    border-block: var(--border-default);
+  }
+
+  .guide-body :global(.guide-template > p:nth-child(2)) {
+    max-width: 33rem;
+    margin-top: var(--space-4);
+    font-size: var(--text-xl);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .guide-body :global(.guide-template span) {
+    color: var(--color-accent-strong);
+  }
+
+  .guide-body :global(.guide-underneath-examples) {
+    display: grid;
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-underneath-example) {
+    padding-block: var(--space-6);
+  }
+
+  .guide-body :global(.guide-underneath-example + .guide-underneath-example) {
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-underneath-example > p:not(.guide-label)) {
+    max-width: 36rem;
+    margin-top: var(--space-3);
+    line-height: 1.45;
+  }
+
+  .guide-body :global(.guide-underneath-example > p + p) {
+    margin-top: var(--space-2);
+  }
+
+  .guide-body :global(.guide-underneath-example span) {
+    display: inline-block;
+    min-width: 7.2rem;
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .guide-body :global(.guide-change-list) {
+    display: grid;
+    gap: 0 var(--space-6);
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-top: var(--border-default);
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-change-list li) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: var(--space-3);
+    margin: 0;
+    padding-block: var(--space-3);
+    border-bottom: var(--border-default);
+    line-height: 1.35;
+  }
+
+  .guide-body :global(.guide-change-list li > span:first-child) {
+    color: var(--color-text-muted);
+  }
+
+  .guide-body :global(.guide-change-list li > span:nth-child(2)) {
+    color: var(--color-accent-strong);
+  }
+
+  .guide-body :global(.guide-change-list strong) {
+    font-weight: 500;
+  }
+
+  .guide-body :global(.guide-change-guidance) {
+    padding-block: var(--space-6);
+  }
+
+  .guide-body :global(.guide-change-guidance ul) {
+    display: grid;
+    gap: var(--space-2);
+    max-width: 38rem;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-change-guidance li) {
+    position: relative;
+    margin: 0;
+    padding-left: 1rem;
+    line-height: 1.45;
+  }
+
+  .guide-body :global(.guide-change-guidance li::before) {
+    position: absolute;
+    top: 0.58em;
+    left: 0;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: var(--color-accent-strong);
+    content: '';
+  }
+
   .guide-body :global(.guide-question) {
     padding-block: var(--space-7);
   }
@@ -881,6 +1040,44 @@ const { frontmatter } = Astro.props;
     .guide-body :global(.guide-declaration__support) {
       align-content: end;
       margin-top: var(--space-4);
+    }
+
+    .guide-body :global(.guide-directing-examples),
+    .guide-body :global(.guide-underneath-examples) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-directing-example),
+    .guide-body :global(.guide-underneath-example) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-directing-example + .guide-directing-example),
+    .guide-body :global(.guide-underneath-example + .guide-underneath-example) {
+      padding-left: var(--space-6);
+      border-top: 0;
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-underneath-example:nth-child(3)) {
+      grid-column: 1 / -1;
+      padding-right: 0;
+      padding-left: 0;
+      border-top: var(--border-default);
+      border-left: 0;
+    }
+
+    .guide-body :global(.guide-change-list) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-change-list li:nth-child(odd)) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-change-list li:nth-child(even)) {
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
     }
   }
 </style>
