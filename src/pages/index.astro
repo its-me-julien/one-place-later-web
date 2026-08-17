@@ -32,14 +32,14 @@ const heroAlt =
       <p class="hero-route">
         <span class="hero-route__place hero-route__origin">Gangnam</span>
         <span class="hero-route__line" aria-hidden="true">
-          <svg viewBox="0 0 112 20" preserveAspectRatio="none">
-            <circle class="hero-route__origin-dot" cx="6" cy="10" r="3" />
+          <svg viewBox="0 0 112 24">
+            <circle class="hero-route__origin-dot" cx="6" cy="17" r="3" />
             <path
               class="hero-route__path"
               pathLength="1"
-              d="M 11 12 H 40 C 49 12 50 5 59 5 H 78 C 88 5 89 12 101 12"
+              d="M 13 17 H 42 C 51 17 51 7 61 7 H 99"
             />
-            <circle class="hero-route__destination-dot" cx="106" cy="12" r="1.75" />
+            <path class="hero-route__arrow" d="M 91 1 L 99 7 L 91 13" />
           </svg>
         </span>
         <span class="hero-route__place hero-route__destination">Han River</span>
@@ -150,8 +150,8 @@ const heroAlt =
   }
 
   .hero-route__line {
-    width: clamp(4.5rem, 13vw, 8.5rem);
-    height: 1.25rem;
+    width: clamp(5.25rem, 11vw, 7.5rem);
+    aspect-ratio: 112 / 24;
     flex: 0 1 auto;
   }
 
@@ -174,20 +174,23 @@ const heroAlt =
     animation: route-draw 640ms 240ms var(--ease-standard) forwards;
   }
 
-  .hero-route__origin-dot,
-  .hero-route__destination-dot {
-    transform-box: fill-box;
-    transform-origin: center;
+  .hero-route__arrow {
+    fill: none;
+    stroke: color-mix(in srgb, var(--color-text-on-dark) 72%, transparent);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    opacity: 0;
+    transform: translateX(-3px);
+    animation: route-arrow-in 220ms 790ms var(--ease-standard) forwards;
   }
 
   .hero-route__origin-dot {
+    transform-box: fill-box;
+    transform-origin: center;
     fill: var(--color-accent);
     animation: route-dot-in 240ms 100ms var(--ease-standard) both;
-  }
-
-  .hero-route__destination-dot {
-    fill: color-mix(in srgb, var(--color-text-on-dark) 78%, transparent);
-    animation: route-dot-in 220ms 820ms var(--ease-standard) both;
   }
 
   .hero-title__line,
@@ -325,6 +328,13 @@ const heroAlt =
     }
   }
 
+  @keyframes route-arrow-in {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   @keyframes hero-type-in {
     from {
       opacity: 0;
@@ -341,7 +351,7 @@ const heroAlt =
     .hero-image,
     .hero-route__place,
     .hero-route__origin-dot,
-    .hero-route__destination-dot,
+    .hero-route__arrow,
     .hero-title__line > span,
     .hero-reveal > span {
       animation: none;
@@ -350,6 +360,11 @@ const heroAlt =
     .hero-route__path {
       animation: none;
       stroke-dashoffset: 0;
+    }
+
+    .hero-route__arrow {
+      opacity: 1;
+      transform: none;
     }
   }
 
