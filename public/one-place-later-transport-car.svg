@@ -3,9 +3,11 @@
   <desc id="description">A minimal rounded car follows a route from a red origin toward an arrow.</desc>
   <circle cx="36" cy="190" r="9" fill="#923D2D" />
   <path d="M68 190h342M378 166l32 24-32 24" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M130 154v-26c0-16 13-29 29-29h34l30-42h74c22 0 38 14 49 42l28 8c14 4 24 17 24 32v15H130Z" stroke="#57544F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M205 99l27-42M224 99h94" stroke="#57544F" stroke-width="8" stroke-linecap="round" />
-  <circle cx="181" cy="159" r="22" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
-  <circle cx="328" cy="159" r="22" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
-  <circle cx="374" cy="128" r="6" fill="#C95C43" />
+  <g transform="translate(480 0) scale(-1 1)">
+    <path d="M130 154v-26c0-16 13-29 29-29h34l30-42h74c22 0 38 14 49 42l28 8c14 4 24 17 24 32v15H130Z" stroke="#57544F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M205 99l27-42M224 99h94" stroke="#57544F" stroke-width="8" stroke-linecap="round" />
+    <circle cx="181" cy="159" r="22" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
+    <circle cx="328" cy="159" r="22" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
+    <circle cx="374" cy="128" r="6" fill="#C95C43" />
+  </g>
 </svg>

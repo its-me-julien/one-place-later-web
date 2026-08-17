@@ -93,6 +93,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Brand assets | Completed the Brand Graphic Language chapter with a unified motion-and-outcome system for Fast Pace, Slow Pace, Problem and Success; added four downloadable SVG assets and documented their production rules. | Release record |
 | 2026-08-17 | Brand assets | Extended the Brand Graphic Language chapter with an on-brand transport family for Walk, Bicycle, Rail, Car and Flight, including five downloadable route-led SVGs and usage rules. | Release record |
 | 2026-08-17 | Brand assets | Removed the unused Fast and Slow Pace marks, renamed Success to Solution, and added practical route-led editorial signals for Location, Tool, Tip or Info, and Quote with downloadable SVGs. | Release record |
+| 2026-08-17 | Brand assets | Corrected the Bicycle and Car transport silhouettes so both face and move toward the route arrow. | Release record |
 
 ---
 
