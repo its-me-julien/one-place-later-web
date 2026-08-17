@@ -1555,218 +1555,192 @@ version: v2.0
 
 ---
 
-## 31. Timelapse
+<section id="31-timelapse" class="guide-chapter guide-chapter--timelapse" aria-labelledby="timelapse-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">31</p>
+<div>
+<h2 id="timelapse-title">Timelapse</h2>
+<p class="guide-chapter__summary">Compress time only when the passage of time changes what the viewer understands.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-timelapse-strip" aria-label="Example timelapse showing a work session becoming evening">
+<div><span>17:42</span><i aria-hidden="true"></i><small>Work</small></div>
+<div><span>18:08</span><i aria-hidden="true"></i><small>Light shifts</small></div>
+<div><span>18:37</span><i aria-hidden="true"></i><small>Evening arrives</small></div>
+<div><span>19:11</span><i aria-hidden="true"></i><small>Only the screen remains</small></div>
+</div>
 
-Timelapse should show change.
+<div class="guide-proof-test">
+<p class="guide-label">The proof test</p>
+<p>What changed while we watched?</p>
+<div><span>Work session</span><span>→</span><strong>Evening arrived</strong></div>
+</div>
 
-Good uses:
+<div class="guide-timelapse-uses">
+<p class="guide-label">Useful change</p>
+<ul>
+<li>crowds building</li><li>river traffic</li><li>café activity</li><li>airport waiting</li><li>sunset</li><li>a family table filling up</li>
+</ul>
+</div>
 
-work sessions\
-light changing\
-evening arriving\
-crowds building\
-river traffic\
-café activity\
-sunset\
-airport waiting\
-family table filling up
-
-Ask:
-
-**What does this timelapse prove?**
-
-If the answer is only:
-
-**It looks cinematic**
-
-skip it.
-
----
-
-## 32. Endings
-
-Avoid:
-
-**So that's it for today. Thanks for watching.**
-
-The ending should complete the opening idea.
-
-Preferred closing grammar:
-
-**settle → ordinary action → final observation → ambient sound → cut**
-
-Possible endings:
-
-returning home\
-closing shutters\
-packing\
-parking the car\
-empty dinner table\
-night street\
-airport\
-quiet apartment\
-one restrained VO thought
-
-The film should end because the story ended.
-
-Not because the runtime did.
+<div class="guide-takeaway">
+<p class="guide-label">Cut rule</p>
+<p class="guide-takeaway__statement">If it proves only that the shot looks cinematic, <span>skip it.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 33. Return Journeys
+<section id="32-endings" class="guide-chapter guide-chapter--endings" aria-labelledby="endings-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">32</p>
+<div>
+<h2 id="endings-title">Endings</h2>
+<p class="guide-chapter__summary">Complete the opening idea, then leave on an image, a thought or a sound that belongs to the story.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-ending-grammar">
+<p class="guide-label">Closing grammar</p>
+<ol aria-label="Preferred ending sequence">
+<li><span>01</span><strong>Settle</strong></li>
+<li><span>02</span><strong>Ordinary action</strong></li>
+<li><span>03</span><strong>Final observation</strong></li>
+<li><span>04</span><strong>Ambient sound</strong></li>
+<li><span>05</span><strong>Cut</strong></li>
+</ol>
+</div>
 
-When appropriate, keep the return journey.
+<figure class="guide-final-frame">
+<div aria-hidden="true"><span></span><i></i></div>
+<figcaption><span>Final frame · 21:14</span><strong>Back in Gangnam.</strong><small>Lift doors close. Apartment ambience. Cut.</small></figcaption>
+</figure>
 
-Examples:
+<div class="guide-ending-options">
+<p class="guide-label">The story can close with</p>
+<ul>
+<li>returning home</li><li>closing shutters</li><li>packing</li><li>parking the car</li><li>an empty dinner table</li><li>a night street</li><li>an airport</li><li>a quiet apartment</li><li>one restrained VO thought</li>
+</ul>
+</div>
 
-Europe → Korea
-
-mountain → city
-
-coast → family home
-
-restaurant → quiet street
-
-Han → Gangnam
-
-Returns can create:
-
-visual callbacks\
-emotional resolution\
-symmetry\
-changed perception\
-a sense of home
-
-Coming back can be as meaningful as leaving.
-
----
-
-## 34. Recurring Objects
-
-Potential recurring objects:
-
-bicycle\
-coffee cup\
-camera bag\
-work laptop\
-apartment window\
-helmet\
-backpack\
-suitcase\
-car keys\
-kitchen tools
-
-Objects can create continuity between countries.
-
-The same camera bag appearing in:
-
-Seoul apartment\
-airport\
-Amsterdam hotel\
-French family home\
-back in Gangnam
-
-quietly connects the world.
+<div class="guide-ending-contrast">
+<div><span>Avoid</span><p>“So that's it for today. Thanks for watching.”</p></div>
+<div><span>End when</span><p>The story has finished—not when the runtime has.</p></div>
+</div>
+</div>
+</section>
 
 ---
 
-## 35. Recurring Themes
+<section id="33-return-journeys" class="guide-chapter guide-chapter--returns" aria-labelledby="returns-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">33</p>
+<div>
+<h2 id="returns-title">Return Journeys</h2>
+<p class="guide-chapter__summary">Leaving establishes the route. Coming back reveals what changed.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-return-loop" aria-label="Example outward and return journey between Gangnam and the Han River">
+<div class="guide-return-loop__out"><span>Outward</span><strong>Gangnam</strong><i aria-hidden="true"></i><strong>Han River</strong><small>traffic → release</small></div>
+<div class="guide-return-loop__back"><span>Return</span><strong>Han River</strong><i aria-hidden="true"></i><strong>Gangnam</strong><small>open air → home</small></div>
+</div>
 
-### Movement
+<div class="guide-return-routes">
+<p class="guide-label">Routes worth keeping</p>
+<ul>
+<li><span>Europe</span><b>→</b><strong>Korea</strong></li>
+<li><span>Mountain</span><b>→</b><strong>City</strong></li>
+<li><span>Coast</span><b>→</b><strong>Family home</strong></li>
+<li><span>Restaurant</span><b>→</b><strong>Quiet street</strong></li>
+</ul>
+</div>
 
-How people move through places.
+<div class="guide-return-value">
+<div><span>01</span><strong>Visual callback</strong></div><div><span>02</span><strong>Emotional resolution</strong></div><div><span>03</span><strong>Symmetry</strong></div><div><span>04</span><strong>Changed perception</strong></div><div><span>05</span><strong>A sense of home</strong></div>
+</div>
 
-### Density and space
+<div class="guide-takeaway">
+<p class="guide-label">Return rule</p>
+<p class="guide-takeaway__statement">Coming back can be as meaningful as leaving.</p>
+</div>
+</div>
+</section>
 
-Gangnam streets versus Han River.
+---
 
-City versus countryside.
+<section id="34-recurring-objects" class="guide-chapter guide-chapter--objects" aria-labelledby="objects-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">34</p>
+<div>
+<h2 id="objects-title">Recurring Objects</h2>
+<p class="guide-chapter__summary">A familiar object can quietly stitch different days, rooms and countries into one world.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-object-thread">
+<header><span class="guide-object-thread__icon" aria-hidden="true"></span><div><p class="guide-label">Continuity study</p><strong>The camera bag travels</strong></div></header>
+<ol>
+<li><span>01</span><strong>Seoul apartment</strong><small>packed by the door</small></li>
+<li><span>02</span><strong>Incheon Airport</strong><small>under the seat</small></li>
+<li><span>03</span><strong>Amsterdam hotel</strong><small>on the desk</small></li>
+<li><span>04</span><strong>French family home</strong><small>beside the kitchen</small></li>
+<li><span>05</span><strong>Back in Gangnam</strong><small>unpacked</small></li>
+</ol>
+</div>
 
-Apartment versus mountain.
+<div class="guide-object-cast">
+<p class="guide-label">The recurring cast</p>
+<ul>
+<li>bicycle</li><li>coffee cup</li><li>camera bag</li><li>work laptop</li><li>apartment window</li><li>helmet</li><li>backpack</li><li>suitcase</li><li>car keys</li><li>kitchen tools</li>
+</ul>
+</div>
 
-### Work and leisure
+<div class="guide-takeaway">
+<p class="guide-label">Continuity rule</p>
+<p class="guide-takeaway__statement">Notice the object. <span>Never turn it into a mascot.</span></p>
+<p>Repetition creates recognition because the object already belongs in the scene.</p>
+</div>
+</div>
+</section>
 
-Remote work.
+---
 
-Weekend projects.
+<section id="35-recurring-themes" class="guide-chapter guide-chapter--themes" aria-labelledby="themes-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">35</p>
+<div>
+<h2 id="themes-title">Recurring Themes</h2>
+<p class="guide-chapter__summary">Themes are lenses for noticing. They should emerge through scenes—not arrive as chapter titles.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-theme-field">
+<article><span>01</span><h3>Movement</h3><p>How people move through places.</p><small>walking · cycling · driving</small></article>
+<article><span>02</span><h3>Density & space</h3><p>The pressure and release of geography.</p><small>Gangnam ↔ Han River</small></article>
+<article><span>03</span><h3>Work & leisure</h3><p>Where one rhythm gives way to another.</p><small>laptop ↔ weekend</small></article>
+<article><span>04</span><h3>Season & atmosphere</h3><p>Conditions that change behaviour.</p><small>humidity ↔ Mediterranean sun</small></article>
+<article><span>05</span><h3>Infrastructure</h3><p>The systems shaping everyday movement.</p><small>subways · roads · bridges</small></article>
+<article><span>06</span><h3>Ordinary rituals</h3><p>Small actions that make a place feel lived in.</p><small>breakfast · coffee · markets</small></article>
+<article><span>07</span><h3>Time & rhythm</h3><p>The pace of a day, week or holiday.</p><small>rush hour ↔ afternoon quiet</small></article>
+<article><span>08</span><h3>Home & away</h3><p>How familiarity changes after distance.</p><small>leaving · arriving · returning</small></article>
+</div>
 
-Cafés.
+<div class="guide-theme-reading">
+<p class="guide-label">Read beneath the itinerary</p>
+<div><span>Surface</span><strong>A cycle to the river</strong></div>
+<div><span>Theme</span><strong>Density gives way to space</strong></div>
+<div><span>Feeling</span><strong>Movement becomes release</strong></div>
+</div>
 
-Travel.
-
-### Season and atmosphere
-
-Heat.
-
-Cold.
-
-Rain.
-
-Humidity.
-
-Mediterranean sun.
-
-Season changes.
-
-### Infrastructure
-
-Cycling paths.
-
-Subways.
-
-Roads.
-
-Trains.
-
-Bridges.
-
-Public spaces.
-
-### Ordinary rituals
-
-Breakfast.
-
-Cooking.
-
-Coffee.
-
-Shopping.
-
-Markets.
-
-Exercise.
-
-Driving.
-
-Walking.
-
-### Time and rhythm
-
-Morning.
-
-Rush hour.
-
-Afternoon quiet.
-
-Evening.
-
-Weekday.
-
-Weekend.
-
-Holiday.
-
-### Home and away
-
-Leaving.
-
-Arriving.
-
-Returning.
-
-Familiar places.
-
-New places.
+<div class="guide-takeaway">
+<p class="guide-label">Theme rule</p>
+<p class="guide-takeaway__statement">Film the concrete moment. <span>Let the pattern reveal itself.</span></p>
+</div>
+</div>
+</section>
 
 ---
 

@@ -85,6 +85,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Creative Field Guide | Established the reusable chapter pattern across sections 1–30: numbered orientation, concise thesis, structured comparisons, routes, templates, step sequences, or decision prompts, and one working takeaway, with responsive anchor positioning. Sections 15–30 add filming roles, sound and graphic systems, narration and cultural-observation tests, editing rhythm, authored transitions, and travel orientation. | Release record |
 | 2026-08-17 | Brand assets | Expanded the guide’s graphic-language chapter into a working identity specimen covering the wordmark, route glyph, editorial arrows, route compositions and colour behaviour; added downloadable editorial-arrow and route-divider SVG assets alongside the existing route and square marks. | Release record |
 | 2026-08-17 | Creative Field Guide | Expanded section 30 into a distinctive orientation toolkit with production-style location cards, schematic Seoul and European journey maps, meaningful time cards, and compact transit, distance and change-state cards. | Release record |
+| 2026-08-17 | Creative Field Guide | Reworked sections 31–35 into a unified continuity-and-return chapter with a timelapse proof strip, closing grammar and final-frame study, outward/return route loops, a recurring-object travel thread, and a scannable thematic field. | Release record |
 
 ---
 

@@ -2052,6 +2052,134 @@ const { frontmatter } = Astro.props;
     margin-top: var(--space-2);
   }
 
+  .guide-body :global(.guide-timelapse-strip) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border: var(--border-default);
+    background: #1a1a18;
+    color: #f2efe7;
+  }
+
+  .guide-body :global(.guide-timelapse-strip > div) {
+    display: grid;
+    min-height: 10rem;
+    grid-template-rows: auto 1fr auto;
+    padding: var(--space-3);
+  }
+
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(even)) { border-left: 1px solid #4b4a46; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(n + 3)) { border-top: 1px solid #4b4a46; }
+  .guide-body :global(.guide-timelapse-strip span),
+  .guide-body :global(.guide-timelapse-strip small) { color: #a9a69e; font-size: var(--text-xs); }
+  .guide-body :global(.guide-timelapse-strip i) {
+    align-self: end;
+    width: 62%;
+    height: 0.35rem;
+    margin-bottom: var(--space-3);
+    background: #c95c43;
+  }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(2)) { background: #262624; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(2) i) { width: 48%; background: #b65a45; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(3)) { background: #20201e; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(3) i) { width: 29%; background: #8e4938; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(4)) { background: #111110; }
+  .guide-body :global(.guide-timelapse-strip > div:nth-child(4) i) { width: 10%; background: #f2efe7; }
+
+  .guide-body :global(.guide-proof-test) { padding-block: var(--space-6); border-bottom: var(--border-default); }
+  .guide-body :global(.guide-proof-test > p:nth-child(2)) { max-width: none; margin-top: var(--space-3); font-size: var(--text-xl); letter-spacing: -0.03em; line-height: 1.15; }
+  .guide-body :global(.guide-proof-test > div) { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--space-3); margin-top: var(--space-5); padding-block: var(--space-3); border-block: var(--border-default); }
+  .guide-body :global(.guide-proof-test > div span:first-child) { color: var(--color-text-muted); }
+  .guide-body :global(.guide-proof-test > div span:nth-child(2)) { color: var(--color-accent-strong); }
+  .guide-body :global(.guide-proof-test strong) { font-weight: 500; }
+  .guide-body :global(.guide-timelapse-uses) { padding-block: var(--space-6); }
+  .guide-body :global(.guide-timelapse-uses ul),
+  .guide-body :global(.guide-ending-options ul),
+  .guide-body :global(.guide-object-cast ul) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--space-4); max-width: none; margin: var(--space-4) 0 0; padding: 0; border-top: var(--border-default); list-style: none; }
+  .guide-body :global(.guide-timelapse-uses li),
+  .guide-body :global(.guide-ending-options li),
+  .guide-body :global(.guide-object-cast li) { margin: 0; padding-block: var(--space-3); border-bottom: var(--border-default); line-height: 1.35; }
+
+  .guide-body :global(.guide-ending-grammar) { padding-block: var(--space-5); border-block: var(--border-default); }
+  .guide-body :global(.guide-ending-grammar ol) { display: flex; flex-wrap: wrap; max-width: none; margin: var(--space-5) 0 0; padding: 0; list-style: none; }
+  .guide-body :global(.guide-ending-grammar li) { display: inline-flex; align-items: center; margin: 0; line-height: 1.35; }
+  .guide-body :global(.guide-ending-grammar li:not(:first-child)::before) { margin-inline: var(--space-2); color: var(--color-accent-strong); content: '→'; }
+  .guide-body :global(.guide-ending-grammar li span) { margin-right: 0.35rem; color: var(--color-text-muted); font-size: var(--text-xs); }
+  .guide-body :global(.guide-ending-grammar li strong) { font-weight: 500; white-space: nowrap; }
+  .guide-body :global(.guide-final-frame) { display: grid; margin: var(--space-7) 0 0; background: #1a1a18; color: #f2efe7; }
+  .guide-body :global(.guide-final-frame > div) { position: relative; min-height: 18rem; overflow: hidden; background: #252522; }
+  .guide-body :global(.guide-final-frame > div::before) { position: absolute; inset: 16% 14% 0 48%; border: 1px solid #67665f; background: #1a1a18; content: ''; }
+  .guide-body :global(.guide-final-frame > div::after) { position: absolute; right: 14%; bottom: 0; left: 48%; height: 1px; background: #c95c43; content: ''; }
+  .guide-body :global(.guide-final-frame > div span) { position: absolute; right: 25%; bottom: 16%; width: 1.25rem; height: 4rem; border-radius: 60% 60% 0 0; background: #77766f; }
+  .guide-body :global(.guide-final-frame > div i) { position: absolute; right: 14%; bottom: 0; width: 38%; height: 28%; background: #181816; transform: skewX(-18deg); transform-origin: bottom; }
+  .guide-body :global(.guide-final-frame figcaption) { display: grid; gap: var(--space-2); padding: var(--space-4); }
+  .guide-body :global(.guide-final-frame figcaption span),
+  .guide-body :global(.guide-final-frame figcaption small) { color: #a9a69e; font-size: var(--text-xs); }
+  .guide-body :global(.guide-final-frame figcaption strong) { font-size: var(--text-lg); font-weight: 500; }
+  .guide-body :global(.guide-ending-options) { padding-block: var(--space-7); }
+  .guide-body :global(.guide-ending-contrast) { display: grid; border-block: var(--border-default); }
+  .guide-body :global(.guide-ending-contrast > div) { padding-block: var(--space-5); }
+  .guide-body :global(.guide-ending-contrast > div + div) { border-top: var(--border-default); }
+  .guide-body :global(.guide-ending-contrast span) { color: var(--color-accent-strong); font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; }
+  .guide-body :global(.guide-ending-contrast p) { margin-top: var(--space-3); font-size: var(--text-lg); line-height: 1.35; }
+  .guide-body :global(.guide-ending-contrast > div:first-child p) { color: var(--color-text-muted); }
+
+  .guide-body :global(.guide-return-loop) { padding: var(--space-4); background: #1a1a18; color: #f2efe7; }
+  .guide-body :global(.guide-return-loop > div) { display: grid; grid-template-columns: minmax(0, 1fr) 3.5rem minmax(0, 1fr); align-items: center; gap: var(--space-3); padding-block: var(--space-5); }
+  .guide-body :global(.guide-return-loop > div + div) { border-top: 1px solid #4b4a46; }
+  .guide-body :global(.guide-return-loop span),
+  .guide-body :global(.guide-return-loop small) { grid-column: 1 / -1; color: #a9a69e; font-size: var(--text-xs); letter-spacing: 0.07em; text-transform: uppercase; }
+  .guide-body :global(.guide-return-loop strong) { font-size: var(--text-lg); font-weight: 500; }
+  .guide-body :global(.guide-return-loop strong:nth-of-type(2)) { text-align: right; }
+  .guide-body :global(.guide-return-loop i) { position: relative; height: 2px; border-radius: 999px; background: #c95c43; }
+  .guide-body :global(.guide-return-loop i::after) { position: absolute; top: -0.28rem; right: 0; width: 0.55rem; height: 0.55rem; border-top: 2px solid #c95c43; border-right: 2px solid #c95c43; content: ''; transform: rotate(45deg); }
+  .guide-body :global(.guide-return-loop__back i) { transform: rotate(180deg); }
+  .guide-body :global(.guide-return-routes) { padding-block: var(--space-7); }
+  .guide-body :global(.guide-return-routes ul) { display: grid; max-width: none; margin: var(--space-4) 0 0; padding: 0; border-top: var(--border-default); list-style: none; }
+  .guide-body :global(.guide-return-routes li) { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--space-3); margin: 0; padding-block: var(--space-3); border-bottom: var(--border-default); }
+  .guide-body :global(.guide-return-routes span) { color: var(--color-text-muted); }
+  .guide-body :global(.guide-return-routes b) { color: var(--color-accent-strong); font-weight: 400; }
+  .guide-body :global(.guide-return-routes strong) { font-weight: 500; }
+  .guide-body :global(.guide-return-value) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-block: var(--border-default); }
+  .guide-body :global(.guide-return-value > div) { min-height: 7rem; padding: var(--space-3); border-bottom: var(--border-default); }
+  .guide-body :global(.guide-return-value > div:nth-child(even)) { border-left: var(--border-default); }
+  .guide-body :global(.guide-return-value > div:last-child) { grid-column: 1 / -1; border-bottom: 0; }
+  .guide-body :global(.guide-return-value span) { display: block; color: var(--color-accent-strong); font-size: var(--text-xs); }
+  .guide-body :global(.guide-return-value strong) { display: block; margin-top: var(--space-4); font-weight: 500; line-height: 1.25; }
+
+  .guide-body :global(.guide-object-thread) { border: var(--border-default); }
+  .guide-body :global(.guide-object-thread > header) { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-4); background: #1a1a18; color: #f2efe7; }
+  .guide-body :global(.guide-object-thread > header strong) { display: block; margin-top: var(--space-2); font-size: var(--text-lg); font-weight: 500; }
+  .guide-body :global(.guide-object-thread__icon) { position: relative; display: block; width: 3.5rem; height: 2.5rem; flex: 0 0 auto; border: 2px solid #a9a69e; border-radius: 0.35rem; }
+  .guide-body :global(.guide-object-thread__icon::before) { position: absolute; top: -0.55rem; left: 0.7rem; width: 1.6rem; height: 0.55rem; border: 2px solid #a9a69e; border-bottom: 0; border-radius: 0.3rem 0.3rem 0 0; content: ''; }
+  .guide-body :global(.guide-object-thread__icon::after) { position: absolute; top: 0.4rem; right: 0.4rem; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: #c95c43; content: ''; }
+  .guide-body :global(.guide-object-thread ol) { counter-reset: none; max-width: none; margin: 0; padding: 0; list-style: none; }
+  .guide-body :global(.guide-object-thread li) { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: var(--space-2) var(--space-3); margin: 0; padding: var(--space-4); border-top: var(--border-default); }
+  .guide-body :global(.guide-object-thread li span) { grid-row: 1 / 3; color: var(--color-accent-strong); font-size: var(--text-xs); }
+  .guide-body :global(.guide-object-thread li strong) { font-weight: 500; }
+  .guide-body :global(.guide-object-thread li small) { color: var(--color-text-muted); }
+  .guide-body :global(.guide-object-cast) { padding-block: var(--space-7); }
+
+  .guide-body :global(.guide-theme-field) { display: grid; border: var(--border-default); }
+  .guide-body :global(.guide-theme-field article) { min-height: 13rem; padding: var(--space-4); border-bottom: var(--border-default); }
+  .guide-body :global(.guide-theme-field article:last-child) { border-bottom: 0; }
+  .guide-body :global(.guide-theme-field article > span) { color: var(--color-accent-strong); font-size: var(--text-xs); }
+  .guide-body :global(.guide-theme-field h3) { max-width: none; margin-top: var(--space-5); color: var(--color-text); font-size: var(--text-lg); font-weight: 500; letter-spacing: -0.02em; }
+  .guide-body :global(.guide-theme-field p) { margin-top: var(--space-3); line-height: 1.4; }
+  .guide-body :global(.guide-theme-field small) { display: block; margin-top: var(--space-5); color: var(--color-text-muted); }
+  .guide-body :global(.guide-theme-field article:nth-child(2)),
+  .guide-body :global(.guide-theme-field article:nth-child(7)) { background: #1a1a18; color: #f2efe7; }
+  .guide-body :global(.guide-theme-field article:nth-child(2) h3),
+  .guide-body :global(.guide-theme-field article:nth-child(7) h3) { color: #f2efe7; }
+  .guide-body :global(.guide-theme-field article:nth-child(2) small),
+  .guide-body :global(.guide-theme-field article:nth-child(7) small) { color: #a9a69e; }
+  .guide-body :global(.guide-theme-field article:nth-child(4)),
+  .guide-body :global(.guide-theme-field article:nth-child(5)) { background: #d8d5cd; }
+  .guide-body :global(.guide-theme-reading) { padding-block: var(--space-7); }
+  .guide-body :global(.guide-theme-reading > div) { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: var(--space-4); padding-block: var(--space-3); border-bottom: var(--border-default); }
+  .guide-body :global(.guide-theme-reading > div:nth-child(2)) { margin-top: var(--space-4); border-top: var(--border-default); }
+  .guide-body :global(.guide-theme-reading span) { color: var(--color-text-muted); font-size: var(--text-xs); font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; }
+  .guide-body :global(.guide-theme-reading strong) { font-weight: 500; }
+
   @media (min-width: 48rem) {
     .guide-header__grid {
       grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
@@ -2422,6 +2550,132 @@ const { frontmatter } = Astro.props;
 
     .guide-body :global(.guide-state-cards small) {
       grid-column: auto;
+    }
+
+    .guide-body :global(.guide-timelapse-strip) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-timelapse-strip > div) {
+      min-height: 15rem;
+      border-top: 0 !important;
+    }
+
+    .guide-body :global(.guide-timelapse-strip > div + div) {
+      border-left: 1px solid #4b4a46;
+    }
+
+    .guide-body :global(.guide-timelapse-uses ul),
+    .guide-body :global(.guide-ending-options ul),
+    .guide-body :global(.guide-object-cast ul) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-final-frame) {
+      grid-template-columns: minmax(0, 1.45fr) minmax(14rem, 0.55fr);
+    }
+
+    .guide-body :global(.guide-final-frame figcaption) {
+      align-content: end;
+      padding: var(--space-5);
+    }
+
+    .guide-body :global(.guide-ending-contrast) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-ending-contrast > div) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-ending-contrast > div + div) {
+      padding-right: 0;
+      padding-left: var(--space-6);
+      border-top: 0;
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-return-loop) {
+      padding: var(--space-5);
+    }
+
+    .guide-body :global(.guide-return-loop > div) {
+      grid-template-columns: minmax(9rem, 1fr) minmax(8rem, 1.1fr) 7rem minmax(8rem, 1.1fr);
+    }
+
+    .guide-body :global(.guide-return-loop span) {
+      grid-column: auto;
+    }
+
+    .guide-body :global(.guide-return-loop small) {
+      grid-column: 2 / -1;
+    }
+
+    .guide-body :global(.guide-return-routes ul) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-return-routes li:nth-child(odd)) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-return-routes li:nth-child(even)) {
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-return-value) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-return-value > div),
+    .guide-body :global(.guide-return-value > div:last-child) {
+      grid-column: auto;
+      border-bottom: 0;
+    }
+
+    .guide-body :global(.guide-return-value > div + div) {
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-object-thread ol) {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-object-thread li) {
+      min-height: 10rem;
+      grid-template-columns: 1fr;
+      align-content: space-between;
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-object-thread li:first-child) {
+      border-left: 0;
+    }
+
+    .guide-body :global(.guide-object-thread li span) {
+      grid-row: auto;
+    }
+
+    .guide-body :global(.guide-theme-field) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-theme-field article) {
+      border-right: var(--border-default);
+    }
+
+    .guide-body :global(.guide-theme-field article:nth-child(4n)) {
+      border-right: 0;
+    }
+
+    .guide-body :global(.guide-theme-field article:nth-child(-n + 4)) {
+      border-bottom: var(--border-default);
+    }
+
+    .guide-body :global(.guide-theme-field article:nth-child(n + 5)) {
+      border-bottom: 0;
     }
   }
 </style>
