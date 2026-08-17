@@ -131,7 +131,7 @@ export const guideChapters: GuideChapter[] = [
       [51, '51-brand-decision-filter', 'Brand Decision Filter'],
       [52, '52-creative-hierarchy', 'Creative Hierarchy'],
       [53, '53-first-project-reference', 'First Project Reference'],
-      [54, '54-european-travel-framework', 'European Travel Framework'],
+      [54, '54-european-travel-framework', 'Away From Home Framework'],
       [55, '55-after-publishing', 'After Publishing'],
     ]),
   },

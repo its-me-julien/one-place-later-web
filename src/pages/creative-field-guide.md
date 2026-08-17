@@ -334,7 +334,7 @@ version: v2.0
 </div>
 
 <div class="guide-question">
-<p class="guide-label">Before filming, identify</p>
+<p class="guide-label">Canonical brief · central question</p>
 <h3>The central question</h3>
 <p class="guide-question__prompt">What are we quietly exploring?</p>
 </div>
@@ -369,7 +369,7 @@ version: v2.0
 
 <div class="guide-chapter__content">
 <div class="guide-declaration guide-declaration--directing">
-<p class="guide-label">The creative spine</p>
+<p class="guide-label">Canonical brief · directing line</p>
 <p>Every vlog should have one sentence <span>describing what the film is really doing.</span></p>
 </div>
 
@@ -402,7 +402,7 @@ version: v2.0
 
 <div class="guide-chapter__content">
 <div class="guide-template">
-<p class="guide-label">Before filming, complete this sentence</p>
+<p class="guide-label">Canonical brief · surface / underneath</p>
 <p>This is a vlog about <span>______</span> on the surface, <br />but underneath it is really about <span>______</span>.</p>
 </div>
 
@@ -442,7 +442,7 @@ version: v2.0
 
 <div class="guide-chapter__content">
 <div class="guide-declaration">
-<p class="guide-label">Look for the shift</p>
+<p class="guide-label">Canonical brief · change</p>
 <p>Find the one already present <span>in the experience.</span></p>
 </div>
 
@@ -495,8 +495,8 @@ version: v2.0
 
 <div class="guide-chapter__content">
 <div class="guide-declaration">
-<p class="guide-label">A typical 30 to 45 minute film</p>
-<p>Give the viewer a reason to continue, <span>then let the experience develop.</span></p>
+<p class="guide-label">Shape before duration</p>
+<p>Give the viewer a reason to continue, <span>then stay only while the experience remains specific and progressive.</span></p>
 </div>
 
 <ol class="guide-story-steps" aria-label="Seven-part story shape">
@@ -510,8 +510,8 @@ version: v2.0
 </ol>
 
 <div class="guide-takeaway">
-<p class="guide-label">Rule of thumb</p>
-<p class="guide-takeaway__statement">Not every film needs visible chapters. <span>But every film needs progression.</span></p>
+<p class="guide-label">Runtime rule</p>
+<p class="guide-takeaway__statement">Not every film needs visible chapters. Every film needs progression. <span>Duration is earned by the material.</span></p>
 </div>
 </div>
 </section>
@@ -527,14 +527,17 @@ version: v2.0
 
 <div class="guide-chapter__content">
 <div class="guide-declaration">
-<p class="guide-label">Preferred pattern</p>
-<ol class="guide-opening-sequence" aria-label="Opening sequence">
-<li>future glimpse</li>
-<li>short thought</li>
-<li>quiet reset</li>
-<li>real beginning</li>
-</ol>
-<p class="guide-declaration__support">Show enough of the destination, contrast or observation to create curiosity. Then begin properly.</p>
+<p class="guide-label">Choose the opening the story has earned</p>
+<p>Establish a truthful promise, <span>then begin before the method becomes visible.</span></p>
+</div>
+
+<div class="guide-opening-shapes" aria-label="Six opening structures">
+<article><span>01</span><h3>Future glimpse</h3><p>Show a later contrast or destination, offer one short thought, reset, then begin properly.</p><small>Best when the payoff creates a useful question.</small></article>
+<article><span>02</span><h3>Immediate action</h3><p>Begin inside a real movement, task or decision and allow orientation to arrive through the action.</p><small>Best when the day is already moving.</small></article>
+<article><span>03</span><h3>Quiet observation</h3><p>Let a place, behaviour or sound establish the subject before the creator explains anything.</p><small>Best when attention itself is the invitation.</small></article>
+<article><span>04</span><h3>Result, then return</h3><p>Open with what changed, then return to the ordinary beginning that made the change meaningful.</p><small>Best when the result is legible without false mystery.</small></article>
+<article><span>05</span><h3>Found conversation</h3><p>Use one natural line that reveals the situation, relationship or question already present in the day.</p><small>Best when a person—not exposition—opens the world.</small></article>
+<article><span>06</span><h3>Departure or return</h3><p>Begin with an ordinary threshold: packing, locking a door, arriving home or starting the route.</p><small>Best when movement between places is the story.</small></article>
 </div>
 
 <div class="guide-guideline-pair">
@@ -557,6 +560,11 @@ version: v2.0
 <li>forced enthusiasm</li>
 </ul>
 </div>
+</div>
+
+<div class="guide-takeaway">
+<p class="guide-label">Opening rule</p>
+<p class="guide-takeaway__statement">Repeat the promise, not the construction. <span>The channel should feel recognisable without every film beginning the same way.</span></p>
 </div>
 </div>
 </section>
@@ -771,7 +779,7 @@ version: v2.0
 <div class="guide-chapter__content">
 <div class="guide-camera-roles">
 <div>
-<p class="guide-label">Insta360 X6</p>
+<p class="guide-label">External / 360 camera</p>
 <p class="guide-camera-roles__purpose">Show the creator inside the environment.</p>
 <p class="guide-label">Best used for</p>
 <ul class="guide-checklist">
@@ -784,7 +792,7 @@ version: v2.0
 <p class="guide-camera-roles__note">Constant orbiting, endless invisible-stick shots and novelty angles without a purpose.</p>
 </div>
 <div>
-<p class="guide-label">Insta360 GO Ultra</p>
+<p class="guide-label">Wearable / miniature camera</p>
 <p class="guide-camera-roles__purpose">Get close to behaviour and place the viewer inside the action.</p>
 <p class="guide-label">Best used for</p>
 <ul class="guide-checklist">
@@ -794,7 +802,7 @@ version: v2.0
 <li>process footage, discreet coverage and small visual jokes</li>
 </ul>
 <p class="guide-label guide-camera-roles__avoid">Relationship</p>
-<p class="guide-camera-roles__note">The GO Ultra complements the external view. <strong>It should not replace it.</strong></p>
+<p class="guide-camera-roles__note">The wearable view complements the external view. <strong>It should not replace it.</strong></p>
 </div>
 </div>
 
@@ -824,15 +832,16 @@ version: v2.0
 
 <div class="guide-technical-grid">
 <div>
-<p class="guide-label">ND filters</p>
-<p class="guide-technical-grid__title">A tool, not a default.</p>
+<p class="guide-label">Exposure and motion</p>
+<p class="guide-technical-grid__title">Protect the image without turning settings into the subject.</p>
 <dl class="guide-technical-settings">
-<div><dt>Bright cycling</dt><dd>Start with ND16 when motion blur is wanted.</dd></div>
-<div><dt>Brighter still</dt><dd>Move to ND32.</dd></div>
-<div><dt>Exceptionally bright</dt><dd>Use ND64 only when necessary.</dd></div>
-<div><dt>Indoors or darker spaces</dt><dd>Remove ND unless there is a specific reason to keep it.</dd></div>
+<div><dt>Outside</dt><dd>Control exposure when motion rendering matters; do not force blur into every shot.</dd></div>
+<div><dt>Inside</dt><dd>Prioritise clean exposure and natural colour over preserving an outdoor setup.</dd></div>
+<div><dt>Changing light</dt><dd>Choose continuity and a usable moment over technically perfect transitions.</dd></div>
+<div><dt>Before moving</dt><dd>Check exposure, horizon and mounting once, then return attention to the scene.</dd></div>
 </dl>
 </div>
+
 <div>
 <p class="guide-label">Special placements</p>
 <p class="guide-technical-grid__title">A clever angle never outweighs the risk.</p>
@@ -846,6 +855,15 @@ version: v2.0
 </ul>
 </div>
 </div>
+
+<details class="guide-current-kit">
+<summary><span>Current kit · August 2026</span><strong>Open technical appendix</strong></summary>
+<div>
+<p><strong>Insta360 X6</strong><span>External cycling, self-filmed wides, elevated geographic reveals and selective reframing.</span></p>
+<p><strong>Insta360 GO Ultra</strong><span>Close behaviour, safe POV, discreet static coverage, interiors and process.</span></p>
+<p><strong>ND filters</strong><span>Use ND16 or ND32 in bright movement when wanted; reserve ND64 for exceptional light and remove ND in darker spaces.</span></p>
+</div>
+</details>
 
 <div class="guide-takeaway">
 <p class="guide-label">Non-negotiable</p>
@@ -1041,7 +1059,7 @@ version: v2.0
 
 <div class="guide-takeaway">
 <p class="guide-label">Frequency</p>
-<p class="guide-takeaway__statement">Aim for roughly five to eight editorial callouts per vlog. <span>Location cards, subtitles and maps are separate.</span></p>
+<p class="guide-takeaway__statement">Use only the callouts the viewer would genuinely miss. <span>A film may need several, one, or none.</span></p>
 </div>
 </div>
 </section>
@@ -1910,6 +1928,7 @@ version: v2.0
 </div>
 </header>
 <div class="guide-chapter__content">
+<p class="guide-cross-reference">This is the filled working example. Complete the <a href="/creative-field-guide/working-system/#56-the-one-place-later-working-brief">canonical reusable brief <span>→</span></a> once per film; the Story chapter explains its fields.</p>
 <article class="guide-brief-sheet">
 <header><div><p class="guide-label">Working brief · 01</p><h3>Escaping Gangnam</h3></div><span>Saturday<br />Seoul</span></header>
 <section><span>Story</span><dl><div><dt>What happens?</dt><dd>Cycle from Gangnam to Check Grow.</dd></div><div><dt>What changes?</dt><dd>Road vigilance becomes river release.</dd></div><div><dt>Viewer waits for</dt><dd>The moment cycling becomes fun.</dd></div><div><dt>Final thought</dt><dd>The city feels different on the way home.</dd></div></dl></section>
@@ -2102,7 +2121,7 @@ version: v2.0
 
 ---
 
-<section id="54-european-travel-framework" class="guide-chapter guide-chapter--europe" aria-labelledby="europe-title"><header class="guide-chapter__header"><p class="guide-chapter__number">54</p><div><h2 id="europe-title">European Travel Framework</h2><p class="guide-chapter__summary">Test whether the identity travels without becoming destination-first content.</p></div></header><div class="guide-chapter__content"><div class="guide-europe-question"><p class="guide-label">Underlying territory</p><p>What does Europe feel like when Korea is now home?</p></div><div class="guide-europe-contrasts"><div><span>Seoul density</span><b>→</b><strong>European space</strong></div><div><span>Korean routines</span><b>→</b><strong>French family routines</strong></div><div><span>Airport speed</span><b>→</b><strong>Southern slowness</strong></div><div><span>Public transport</span><b>→</b><strong>Road travel</strong></div><div><span>Gangnam cafés</span><b>→</b><strong>Village terraces</strong></div><div><span>Korean summer</span><b>→</b><strong>Mediterranean summer</strong></div></div><div class="guide-ordinary-material"><p class="guide-label">Strong material may be ordinary</p><span>breakfast outside</span><span>buying bread</span><span>family lunch</span><span>evening walk</span><span>packing again</span></div></div></section>
+<section id="54-european-travel-framework" class="guide-chapter guide-chapter--europe" aria-labelledby="europe-title"><header class="guide-chapter__header"><p class="guide-chapter__number">54</p><div><h2 id="europe-title">Away From Home Framework</h2><p class="guide-chapter__summary">Let a particular journey expand the channel without turning places into broad comparisons.</p></div></header><div class="guide-chapter__content"><div class="guide-europe-question"><p class="guide-label">Underlying territory</p><p>What becomes newly noticeable away from the routines that now feel like home?</p></div><div class="guide-europe-contrasts"><div><span>Packing in Gangnam</span><b>→</b><strong>Unpacking at the family home</strong></div><div><span>Familiar subway transfer</span><b>→</b><strong>Unfamiliar station platform</strong></div><div><span>Scheduled airport movement</span><b>→</b><strong>A day without an itinerary</strong></div><div><span>Seoul cycling route</span><b>→</b><strong>One southern road journey</strong></div><div><span>Coffee alone before work</span><b>→</b><strong>Family lunch in Provence</strong></div><div><span>Leaving Korea</span><b>→</b><strong>Noticing what now feels like home</strong></div></div><div class="guide-ordinary-material"><p class="guide-label">Strong material may be ordinary</p><span>breakfast outside</span><span>buying bread</span><span>family lunch</span><span>evening walk</span><span>packing again</span></div><div class="guide-takeaway"><p class="guide-label">Comparison rule</p><p class="guide-takeaway__statement">Compare moments you experienced. <span>Never make one journey explain an entire country.</span></p></div></div></section>
 
 ---
 
@@ -2110,7 +2129,7 @@ version: v2.0
 
 ---
 
-<section id="56-the-one-place-later-working-brief" class="guide-chapter guide-chapter--working-brief" aria-labelledby="working-brief-title"><header class="guide-chapter__header"><p class="guide-chapter__number">56</p><div><h2 id="working-brief-title">The One Place Later Working Brief</h2><p class="guide-chapter__summary">Complete this before detailed shot planning begins.</p></div></header><div class="guide-chapter__content"><div class="guide-blank-brief"><div><span>01</span><strong>Surface activity</strong><small>What are we literally doing?</small></div><div><span>02</span><strong>Underneath</strong><small>What is this actually about?</small></div><div><span>03</span><strong>Central question</strong><small>What are we quietly exploring?</small></div><div><span>04</span><strong>Change</strong><small>What feels different by the end?</small></div><div><span>05</span><strong>Viewer promise</strong><small>What are they waiting to experience?</small></div><div><span>06</span><strong>Directing line</strong><small>One sentence describing what the film is doing.</small></div><div><span>07</span><strong>Must-have scenes</strong><small>Only what is required to tell the story.</small></div><div><span>08</span><strong>Must-have sound</strong><small>What should the viewer hear?</small></div><div><span>09</span><strong>Final thought</strong><small>Where does the idea resolve?</small></div></div><div class="guide-takeaway"><p class="guide-label">Readiness rule</p><p class="guide-takeaway__statement">If these answers are weak, <span>more shots will not fix the film.</span></p></div></div></section>
+<section id="56-the-one-place-later-working-brief" class="guide-chapter guide-chapter--working-brief" aria-labelledby="working-brief-title"><header class="guide-chapter__header"><p class="guide-chapter__number">56</p><div><h2 id="working-brief-title">The One Place Later Working Brief</h2><p class="guide-chapter__summary">The one canonical planning document for every film.</p></div></header><div class="guide-chapter__content"><div class="guide-declaration"><p class="guide-label">Complete once</p><p>Sections 7–10 explain these fields. <span>They are not separate exercises or additional documents.</span></p></div><div class="guide-blank-brief"><div><span>01 · Foundation</span><strong>Surface / underneath</strong><small>What are we doing, and what is it actually about?</small></div><div><span>02 · Foundation</span><strong>Central question</strong><small>What are we quietly exploring?</small></div><div><span>03 · Foundation</span><strong>Change</strong><small>What feels different by the end?</small></div><div><span>04 · Direction</span><strong>Viewer promise</strong><small>What are they waiting to experience?</small></div><div><span>05 · Direction</span><strong>Directing line</strong><small>One sentence describing what the film is doing.</small></div><div><span>06 · Direction</span><strong>Essential scenes</strong><small>Only the scenes required to deliver the promise.</small></div><div><span>07 · Capture</span><strong>Essential sound</strong><small>What must the viewer hear for the place to feel tangible?</small></div><div><span>08 · Resolution</span><strong>Ending thought</strong><small>Where can the central idea resolve without summarising the day?</small></div></div><div class="guide-takeaway"><p class="guide-label">Readiness rule</p><p class="guide-takeaway__statement">If these answers are weak, <span>more shots will not fix the film.</span></p></div></div></section>
 
 ---
 

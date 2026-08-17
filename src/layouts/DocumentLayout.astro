@@ -1046,6 +1046,49 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
     line-height: 1.5;
   }
 
+  .guide-body :global(.guide-opening-shapes) {
+    display: grid;
+    margin-block: var(--space-6);
+    border: var(--border-default);
+  }
+
+  .guide-body :global(.guide-opening-shapes article) {
+    display: flex;
+    min-height: 15rem;
+    flex-direction: column;
+    padding: var(--space-4);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-opening-shapes article:last-child) { border-bottom: 0; }
+
+  .guide-body :global(.guide-opening-shapes article > span) {
+    color: var(--color-accent-strong);
+    font-size: var(--text-xs);
+  }
+
+  .guide-body :global(.guide-opening-shapes h3) {
+    margin-top: var(--space-4);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .guide-body :global(.guide-opening-shapes p) {
+    margin-top: var(--space-3);
+    color: var(--color-text-muted);
+    line-height: 1.45;
+  }
+
+  .guide-body :global(.guide-opening-shapes small) {
+    display: block;
+    margin-top: auto;
+    padding-top: var(--space-5);
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
+    line-height: 1.4;
+  }
+
   .guide-body :global(.guide-guideline-pair),
   .guide-body :global(.guide-direct-camera) {
     display: grid;
@@ -1155,6 +1198,64 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
   .guide-body :global(.guide-camera-roles__note strong) {
     color: var(--color-text);
     font-weight: 500;
+  }
+
+  .guide-body :global(.guide-current-kit) {
+    margin-top: var(--space-6);
+    border-top: 2px solid var(--color-text);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-current-kit summary) {
+    display: grid;
+    min-height: 3.5rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-4);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-current-kit summary::-webkit-details-marker) { display: none; }
+
+  .guide-body :global(.guide-current-kit summary span) {
+    color: var(--color-accent-strong);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .guide-body :global(.guide-current-kit summary strong) {
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+
+  .guide-body :global(.guide-current-kit summary strong::after) {
+    margin-left: var(--space-2);
+    color: var(--color-accent-strong);
+    content: '+';
+  }
+
+  .guide-body :global(.guide-current-kit[open] summary strong::after) { content: '−'; }
+
+  .guide-body :global(.guide-current-kit > div) { border-top: var(--border-default); }
+
+  .guide-body :global(.guide-current-kit > div p) {
+    display: grid;
+    gap: var(--space-2);
+    margin: 0;
+    padding-block: var(--space-4);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-current-kit > div p:last-child) { border-bottom: 0; }
+
+  .guide-body :global(.guide-current-kit > div strong) { font-weight: 500; }
+
+  .guide-body :global(.guide-current-kit > div span) {
+    color: var(--color-text-muted);
+    line-height: 1.45;
   }
 
   .guide-body :global(.guide-technical-settings) {
@@ -2755,6 +2856,20 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
   .guide-chapter-pagination > a strong { font-size: var(--text-lg); font-weight: 500; }
 
   @media (min-width: 48rem) {
+
+    .guide-body :global(.guide-opening-shapes) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-opening-shapes article) {
+      border-right: var(--border-default);
+    }
+
+    .guide-body :global(.guide-opening-shapes article:nth-child(3n)) { border-right: 0; }
+
+    .guide-body :global(.guide-opening-shapes article:nth-child(-n + 3)) { border-bottom: var(--border-default); }
+
+    .guide-body :global(.guide-opening-shapes article:nth-child(n + 4)) { border-bottom: 0; }
     .guide-directory__chapters article {
       display: grid;
       grid-template-columns: minmax(14rem, 1fr) minmax(0, 1.8fr);
@@ -3502,7 +3617,7 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
     .guide-body :global(.guide-project-sheet > div) { grid-template-columns: minmax(8rem,.4fr) minmax(0,1.6fr); align-items: baseline; }
     .guide-body :global(.guide-europe-contrasts) { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }.guide-body :global(.guide-europe-contrasts > div:nth-child(odd)) { border-right: var(--border-default); }
     .guide-body :global(.guide-review-board) { grid-template-columns: repeat(3,minmax(0,1fr)); }.guide-body :global(.guide-review-board > div), .guide-body :global(.guide-blank-brief > div) { border-right: var(--border-default); }.guide-body :global(.guide-review-board > div:nth-child(3n)) { border-right: 0; }
-    .guide-body :global(.guide-blank-brief) { grid-template-columns: repeat(3,minmax(0,1fr)); }.guide-body :global(.guide-blank-brief > div:nth-child(3n)) { border-right: 0; }.guide-body :global(.guide-blank-brief > div:nth-child(n+7)) { border-bottom: 0; }
+    .guide-body :global(.guide-blank-brief) { grid-template-columns: repeat(2,minmax(0,1fr)); }.guide-body :global(.guide-blank-brief > div:nth-child(2n)) { border-right: 0; }.guide-body :global(.guide-blank-brief > div:nth-child(n+7)) { border-bottom: 0; }
     .guide-body :global(.guide-manifesto) { padding: var(--space-7); }.guide-body :global(.guide-manifesto > p) { font-size: var(--text-xl); }.guide-body :global(.guide-manifesto footer) { grid-template-columns: repeat(3,minmax(0,1fr)); }
     .guide-body :global(.guide-north-star) { min-height: 42rem; }.guide-body :global(.guide-north-star > p) { font-size: clamp(2.5rem,4vw,4rem); }
   }
