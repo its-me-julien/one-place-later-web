@@ -462,6 +462,7 @@ The page should feel like an editorial film home, not a media-player interface.
 - One short editorial label.
 - One strong statement.
 - One restrained sign-off or route.
+- A static Route Red origin and fine Stone connector may make desktop negative space structural; it must not become a second animated route.
 - No explanatory brand manifesto.
 
 ## Footer

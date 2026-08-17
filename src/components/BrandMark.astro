@@ -30,6 +30,7 @@ const { variant = 'compact', tone = 'paper' } = Astro.props;
 <style>
   .brand-mark {
     display: inline-flex;
+    max-width: 100%;
     align-items: center;
     gap: 0.45rem;
     color: inherit;
@@ -104,6 +105,15 @@ const { variant = 'compact', tone = 'paper' } = Astro.props;
 
     .brand-mark--compact .brand-mark__route {
       width: 2.25rem;
+    }
+
+    .brand-mark--display {
+      flex-wrap: wrap;
+    }
+
+    .brand-mark--display .brand-mark__name {
+      max-width: 100%;
+      white-space: normal;
     }
   }
 </style>

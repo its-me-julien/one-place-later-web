@@ -105,6 +105,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Homepage motion | Replaced the generic hero fade with a one-time route-led entrance connecting Gangnam to the Han River, followed by the English and Hangul titles, with an immediate reduced-motion state. | Release record |
 | 2026-08-17 | Homepage motion | Refined the hero signature with quieter image settling, a single Route Red origin, smoother responsive route geometry, and separately timed title lines. | Release record |
 | 2026-08-17 | Homepage artwork | Corrected the hero route to the established brand geometry: one low rounded rise from a Route Red origin into a directional arrow toward the Han River. | Release record |
+| 2026-08-18 | Homepage refinement | Added text-resize-safe masthead and footer behaviour, accelerated the route-led title reveal, and gave the introduction a static origin-and-Stone connector. | Release record |
 
 ---
 
