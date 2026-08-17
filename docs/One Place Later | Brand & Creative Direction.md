@@ -618,6 +618,10 @@ match movement
 arrows  
 natural transitions between spaces
 
+On the web, the route may introduce one dominant image-led hero. The origin appears first, the rounded line travels toward a factual destination, and the title follows as the route resolves. This is a single entrance, not an autonomous logo animation or a looping ambient effect. Once the sequence completes, the interface becomes still.
+
+Use this signature once per page at most. Keep the route subordinate to the image and title, preserve Route Red as a point rather than a surface, and show the completed composition immediately when reduced motion is requested.
+
 Avoid:
 
 spins  

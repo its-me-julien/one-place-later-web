@@ -29,9 +29,27 @@ const heroAlt =
     />
 
     <div class="l-wrapper hero-copy">
-      <p class="hero-route">Gangnam <span aria-hidden="true">→</span> Han River</p>
-      <h1>One Place Later</h1>
-      <p lang="ko">원 플레이스 레이터</p>
+      <p class="hero-route">
+        <span class="hero-route__place hero-route__origin">Gangnam</span>
+        <span class="hero-route__line" aria-hidden="true">
+          <svg viewBox="0 0 112 20" preserveAspectRatio="none">
+            <circle class="hero-route__origin-dot" cx="6" cy="10" r="3" />
+            <path
+              class="hero-route__path"
+              pathLength="1"
+              d="M 11 10 H 38 C 49 10 48 4 59 4 H 77 C 88 4 88 10 101 10"
+            />
+            <circle class="hero-route__destination-dot" cx="106" cy="10" r="2" />
+          </svg>
+        </span>
+        <span class="hero-route__place hero-route__destination">Han River</span>
+      </p>
+      <h1 class="hero-reveal">
+        <span>One Place Later</span>
+      </h1>
+      <p class="hero-reveal hero-subtitle" lang="ko">
+        <span>원 플레이스 레이터</span>
+      </p>
     </div>
   </header>
 
@@ -75,7 +93,7 @@ const heroAlt =
     max-width: none;
     object-fit: cover;
     object-position: 62% center;
-    animation: hero-image-in 900ms var(--ease-standard) both;
+    animation: hero-image-in 1500ms var(--ease-standard) both;
   }
 
   .hero-copy {
@@ -84,7 +102,6 @@ const heroAlt =
     flex-direction: column;
     justify-content: flex-end;
     padding-block: var(--space-8) var(--space-7);
-    animation: hero-copy-in 700ms 120ms var(--ease-standard) both;
   }
 
   h1 {
@@ -95,7 +112,7 @@ const heroAlt =
     letter-spacing: -0.045em;
   }
 
-  .hero-copy p {
+  .hero-copy > p {
     margin-top: var(--space-5);
     font-size: var(--text-sm);
     font-weight: 500;
@@ -105,7 +122,7 @@ const heroAlt =
   .hero-route {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.65em;
     margin: 0 0 var(--space-4);
     color: color-mix(in srgb, var(--color-text-on-dark) 88%, transparent);
     font-size: var(--text-xs);
@@ -113,9 +130,70 @@ const heroAlt =
     letter-spacing: 0.04em;
   }
 
-  .hero-route span {
-    color: var(--color-accent);
-    font-size: 1.15em;
+  .hero-route__place {
+    white-space: nowrap;
+  }
+
+  .hero-route__origin {
+    animation: route-place-in 320ms 100ms var(--ease-standard) both;
+  }
+
+  .hero-route__destination {
+    animation: route-place-in 320ms 820ms var(--ease-standard) both;
+  }
+
+  .hero-route__line {
+    width: clamp(4.5rem, 13vw, 8.5rem);
+    height: 1.25rem;
+    flex: 0 1 auto;
+  }
+
+  .hero-route__line svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .hero-route__path {
+    fill: none;
+    stroke: color-mix(in srgb, var(--color-text-on-dark) 72%, transparent);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: route-draw 650ms 300ms var(--ease-standard) forwards;
+  }
+
+  .hero-route__origin-dot,
+  .hero-route__destination-dot {
+    fill: var(--color-accent);
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .hero-route__origin-dot {
+    animation: route-dot-in 260ms 140ms var(--ease-standard) both;
+  }
+
+  .hero-route__destination-dot {
+    animation: route-dot-in 260ms 850ms var(--ease-standard) both;
+  }
+
+  .hero-reveal {
+    overflow: hidden;
+  }
+
+  .hero-reveal > span {
+    display: block;
+    animation: hero-type-in 620ms 780ms var(--ease-standard) both;
+  }
+
+  .hero-subtitle > span {
+    animation-duration: 480ms;
+    animation-delay: 980ms;
   }
 
   .about {
@@ -202,15 +280,60 @@ const heroAlt =
     }
   }
 
-  @keyframes hero-copy-in {
+  @keyframes route-place-in {
     from {
       opacity: 0;
-      transform: translateY(12px);
+      transform: translateY(5px);
     }
 
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes route-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes route-dot-in {
+    from {
+      opacity: 0;
+      transform: scale(0.35);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hero-type-in {
+    from {
+      opacity: 0;
+      transform: translateY(105%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-image,
+    .hero-route__place,
+    .hero-route__origin-dot,
+    .hero-route__destination-dot,
+    .hero-reveal > span {
+      animation: none;
+    }
+
+    .hero-route__path {
+      animation: none;
+      stroke-dashoffset: 0;
     }
   }
 

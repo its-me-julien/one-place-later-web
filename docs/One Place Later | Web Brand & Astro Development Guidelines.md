@@ -455,6 +455,7 @@ The page should feel like an editorial film home, not a media-player interface.
 - Factual route, Hangul or film metadata may provide small context.
 - Text must sit on a reliably calm, high-contrast part of the image.
 - Preserve the subject in responsive crops.
+- A single route-led entrance may connect factual origin, destination and title. Draw the rounded route once, let the title follow its arrival, then leave the composition still.
 
 ## Introduction
 
@@ -515,9 +516,12 @@ Allowed:
 - small opacity or colour changes
 - image scale of 1–2%
 - one restrained entrance for a dominant hero
+- one route drawing that communicates a real origin and destination
 - an optional page fade or shared film-image transition
 
 Avoid parallax, scroll-jacking, cursor followers, magnetic buttons, tilting cards, continuous floating, large staggered sequences and universal scroll reveals.
+
+The homepage hero is the reference motion signature: the image settles gently while the factual route resolves from origin to destination, followed by the English title and Hangul subtitle. Keep the full sequence between 1.4 and 1.6 seconds, use real HTML for the place names, treat the SVG as decorative, and play it only once. Reduced motion must display the fully resolved state immediately, without delayed or clipped copy.
 
 The films move. The interface moves only to explain something.
 
