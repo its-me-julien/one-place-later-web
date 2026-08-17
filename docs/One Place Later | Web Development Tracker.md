@@ -39,6 +39,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 - Pretendard Variable is loaded as a pinned dynamic subset, with system-font fallbacks.
 - A rounded SVG route arrow is integrated with the header wordmark in secondary Stone; its origin point and rising path signal direction and transition, with Route Red reserved for interactive emphasis.
 - The reusable site masthead keeps navigation compact: an editorial About link and one clear Carbon YouTube destination.
+- The reusable footer is a restrained Carbon end-mark: a short brand line, Seoul location, and explicitly external social destinations.
 - The visual source of truth is the web brand guidelines; the creative-direction document governs voice and editorial choices.
 
 ---
@@ -68,6 +69,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Homepage | Released the first editorial homepage, semantic layout system, generated Seoul hero, accessibility baseline, metadata, and favicon. | `6202f5c` |
 | 2026-08-17 | Channel language | Established `night rides` as the active content category in place of generic weather language. | `67b2194` |
 | 2026-08-17 | Navigation | Reworked the reusable masthead around a quiet wordmark, editorial section link, and a single clear YouTube destination. | Release record |
+| 2026-08-17 | Footer | Reworked the reusable footer into a compact editorial closing frame with YouTube and Instagram destinations. | Release record |
 
 ---
 

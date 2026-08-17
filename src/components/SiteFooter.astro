@@ -5,16 +5,27 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
 
 <footer class="site-footer" data-surface="dark">
   <div class="l-wrapper inner">
-    <p class="brand">One Place Later</p>
+    <div class="brand-block">
+      <p class="brand">One Place Later</p>
+      <p class="brand-line">Ordinary life, noticed in motion.</p>
+    </div>
 
-    <div class="details">
+    <div class="footer-navigation">
       <p>Seoul, South Korea</p>
-      <a href={youtubeUrl} target="_blank" rel="me noopener">
-        YouTube <span aria-hidden="true">↗</span>
-      </a>
-      <a href={instagramUrl} target="_blank" rel="me noopener">
-        Instagram <span aria-hidden="true">↗</span>
-      </a>
+      <nav aria-label="One Place Later destinations">
+        <ul>
+          <li>
+            <a href={youtubeUrl} target="_blank" rel="me noopener">
+              YouTube <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href={instagramUrl} target="_blank" rel="me noopener">
+              Instagram <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <p class="copyright">© 2026</p>
@@ -23,7 +34,7 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
 
 <style>
   .site-footer {
-    padding-block: var(--space-7) var(--space-6);
+    padding-block: var(--space-8) var(--space-6);
   }
 
   .inner {
@@ -32,24 +43,44 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
   }
 
   .brand {
-    font-size: var(--text-lg);
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1;
   }
 
-  .details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3) var(--space-7);
+  .brand-line,
+  .footer-navigation {
     color: color-mix(in srgb, var(--color-text-on-dark) 74%, transparent);
     font-size: var(--text-sm);
   }
 
+  .brand-line {
+    margin-top: var(--space-3);
+  }
+
+  .footer-navigation {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-6);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   a {
     display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     gap: 0.3rem;
     color: var(--color-text-on-dark);
-    text-underline-offset: 0.2em;
+    text-decoration-color: color-mix(in srgb, var(--color-text-on-dark) 40%, transparent);
+    text-underline-offset: 0.24em;
   }
 
   a span {
@@ -57,7 +88,8 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
     transition: transform var(--motion-fast) var(--ease-standard);
   }
 
-  a:hover span {
+  a:hover span,
+  a:focus-visible span {
     transform: translate(2px, -2px);
   }
 
@@ -70,12 +102,13 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
 
   @media (min-width: 48rem) {
     .inner {
-      grid-template-columns: 1fr auto;
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: start;
     }
 
-    .details {
-      justify-content: flex-end;
+    .footer-navigation {
+      justify-items: end;
+      text-align: right;
     }
 
     .copyright {
