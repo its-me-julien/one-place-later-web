@@ -79,6 +79,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Brand system | Formalized the route glyph as the secondary mark, quieted the masthead, adopted `quiet details`, and stabilized the mobile Korea sign-off. | Release record |
 | 2026-08-17 | Identity | Redrew the square mark from the main route geometry and unified every logo lockup around a Route Red origin with a surface-aware neutral path. | Release record |
 | 2026-08-17 | Homepage direction | Added the factual `Gangnam → Han River` hero caption, tuned the mobile crop to retain the cyclist, and documented the poster-first featured-film hero for the first release. | Release record |
+| 2026-08-17 | Guidelines | Consolidated the web brand and Astro guidelines into one decision-led standard, removing repetition and reconciling the tokens, staged architecture, identity behaviour and release QA with the live site. | Release record |
 
 ---
 

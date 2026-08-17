@@ -1,475 +1,195 @@
 # One Place Later
-## Web Brand & Astro Development Guidelines v1.0
+## Web Brand & Astro Development Guidelines v1.1
+
+This document is the visual and implementation standard for the One Place Later website.
+
+It translates the creative direction into decisions that can be applied consistently in Astro, HTML and CSS. When this document and an isolated example disagree, follow the principle rather than copying the example.
 
 ---
 
 # 1. Purpose
 
-The One Place Later website is the **home of the films and the world around them**.
+The website is the permanent home of the films and the world around them.
 
-It should not feel like:
+It should feel like a quiet editorial archive of places, movement and ordinary life—not a creator landing page, travel blog, tourism site, portfolio or SaaS template.
 
-- a YouTube creator landing page
-- a travel blog
-- a personal résumé
-- a tourism website
-- a SaaS template with vlog content dropped into it
+The work comes first:
 
-It should feel like:
+```text
+image or film
+→ title
+→ factual context
+→ action
+```
 
-**a quiet editorial archive of places, movement and ordinary life.**
-
-The experience should be:
-
-**visual first  
-fast  
-calm  
-clear  
-human  
-editorial  
-slightly understated**
-
-The website should make visitors want to watch.
-
-It should not compete with the films.
+The interface should be fast, calm, clear, human and slightly understated. It should make visitors want to watch without competing with what they came to see.
 
 ---
 
-# 2. Core Web Principle
+# 2. Decision Order
 
-## Show the place. Then provide the context.
+When making a design decision, use this order:
 
-The hierarchy is:
+1. Preserve the truth of the image or film.
+2. Make the page understandable and accessible.
+3. Express the brand through composition, language and restraint.
+4. Add interaction only when it clarifies movement or state.
+5. Remove anything that exists only to make the interface look designed.
 
-**Image / film**
-→ **title**
-→ **small context**
-→ **action**
-
-Not:
-
-navigation  
-→ introduction  
-→ branding  
-→ explanation  
-→ finally the film
-
-The work comes first.
+The brand should determine the implementation. The framework should not determine the brand.
 
 ---
 
-# 3. Website Goals
+# 3. Experience Principles
 
-The site has four jobs.
+## Show the place, then provide context
 
-### 1. Introduce One Place Later
-
-A new visitor should understand the tone quickly without reading a manifesto.
-
-### 2. Make films easy to discover
-
-Recent and representative films should be immediately visible.
-
-### 3. Give the channel a permanent home
-
-YouTube is distribution.
-
-The website is the archive and identity.
-
-### 4. Create continuity
-
-Korea, Europe, home life and travel should feel like parts of the same world.
-
----
-
-# 4. UX Principles
+Use images, titles, routes and concise captions. Do not lead with a manifesto.
 
 ## Quiet interface
 
-The UI should recede behind the photography and film stills.
+Navigation and controls recede behind the work. Familiar interactions are preferred over experimental UX.
 
 ## Low cognitive load
 
-Do not make visitors choose between twelve categories.
+Keep choices limited. Do not create categories, filters or navigation branches before real content requires them.
 
-## Familiar interactions
+## Editorial continuity
 
-Links should look clickable.
-
-Navigation should behave normally.
-
-Scrolling should behave normally.
-
-No experimental UX simply to appear creative.
-
-## Content before chrome
-
-The page should contain more imagery and editorial content than visible interface.
+Korea, Europe, home life and travel must feel like parts of the same world.
 
 ## Restraint creates identity
 
-One distinctive interaction repeated carefully is stronger than ten visual effects.
+One repeated, meaningful detail is stronger than a collection of effects.
 
 ---
 
-# 5. Information Architecture
+# 4. Site States and Information Architecture
 
-Launch with only what is necessary.
-
-```text
-/
-├── Films
-│   └── /films/[slug]
-├── About
-└── YouTube ↗
-```
-
-## Navigation
-
-**One Place Later**
-
-Films  
-About  
-YouTube ↗
-
-That is enough.
-
-Do not launch with:
-
-Journal  
-Gear  
-Newsletter  
-Shop  
-Korea Guide  
-France Guide  
-Resources  
-Categories  
-Tags  
-Search
-
-unless actual content eventually justifies them.
-
----
-
-# 6. Homepage Structure
-
-The homepage has two intentional states.
+The architecture grows with the films.
 
 ## Before the first film
 
-Use the brand-led image hero, a short channel statement and the restrained footer. A location route may caption the image when it is factual, for example:
+```text
+/
+├── #about
+├── YouTube ↗
+└── Instagram ↗
+```
+
+The homepage uses a brand-led image hero, a short channel statement and the footer. A factual route may caption the image:
 
 ```text
 Gangnam → Han River
 ```
 
-Do not invent a film treatment or add placeholder cards simply to fill this state.
+Do not add placeholder film cards, empty archives or invented metadata.
 
 ## Once a real film is published
 
-The homepage hero becomes one featured film, not a generic channel introduction.
+```text
+/
+├── /films
+│   └── /films/[slug]
+├── /about        only when the homepage introduction is insufficient
+├── YouTube ↗
+└── Instagram ↗
+```
+
+The homepage hero becomes the featured film:
 
 ```text
-HEADER
-
-FEATURED FILM
 site-owned poster image
 factual route or location · date
 actual film title
 one-line editorial description
-link to the permanent film page →
-
-SHORT BRAND STATEMENT
-only if it remains useful beside the film
-
-RECENT FILMS
-introduce only once there are enough real films to form an editorial sequence
-
-FOOTER
+permanent film page →
 ```
 
-The featured-film hero should be a semantic `<article>` and a single, clear link to `/films/[slug]`. The poster, route and title should describe the actual work; never use `Latest video`, a generic thumbnail card, placeholder metadata or a full YouTube player on the index page. The permanent film page carries the player and its `Watch on YouTube ↗` destination.
+Use a semantic `<article>` with one clear route to `/films/[slug]`. Never label it `Latest video`, use a generic thumbnail treatment or instantiate a YouTube player on the homepage.
 
-Do not create a giant introductory hero saying:
+Add a recent-films sequence only when enough real work exists to make the sequence useful.
 
-**WELCOME TO ONE PLACE LATER**
-
-When a real film exists, it—not an introductory slogan—should be the hero.
+Do not launch speculative sections such as Journal, Gear, Newsletter, Shop, Guides, Resources, Categories, Tags or Search.
 
 ---
 
-# 7. Film Page Structure
+# 5. Visual Thesis
 
-Each film gets a permanent page.
+The site is:
 
-Recommended structure:
+- editorial rather than app-like
+- warm rather than clinical
+- observational rather than promotional
+- architectural rather than card-heavy
+- expressive through photography rather than decoration
 
-```text
-Film title
+Think independent magazine, photographic essay and quiet film journal.
 
-Location · Date
-Short editorial introduction
+Avoid dashboard cards, floating panels, gradient blobs, oversized pills, glass effects and feature-grid composition.
 
-16:9 film / YouTube player
-
-Optional short note or story context
-
-Selected stills
-
-Previous film ←     One place later →
-```
-
-## Signature navigation
-
-The next-film interaction may use:
-
-**One place later →**
-
-This is one of the few places where the channel name becomes interface language.
-
-Use it naturally.
-
-Do not turn every button into a variation of the name.
+Each page should have one dominant visual idea. A strong image, strong title, a little context and somewhere to go is usually enough.
 
 ---
 
-# 8. Visual Direction
+# 6. Colour System
 
-The website should feel:
+## Palette
 
-**editorial rather than app-like**
-
-Think:
-
-film journal  
-independent magazine  
-photographic essay  
-quiet contemporary publication
-
-Not:
-
-rounded dashboard cards  
-floating glass panels  
-gradient blobs  
-oversized pills  
-neon gradients  
-feature grids  
-startup landing-page UI
-
----
-
-# 9. Design Personality
-
-Translate the brand personality into UI.
-
-## Warm
-
-Warm paper surfaces rather than clinical white.
-
-Real photography.
-
-Comfortable spacing.
-
-## Observant
-
-Details and captions matter.
-
-Metadata is useful but subtle.
-
-## Intelligent
-
-Strong hierarchy.
-
-No decorative complexity.
-
-## Dry
-
-Copy can occasionally carry understated humour.
-
-UI itself should not perform jokes.
-
-## Evocative
-
-Photography creates emotion.
-
-CSS does not need to.
-
----
-
-# 10. Colour System
-
-## Core palette
-
-### Carbon
-
-```css
-#1A1A18
-```
-
-Primary text and dark surfaces.
-
-### Paper
-
-```css
-#F2EFE7
-```
-
-Primary background.
-
-### Paper Light
-
-```css
-#F8F5EF
-```
-
-Subtle raised or alternate surface.
-
-### Stone
-
-```css
-#77736C
-```
-
-Secondary information.
-
-### Stone Dark
-
-```css
-#57544F
-```
-
-Readable muted copy.
-
-### Route Red
-
-```css
-#C95C43
-```
-
-Brand accent.
-
-### Route Red Dark
-
-```css
-#923D2D
-```
-
-Interactive or text use where stronger contrast is required.
-
----
-
-# 11. Colour Behaviour
+| Role | Value | Use |
+| --- | --- | --- |
+| Carbon | `#1A1A18` | Primary type and dark surfaces |
+| Paper | `#F2EFE7` | Primary background and dark-surface type |
+| Paper Light | `#F8F5EF` | Rare alternate surface |
+| Stone | `#8C8B84` | Decorative neutral and non-text detail |
+| Stone Dark | `#57544F` | Readable muted text and route paths |
+| Rule | `#D8D2C7` | Fine separators |
+| Route Red | `#C95C43` | Graphic punctuation and dark-surface accent |
+| Route Red Dark | `#923D2D` | Small accent text and focus on Paper |
 
 Default experience:
 
-**Paper background + Carbon type**
+```text
+Paper surface + Carbon type
+```
 
-Route Red is punctuation.
+Route Red is punctuation. Use it for origins, arrows, routes, focus, selected metadata and tiny editorial details. Never use it for large surfaces, full headings, long copy or every interaction.
 
-Use it for:
+On dark surfaces, Paper becomes the primary foreground and the brighter Route Red may be used for small details. Colour must never be the only carrier of meaning.
 
-- route markers
-- arrows
-- small active states
-- selected metadata
-- occasional rules
-- focus accents
-- tiny editorial details
+Do not add a dark-mode toggle. Carbon sections are intentional editorial moments, not an alternate theme.
 
-Do not use it for:
+## Semantic token contract
 
-- large backgrounds
-- entire headings
-- long paragraphs
-- every button
-- decorative gradients
-
-The accent should feel discovered rather than sprayed across the interface.
-
----
-
-# 12. Semantic Colour Tokens
-
-Never write palette values directly throughout components.
-
-Use semantic variables.
+Components use semantic variables, not palette values.
 
 ```css
-:root {
-  --color-bg: #f2efe7;
-  --color-bg-soft: #f8f5ef;
-
-  --color-text: #1a1a18;
-  --color-text-muted: #57544f;
-
-  --color-border: #d8d2c7;
-
-  --color-accent: #c95c43;
-  --color-accent-strong: #923d2d;
-
-  --color-surface-dark: #1a1a18;
-  --color-text-on-dark: #f2efe7;
+@layer tokens {
+  :root {
+    --color-bg: #f2efe7;
+    --color-bg-soft: #f8f5ef;
+    --color-text: #1a1a18;
+    --color-text-muted: #57544f;
+    --color-stone: #8c8b84;
+    --color-border: #d8d2c7;
+    --color-accent: #c95c43;
+    --color-accent-strong: #923d2d;
+    --color-surface-dark: #1a1a18;
+    --color-text-on-dark: #f2efe7;
+  }
 }
 ```
 
-Components should ask for:
-
-`--color-text`
-
-not:
-
-`#1A1A18`
-
-This makes future brand refinement inexpensive.
+Use `color-mix()` for contextual softening rather than creating many near-duplicate colours.
 
 ---
 
-# 13. Dark Mode
+# 7. Typography
 
-Do **not** add a dark-mode toggle at launch.
-
-It adds interface, testing and visual decisions without improving the core experience.
-
-One Place Later has a defined warm editorial surface.
-
-Use occasional dark sections when the content benefits from them.
-
-Example:
-
-```html
-<section data-surface="dark">
-```
-
-with:
+Use Pretendard Variable for both Latin and Korean text.
 
 ```css
-[data-surface="dark"] {
-  color: var(--color-text-on-dark);
-  background: var(--color-surface-dark);
-}
-```
-
-If a full dark theme is introduced later, implement it through semantic tokens rather than rewriting components.
-
----
-
-# 14. Typography
-
-## Primary Typeface
-
-**Pretendard Variable**
-
-Reason:
-
-- contemporary
-- understated
-- works well with Korean and Latin typography
-- appropriate for both editorial and interface use
-
-Fallback:
-
-```css
-font-family:
+--font-sans:
   "Pretendard Variable",
   "Pretendard",
   Inter,
@@ -481,44 +201,15 @@ font-family:
   sans-serif;
 ```
 
-One type family is enough.
+Use only weights 400, 500 and 600.
 
-Do not add a serif simply to make the site look editorial.
+- 400: body copy and large editorial statements
+- 500: navigation, metadata, labels and display titles
+- 600: compact wordmark emphasis only
 
-The editorial character should come from layout and typography, not font collecting.
+Do not add a serif merely to appear editorial. The editorial quality comes from scale, rhythm and composition.
 
----
-
-# 15. Font Weights
-
-Use only:
-
-```text
-400 Regular
-500 Medium
-600 SemiBold
-```
-
-Default to 400.
-
-Use 500 for:
-
-navigation  
-metadata emphasis  
-buttons  
-small labels
-
-Use 600 sparingly for major title emphasis.
-
-Avoid heavy 700–900 display typography.
-
-One Place Later should not shout.
-
----
-
-# 16. Type Scale
-
-Use fluid typography.
+## Type tokens
 
 ```css
 :root {
@@ -528,68 +219,25 @@ Use fluid typography.
   --text-lg: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
   --text-xl: clamp(1.55rem, 1.3rem + 1vw, 2.1rem);
   --text-2xl: clamp(2rem, 1.55rem + 1.8vw, 3.25rem);
-  --text-3xl: clamp(2.8rem, 1.8rem + 4vw, 5.75rem);
+  --text-3xl: clamp(3rem, 2rem + 5vw, 6.75rem);
 }
 ```
 
----
+## Rules
 
-# 17. Typography Rules
-
-## Body
-
-```css
-font-size: var(--text-base);
-line-height: 1.6;
-```
-
-Maximum reading width:
-
-```css
-65ch
-```
-
-## Large titles
-
-```css
-font-size: var(--text-3xl);
-font-weight: 500;
-line-height: 0.98;
-letter-spacing: -0.035em;
-```
-
-## Film titles
-
-Medium weight.
-
-Never all caps.
-
-## Metadata
-
-Small.
-
-Quiet.
-
-Slight letter spacing is acceptable.
-
-## Uppercase
-
-Reserve for tiny interface labels only.
-
-Example:
-
-```text
-LATEST FILM
-SEOUL · AUGUST 2026
-```
-
-Do not uppercase titles or paragraphs.
+- Body copy: `line-height: 1.6`, maximum `65ch`.
+- Large titles: medium weight, tight but readable leading, negative tracking used carefully.
+- Film titles: never all caps.
+- Metadata: small, concise and visibly secondary.
+- Uppercase: reserved for short editorial labels such as `FROM HERE`.
+- Use `text-wrap: balance` for short headings and `text-wrap: pretty` for prose where supported.
+- Never shrink meaningful mobile copy into miniature metadata.
 
 ---
 
-# 18. Spacing System
+# 8. Spacing and Layout
 
-Use a small intentional scale.
+## Tokens
 
 ```css
 :root {
@@ -602,83 +250,33 @@ Use a small intentional scale.
   --space-7: clamp(2.5rem, 5vw, 4rem);
   --space-8: clamp(4rem, 8vw, 7rem);
   --space-9: clamp(6rem, 12vw, 11rem);
-}
-```
 
-Prefer generous vertical rhythm.
-
-Do not compensate for weak hierarchy with extra boxes.
-
----
-
-# 19. Layout System
-
-Use three primary content widths.
-
-```css
-:root {
   --width-copy: 46rem;
   --width-content: 72rem;
   --width-page: 90rem;
-
-  --gutter:
-    clamp(1rem, 3vw, 2.75rem);
+  --gutter: clamp(1rem, 3vw, 2.75rem);
 }
 ```
 
-Standard page container:
+Prefer generous vertical rhythm. Do not use boxes to compensate for weak hierarchy.
 
 ```css
-.wrapper {
-  width:
-    min(
-      calc(100% - (var(--gutter) * 2)),
-      var(--width-page)
-    );
-
+.l-wrapper {
+  width: min(
+    calc(100% - (var(--gutter) * 2)),
+    var(--width-page)
+  );
   margin-inline: auto;
 }
 ```
 
-Copy:
+Use CSS Grid for editorial composition and Flexbox for one-dimensional alignment. A twelve-column grid may support complex pages, but visitors should never see the grid as a visual effect.
 
-```css
-.prose {
-  max-width: var(--width-copy);
-}
-```
+## Responsive rules
 
----
+Design mobile first and add breakpoints where content breaks—not by device name.
 
-# 20. Grid
-
-Use CSS Grid.
-
-Desktop editorial grid:
-
-```css
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: var(--space-6);
-}
-```
-
-Do not force every page into visible twelve-column symmetry.
-
-The grid is infrastructure.
-
-Visitors should not notice it.
-
----
-
-# 21. Responsive Strategy
-
-Design mobile first.
-
-Prefer content-driven breakpoints rather than device names.
-
-Suggested baseline breakpoints:
+Baseline references:
 
 ```css
 @media (min-width: 40rem) { }
@@ -686,127 +284,171 @@ Suggested baseline breakpoints:
 @media (min-width: 90rem) { }
 ```
 
-Use these only when the layout genuinely needs to change.
+Use container queries when a reusable component should respond to its own width. Preserve full-bleed imagery, comfortable touch targets, readable text, intentional crops and zero horizontal overflow.
 
-For reusable components, prefer container queries where appropriate rather than making every component depend on viewport width.
+The persistent header counts against the initial viewport. Full-height heroes must subtract its height.
 
 ---
 
-# 22. Shape Language
+# 9. Shape, Rules and Depth
 
 One Place Later is not a rounded-card brand.
 
-Use:
-
 ```css
---radius-sm: 0.125rem;
---radius-md: 0.375rem;
---radius-media: 0.25rem;
+:root {
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-media: 0.25rem;
+  --border-default: 1px solid var(--color-border);
+}
 ```
 
-Images may have a very subtle radius.
+Use fine rules for section separation, metadata and footer boundaries. Do not box ordinary content.
 
-Buttons may have a small radius.
+Default shadow: none.
+
+If genuine elevation is required:
+
+```css
+box-shadow: 0 8px 28px rgb(26 26 24 / 0.08);
+```
+
+Never use large radii, pill navigation, floating rounded containers or shadows on ordinary film entries.
+
+---
+
+# 10. Identity System
+
+## Hierarchy
+
+1. The written **One Place Later** wordmark is the primary logo.
+2. The bespoke rounded route glyph is the secondary mark.
+3. The square route mark is reserved for favicons, avatars and constrained formats.
+4. Typographic arrows are editorial punctuation.
+
+The route glyph always preserves the same low, rounded geometry. Route Red identifies the origin. The path uses Stone Dark on Paper and softened Paper on Carbon.
+
+Hover or keyboard focus may shift the complete glyph 2–4px and strengthen the neutral path. The origin remains red. Do not animate the mark autonomously or replace every typographic arrow with it.
+
+## Arrow grammar
+
+```text
+Gangnam → Han River
+One place later →
+YouTube ↗
+```
+
+- `→` communicates route, sequence or continuation.
+- `↗` identifies an external destination.
+- Use arrows only where direction is meaningful.
+
+---
+
+# 11. Photography and Image Treatment
+
+Photography is the main visual identity.
+
+Prefer environmental, candid and specific images. The person may be present without dominating the place. Preserve natural seasonal colour and useful negative space.
+
+Do not add colour overlays, heavy gradients, fake grain, vignettes, duotones or decorative filters. CSS does not need to manufacture atmosphere already present in the image.
+
+## Recurring ratios
+
+| Use | Ratio |
+| --- | --- |
+| Film poster or thumbnail | `16 / 9` |
+| Environmental image | `3 / 2` |
+| Portrait or human detail | `4 / 5` |
+| Full-width landscape | Native ratio allowed |
+
+Do not force every image into the same crop. Check the subject at every breakpoint; mobile cropping must not accidentally remove the person or meaningful detail.
+
+Use Astro's image pipeline for site-owned imagery and include intrinsic dimensions through the generated output.
+
+Alt text describes the meaningful scene, not the brand or SEO target.
+
+Good:
+
+```text
+Cycling along the Han River with Seoul apartment towers behind the path
+```
 
 Avoid:
 
 ```text
-20px cards
-32px cards
-pill navigation
-pill tags everywhere
-large floating rounded containers
+One Place Later cinematic Seoul lifestyle travel vlog thumbnail
 ```
-
-The geometry should feel editorial and architectural.
 
 ---
 
-# 23. Borders
+# 12. Video and YouTube
 
-Use fine borders for structure.
+Never autoplay video or sound.
 
-```css
---border-default:
-  1px solid var(--color-border);
-```
-
-Good:
-
-section separators  
-metadata rules  
-footer boundary  
-menu separation
-
-Avoid boxing every piece of content.
-
----
-
-# 24. Shadows
-
-Default:
-
-**none**
-
-Photography already provides visual depth.
-
-If absolutely necessary:
-
-```css
-box-shadow:
-  0 8px 28px rgb(26 26 24 / 0.08);
-```
-
-Use for genuinely elevated UI only.
-
-Not for ordinary film cards.
-
----
-
-# 25. The Arrow and Route Mark
-
-The arrow is the primary graphic device.
+Use this sequence:
 
 ```text
-→
+site-owned poster → user intent → video
 ```
 
-It represents:
+Index pages show poster images and link to permanent film pages. Film pages may contain one lightweight, lazy or click-to-load YouTube player.
 
-movement  
-continuation  
-transition  
-sequence  
-arrival
-
-Web uses:
+External destinations remain explicit:
 
 ```text
-Watch film →
-About →
-YouTube ↗
-One place later →
+Watch on YouTube ↗
 ```
 
-Do not replace every arrow with an illustrated icon.
-
-A typographic arrow is more consistent with the editorial identity.
-
-## Identity hierarchy
-
-The written **One Place Later** wordmark is the primary logo.
-
-The bespoke rounded route glyph is the secondary mark. It may sit beside the wordmark, but should appear alone only in constrained formats such as the favicon, avatar or square profile image. Every rendering must preserve the main glyph's proportions and low route silhouette. Route Red identifies the origin; the path uses Stone on Paper and softened Paper on Carbon. Hover or focus may shift the complete glyph slightly and strengthen the neutral path, but the origin remains red.
-
-The route glyph does not replace typographic arrows in links or editorial copy. Both should remain sparse enough to preserve their meaning.
+The page should feel like an editorial film home, not a media-player interface.
 
 ---
 
-# 26. Links
+# 13. Component Direction
 
-Text links should remain obvious.
+## Header
 
-Default:
+- Compact Paper surface.
+- Written wordmark and route glyph on the left.
+- Only necessary destinations on the right.
+- Internal and external links share one quiet editorial treatment.
+- External arrow may use Route Red.
+- Sticky is acceptable; disappearing, resizing and glassmorphism are not.
+- Keep interactive targets at least 44px high.
+- Use a menu trigger only when the navigation genuinely outgrows the mobile width.
+
+## Hero
+
+- Full bleed and image led.
+- One composition, not a panel layout.
+- Title is the dominant text.
+- Factual route, Hangul or film metadata may provide small context.
+- Text must sit on a reliably calm, high-contrast part of the image.
+- Preserve the subject in responsive crops.
+
+## Introduction
+
+- One short editorial label.
+- One strong statement.
+- One restrained sign-off or route.
+- No explanatory brand manifesto.
+
+## Footer
+
+- Carbon end frame.
+- Wordmark, short brand line, Seoul location and real external destinations.
+- Do not repeat the introduction or add decorative content to fill space.
+
+## Film feature and film entries
+
+The image dominates. Use factual metadata, the actual title and at most one short deck.
+
+Do not place film entries inside panels with backgrounds, borders, shadows or large radii. The title/image region may form the link.
+
+Hover may scale the image by at most 1–2%, reveal a title underline or move an arrow slightly. Never darken an image dramatically.
+
+## Links and buttons
+
+Most navigation is a text link.
 
 ```css
 a {
@@ -817,378 +459,36 @@ a {
 }
 ```
 
-Navigation and image-card links may remove the underline where context clearly communicates interaction.
+Navigation and image links may omit a persistent underline when context makes interactivity clear, but hover and focus must restore an obvious state.
 
-On hover:
-
-- darken
-- reveal underline
-- move arrow very slightly
-
-Do not animate entire paragraphs or large images dramatically.
+Use a filled Carbon button only for a genuine primary action that cannot read clearly as an editorial link. Buttons are small-radius, shadowless and never pill-shaped.
 
 ---
 
-# 27. Buttons
+# 14. Motion
 
-Buttons are rare.
-
-Most navigation should use links.
-
-## Primary button
-
-Carbon surface.
-
-Paper text.
-
-```css
-.button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  min-height: 2.75rem;
-  padding-inline: 1rem;
-
-  color: var(--color-text-on-dark);
-  background: var(--color-text);
-
-  border: 0;
-  border-radius: var(--radius-md);
-
-  font-weight: 500;
-}
-```
-
-No gradients.
-
-No oversized pill buttons.
-
-No button shadows.
-
----
-
-# 28. Film Cards
-
-The film card is the primary repeated component.
-
-Structure:
-
-```text
-[ 16:9 still ]
-
-Location · Date
-
-Film title
-Optional one-line deck
-```
-
-The image should dominate.
-
-The card should not have:
-
-background panel  
-border box  
-shadow  
-large radius  
-button inside it
-
-The entire title/image region can be the link.
-
----
-
-# 29. Film Card Behaviour
-
-Default image:
-
-```css
-aspect-ratio: 16 / 9;
-object-fit: cover;
-```
-
-Hover:
-
-- extremely subtle image scale, maximum around 1–2%
-- title underline or arrow movement
-- never darken the image dramatically
-
-The hover state should indicate interactivity.
-
-Not perform a transition reel.
-
----
-
-# 30. Editorial Image Ratios
-
-Use recurring ratios intentionally.
-
-## Film / thumbnail
-
-```text
-16:9
-```
-
-## Environmental editorial image
-
-```text
-3:2
-```
-
-## Portrait / human detail
-
-```text
-4:5
-```
-
-## Full-width landscape
-
-Native ratio allowed.
-
-Do not crop every photograph into identical cards.
-
-Variation makes the site feel editorial.
-
----
-
-# 31. Image Treatment
-
-The photography is the brand.
-
-Do not add:
-
-colour overlays  
-heavy gradients  
-fake film grain through CSS  
-vignettes  
-posterization  
-duotones
-
-Preserve the real environment.
-
-The website should respect the same colour philosophy as the films:
-
-Seoul summer can feel humid.
-
-Winter can feel cold.
-
-France can feel warm.
-
-Grey weather can remain grey.
-
----
-
-# 32. Video
-
-Do not autoplay video backgrounds.
-
-Do not autoplay sound.
-
-Prefer:
-
-**poster image → user intent → video**
-
-For embedded YouTube films, use a lightweight poster-first approach where practical so the heavy player does not dominate initial page loading.
-
-The video belongs inside the page.
-
-It should not turn the site into a media-player interface.
-
----
-
-# 33. Header
-
-Recommended:
-
-```text
-ONE PLACE LATER                 Films  About  YouTube ↗
-```
-
-Or normal title casing:
-
-```text
-One Place Later                 Films  About  YouTube ↗
-```
-
-Preferred:
-
-**One Place Later**
-
-Do not over-brand the navigation.
-
-Header:
-
-- sticky is acceptable
-- compact
-- no giant logo
-- no burger menu on desktop
-- no animation beyond subtle state changes
-- navigation links share one quiet editorial treatment; external arrows may use Route Red as punctuation
-
-Mobile:
-
-Brand left.
-
-Simple menu trigger right if needed.
-
----
-
-# 34. Header Behaviour
-
-The header may use:
-
-```css
-position: sticky;
-top: 0;
-```
-
-As the page scrolls, allow the Paper background to remain slightly opaque.
-
-Avoid:
-
-disappearing/reappearing headers  
-complex scroll detection  
-animated resizing  
-glassmorphism blur as a defining effect
-
-The header is navigation.
-
-Not entertainment.
-
----
-
-# 35. Footer
-
-Keep it simple.
-
-Example:
-
-```text
-One Place Later
-
-Seoul, South Korea
-
-YouTube ↗
-Instagram ↗
-
-© 2026
-```
-
-A small brand line may appear:
-
-**Ordinary life, noticed in motion.**
-
-Do not repeat the entire About section.
-
----
-
-# 36. Copy UX
-
-Interface copy should sound like the channel.
-
-Use:
-
-**Watch film →**
-
-Not:
-
-**Click here to watch**
-
-Use:
-
-**More films →**
-
-Not:
-
-**Explore our content library**
-
-Use:
-
-**About**
-
-Not:
-
-**Discover the story behind One Place Later**
-
-Use:
-
-**One place later →**
-
-where the brand connection is genuinely useful.
-
----
-
-# 37. Empty States
-
-Keep them human.
-
-Example:
-
-**Nothing here yet. Probably filming.**
-
-Use dry personality very sparingly.
-
-The website should not constantly wink at the visitor.
-
----
-
-# 38. Motion Philosophy
-
-Motion communicates:
-
-movement  
-continuity  
-state change
-
-This fits the One Place Later identity particularly well.
-
-But movement should be restrained.
-
-Use three speeds:
+Motion communicates direction, continuity or state change.
 
 ```css
 :root {
   --motion-fast: 120ms;
   --motion-base: 220ms;
   --motion-slow: 450ms;
-
-  --ease-standard:
-    cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 ```
 
----
+Allowed:
 
-# 39. Allowed Motion
+- arrow movement of 2–4px
+- small opacity or colour changes
+- image scale of 1–2%
+- one restrained entrance for a dominant hero
+- an optional page fade or shared film-image transition
 
-Good:
+Avoid parallax, scroll-jacking, cursor followers, magnetic buttons, tilting cards, continuous floating, large staggered sequences and universal scroll reveals.
 
-arrow moving 2–4px  
-small opacity changes  
-subtle image scale  
-page crossfade  
-content entering naturally  
-one continuity transition between related images
-
-Avoid:
-
-parallax  
-scroll-jacking  
-cursor followers  
-magnetic buttons  
-tilting cards  
-continuous floating animation  
-large staggered entrance animations  
-everything fading upward on scroll
-
-The films move.
-
-The interface does not need to constantly move too.
-
----
-
-# 40. Reduced Motion
-
-Motion must respect user preference.
+The films move. The interface moves only to explain something.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -1205,115 +505,98 @@ Motion must respect user preference.
 
 ---
 
-# 41. Accessibility Standard
+# 15. Accessibility
 
-Target:
-
-**WCAG 2.2 AA**
+Target WCAG 2.2 AA.
 
 Non-negotiable:
 
-- semantic HTML
-- keyboard navigation
+- semantic HTML and logical headings
+- skip navigation
+- complete keyboard access
 - visible focus
-- sufficient text contrast
-- meaningful alternative text
-- heading hierarchy
-- skip link
-- labelled controls
-- no information communicated through colour alone
+- minimum 44px touch targets for primary navigation
+- sufficient contrast for body and muted text
+- meaningful alt text
+- labelled controls and embedded video
 - reduced-motion support
-- comfortable touch targets
-
-Body text and backgrounds should meet at least the WCAG AA minimum contrast requirement.
-
-Route Red is therefore an accent first, not a default small-text colour.
-
----
-
-# 42. Focus Style
-
-Never remove outlines without replacing them.
+- no colour-only meaning
+- usable layout at 200% text zoom
+- no horizontal overflow
 
 ```css
 :focus-visible {
   outline: 3px solid var(--color-accent-strong);
   outline-offset: 3px;
 }
-```
 
-On dark surfaces:
-
-```css
 [data-surface="dark"] :focus-visible {
   outline-color: var(--color-text-on-dark);
 }
 ```
 
-Focus should be obvious.
-
-Not aesthetically hidden.
+Route Red is an accent first, not the default colour for small text.
 
 ---
 
-# 43. HTML Semantics
+# 16. Language and Interface Copy
 
-Prefer:
-
-```html
-<header>
-<nav>
-<main>
-<article>
-<section>
-<figure>
-<figcaption>
-<footer>
-```
-
-Film entries should generally be `<article>` elements.
-
-Navigation lists should be actual lists.
-
-Buttons perform actions.
-
-Links navigate.
-
-Do not use clickable `<div>` elements.
-
----
-
-# 44. Astro Development Philosophy
-
-The site is primarily content.
-
-Therefore:
-
-## Astro first
-
-Use `.astro` components for the majority of the interface.
-
-## HTML first
-
-Render useful HTML before adding JavaScript.
-
-## CSS first
-
-Use native CSS for layout, interaction and responsive behaviour.
-
-## JavaScript only when behaviour requires it
-
-Do not hydrate components simply because a framework is available.
-
----
-
-# 45. CSS Architecture
+Copy is specific, understated and conversational.
 
 Use:
 
-**global tokens + global foundations + scoped component CSS**
+```text
+Watch film →
+More films →
+About
+One place later →
+```
 
-Recommended files:
+Avoid:
+
+```text
+Click here to watch
+Explore our content library
+Discover the story behind One Place Later
+```
+
+Factual context has more personality than generic labels:
+
+```text
+Gangnam → Han River
+```
+
+Dry humour may appear in rare empty or error states:
+
+```text
+One place too far.
+That page isn't here.
+Back home →
+```
+
+Do not make the interface constantly wink at the visitor.
+
+---
+
+# 17. Astro and CSS Architecture
+
+Use Astro-rendered HTML and native CSS by default. Add client JavaScript only for behaviour that cannot be delivered accessibly with HTML and CSS.
+
+```text
+tokens
+↓
+global foundations
+↓
+layouts
+↓
+Astro components
+↓
+content
+↓
+optional interaction
+```
+
+Recommended style structure:
 
 ```text
 src/styles/
@@ -1322,205 +605,46 @@ src/styles/
 └── utilities.css
 ```
 
-Astro component-specific styles live inside their respective `.astro` components.
+- Tokens define the shared visual contract.
+- Global CSS contains reset, base elements and shared surface behaviour.
+- Layout utilities remain few and explicit.
+- Component CSS stays scoped inside its `.astro` component.
 
-Example:
-
-```astro
-<style>
-  .film-card {
-    /* local component rules */
-  }
-</style>
-```
-
-Keep component selectors shallow.
-
-Astro already provides component scoping.
-
-Do not recreate CSS Modules/BEM complexity unless needed.
-
----
-
-# 46. Cascade Layers
-
-Global CSS can use explicit cascade layers:
+Use cascade layers:
 
 ```css
 @layer reset, tokens, base, layout, utilities;
 ```
 
-Example:
+Keep selectors shallow. Astro already scopes component styles; do not recreate a large BEM or utility framework.
 
-```css
-@layer reset {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  body,
-  h1,
-  h2,
-  h3,
-  p,
-  figure {
-    margin: 0;
-  }
-}
-
-@layer tokens {
-  :root {
-    /* tokens */
-  }
-}
-
-@layer base {
-  body {
-    background: var(--color-bg);
-    color: var(--color-text);
-  }
-}
-
-@layer utilities {
-  .u-visually-hidden {
-    /* accessibility utility */
-  }
-}
-```
-
-Do not build a giant utility framework.
-
----
-
-# 47. CSS Naming
-
-Because Astro styles are scoped, component classes can remain simple.
-
-Good:
+Naming:
 
 ```css
 .card {}
 .image {}
 .meta {}
 .title {}
-```
 
-Global layout classes:
-
-```css
 .l-wrapper {}
 .l-stack {}
 .l-cluster {}
-```
 
-Utilities:
-
-```css
 .u-visually-hidden {}
 .u-no-wrap {}
 ```
 
-Component variants should preferably use data attributes:
+Use data attributes for meaningful variants and surfaces:
 
 ```html
 <section data-surface="dark">
 ```
 
-or:
-
-```html
-<FilmCard data-size="featured" />
-```
-
-Avoid:
-
-```text
-card-wrapper-container-inner-v2
-```
+Do not add React, Vue or Svelte unless a future interaction genuinely benefits from isolated hydration.
 
 ---
 
-# 48. CSS Tokens
-
-Recommended starter system:
-
-```css
-@layer tokens {
-  :root {
-    /* Colour */
-    --color-bg: #f2efe7;
-    --color-bg-soft: #f8f5ef;
-
-    --color-text: #1a1a18;
-    --color-text-muted: #57544f;
-
-    --color-border: #d8d2c7;
-
-    --color-accent: #c95c43;
-    --color-accent-strong: #923d2d;
-
-    --color-surface-dark: #1a1a18;
-    --color-text-on-dark: #f2efe7;
-
-    /* Typography */
-    --font-sans:
-      "Pretendard Variable",
-      "Pretendard",
-      Inter,
-      ui-sans-serif,
-      system-ui,
-      sans-serif;
-
-    --text-xs: clamp(.75rem, .72rem + .1vw, .8125rem);
-    --text-sm: clamp(.875rem, .84rem + .15vw, .95rem);
-    --text-base: clamp(1rem, .96rem + .2vw, 1.125rem);
-    --text-lg: clamp(1.2rem, 1.1rem + .45vw, 1.45rem);
-    --text-xl: clamp(1.55rem, 1.3rem + 1vw, 2.1rem);
-    --text-2xl: clamp(2rem, 1.55rem + 1.8vw, 3.25rem);
-    --text-3xl: clamp(2.8rem, 1.8rem + 4vw, 5.75rem);
-
-    /* Spacing */
-    --space-1: .25rem;
-    --space-2: .5rem;
-    --space-3: .75rem;
-    --space-4: 1rem;
-    --space-5: 1.5rem;
-    --space-6: 2rem;
-    --space-7: clamp(2.5rem, 5vw, 4rem);
-    --space-8: clamp(4rem, 8vw, 7rem);
-    --space-9: clamp(6rem, 12vw, 11rem);
-
-    /* Width */
-    --width-copy: 46rem;
-    --width-content: 72rem;
-    --width-page: 90rem;
-    --gutter: clamp(1rem, 3vw, 2.75rem);
-
-    /* Shape */
-    --radius-sm: .125rem;
-    --radius-md: .375rem;
-    --radius-media: .25rem;
-
-    /* Motion */
-    --motion-fast: 120ms;
-    --motion-base: 220ms;
-    --motion-slow: 450ms;
-
-    --ease-standard:
-      cubic-bezier(.2, .7, .2, 1);
-  }
-}
-```
-
-This file is the main visual source of truth.
-
----
-
-# 49. Global CSS
-
-Recommended foundation:
+# 18. Global CSS Foundation
 
 ```css
 @layer reset, tokens, base, layout, utilities;
@@ -1579,7 +703,6 @@ Recommended foundation:
   h1,
   h2,
   h3 {
-    font-weight: 500;
     line-height: 1.05;
     text-wrap: balance;
   }
@@ -1599,435 +722,70 @@ Recommended foundation:
 }
 ```
 
----
-
-# 50. Astro Project Structure
-
-Recommended:
-
-```text
-src/
-├── assets/
-│   ├── images/
-│   └── fonts/
-│
-├── components/
-│   ├── Header.astro
-│   ├── Footer.astro
-│   ├── FilmCard.astro
-│   ├── FilmGrid.astro
-│   ├── FilmMeta.astro
-│   ├── ArrowLink.astro
-│   ├── Picture.astro
-│   └── YouTubeEmbed.astro
-│
-├── data/
-│   └── films/
-│
-├── layouts/
-│   ├── BaseLayout.astro
-│   └── FilmLayout.astro
-│
-├── pages/
-│   ├── index.astro
-│   ├── about.astro
-│   └── films/
-│       ├── index.astro
-│       └── [slug].astro
-│
-├── styles/
-│   ├── tokens.css
-│   ├── global.css
-│   └── utilities.css
-│
-└── content.config.ts
-```
-
-Keep the architecture boring.
-
-Boring architecture gives the creative layer room to be interesting.
+Do not build a generic design system beyond what the site uses.
 
 ---
 
-# 51. Base Layout
+# 19. Content and Film Pages
 
-Global CSS belongs at the layout level.
+Films are content entries, not hard-coded page markup.
 
-Example:
-
-```astro
----
-import "../styles/tokens.css";
-import "../styles/global.css";
-import "../styles/utilities.css";
-
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-
-interface Props {
-  title: string;
-  description?: string;
-}
-
-const {
-  title,
-  description = "Ordinary life, noticed in motion."
-} = Astro.props;
----
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-
-    <title>{title}</title>
-    <meta
-      name="description"
-      content={description}
-    />
-  </head>
-
-  <body>
-    <a class="u-skip-link" href="#main">
-      Skip to content
-    </a>
-
-    <Header />
-
-    <main id="main">
-      <slot />
-    </main>
-
-    <Footer />
-  </body>
-</html>
-```
-
----
-
-# 52. Film Content Model
-
-Films should be content, not hard-coded page markup.
-
-Suggested fields:
-
-```text
-title
-slug
-date
-location
-country
-description
-youtubeId
-duration
-cover
-coverAlt
-featured
-draft
-```
-
-Optional:
-
-```text
-coordinates
-chapter
-relatedFilms
-gallery
-```
-
-Do not invent thirty metadata fields before they are needed.
-
----
-
-# 53. Content Collection Shape
-
-Conceptually:
+Start with fields that support real presentation:
 
 ```ts
 {
   title: string;
+  slug: string;
   date: Date;
   location: string;
   country: string;
   description: string;
   youtubeId: string;
-  duration?: string;
   cover: Image;
   coverAlt: string;
+  duration?: string;
   featured?: boolean;
   draft?: boolean;
 }
 ```
 
-Content should remain editable independently of component implementation.
+Add coordinates, chapters, related films or galleries only when real content needs them.
 
----
-
-# 54. Astro Assets
-
-Use Astro's image pipeline for site-owned imagery.
-
-Prefer:
-
-```astro
----
-import { Image } from "astro:assets";
-import cover from "../assets/images/film-cover.jpg";
----
-
-<Image
-  src={cover}
-  alt="Cycling beside the Han River in Seoul"
-/>
-```
-
-Avoid putting every image into `/public` simply for convenience.
-
-Store editable site assets in `src/assets` when they should participate in the asset pipeline.
-
----
-
-# 55. Image Alt Text
-
-Alt text describes the meaningful visual information.
-
-Good:
-
-**Cycling along the Han River with Seoul apartment towers behind the path**
-
-Weak:
-
-**Image**
-
-Weak:
-
-**One Place Later cinematic Seoul lifestyle travel vlog thumbnail**
-
-Do not turn alt text into SEO copy.
-
-Decorative images should be treated as decorative.
-
----
-
-# 56. Fonts in Astro
-
-If using the selected font through the Astro font system, expose it through a CSS variable and let the design tokens consume that variable.
-
-Conceptually:
-
-```css
---font-sans:
-  var(--font-pretendard),
-  system-ui,
-  sans-serif;
-```
-
-Load only the weights actually used.
-
-For this site:
+Each film gets a permanent page:
 
 ```text
-400
-500
-600
+actual film title
+location · date
+short editorial introduction
+16:9 film
+optional note or selected stills
+previous film ←     One place later →
 ```
 
-Do not ship five unused weights.
+The next-film phrase is a signature interaction. Use it there, not on every button.
 
 ---
 
-# 57. JavaScript Rule
+# 20. Metadata, URLs and SEO
 
-Default:
+Every page needs:
 
-**no client JavaScript**
+- a unique title and meta description
+- canonical URL
+- Open Graph title, description and image
+- meaningful headings
+- descriptive social imagery
 
-Add it only for a real interaction.
-
-Good reasons:
-
-mobile navigation  
-video consent/loading interaction  
-future filtering  
-small progressive enhancement
-
-Weak reasons:
-
-hover effects  
-simple disclosure  
-layout  
-scroll animation  
-typography  
-responsive behaviour
-
-Modern CSS and HTML should handle those where possible.
-
----
-
-# 58. Framework Components
-
-Do not add React, Vue or Svelte just because Astro supports them.
-
-If a future feature genuinely benefits from a framework component, hydrate it deliberately.
-
-The rest of the page should remain normal Astro-rendered HTML.
-
-This keeps the implementation aligned with the brand:
-
-quiet  
-fast  
-purposeful
-
----
-
-# 59. View Transitions
-
-View transitions are optional.
-
-If used, limit the brand language to:
-
-### Page fade
-
-Very restrained.
-
-### Shared film image
-
-The film thumbnail may visually continue into its detail page.
-
-That transition maps naturally to the brand idea:
-
-**one state → another**
-
-Do not animate:
-
-navigation labels  
-every paragraph  
-footer  
-random cards  
-every page element
-
-The transition should communicate continuity rather than advertise the framework.
-
----
-
-# 60. Performance Principles
-
-Priority order:
-
-## 1. Useful HTML quickly
-
-## 2. Optimized imagery
-
-## 3. Minimal font payload
-
-## 4. Minimal JavaScript
-
-## 5. Third-party content only when necessary
-
-Especially avoid:
-
-autoplay background video  
-multiple YouTube players on listing pages  
-large JS animation libraries  
-unnecessary analytics scripts  
-huge font families  
-oversized original photographs
-
-A beautiful site that feels slow is off-brand.
-
----
-
-# 61. YouTube Integration
-
-On index pages:
-
-show a site-owned poster image.
-
-Do not instantiate multiple full YouTube players.
-
-On film pages:
-
-use one player.
-
-Prefer lazy or click-to-load behaviour if practical.
-
-External links to YouTube should remain clearly identifiable:
-
-**Watch on YouTube ↗**
-
----
-
-# 62. SEO Structure
-
-Every page should have:
-
-unique `<title>`
-
-unique meta description
-
-canonical URL
-
-Open Graph title
-
-Open Graph description
-
-Open Graph image
-
-meaningful document headings
-
-Film pages should use the actual film title.
-
-Do not stuff repetitive phrases such as:
-
-```text
-Korea vlog Seoul vlog cinematic vlog lifestyle vlog...
-```
-
-into visible page copy.
-
-Brand clarity beats keyword stuffing.
-
----
-
-# 63. Page Titles
-
-Suggested structure:
-
-Homepage:
+Title patterns:
 
 ```text
 One Place Later
-```
-
-Film:
-
-```text
+Films | One Place Later
+About | One Place Later
 Escaping Gangnam Without Leaving Seoul | One Place Later
 ```
 
-Films archive:
-
-```text
-Films | One Place Later
-```
-
-About:
-
-```text
-About | One Place Later
-```
-
----
-
-# 64. URL Design
-
-Keep URLs human.
-
-Good:
+URLs remain short and durable:
 
 ```text
 /films/escaping-gangnam
@@ -2035,404 +793,129 @@ Good:
 /about
 ```
 
-Avoid:
-
-```text
-/blog/category/korea/vlog/post-001
-/watch?vlog_id=234
-/content/2026/08/17/...
-```
-
-URLs should survive future redesigns.
+Avoid date folders, category stacks, IDs and keyword stuffing. Brand clarity is more valuable than repetitive `Seoul vlog` phrasing.
 
 ---
 
-# 65. Responsive Film Grid
+# 21. Performance
 
-Mobile:
+Priority order:
 
-```text
-1 column
-```
+1. Useful HTML quickly.
+2. Correctly sized, optimized imagery.
+3. Minimal font payload.
+4. Minimal client JavaScript.
+5. Third-party content only after user intent.
 
-Medium:
+Avoid autoplay media, multiple YouTube players, large animation libraries, unnecessary analytics, unused font weights and oversized source images.
 
-```text
-2 columns
-```
+Static content renders as content. Do not use skeleton loaders for it. A film poster is the loading state for deferred video.
 
-Wide:
-
-allow selective editorial asymmetry.
-
-For example:
-
-```text
-featured item: 7 columns
-secondary item: 5 columns
-```
-
-Not every section needs identical cards.
-
-Use asymmetry deliberately.
-
-Never let it become a Pinterest masonry wall.
+A beautiful site that feels slow is off-brand.
 
 ---
 
-# 66. Loading States
+# 22. Explicit Exclusions
 
-Avoid skeleton interfaces for statically available content.
-
-The page should render actual content.
-
-For deferred media:
-
-use the film poster itself as the loading state.
-
-Do not show generic grey shimmer blocks unless genuinely necessary.
-
----
-
-# 67. Error Pages
-
-404 copy can carry a little personality.
-
-Example:
-
-## One place too far.
-
-**That page isn't here.**
-
-**Back home →**
-
-Keep the joke short.
-
-The recovery action matters more than the line.
-
----
-
-# 68. Mobile Experience
-
-Mobile is not the reduced version of the desktop site.
-
-It is likely one of the primary viewing contexts.
-
-Priorities:
-
-large film imagery  
-comfortable title size  
-generous touch targets  
-minimal header  
-no hover-dependent meaning  
-fast media loading  
-no horizontal overflow  
-no miniature metadata
-
-Keep the site composed rather than cramped.
-
----
-
-# 69. Things We Explicitly Do Not Build
-
-Unless a real future need appears:
+Do not build these without a demonstrated need:
 
 - custom cursor
-- splash screen
+- splash screen or loading percentage
 - intro animation
-- loading percentage
 - horizontal-scroll site
-- scroll hijacking
-- parallax hero
-- autoplay audio
-- background video
+- scroll hijacking or parallax
+- autoplay audio or background video
 - floating social dock
-- elaborate dropdown navigation
-- infinite scroll
-- carousels
-- testimonial cards
+- elaborate navigation
+- infinite scroll or carousels
+- testimonial or feature cards
 - tag clouds
-- glassmorphism
-- neumorphism
+- glassmorphism or neumorphism
 - giant rounded containers
 - theme toggle
-- animated logo
-- fake film grain interface layer
+- autonomous logo animation
+- fake film-grain interface layer
 
-Restraint is not missing functionality.
-
-It is the design.
+Restraint is the design, not missing functionality.
 
 ---
 
-# 70. Accessibility QA
+# 23. Release QA
 
-Before release, verify:
+## Content
 
-- keyboard can reach every interaction
-- tab order follows visual order
-- focus state is always visible
-- skip link works
-- headings form a logical hierarchy
-- images have correct alt treatment
-- embedded video has an accessible title
-- controls have names
-- body text meets contrast requirements
-- muted text still meets contrast requirements
-- interface does not rely only on Route Red
-- reduced motion removes unnecessary animation
-- page works at large text zoom
-- landscape mobile does not break
-- no horizontal scrolling is introduced accidentally
+- Titles, dates, locations and routes are factual.
+- Description adds context rather than repeating the title.
+- Poster crop works at mobile size.
+- Alt text describes the scene.
+- YouTube destination is correct.
+- Social preview uses a strong image.
+- No placeholder or draft content is public.
 
----
+## Accessibility and interaction
 
-# 71. Responsive QA
+- Keyboard reaches every interaction in visual order.
+- Skip link and focus styles work.
+- Headings are logical.
+- Controls have names.
+- Touch targets are comfortable.
+- Text and muted text meet contrast requirements.
+- Reduced motion removes unnecessary animation.
+- Meaning does not depend on colour or hover.
+- The page works with text zoom and landscape mobile.
 
-Test at minimum:
+## Responsive and technical
+
+Check at least:
 
 ```text
-320px
-375px
-430px
-768px
-1024px
-1440px
-1920px
+320 · 375 · 430 · 768 · 1024 · 1440 · 1920
 ```
 
-But fix layouts based on when the design breaks, not based on named devices.
+- No horizontal overflow.
+- No accidental layout shift.
+- No broken links, missing images or console errors.
+- No unnecessary client hydration.
+- No missing image dimensions or oversized assets.
+- No duplicate titles, localhost URLs or stale metadata.
+- Production build and whitespace checks pass.
 
-Test real content.
+## Brand
 
-A card with:
+Ask:
 
-**When the Holiday Finally Slows Down**
+1. Does the footage dominate?
+2. Does the page feel editorial rather than templated?
+3. Is Route Red punctuation rather than surface?
+4. Is every movement purposeful?
+5. Could the system hold the next film in Seoul, France or somewhere new?
 
-is more useful than testing:
-
-**Sample Title**
-
----
-
-# 72. Content QA
-
-Before publishing a film page:
-
-- title is correct
-- date is correct
-- location is correct
-- description adds context rather than repeating the title
-- poster works at mobile size
-- alt text describes the image
-- YouTube ID is correct
-- thumbnail crop does not hide the creator
-- metadata is concise
-- next/previous film links work
-- social preview uses a strong image
+If the answer weakens, simplify.
 
 ---
 
-# 73. Development QA
+# 24. North Star
 
-Before production:
+The website should feel like One Place Later before the visitor has read the words “One Place Later.”
+
+The identity comes from:
 
 ```text
-No console errors
-No broken internal links
-No missing image dimensions
-No accidental layout shift
-No unnecessary client hydration
-No unused large assets
-No duplicate page titles
-No inaccessible controls
-No forgotten draft content
-No localhost URLs
+pace
+space
+imagery
+restraint
+movement
+language
+detail
 ```
 
----
-
-# 74. Brand QA
-
-Ask five questions.
-
-## Does the footage still dominate?
-
-If not, simplify the UI.
-
-## Does it feel like an editorial home rather than a creator template?
-
-If not, remove components.
-
-## Is the Route Red behaving as punctuation?
-
-If not, reduce it.
-
-## Is movement purposeful?
-
-If not, remove animation.
-
-## Could this still work if the next film were in Seoul, France or somewhere entirely new?
-
-If yes, the system is doing its job.
-
----
-
-# 75. Astro Source of Truth
-
-The recommended implementation hierarchy is:
-
-```text
-TOKENS
-↓
-GLOBAL FOUNDATIONS
-↓
-LAYOUTS
-↓
-ASTRO COMPONENTS
-↓
-CONTENT
-↓
-OPTIONAL INTERACTION
-```
-
-Not:
-
-```text
-PLUGIN
-↓
-THEME
-↓
-UTILITY FRAMEWORK
-↓
-COMPONENT LIBRARY
-↓
-BRAND
-```
-
-The brand should determine the implementation.
-
-The implementation should not determine the brand.
-
----
-
-# 76. Core Component Set
-
-Build these first:
-
-```text
-BaseLayout
-Header
-Footer
-Wrapper
-FilmCard
-FilmGrid
-FilmMeta
-ArrowLink
-YouTubeEmbed
-```
-
-Then stop.
-
-Only add another abstraction after the site has demonstrated that it needs one.
-
----
-
-# 77. Design Tokens Are Locked
-
-The following form the initial web design system:
-
-### Colour
-
-Paper  
-Carbon  
-Stone  
-Route Red
-
-### Type
-
-Pretendard Variable  
-400 / 500 / 600
-
-### Geometry
-
-Mostly square  
-subtle radius  
-fine rules  
-no card-heavy UI
-
-### Spacing
-
-Generous  
-fluid  
-editorial
-
-### Motion
-
-Subtle  
-directional  
-rare
-
-### Graphic language
-
-**→**
-
-### Photography
-
-Natural  
-unfiltered by UI  
-environment first
-
----
-
-# 78. Web Personality in One Screen
-
-A One Place Later page should ideally contain:
-
-**one strong image**
-
-**one strong title**
-
-a little context
-
-a little space
-
-and something that takes you somewhere else:
-
-**→**
-
-That is the interface.
-
----
-
-# 79. Implementation Rule
+Not decorative branding.
 
 When deciding whether to add something, ask:
 
 **Does this help someone understand, experience or move through the work?**
 
-If yes:
+If yes, build it carefully.
 
-build it well.
-
-If no:
-
-leave it out.
-
----
-
-# 80. North Star
-
-## The website should feel like One Place Later before the visitor has read the words “One Place Later.”
-
-The identity should come from:
-
-pace  
-space  
-imagery  
-restraint  
-movement  
-language  
-detail
-
-Not decorative branding.
+If no, leave it out.
