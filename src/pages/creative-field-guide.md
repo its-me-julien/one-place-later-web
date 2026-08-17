@@ -1135,25 +1135,17 @@ version: v2.0
 <div class="guide-motion-language guide-editorial-signals" aria-labelledby="editorial-signals-title">
 <div class="guide-motion-language__introduction">
 <p class="guide-label">Editorial signals</p>
-<h3 id="editorial-signals-title">Four useful callouts.</h3>
-<p>Use these marks to orient, equip, clarify or let another voice enter. The label carries the meaning; the graphic gives it a recognisable place in the system.</p>
+<h3 id="editorial-signals-title">Two useful callouts.</h3>
+<p>Use these marks to equip or clarify. The label carries the meaning; the graphic gives it a recognisable place in the system.</p>
 </div>
 <div class="guide-motion-language__specimens">
 <figure>
-<img src="/one-place-later-location.svg" alt="Location route arriving at a map marker" width="640" height="240" />
-<figcaption><span>01</span><strong>Location</strong><small>Names where the viewer is now. Pair with a place, neighbourhood, route or arrival point.</small></figcaption>
-</figure>
-<figure>
 <img src="/one-place-later-tool.svg" alt="Tool route becoming a rounded tool marker" width="640" height="240" />
-<figcaption><span>02</span><strong>Tool</strong><small>Introduces something practically useful: camera, mount, app, map, booking method or piece of kit.</small></figcaption>
+<figcaption><span>01</span><strong>Tool</strong><small>Introduces something practically useful: camera, mount, app, map, booking method or piece of kit.</small></figcaption>
 </figure>
 <figure>
 <img src="/one-place-later-tip-info.svg" alt="Tip or information route reaching an information marker" width="640" height="240" />
-<figcaption><span>03</span><strong>Tip or Info</strong><small>Adds concise context the footage cannot supply: timing, access, cost, distance or one useful warning.</small></figcaption>
-</figure>
-<figure>
-<img src="/one-place-later-quote.svg" alt="Quote route opening into a pair of quotation marks" width="640" height="240" />
-<figcaption><span>04</span><strong>Quote</strong><small>Brings in a specific voice. Pair with a short attributed line; never use it for decorative pull quotes.</small></figcaption>
+<figcaption><span>02</span><strong>Tip or Info</strong><small>Adds concise context the footage cannot supply: timing, access, cost, distance or one useful warning.</small></figcaption>
 </figure>
 </div>
 <p class="guide-motion-language__rule"><strong>Signal once, then get out of the way.</strong> A callout should answer one question and leave before it competes with the scene.</p>
@@ -1225,10 +1217,8 @@ version: v2.0
 <li><a href="/one-place-later-route-divider.svg" download>Route divider <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-problem.svg" download>Problem route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-solution.svg" download>Solution route <span>SVG ↓</span></a></li>
-<li><a href="/one-place-later-location.svg" download>Location marker <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-tool.svg" download>Tool marker <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-tip-info.svg" download>Tip or Info marker <span>SVG ↓</span></a></li>
-<li><a href="/one-place-later-quote.svg" download>Quote marker <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-walk.svg" download>Walking route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-bicycle.svg" download>Bicycle route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-rail.svg" download>Rail route <span>SVG ↓</span></a></li>

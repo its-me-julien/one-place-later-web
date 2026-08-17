@@ -336,18 +336,16 @@ These graphics may be revealed by an edit when timing carries meaning, but shoul
 
 ## Editorial signals
 
-Four callouts support recurring practical information without turning the films into an interface.
+Two callouts support recurring practical information without turning the films into an interface.
 
 | Signal | Role | Use |
 | --- | --- | --- |
-| **Location** | Orient | Place, neighbourhood, route or arrival point |
 | **Tool** | Equip | Camera, mount, app, map, booking method or useful kit |
 | **Tip or Info** | Clarify | Timing, access, cost, distance, context or one warning |
-| **Quote** | Attribute | A short line from a specific person or source |
 
-Every signal begins with the same Route Red origin and the same horizontal Stone line. Only the final quarter changes: Location resolves into a coordinate target, Tool becomes adjustable controls, Tip or Info arrives at an information point, and Quote ends at two speech marks.
+Both signals begin with the same Route Red origin and the same horizontal Stone line. Only the final quarter changes: Tool becomes adjustable controls, while Tip or Info arrives at an information point.
 
-The text label carries the meaning and the mark gives it a recognisable place in the system. Signal once, answer one question, and leave before the callout competes with the scene. Quote graphics require attribution; they are not decorative pull quotes.
+The text label carries the meaning and the mark gives it a recognisable place in the system. Signal once, answer one question, and leave before the callout competes with the scene.
 
 ## Methods of transport
 
