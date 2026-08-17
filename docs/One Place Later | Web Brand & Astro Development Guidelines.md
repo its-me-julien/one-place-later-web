@@ -754,7 +754,7 @@ Not for ordinary film cards.
 
 ---
 
-# 25. The Arrow
+# 25. The Arrow and Route Mark
 
 The arrow is the primary graphic device.
 
@@ -782,6 +782,14 @@ One place later →
 Do not replace every arrow with an illustrated icon.
 
 A typographic arrow is more consistent with the editorial identity.
+
+## Identity hierarchy
+
+The written **One Place Later** wordmark is the primary logo.
+
+The bespoke rounded route glyph is the secondary mark. It may sit beside the wordmark, but should appear alone only in constrained formats such as the favicon, avatar or square profile image.
+
+The route glyph does not replace typographic arrows in links or editorial copy. Both should remain sparse enough to preserve their meaning.
 
 ---
 
@@ -1005,6 +1013,7 @@ Header:
 - no giant logo
 - no burger menu on desktop
 - no animation beyond subtle state changes
+- navigation links share one quiet editorial treatment; external arrows may use Route Red as punctuation
 
 Mobile:
 

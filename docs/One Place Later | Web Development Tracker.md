@@ -37,9 +37,9 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 - HTML and CSS first: no client-side framework or homepage JavaScript.
 - One generated, site-owned hero image is processed through Astro’s image pipeline.
 - Pretendard Variable is loaded as a pinned dynamic subset, with system-font fallbacks.
-- The shared BrandMark component keeps the name as the logo and pairs it with a bespoke, rounded route glyph; the glyph stays secondary until an interactive state introduces Route Red.
+- The shared BrandMark component keeps the written name as the primary logo and pairs it with the bespoke rounded route glyph as the secondary mark; typographic arrows remain editorial grammar.
 - `one-place-later-square-mark.svg` is the compact mark for favicon, avatar, and profile contexts; the full wordmark remains the primary identity.
-- The reusable site masthead keeps navigation compact: an editorial About link and one clear Carbon YouTube destination.
+- The reusable site masthead keeps About and YouTube as equally quiet editorial links, with Route Red limited to outbound punctuation.
 - The reusable footer is a restrained Carbon end-mark: a short brand line, Seoul location, and explicitly external social destinations.
 - The visual source of truth is the web brand guidelines; the creative-direction document governs voice and editorial choices.
 
@@ -58,7 +58,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 - Hero title: **One Place Later**, with **원 플레이스 레이터** as its subtitle and the English wordmark retained in the masthead and footer.
 - Brand line: **Ordinary life, noticed in motion.**
-- Channel focus: routines, food, observations, small escapes, and the occasional long way round.
+- Channel focus: routines, food, quiet details, small escapes, and the occasional long way round.
 - No autoplay, background video, film listing, creator-template sections, or technique explanation.
 
 ---
@@ -76,6 +76,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Homepage language | Added the Hangul rendering as the hero subtitle while retaining the English title and site wordmark. | Release record |
 | 2026-08-17 | Identity | Added a square route-glyph mark for compact digital contexts and made it the site favicon. | Release record |
 | 2026-08-17 | Homepage language | Replaced `night rides` with `observations` and introduced the route-led Korea sign-off. | Release record |
+| 2026-08-17 | Brand system | Formalized the route glyph as the secondary mark, quieted the masthead, adopted `quiet details`, and stabilized the mobile Korea sign-off. | Release record |
 
 ---
 

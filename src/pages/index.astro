@@ -41,12 +41,14 @@ const heroAlt =
       <div class="copy">
         <h2 id="about-title">
           Based in Seoul, I make films about ordinary life in motion: routines,
-          food, observations, small escapes, and the occasional long way round.
+          food, quiet details, small escapes, and the occasional long way round.
         </h2>
         <p class="route-signoff">
-          <span>Korea is home.</span>
-          <span class="route-signoff__arrow" aria-hidden="true">→</span>
-          <span>The rest happens one place later.</span>
+          <span class="route-signoff__origin">Korea is home.</span>
+          <span class="route-signoff__destination">
+            <span class="route-signoff__arrow" aria-hidden="true">→</span>
+            <span>The rest happens one place later.</span>
+          </span>
         </p>
       </div>
     </div>
@@ -134,7 +136,7 @@ const heroAlt =
   }
 
   .route-signoff {
-    display: flex;
+    display: grid;
     max-width: 45ch;
     flex-wrap: wrap;
     align-items: baseline;
@@ -149,8 +151,15 @@ const heroAlt =
     letter-spacing: -0.025em;
   }
 
-  .route-signoff span:first-child {
+  .route-signoff__origin {
     color: var(--color-text-muted);
+  }
+
+  .route-signoff__destination {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: baseline;
+    gap: 0.5em;
   }
 
   .route-signoff__arrow {
@@ -190,6 +199,10 @@ const heroAlt =
     .about-grid {
       grid-template-columns: minmax(9rem, 2fr) minmax(0, 8fr);
       align-items: start;
+    }
+
+    .route-signoff {
+      display: flex;
     }
   }
 </style>

@@ -287,7 +287,7 @@ Let it breathe.
 
 ---
 
-# 11. Graphic signature
+# 11. Graphic signature and secondary mark
 
 The main graphic device is:
 
@@ -313,11 +313,13 @@ Examples:
 
 **35°C → finally tolerable**
 
-The arrow is not a logo.
+The written **One Place Later** wordmark is the primary logo.
 
-It is a piece of visual grammar.
+The bespoke rounded route glyph is the secondary mark. It may accompany the wordmark, or appear alone only where the full name cannot work: favicons, avatars and other constrained square formats.
 
-Use it sparingly enough that it remains meaningful.
+The typographic arrow remains a piece of editorial visual grammar. Use it in copy, routes and transitions; do not replace every arrow with the illustrated route glyph.
+
+Use both forms sparingly enough that movement remains meaningful.
 
 ---
 
