@@ -664,224 +664,195 @@ version: v2.0
 
 ---
 
-## 15. Movement as Storytelling
+<section id="15-movement-as-storytelling" class="guide-chapter guide-chapter--movement" aria-labelledby="movement-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">15</p>
+<div>
+<h2 id="movement-title">Movement as Storytelling</h2>
+<p class="guide-chapter__summary">Movement earns its place when it reveals geography or changes the state of the day.</p>
+</div>
+</header>
 
-Movement should reveal geography or change state.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">The movement test</p>
+<p>Ask what is different when the movement ends. <span>If the answer is nothing, shorten it.</span></p>
+</div>
 
-Useful movement:
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Movement with a destination</p>
+<ul class="guide-checklist">
+<li>leaving home or entering a neighbourhood</li>
+<li>descending toward the river or crossing a bridge</li>
+<li>boarding a train or reaching the sea</li>
+<li>driving through changing landscapes</li>
+<li>walking from station to hotel</li>
+<li>returning home</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Movement without development</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>endless walking footage</li>
+<li>roads where nothing changes</li>
+<li>POV with no development</li>
+<li>repetitive car-window footage</li>
+<li>movement that changes no location, mood or understanding</li>
+</ul>
+</div>
+</div>
 
-leaving home\
-entering a neighbourhood\
-descending toward the river\
-crossing a bridge\
-boarding a train\
-driving through changing landscapes\
-walking from station to hotel\
-reaching the sea\
-returning home
-
-Weak movement:
-
-endless walking footage\
-roads where nothing changes\
-POV with no development\
-repetitive car-window footage\
-movement that does not change location, mood or understanding
-
-Ask:
-
-**What is different when this movement ends?**
-
-If the answer is nothing, shorten it.
-
----
-
-## 16. Perspective Strategy
-
-Mix perspectives deliberately.
-
-### External observational
-
-This is one of the most important perspectives.
-
-Show yourself inside the environment.
-
-Examples:
-
-riding past camera\
-walking into a village\
-waiting at a station\
-driving away\
-cooking in a wide shot\
-working in a café\
-walking along the coast
-
-### POV
-
-Useful for:
-
-cycling\
-entering spaces\
-crowded environments\
-food preparation\
-process\
-moments where sharing your exact view adds something
-
-POV should not dominate entire sequences.
-
-### Elevated and 360
-
-Use for:
-
-geography\
-scale\
-route orientation\
-bridges\
-roads\
-mountains\
-coastlines\
-showing yourself inside a larger environment
-
-Pseudo-drone shots are punctuation.
-
-Not wallpaper.
-
-### Detail
-
-Details create specificity.
-
-Hands.
-
-Food.
-
-Road markings.
-
-Rain.
-
-Keys.
-
-Tickets.
-
-Shoes.
-
-Coffee.
-
-Bicycle components.
-
-Condensation.
-
-Signs.
-
-Market produce.
-
-Screens.
-
-Objects associated with routines.
-
-Details should support scenes rather than exist as decorative B-roll.
+<div class="guide-takeaway">
+<p class="guide-label">A simple edit decision</p>
+<p class="guide-takeaway__statement">Movement is not atmosphere by itself. <span>It needs to take the viewer somewhere.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 17. Camera Roles
+<section id="16-perspective-strategy" class="guide-chapter guide-chapter--perspective" aria-labelledby="perspective-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">16</p>
+<div>
+<h2 id="perspective-title">Perspective Strategy</h2>
+<p class="guide-chapter__summary">Mix perspectives deliberately, so each one gives the viewer something the others cannot.</p>
+</div>
+</header>
 
-### Insta360 X6
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">The perspective map</p>
+<p>Move between being seen, seeing through the creator’s eyes, <span>understanding the wider route, and noticing the particulars.</span></p>
+</div>
 
-Primary purpose:
+<div class="guide-perspective-map">
+<div>
+<p class="guide-label">External observational</p>
+<p class="guide-perspective-map__title">Show yourself inside the environment.</p>
+<p>Ride past camera, walk into a village, wait at a station, cook in a wide shot, work in a café, drive away.</p>
+</div>
+<div>
+<p class="guide-label">POV</p>
+<p class="guide-perspective-map__title">Share the exact view when it adds something.</p>
+<p>Cycling, entering spaces, crowded environments, food preparation and process. Do not let it dominate a whole sequence.</p>
+</div>
+<div>
+<p class="guide-label">Elevated and 360</p>
+<p class="guide-perspective-map__title">Orient the viewer within the larger place.</p>
+<p>Use for geography, scale, routes, bridges, roads, mountains and coastlines. Pseudo-drone shots are punctuation, not wallpaper.</p>
+</div>
+<div>
+<p class="guide-label">Detail</p>
+<p class="guide-perspective-map__title">Make the moment specific.</p>
+<p>Hands, food, road markings, rain, keys, tickets, shoes, coffee, condensation, signs and routines. Support the scene; do not decorate it.</p>
+</div>
+</div>
 
-**Show the creator inside the environment.**
-
-Best uses:
-
-external cycling\
-self-filmed wides\
-elevated geographic reveals\
-pass-bys\
-bridges\
-road-trip stops\
-walking into landscapes\
-larger environmental compositions\
-selective reframing
-
-Avoid:
-
-constant orbiting\
-endless invisible-stick shots\
-novelty angles without purpose
-
-### Insta360 GO Ultra
-
-Primary purpose:
-
-**Get close to behaviour and place the viewer inside the action.**
-
-Best uses:
-
-chest POV\
-cap POV where appropriate\
-static mini-camera\
-café timelapse\
-safe car interiors\
-details\
-food preparation\
-process footage\
-discreet environmental coverage\
-small visual jokes
-
-The GO Ultra complements the external view.
-
-It should not replace it.
+<div class="guide-takeaway">
+<p class="guide-label">Editing principle</p>
+<p class="guide-takeaway__statement">Every perspective has a job. <span>Use the one that makes the scene clearer or more particular.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 18. Technical Style
+<section id="17-camera-roles" class="guide-chapter guide-chapter--camera-roles" aria-labelledby="camera-roles-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">17</p>
+<div>
+<h2 id="camera-roles-title">Camera Roles</h2>
+<p class="guide-chapter__summary">Assign each camera a point of view before you start collecting footage.</p>
+</div>
+</header>
 
-Technology serves the story.
+<div class="guide-chapter__content">
+<div class="guide-camera-roles">
+<div>
+<p class="guide-label">Insta360 X6</p>
+<p class="guide-camera-roles__purpose">Show the creator inside the environment.</p>
+<p class="guide-label">Best used for</p>
+<ul class="guide-checklist">
+<li>external cycling and self-filmed wides</li>
+<li>elevated geographic reveals and pass-bys</li>
+<li>bridges, road-trip stops and larger compositions</li>
+<li>walking into landscapes and selective reframing</li>
+</ul>
+<p class="guide-label guide-camera-roles__avoid">Avoid</p>
+<p class="guide-camera-roles__note">Constant orbiting, endless invisible-stick shots and novelty angles without a purpose.</p>
+</div>
+<div>
+<p class="guide-label">Insta360 GO Ultra</p>
+<p class="guide-camera-roles__purpose">Get close to behaviour and place the viewer inside the action.</p>
+<p class="guide-label">Best used for</p>
+<ul class="guide-checklist">
+<li>chest or cap POV where appropriate</li>
+<li>static mini-camera and café timelapse</li>
+<li>safe car interiors, details and food preparation</li>
+<li>process footage, discreet coverage and small visual jokes</li>
+</ul>
+<p class="guide-label guide-camera-roles__avoid">Relationship</p>
+<p class="guide-camera-roles__note">The GO Ultra complements the external view. <strong>It should not replace it.</strong></p>
+</div>
+</div>
 
-Never reverse that relationship.
+<div class="guide-takeaway">
+<p class="guide-label">Before recording</p>
+<p class="guide-takeaway__statement">Choose the perspective first. <span>Then choose the camera that can make it honestly.</span></p>
+</div>
+</div>
+</section>
 
-### ND filters
+---
 
-ND filters are tools, not defaults.
+<section id="18-technical-style" class="guide-chapter guide-chapter--technical-style" aria-labelledby="technical-style-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">18</p>
+<div>
+<h2 id="technical-style-title">Technical Style</h2>
+<p class="guide-chapter__summary">Technology serves the story. Never reverse that relationship.</p>
+</div>
+</header>
 
-For cycling in bright conditions where motion blur is desired:
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Technical restraint</p>
+<p>Seek natural movement, <span>not technical perfection.</span></p>
+</div>
 
-ND16 as the normal starting point.
+<div class="guide-technical-grid">
+<div>
+<p class="guide-label">ND filters</p>
+<p class="guide-technical-grid__title">A tool, not a default.</p>
+<dl class="guide-technical-settings">
+<div><dt>Bright cycling</dt><dd>Start with ND16 when motion blur is wanted.</dd></div>
+<div><dt>Brighter still</dt><dd>Move to ND32.</dd></div>
+<div><dt>Exceptionally bright</dt><dd>Use ND64 only when necessary.</dd></div>
+<div><dt>Indoors or darker spaces</dt><dd>Remove ND unless there is a specific reason to keep it.</dd></div>
+</dl>
+</div>
+<div>
+<p class="guide-label">Special placements</p>
+<p class="guide-technical-grid__title">A clever angle never outweighs the risk.</p>
+<p>For 3 m stick work, cycling mounts, magnetic or suction mounting, and other unusual placements, protect what matters first.</p>
+<ul class="guide-checklist">
+<li>secure mounting</li>
+<li>public safety</li>
+<li>property</li>
+<li>permissions</li>
+<li>privacy</li>
+</ul>
+</div>
+</div>
 
-If brighter:
-
-ND32.
-
-If exceptionally bright and necessary:
-
-ND64.
-
-Inside cafés, homes, trains, restaurants or darker environments:
-
-remove ND unless there is a specific reason to keep it.
-
-The goal is natural movement.
-
-Not technical perfection.
-
-### Special placements
-
-For:
-
-3 m stick work\
-cycling mounts\
-magnetic mounting\
-suction mounting\
-unusual camera placements
-
-Prioritise:
-
-secure mounting\
-public safety\
-property\
-permissions\
-privacy
-
-A clever angle is never worth unnecessary risk.
+<div class="guide-takeaway">
+<p class="guide-label">Non-negotiable</p>
+<p class="guide-takeaway__statement">No frame is worth unnecessary risk. <span>Let the technical choice remain invisible in the finished film.</span></p>
+</div>
+</div>
+</section>
 
 ---
 

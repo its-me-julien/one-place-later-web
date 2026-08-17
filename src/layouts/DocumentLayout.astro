@@ -1008,6 +1008,86 @@ const { frontmatter } = Astro.props;
     border-bottom: var(--border-default);
   }
 
+  .guide-body :global(.guide-perspective-map),
+  .guide-body :global(.guide-camera-roles),
+  .guide-body :global(.guide-technical-grid) {
+    display: grid;
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-perspective-map > div),
+  .guide-body :global(.guide-camera-roles > div),
+  .guide-body :global(.guide-technical-grid > div) {
+    padding-block: var(--space-6);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-perspective-map__title),
+  .guide-body :global(.guide-camera-roles__purpose),
+  .guide-body :global(.guide-technical-grid__title) {
+    max-width: 28rem;
+    margin-top: var(--space-3);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  .guide-body :global(.guide-perspective-map__title + p),
+  .guide-body :global(.guide-camera-roles__purpose + .guide-label),
+  .guide-body :global(.guide-technical-grid__title + p) {
+    margin-top: var(--space-5);
+  }
+
+  .guide-body :global(.guide-perspective-map > div > p:last-child),
+  .guide-body :global(.guide-technical-grid > div > p:not(.guide-label):not(.guide-technical-grid__title)) {
+    max-width: 34rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  .guide-body :global(.guide-camera-roles__avoid) {
+    margin-top: var(--space-6);
+  }
+
+  .guide-body :global(.guide-camera-roles__note) {
+    max-width: 32rem;
+    margin-top: var(--space-3);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  .guide-body :global(.guide-camera-roles__note strong) {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .guide-body :global(.guide-technical-settings) {
+    display: grid;
+    gap: 0;
+    max-width: 38rem;
+    margin: var(--space-5) 0 0;
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-technical-settings div) {
+    display: grid;
+    grid-template-columns: minmax(7rem, 0.7fr) minmax(0, 1.6fr);
+    gap: var(--space-4);
+    padding-block: var(--space-3);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-technical-settings dt) {
+    font-weight: 500;
+  }
+
+  .guide-body :global(.guide-technical-settings dd) {
+    margin: 0;
+    color: var(--color-text-muted);
+    line-height: 1.45;
+  }
+
   .guide-body :global(.guide-direct-camera > div > p:nth-child(2)) {
     max-width: 34rem;
     margin-top: var(--space-4);
@@ -1156,7 +1236,7 @@ const { frontmatter } = Astro.props;
     .guide-body :global(.guide-meaning),
     .guide-body :global(.guide-contexts),
     .guide-body :global(.guide-modes),
-    .guide-body :global(.guide-perspective-grid) {
+    .guide-body :global(.guide-perspective-map) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1164,7 +1244,7 @@ const { frontmatter } = Astro.props;
     .guide-body :global(.guide-meaning__column),
     .guide-body :global(.guide-context),
     .guide-body :global(.guide-mode),
-    .guide-body :global(.guide-perspective-grid > div) {
+    .guide-body :global(.guide-perspective-map > div) {
       padding-right: var(--space-6);
     }
 
@@ -1247,6 +1327,46 @@ const { frontmatter } = Astro.props;
       padding-right: 0;
       padding-left: var(--space-6);
       border-top: 0;
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-perspective-grid) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-perspective-grid > div) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-perspective-map > div:nth-child(even)) {
+      padding-right: 0;
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-perspective-map > div:nth-child(-n + 2)) {
+      border-bottom: var(--border-default);
+    }
+
+    .guide-body :global(.guide-perspective-map > div:nth-child(n + 3)) {
+      border-bottom: 0;
+    }
+
+    .guide-body :global(.guide-camera-roles),
+    .guide-body :global(.guide-technical-grid) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-camera-roles > div),
+    .guide-body :global(.guide-technical-grid > div) {
+      padding-right: var(--space-6);
+      border-bottom: 0;
+    }
+
+    .guide-body :global(.guide-camera-roles > div + div),
+    .guide-body :global(.guide-technical-grid > div + div) {
+      padding-right: 0;
+      padding-left: var(--space-6);
       border-left: var(--border-default);
     }
   }
