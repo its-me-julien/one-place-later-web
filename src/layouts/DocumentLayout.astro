@@ -117,12 +117,6 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
     ) : (
       <div class="guide-directory">
         <div class="l-wrapper">
-          <section class="guide-directory__intro" aria-labelledby="guide-use-title">
-            <p class="guide-label">How to use this guide</p>
-            <h2 id="guide-use-title">Read in sequence.<br />Return by chapter.</h2>
-            <p>Start with Identity if the system is new. When making a film, move directly to the chapter that answers the decision in front of you.</p>
-          </section>
-
           <ol class="guide-directory__chapters">
             {guideChapters.map((item, index) => (
               <li>
@@ -2412,9 +2406,6 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
   .guide-header--chapter h1 { max-width: 12ch; }
 
   .guide-directory { padding-block: var(--space-8) var(--space-9); }
-  .guide-directory__intro { display: grid; gap: var(--space-4); padding-bottom: var(--space-8); border-bottom: 2px solid var(--color-text); }
-  .guide-directory__intro h2 { max-width: 16ch; font-size: var(--text-2xl); font-weight: 400; line-height: 1.05; letter-spacing: -0.04em; }
-  .guide-directory__intro > p:last-child { max-width: 36rem; color: var(--color-text-muted); font-size: var(--text-lg); line-height: 1.5; }
   .guide-directory__chapters, .guide-directory__chapters article > ol { margin: 0; padding: 0; list-style: none; }
   .guide-directory__chapters > li { margin: 0; padding-block: var(--space-7); border-bottom: var(--border-default); }
   .guide-directory__chapters article > header { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: var(--space-3); }
@@ -2452,16 +2443,6 @@ const nextChapter = chapterIndex >= 0 && chapterIndex < guideChapters.length - 1
   .guide-chapter-pagination > a strong { font-size: var(--text-lg); font-weight: 500; }
 
   @media (min-width: 48rem) {
-    .guide-directory__intro {
-      grid-template-columns: minmax(10rem, 1fr) minmax(0, 3fr);
-      column-gap: var(--space-7);
-      align-items: start;
-    }
-
-    .guide-directory__intro > p:last-child {
-      margin-top: 0.25rem;
-    }
-
     .guide-directory__chapters article {
       display: grid;
       grid-template-columns: minmax(14rem, 1fr) minmax(0, 1.8fr);
