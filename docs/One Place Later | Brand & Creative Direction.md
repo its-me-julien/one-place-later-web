@@ -345,6 +345,8 @@ Four callouts support recurring practical information without turning the films 
 | **Tip or Info** | Clarify | Timing, access, cost, distance, context or one warning |
 | **Quote** | Attribute | A short line from a specific person or source |
 
+Every signal begins with the same Route Red origin and the same horizontal Stone line. Only the final quarter changes: Location resolves into a coordinate target, Tool becomes adjustable controls, Tip or Info arrives at an information point, and Quote ends at two speech marks.
+
 The text label carries the meaning and the mark gives it a recognisable place in the system. Signal once, answer one question, and leave before the callout competes with the scene. Quote graphics require attribution; they are not decorative pull quotes.
 
 ## Methods of transport

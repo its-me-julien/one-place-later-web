@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
   <title id="title">One Place Later tool graphic</title>
-  <desc id="description">A route from a red origin becomes the handle of a restrained rounded tool mark.</desc>
+  <desc id="description">A shared route from a red origin becomes a set of adjustable production controls.</desc>
   <circle cx="36" cy="176" r="10" fill="#923D2D" />
-  <path d="M70 176h278" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
-  <path d="M348 176l112-112c-5-22 1-46 18-63l24 40 38 5 27-34c8 27 2 57-19 78-18 18-43 25-66 20L372 220c-13 13-35 13-48 0s-13-35 0-48l24 4Z" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="348" cy="196" r="8" fill="#C95C43" />
+  <path d="M70 176h340" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <path d="M454 48v128M522 48v128M590 48v128" stroke="#57544F" stroke-width="9" stroke-linecap="round" />
+  <path d="M434 86h40M502 132h40M570 74h40" stroke="#57544F" stroke-width="15" stroke-linecap="round" />
+  <circle cx="522" cy="132" r="7" fill="#C95C43" />
 </svg>

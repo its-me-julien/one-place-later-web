@@ -366,7 +366,7 @@ Keep SVGs at their native proportions. The editorial arrow and route divider are
 
 Problem and Solution extend the route language; they are not independent status icons. Story state comes from route behaviour. Keep Route Red limited to the origin, interruption or destination, and pair both graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
 
-Location, Tool, Tip or Info, and Quote are editorial signals. Their labels carry meaning and their graphics create recognition. Each callout should answer one question and leave. Quotes must be attributed; tools should be genuinely relevant; information should be concise and useful.
+Location, Tool, Tip or Info, and Quote are editorial signals. All four preserve the same origin position, horizontal route length, stroke weight and neutral colour; only the final route transformation changes. Their labels carry meaning and their graphics create recognition. Each callout should answer one question and leave. Quotes must be attributed; tools should be genuinely relevant; information should be concise and useful.
 
 Transport assets use the same rule: the route leads and the vehicle remains secondary. Keep their native proportions, pair them with useful journey context, and do not use any transport asset as a logo. A single entrance or route reveal may support a film edit; looping vehicle animation is not part of the web language.
 
