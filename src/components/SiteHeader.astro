@@ -1,22 +1,36 @@
 ---
 const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
+
+const navigation = [
+  { label: 'About', href: '#about', kind: 'section' },
+  { label: 'YouTube', href: youtubeUrl, kind: 'channel', external: true },
+];
 ---
 
 <header class="site-header">
   <div class="l-wrapper inner">
-    <a class="brand" href="/" aria-label="One Place Later, home">
+    <a class="brand-lockup" href="/" aria-label="One Place Later, home">
       <span>One Place Later</span>
       <span class="arrow-mark" aria-hidden="true"></span>
     </a>
 
     <nav aria-label="Primary navigation">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li>
-          <a href={youtubeUrl} target="_blank" rel="me noopener">
-            YouTube <span aria-hidden="true">↗</span>
-          </a>
-        </li>
+      <ul class="nav-list">
+        {
+          navigation.map(({ label, href, kind, external }) => (
+            <li>
+              <a
+                class:list={['nav-link', `nav-link--${kind}`]}
+                href={href}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'me noopener' : undefined}
+              >
+                {label}
+                {external && <span class="external-arrow" aria-hidden="true">↗</span>}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </nav>
   </div>
@@ -40,7 +54,7 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
     gap: var(--space-3);
   }
 
-  .brand {
+  .brand-lockup {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -62,43 +76,79 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
       transform var(--motion-base) var(--ease-standard);
   }
 
-  .brand:hover .arrow-mark,
-  .brand:focus-visible .arrow-mark {
+  .brand-lockup:hover .arrow-mark,
+  .brand-lockup:focus-visible .arrow-mark {
     background-color: var(--color-accent-strong);
     transform: translateX(3px);
   }
 
-  ul {
+  .nav-list {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
+    gap: var(--space-2);
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  nav a {
+  .nav-link {
     display: inline-flex;
     min-height: 2.75rem;
     align-items: center;
-    gap: 0.25rem;
+    justify-content: center;
+    gap: 0.35rem;
+    padding-inline: 0.625rem;
     font-size: var(--text-sm);
     font-weight: 500;
     text-decoration: none;
-    text-underline-offset: 0.25em;
   }
 
-  nav a span {
-    color: var(--color-accent-strong);
+  .nav-link--section {
+    position: relative;
+  }
+
+  .nav-link--section::after {
+    position: absolute;
+    right: 0.625rem;
+    bottom: 0.6rem;
+    left: 0.625rem;
+    height: 1px;
+    background: currentColor;
+    content: '';
+    opacity: 0;
+    transform: scaleX(0.35);
+    transform-origin: left center;
+    transition:
+      opacity var(--motion-fast) var(--ease-standard),
+      transform var(--motion-fast) var(--ease-standard);
+  }
+
+  .nav-link--section:hover::after,
+  .nav-link--section:focus-visible::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .nav-link--channel {
+    min-width: 6.5rem;
+    padding-inline: 0.875rem;
+    color: var(--color-text-on-dark);
+    background: var(--color-surface-dark);
+    border-radius: var(--radius-sm);
+  }
+
+  .external-arrow {
+    color: var(--color-bg);
     transition: transform var(--motion-fast) var(--ease-standard);
   }
 
-  nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  .nav-link--channel:hover,
+  .nav-link--channel:focus-visible {
+    background: var(--color-accent-strong);
   }
 
-  nav a:hover span {
+  .nav-link--channel:hover .external-arrow,
+  .nav-link--channel:focus-visible .external-arrow {
     transform: translate(2px, -2px);
   }
 
@@ -107,7 +157,7 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
       gap: var(--space-1);
     }
 
-    .brand {
+    .brand-lockup {
       gap: 0.25rem;
       font-size: var(--text-xs);
       line-height: 1;
@@ -118,12 +168,25 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
       width: 2.25rem;
     }
 
-    ul {
-      gap: var(--space-3);
+    .nav-list {
+      gap: 0;
     }
 
-    nav a {
+    .nav-link {
+      min-height: 2.5rem;
+      padding-inline: 0.45rem;
       font-size: var(--text-xs);
+    }
+
+    .nav-link--section::after {
+      right: 0.45rem;
+      bottom: 0.5rem;
+      left: 0.45rem;
+    }
+
+    .nav-link--channel {
+      min-width: 0;
+      padding-inline: 0.6rem;
     }
   }
 
@@ -132,8 +195,16 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
       gap: var(--space-5);
     }
 
-    ul {
-      gap: clamp(1.25rem, 3vw, 2.5rem);
+    .nav-list {
+      gap: var(--space-3);
+    }
+
+    .nav-link {
+      padding-inline: 0.75rem;
+    }
+
+    .nav-link--channel {
+      min-width: 7.25rem;
     }
   }
 </style>
