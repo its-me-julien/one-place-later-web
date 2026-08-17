@@ -818,7 +818,7 @@ Branding exists to strengthen the experience, not compete with it.
 
 ### Channel description
 
-Based in Seoul, I make films about ordinary life in motion: routines, food, weather, small escapes, and the occasional long way round.
+Based in Seoul, I make films about ordinary life in motion: routines, food, night rides, small escapes, and the occasional long way round.
 
 Korea is home. The rest happens one place later.
 
