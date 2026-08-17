@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later blank scene direction card</title>
+  <desc id="description">An editable production card for scene purpose, change, action, evidence, sound, connections, discoveries and completion.</desc>
+  <rect width="1200" height="1600" fill="#F2EFE7" />
+  <style>
+    .label{fill:#923D2D;font:500 18px 'Pretendard Variable',Pretendard,Arial,sans-serif;letter-spacing:2px}.title{fill:#1A1A18;font:500 56px 'Pretendard Variable',Pretendard,Arial,sans-serif;letter-spacing:-2px}.field{fill:#57544F;font:500 17px 'Pretendard Variable',Pretendard,Arial,sans-serif;letter-spacing:1.5px}.prompt{fill:#1A1A18;font:500 25px 'Pretendard Variable',Pretendard,Arial,sans-serif}.hint{fill:#8C8B84;font:400 20px 'Pretendard Variable',Pretendard,Arial,sans-serif}.line{stroke:#B9B6AE;stroke-width:2}.route{fill:none;stroke:#57544F;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.box{fill:none;stroke:#8C8B84;stroke-width:2}
+  </style>
+  <circle cx="72" cy="72" r="10" fill="#923D2D" />
+  <path class="route" d="M104 72h115c42 0 44-48 86-48h54m-26-22 26 22-26 22" />
+  <text class="label" x="72" y="144">SCENE DIRECTION CARD</text>
+  <text class="title" x="72" y="220">Scene ____ · ____________________</text>
+  <text class="hint" x="72" y="265">Location ____________________   Film position ____________________</text>
+  <line class="line" x1="72" y1="310" x2="1128" y2="310" />
+
+  <text class="field" x="72" y="360">PRIMARY JOB</text>
+  <text class="hint" x="72" y="405">Orient · Advance · Reveal · Contrast · Change · Payoff · Resolve</text>
+  <line class="line" x1="72" y1="445" x2="1128" y2="445" />
+
+  <text class="field" x="72" y="500">BEGINS</text>
+  <text class="prompt" x="72" y="550">________________________________</text>
+  <path class="route" d="M500 535h170m-26-22 26 22-26 22" />
+  <text class="field" x="720" y="500">ENDS</text>
+  <text class="prompt" x="720" y="550">________________________</text>
+  <line class="line" x1="72" y1="600" x2="1128" y2="600" />
+
+  <text class="field" x="72" y="655">ACTION TO FOLLOW</text>
+  <text class="hint" x="72" y="700">What genuinely happens from beginning to end?</text>
+  <line class="line" x1="72" y1="750" x2="1128" y2="750" />
+  <line class="line" x1="72" y1="795" x2="1128" y2="795" />
+
+  <text class="field" x="72" y="850">EVIDENCE TO CAPTURE</text>
+  <rect class="box" x="72" y="890" width="26" height="26"/><text class="prompt" x="118" y="912">Establish</text>
+  <rect class="box" x="300" y="890" width="26" height="26"/><text class="prompt" x="346" y="912">Action</text>
+  <rect class="box" x="510" y="890" width="26" height="26"/><text class="prompt" x="556" y="912">Detail</text>
+  <rect class="box" x="710" y="890" width="26" height="26"/><text class="prompt" x="756" y="912">Presence</text>
+  <rect class="box" x="950" y="890" width="26" height="26"/><text class="prompt" x="996" y="912">Exit</text>
+  <line class="line" x1="72" y1="965" x2="1128" y2="965" />
+
+  <text class="field" x="72" y="1020">SOUND TRANSITION</text>
+  <text class="hint" x="72" y="1065">________________ → ________________</text>
+  <text class="field" x="640" y="1020">CLEAN SOUND TO PROTECT</text>
+  <text class="hint" x="640" y="1065">________________________________</text>
+  <line class="line" x1="72" y1="1115" x2="1128" y2="1115" />
+
+  <text class="field" x="72" y="1170">CONNECTION</text>
+  <text class="hint" x="72" y="1215">Into scene ____________________   Out of scene ____________________</text>
+  <line class="line" x1="72" y1="1265" x2="1128" y2="1265" />
+
+  <text class="field" x="72" y="1320">WHAT I NOTICED</text>
+  <line class="line" x1="72" y1="1370" x2="1128" y2="1370" />
+  <line class="line" x1="72" y1="1415" x2="1128" y2="1415" />
+
+  <rect x="72" y="1460" width="1056" height="90" fill="#1A1A18" />
+  <text class="label" x="104" y="1500">THE SCENE IS SAFE WHEN</text>
+  <text x="104" y="1533" fill="#F2EFE7" font-family="Pretendard Variable, Pretendard, Arial, sans-serif" font-size="21">______________________________________________________________</text>
+</svg>

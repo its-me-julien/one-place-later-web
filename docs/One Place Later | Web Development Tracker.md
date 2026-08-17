@@ -100,6 +100,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Brand assets | Added route-led Notice / Detail and Return / Callback marks plus a flexible Distance / Progress strip, with downloadable SVG assets and clear production-use boundaries. | Release record |
 | 2026-08-17 | Creative Field Guide | Expanded Section 30 into a fuller orientation toolkit with departure, threshold and return locations; progress and return maps; elapsed, waiting and local-time treatments; and six practical supporting states. | Release record |
 | 2026-08-17 | Creative Field Guide | Replaced the default opening formula with six story-led opening shapes, made runtime and graphics need-led, consolidated planning into one canonical brief, separated enduring camera roles from the current kit appendix, and reframed away-from-home contrasts as specific lived transitions. | Release record |
+| 2026-08-17 | Creative Field Guide | Added a scene-level directing tool to Section 36 with a completed Road-to-River example, coverage and sound safeguards, a completion test, and an editable blank SVG for field or Figma use. | Release record |
 
 ---
 

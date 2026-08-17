@@ -1941,6 +1941,37 @@ version: v2.0
 <p class="guide-label">Brief rule</p>
 <p class="guide-takeaway__statement">Keep pre-production realistic. <span>Do not overengineer an ordinary day.</span></p>
 </div>
+
+<div class="guide-scene-tool" aria-labelledby="scene-direction-title">
+<header class="guide-scene-tool__introduction">
+<div><p class="guide-label">Scene-level directing tool</p><h3 id="scene-direction-title">Direct the change.<br />Capture the evidence.</h3></div>
+<p>Use one card for each structural scene—not every fragment. It translates the film brief into what must be experienced, heard and safely brought back.</p>
+</header>
+
+<article class="guide-scene-card">
+<header><div><span>Scene · 03</span><h4>Road becomes river</h4><p>Gangnam → Han River</p></div><strong>Create contrast</strong></header>
+
+<div class="guide-scene-card__change" aria-label="Scene begins with traffic, vigilance and compressed roads and ends with wind, open path and physical release">
+<div><span>Begins</span><strong>Traffic · vigilance<br />compressed roads</strong></div><b aria-hidden="true">→</b><div><span>Ends</span><strong>Wind · open path<br />physical release</strong></div>
+</div>
+
+<section class="guide-scene-card__action"><span>Action to follow</span><p>Leave the road, descend toward the Han and continue along the river path.</p></section>
+
+<section class="guide-scene-card__evidence"><span>Evidence to capture</span><ul><li><i aria-hidden="true"></i><div><strong>Establish</strong><small>Cyclist contained by traffic and buildings.</small></div></li><li><i aria-hidden="true"></i><div><strong>Action</strong><small>Complete road-to-path transition.</small></div></li><li><i aria-hidden="true"></i><div><strong>Detail</strong><small>Hands loosen on the handlebars.</small></div></li><li><i aria-hidden="true"></i><div><strong>Presence</strong><small>Creator riding within the open environment.</small></div></li><li><i aria-hidden="true"></i><div><strong>Exit</strong><small>Bicycle continues beside the river.</small></div></li></ul></section>
+
+<div class="guide-scene-card__production"><section><span>Sound</span><p><strong>Traffic → tyres and wind</strong>Protect 20 seconds of uninterrupted river ambience.</p></section><section><span>Connection</span><p><strong>In:</strong> traffic continues from the previous scene.<br /><strong>Out:</strong> freewheel becomes café grinder.</p></section></div>
+
+<section class="guide-scene-card__notice"><span>What I noticed</span><p>The shoulders drop before the skyline opens.</p></section>
+<footer><span>The scene is safe when</span><p>The spatial and emotional change is visible, creator presence is covered and the sound transition is clean.</p></footer>
+</article>
+
+<div class="guide-scene-tool__use">
+<div><p class="guide-label">Use four to seven cards</p><p>Beginning · first movement · obstacle or contrast · change · payoff · return or resolution. Leave small discoveries spontaneous.</p></div>
+<a href="/one-place-later-scene-direction-card.svg" download>Download blank Scene Direction Card <span>Editable SVG ↓</span></a>
+</div>
+
+<p class="guide-motion-language__rule"><strong>Stop when the scene is safe.</strong> The card protects the story from missing coverage and protects the day from endless filming.</p>
+</div>
 </div>
 </section>
 
