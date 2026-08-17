@@ -856,230 +856,234 @@ version: v2.0
 
 ---
 
-## 19. Sound Philosophy
+<section id="19-sound-philosophy" class="guide-chapter guide-chapter--sound" aria-labelledby="sound-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">19</p>
+<div>
+<h2 id="sound-title">Sound Philosophy</h2>
+<p class="guide-chapter__summary">Real environmental sound is one of the channel’s main creative signatures.</p>
+</div>
+</header>
 
-Sound is one of the channel's main creative signatures.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">First priority</p>
+<p>Let the viewer hear the place. <span>Do not fill every moment.</span></p>
+</div>
 
-Priority:
+<div class="guide-sound-fields">
+<div>
+<p class="guide-label">At home in Korea</p>
+<ul class="guide-observation-list">
+<li>traffic and tyres</li>
+<li>freewheel and subway</li>
+<li>river, birds and rain</li>
+<li>elevators and café ambience</li>
+<li>keyboard sounds</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">While travelling</p>
+<ul class="guide-observation-list">
+<li>airport ambience and train sounds</li>
+<li>car doors, road noise and markets</li>
+<li>church bells, cicadas, sea and wind</li>
+<li>plates, glasses and family conversation</li>
+<li>street ambience and station announcements</li>
+</ul>
+</div>
+</div>
 
-### 1. Real environmental sound
-
-Examples in Korea:
-
-traffic\
-tyres\
-freewheel\
-subway\
-river\
-birds\
-rain\
-elevators\
-café ambience\
-keyboard sounds
-
-Examples while travelling:
-
-airport ambience\
-train sounds\
-car doors\
-road noise\
-markets\
-church bells\
-cicadas\
-sea\
-wind\
-plates\
-glasses\
-family conversation\
-street ambience\
-station announcements
-
-Viewers should regularly be allowed to simply hear the place.
-
----
-
-## 20. Music
-
-Music supports:
-
-movement\
-emotion\
-progression\
-release\
-arrival\
-reflection
-
-It should not run continuously.
-
-Real sound and silence make music stronger when it returns.
-
-Likely musical direction:
-
-restrained electronic\
-gentle indie\
-warm ambient\
-subtle rhythmic tracks\
-occasional understated jazz or groove
-
-Avoid stereotypical musical shorthand for countries.
-
-No accordion simply because we are in France.
-
-No traditional Korean cue simply because we are in Korea.
-
-Music serves mood.
-
-Not geography.
+<div class="guide-takeaway">
+<p class="guide-label">The sound test</p>
+<p class="guide-takeaway__statement">Viewers should regularly be allowed to simply <span>hear the place.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 21. Sound Bridges
+<section id="20-music" class="guide-chapter guide-chapter--music" aria-labelledby="music-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">20</p>
+<div>
+<h2 id="music-title">Music</h2>
+<p class="guide-chapter__summary">Use music to deepen a shift; leave space for real sound and silence.</p>
+</div>
+</header>
 
-Sound bridges should become a recurring signature.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">What music can support</p>
+<ol class="guide-opening-sequence guide-opening-sequence--music" aria-label="Music roles">
+<li>movement</li>
+<li>emotion</li>
+<li>progression</li>
+<li>release</li>
+<li>arrival</li>
+<li>reflection</li>
+</ol>
+<p class="guide-declaration__support">It should not run continuously. Real sound and silence make music stronger when it returns.</p>
+</div>
 
-Examples:
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Likely direction</p>
+<ul class="guide-checklist">
+<li>restrained electronic</li>
+<li>gentle indie</li>
+<li>warm ambient</li>
+<li>subtle rhythmic tracks</li>
+<li>occasional understated jazz or groove</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>continuous music</li>
+<li>accordion simply because the film is in France</li>
+<li>traditional Korean cues simply because the film is in Korea</li>
+<li>any shorthand that flattens a place into a stereotype</li>
+</ul>
+</div>
+</div>
 
-bike freewheel → coffee grinder
-
-traffic → river wind
-
-plane cabin → European street
-
-train wheels → car wheels
-
-market chatter → family lunch
-
-sea waves → shower
-
-pan sizzling → restaurant kitchen
-
-elevator chime → café door
-
-These transitions should feel authored without becoming flashy.
-
----
-
-## 22. On-Screen Text
-
-Text is a second editorial voice.
-
-It should add something the image or narration is not already saying.
-
-Possible uses:
-
-dry observations\
-small jokes\
-distance\
-location\
-personal history\
-context\
-state changes\
-small factual information
-
-Examples:
-
-**Saturday office**
-
-**Distance remaining: 10 km**
-
-**My very unprofessional camera crew**
-
-**This bike followed me from the UK → Singapore → Korea**
-
-**First coffee back in France**
-
-**When cycling becomes fun**
-
-**We have absolutely no plan for lunch**
-
-Text should feel like notes written in the margin of the film.
-
-### Text rules
-
-Use:
-
-one primary typeface\
-simple hierarchy\
-restrained animation\
-small scale\
-consistent placement\
-warm white or neutral treatment
-
-Avoid:
-
-giant captions\
-bouncing text\
-multiple fonts\
-emoji-heavy graphics\
-repeating narration\
-constant callouts
-
-Usually aim for roughly 5 to 8 editorial callouts per vlog.
-
-Location cards, subtitles and maps are separate.
+<div class="guide-takeaway">
+<p class="guide-label">Selection rule</p>
+<p class="guide-takeaway__statement">Music serves mood. <span>Not geography.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 23. Brand Graphic Language
+<section id="21-sound-bridges" class="guide-chapter guide-chapter--sound-bridges" aria-labelledby="sound-bridges-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">21</p>
+<div>
+<h2 id="sound-bridges-title">Sound Bridges</h2>
+<p class="guide-chapter__summary">A recurring way to carry the viewer between places without forcing the transition.</p>
+</div>
+</header>
 
-The main graphic device is:
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">A recurring signature</p>
+<p>Let one sound resolve into another. <span>The edit should feel authored, not flashy.</span></p>
+</div>
 
-### →
+<ol class="guide-sound-bridges" aria-label="Sound bridge examples">
+<li><span>bike freewheel</span><b aria-hidden="true">→</b><strong>coffee grinder</strong></li>
+<li><span>traffic</span><b aria-hidden="true">→</b><strong>river wind</strong></li>
+<li><span>plane cabin</span><b aria-hidden="true">→</b><strong>European street</strong></li>
+<li><span>train wheels</span><b aria-hidden="true">→</b><strong>car wheels</strong></li>
+<li><span>market chatter</span><b aria-hidden="true">→</b><strong>family lunch</strong></li>
+<li><span>sea waves</span><b aria-hidden="true">→</b><strong>shower</strong></li>
+<li><span>pan sizzling</span><b aria-hidden="true">→</b><strong>restaurant kitchen</strong></li>
+<li><span>elevator chime</span><b aria-hidden="true">→</b><strong>café door</strong></li>
+</ol>
 
-The arrow represents:
+<div class="guide-takeaway">
+<p class="guide-label">Transition rule</p>
+<p class="guide-takeaway__statement">A bridge should make the next place feel <span>already connected to the last.</span></p>
+</div>
+</div>
+</section>
 
-movement\
-sequence\
-transition\
-change\
-arrival
+---
 
-Examples:
+<section id="22-on-screen-text" class="guide-chapter guide-chapter--text" aria-labelledby="text-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">22</p>
+<div>
+<h2 id="text-title">On-Screen Text</h2>
+<p class="guide-chapter__summary">A second editorial voice, used only when the image or narration cannot say it better.</p>
+</div>
+</header>
 
-Gangnam → Han River
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">The role of text</p>
+<p>It should feel like a note written <span>in the margin of the film.</span></p>
+</div>
 
-work → weekend
+<div class="guide-text-examples" aria-label="Examples of editorial on-screen text">
+<p>Saturday office</p>
+<p>Distance remaining: 10 km</p>
+<p>My very unprofessional camera crew</p>
+<p>This bike followed me from the UK <span aria-hidden="true">→</span> Singapore <span aria-hidden="true">→</span> Korea</p>
+<p>First coffee back in France</p>
+<p>When cycling becomes fun</p>
+<p>We have absolutely no plan for lunch</p>
+</div>
 
-Seoul → Amsterdam
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Use for</p>
+<ul class="guide-checklist">
+<li>dry observations and small jokes</li>
+<li>distance, location and personal history</li>
+<li>context, state changes and small factual information</li>
+<li>one primary typeface, simple hierarchy and consistent placement</li>
+<li>small scale, restrained animation, warm white or neutral treatment</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>giant captions or bouncing text</li>
+<li>multiple fonts or emoji-heavy graphics</li>
+<li>repeating narration</li>
+<li>constant callouts</li>
+</ul>
+</div>
+</div>
 
-35°C → finally tolerable
+<div class="guide-takeaway">
+<p class="guide-label">Frequency</p>
+<p class="guide-takeaway__statement">Aim for roughly five to eight editorial callouts per vlog. <span>Location cards, subtitles and maps are separate.</span></p>
+</div>
+</div>
+</section>
 
-The arrow is not a logo.
+---
 
-It is part of the channel's syntax.
+<section id="23-brand-graphic-language" class="guide-chapter guide-chapter--graphic-language" aria-labelledby="graphic-language-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">23</p>
+<div>
+<h2 id="graphic-language-title">Brand Graphic Language</h2>
+<p class="guide-chapter__summary">A small editorial syntax for movement, sequence, transition, change and arrival.</p>
+</div>
+</header>
 
-Use it sparingly.
+<div class="guide-chapter__content">
+<div class="guide-graphic-device">
+<p class="guide-label">Main graphic device</p>
+<p class="guide-graphic-device__arrow" aria-label="Arrow">→</p>
+<p>The arrow is not a logo. <span>It is part of the channel’s syntax.</span></p>
+</div>
 
-### Colour
+<div class="guide-graphic-examples" aria-label="Arrow usage examples">
+<p>Gangnam <span aria-hidden="true">→</span> Han River</p>
+<p>work <span aria-hidden="true">→</span> weekend</p>
+<p>Seoul <span aria-hidden="true">→</span> Amsterdam</p>
+<p>35°C <span aria-hidden="true">→</span> finally tolerable</p>
+</div>
 
-Keep graphics restrained.
+<div class="guide-colour-system" aria-label="Brand colour reference">
+<div><span class="guide-colour-system__swatch guide-colour-system__swatch--carbon" aria-hidden="true"></span><p><b>Carbon</b><span>#1A1A18</span></p></div>
+<div><span class="guide-colour-system__swatch guide-colour-system__swatch--paper" aria-hidden="true"></span><p><b>Paper</b><span>#F2EFE7</span></p></div>
+<div><span class="guide-colour-system__swatch guide-colour-system__swatch--stone" aria-hidden="true"></span><p><b>Stone</b><span>#8C8B84</span></p></div>
+<div><span class="guide-colour-system__swatch guide-colour-system__swatch--route" aria-hidden="true"></span><p><b>Route Red</b><span>#C95C43</span></p></div>
+</div>
 
-#### Carbon
-
-#1A1A18
-
-#### Paper
-
-#F2EFE7
-
-#### Stone
-
-#8C8B84
-
-#### Route Red
-
-#C95C43
-
-Route Red is an accent.
-
-Use it for:
-
-routes\
-arrows\
-map destinations\
-small highlights
-
-Do not colour-grade footage to match the graphic identity.
+<div class="guide-takeaway">
+<p class="guide-label">Colour rule</p>
+<p class="guide-takeaway__statement">Route Red is an accent for routes, arrows, map destinations and small highlights. <span>Do not colour-grade footage to match the identity.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
