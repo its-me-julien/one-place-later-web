@@ -3,4 +3,6 @@ dist/
 .astro/
 .wrangler/
 .env
+.DS_Store
+output/
 worker-configuration.d.ts

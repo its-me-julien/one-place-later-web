@@ -1,0 +1,26 @@
+@layer layout {
+  .l-wrapper {
+    width: min(calc(100% - (var(--gutter) * 2)), var(--width-page));
+    margin-inline: auto;
+  }
+}
+
+@layer utilities {
+  .u-skip-link {
+    position: fixed;
+    z-index: 100;
+    top: var(--space-3);
+    left: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-text-on-dark);
+    background: var(--color-text);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    transform: translateY(calc(-100% - var(--space-5)));
+    transition: transform var(--motion-fast) var(--ease-standard);
+  }
+
+  .u-skip-link:focus {
+    transform: translateY(0);
+  }
+}

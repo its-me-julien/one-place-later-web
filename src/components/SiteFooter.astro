@@ -1,0 +1,81 @@
+---
+const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
+---
+
+<footer class="site-footer" data-surface="dark">
+  <div class="l-wrapper inner">
+    <p class="brand">One Place Later</p>
+
+    <div class="details">
+      <p>Seoul, South Korea</p>
+      <a href={youtubeUrl} target="_blank" rel="me noopener">
+        YouTube <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <p class="copyright">© 2026</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding-block: var(--space-7) var(--space-6);
+  }
+
+  .inner {
+    display: grid;
+    gap: var(--space-7);
+  }
+
+  .brand {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-7);
+    color: color-mix(in srgb, var(--color-text-on-dark) 74%, transparent);
+    font-size: var(--text-sm);
+  }
+
+  a {
+    display: inline-flex;
+    gap: 0.3rem;
+    color: var(--color-text-on-dark);
+    text-underline-offset: 0.2em;
+  }
+
+  a span {
+    color: var(--color-accent);
+    transition: transform var(--motion-fast) var(--ease-standard);
+  }
+
+  a:hover span {
+    transform: translate(2px, -2px);
+  }
+
+  .copyright {
+    padding-top: var(--space-6);
+    border-top: 1px solid color-mix(in srgb, var(--color-text-on-dark) 20%, transparent);
+    color: color-mix(in srgb, var(--color-text-on-dark) 60%, transparent);
+    font-size: var(--text-xs);
+  }
+
+  @media (min-width: 48rem) {
+    .inner {
+      grid-template-columns: 1fr auto;
+      align-items: start;
+    }
+
+    .details {
+      justify-content: flex-end;
+    }
+
+    .copyright {
+      grid-column: 1 / -1;
+    }
+  }
+</style>
