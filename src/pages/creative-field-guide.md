@@ -1572,6 +1572,22 @@ version: v2.0
 <span class="guide-location-card__index">DESTINATION · 03</span>
 <div><strong>Aix-en-<br />Provence</strong><span>France</span></div>
 </div>
+<div class="guide-location-card guide-location-card--departure">
+<span class="guide-location-card__index">DEPARTURE · 06:40</span>
+<div><strong>Incheon<br />Airport</strong><span>Seoul → Amsterdam</span></div>
+<small>Doors close. Korea recedes.</small>
+</div>
+<div class="guide-location-card guide-location-card--threshold">
+<span class="guide-location-card__index">CHANGE · 09:12</span>
+<div><strong>City roads</strong><span>→ river path</span></div>
+<small>When cycling becomes fun</small>
+</div>
+<div class="guide-location-card guide-location-card--return">
+<span class="guide-location-card__dot" aria-hidden="true"></span>
+<span class="guide-location-card__index">HOME · 21:14</span>
+<div><strong>Gangnam</strong><span>Seoul · South Korea</span></div>
+<small>Back where we started.</small>
+</div>
 </div>
 </div>
 
@@ -1608,6 +1624,25 @@ version: v2.0
 </div>
 <p>Transit becomes part of the story.</p>
 </figure>
+
+<figure class="guide-map-card guide-map-card--progress">
+<figcaption><span>Route progress</span><strong>One useful measure</strong></figcaption>
+<div class="guide-progress-map" aria-label="Gangnam to Han River route with Yeouido waypoint, 10 kilometres remaining and 35 minutes travel time">
+<div><span>10 km remaining</span><small>35 min</small></div>
+<i aria-hidden="true"><b></b></i>
+<ol><li>Gangnam</li><li>Yeouido</li><li>Han River</li></ol>
+</div>
+<p>Use distance or time—only both when the combination changes the decision.</p>
+</figure>
+
+<figure class="guide-map-card guide-map-card--return">
+<figcaption><span>Return context</span><strong>The same route, read twice</strong></figcaption>
+<div class="guide-return-map" aria-label="Outward route from Gangnam to the Han River and return route home">
+<div><span>Out</span><b>Gangnam</b><i aria-hidden="true"></i><strong>Han River</strong></div>
+<div><span>Back</span><b>Han River</b><i aria-hidden="true"></i><strong>Gangnam</strong></div>
+</div>
+<p>Repeat geography only when the return reveals what changed.</p>
+</figure>
 </div>
 </div>
 
@@ -1633,6 +1668,21 @@ version: v2.0
 <strong>06</strong>
 <small>Aix-en-Provence</small>
 </div>
+<div class="guide-time-card guide-time-card--elapsed">
+<span>Elapsed</span>
+<strong>42 min</strong>
+<small>Gangnam → Han River</small>
+</div>
+<div class="guide-time-card guide-time-card--waiting">
+<span>Next departure</span>
+<strong>18 min</strong>
+<small>Brussels-Midi</small>
+</div>
+<div class="guide-time-card guide-time-card--return">
+<span>Local time</span>
+<strong>21:14</strong>
+<small>Back in Gangnam</small>
+</div>
 </div>
 </div>
 
@@ -1645,7 +1695,10 @@ version: v2.0
 <div class="guide-state-cards">
 <div><span>Route state</span><strong>In transit</strong><small>Amsterdam → Brussels</small></div>
 <div><span>Distance</span><strong>10 km</strong><small>remaining</small></div>
-<div><span>Change</span><strong>35°C → 27°C</strong><small>finally tolerable</small></div>
+<div><span>Travel time</span><strong>35 min</strong><small>by bicycle</small></div>
+<div><span>Threshold</span><strong>Road → river</strong><small>city pressure gives way</small></div>
+<div><span>Waiting</span><strong>18 min</strong><small>next train</small></div>
+<div><span>Return</span><strong>Back home</strong><small>Gangnam · 21:14</small></div>
 </div>
 </div>
 

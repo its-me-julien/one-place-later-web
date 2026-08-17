@@ -98,6 +98,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Brand assets | Redrew the Bicycle transport asset from scratch with a cleaner, mechanically legible right-facing city-bike silhouette. | Release record |
 | 2026-08-17 | Brand assets | Reduced the editorial callout system to the two production-useful marks—Tool and Tip or Info—and retired Location and Quote. | Release record |
 | 2026-08-17 | Brand assets | Added route-led Notice / Detail and Return / Callback marks plus a flexible Distance / Progress strip, with downloadable SVG assets and clear production-use boundaries. | Release record |
+| 2026-08-17 | Creative Field Guide | Expanded Section 30 into a fuller orientation toolkit with departure, threshold and return locations; progress and return maps; elapsed, waiting and local-time treatments; and six practical supporting states. | Release record |
 
 ---
 
