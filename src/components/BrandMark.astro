@@ -1,0 +1,72 @@
+---
+interface Props {
+  variant?: 'compact' | 'display';
+  tone?: 'paper' | 'carbon';
+}
+
+const { variant = 'compact', tone = 'paper' } = Astro.props;
+---
+
+<span class:list={['brand-mark', `brand-mark--${variant}`, `brand-mark--${tone}`]}>
+  <span class="brand-mark__name">One Place <span class="brand-mark__later">Later</span></span>
+  <span class="brand-mark__route" aria-hidden="true"></span>
+</span>
+
+<style>
+  .brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: inherit;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .brand-mark__later {
+    letter-spacing: -0.045em;
+  }
+
+  .brand-mark__route {
+    display: block;
+    width: 2.9rem;
+    aspect-ratio: 74 / 32;
+    background-color: var(--color-text-muted);
+    -webkit-mask: url('/one-place-later-route-arrow.svg') center / contain no-repeat;
+    mask: url('/one-place-later-route-arrow.svg') center / contain no-repeat;
+    transition:
+      background-color var(--motion-base) var(--ease-standard),
+      transform var(--motion-base) var(--ease-standard);
+  }
+
+  .brand-mark--display {
+    gap: 0.6rem;
+    font-size: var(--text-xl);
+  }
+
+  .brand-mark--display .brand-mark__route {
+    width: 3.75rem;
+  }
+
+  .brand-mark--carbon .brand-mark__route {
+    background-color: var(--color-text-on-dark);
+  }
+
+  :global(.brand-lockup:hover) .brand-mark__route,
+  :global(.brand-lockup:focus-visible) .brand-mark__route {
+    background-color: var(--color-accent-strong);
+    transform: translateX(3px);
+  }
+
+  @media (max-width: 24rem) {
+    .brand-mark--compact {
+      gap: 0.3rem;
+      font-size: var(--text-xs);
+    }
+
+    .brand-mark--compact .brand-mark__route {
+      width: 2.25rem;
+    }
+  }
+</style>

@@ -1,4 +1,6 @@
 ---
+import BrandMark from './BrandMark.astro';
+
 const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 const instagramUrl = 'https://www.instagram.com/oneplacelater';
 ---
@@ -6,7 +8,7 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
 <footer class="site-footer" data-surface="dark">
   <div class="l-wrapper inner">
     <div class="brand-block">
-      <p class="brand">One Place Later</p>
+      <BrandMark variant="display" tone="carbon" />
       <p class="brand-line">Ordinary life, noticed in motion.</p>
     </div>
 
@@ -40,13 +42,6 @@ const instagramUrl = 'https://www.instagram.com/oneplacelater';
   .inner {
     display: grid;
     gap: var(--space-7);
-  }
-
-  .brand {
-    font-size: var(--text-xl);
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    line-height: 1;
   }
 
   .brand-line,

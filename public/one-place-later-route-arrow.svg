@@ -1,12 +1,12 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 72 28"
+  viewBox="0 0 74 32"
   fill="none"
   aria-hidden="true"
 >
-  <circle cx="6" cy="18" r="3.25" fill="#c95c43" />
+  <circle cx="6" cy="25" r="3.25" fill="#c95c43" />
   <path
-    d="M14 18h14c6 0 8-8 14-8h16m-8-8 8 8-8 8"
+    d="M14 25h12.5c7 0 8-13 16-13H59m-8.5-8.5L59 12l-8.5 8.5"
     stroke="#c95c43"
     stroke-linecap="round"
     stroke-linejoin="round"

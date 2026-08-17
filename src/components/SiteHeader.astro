@@ -1,4 +1,6 @@
 ---
+import BrandMark from './BrandMark.astro';
+
 const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 
 const navigation = [
@@ -10,8 +12,7 @@ const navigation = [
 <header class="site-header">
   <div class="l-wrapper inner">
     <a class="brand-lockup" href="/" aria-label="One Place Later, home">
-      <span>One Place Later</span>
-      <span class="arrow-mark" aria-hidden="true"></span>
+      <BrandMark />
     </a>
 
     <nav aria-label="Primary navigation">
@@ -55,31 +56,8 @@ const navigation = [
   }
 
   .brand-lockup {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
     font-size: var(--text-sm);
-    font-weight: 600;
-    letter-spacing: -0.01em;
     text-decoration: none;
-  }
-
-  .arrow-mark {
-    display: block;
-    width: 2.75rem;
-    aspect-ratio: 72 / 28;
-    background-color: var(--color-text-muted);
-    -webkit-mask: url("/one-place-later-route-arrow.svg") center / contain no-repeat;
-    mask: url("/one-place-later-route-arrow.svg") center / contain no-repeat;
-    transition:
-      background-color var(--motion-base) var(--ease-standard),
-      transform var(--motion-base) var(--ease-standard);
-  }
-
-  .brand-lockup:hover .arrow-mark,
-  .brand-lockup:focus-visible .arrow-mark {
-    background-color: var(--color-accent-strong);
-    transform: translateX(3px);
   }
 
   .nav-list {
@@ -158,14 +136,7 @@ const navigation = [
     }
 
     .brand-lockup {
-      gap: 0.25rem;
       font-size: var(--text-xs);
-      line-height: 1;
-      white-space: nowrap;
-    }
-
-    .arrow-mark {
-      width: 2.25rem;
     }
 
     .nav-list {
