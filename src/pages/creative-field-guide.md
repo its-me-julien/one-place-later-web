@@ -1159,259 +1159,315 @@ version: v2.0
 
 ---
 
-## 24. Narration Voice
+<section id="24-narration-voice" class="guide-chapter guide-chapter--narration" aria-labelledby="narration-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">24</p>
+<div>
+<h2 id="narration-title">Narration Voice</h2>
+<p class="guide-chapter__summary">The creator thinking clearly after the event, not presenting while it happens.</p>
+</div>
+</header>
 
-Narration should sound like the creator thinking clearly after the event.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Before adding voice-over</p>
+<p>Does the image already tell us this? <span>If yes, cut the narration.</span></p>
+</div>
 
-It should be:
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">The voice is</p>
+<ul class="guide-checklist">
+<li>understated, observant and curious</li>
+<li>specific and conversational</li>
+<li>occasionally dry</li>
+<li>warm when appropriate</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">The voice is not</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>travel-brochure language or fake excitement</li>
+<li>artificial profundity</li>
+<li>cultural generalisations</li>
+<li>an explanation of obvious visuals</li>
+<li>YouTube host language</li>
+</ul>
+</div>
+</div>
 
-understated\
-observant\
-curious\
-specific\
-conversational\
-occasionally dry\
-warm when appropriate
+<div class="guide-voice-examples">
+<div>
+<p class="guide-label">Better · perspective</p>
+<blockquote>I don’t really enjoy cycling on the road, but cycling along the Han feels completely different.</blockquote>
+</div>
+<div>
+<p class="guide-label">Better · lived contrast</p>
+<blockquote>I’ve been coming to this part of France for years, but arriving from Seoul makes the quiet much more obvious.</blockquote>
+</div>
+<div class="guide-voice-examples__avoid">
+<p class="guide-label">Avoid · brochure voice</p>
+<blockquote>The beautiful south of France offers an unforgettable escape filled with charm and culture.</blockquote>
+</div>
+</div>
 
-Avoid:
-
-travel-brochure language\
-fake excitement\
-artificial profundity\
-cultural generalisations\
-explaining obvious visuals\
-YouTube host language
-
-Better:
-
-**I don't really enjoy cycling on the road, but cycling along the Han feels completely different.**
-
-Better:
-
-**I've been coming to this part of France for years, but arriving from Seoul makes the quiet much more obvious.**
-
-Worse:
-
-**The beautiful south of France offers an unforgettable escape filled with charm and culture.**
-
-### Narration rule
-
-Before adding VO, ask:
-
-**Does the image already tell us this?**
-
-If yes, cut the narration.
-
-Narration should add:
-
-context\
-perspective\
-meaning\
-personal history\
-humour\
-transition\
-information the viewer cannot see\
-a thought that changes how the viewer interprets the image
-
----
-
-## 25. One Place Later Language
-
-The channel name can occasionally become part of the editorial voice.
-
-Examples:
-
-**One coffee later**
-
-**One train later**
-
-**One hill later**
-
-**One very questionable lunch later**
-
-**One place later**
-
-Use this rarely.
-
-It should feel like a natural callback to the brand, not a required gimmick.
+<div class="guide-takeaway">
+<p class="guide-label">What narration earns</p>
+<p class="guide-takeaway__statement">Add context, perspective, history, humour or a thought that changes the image. <span>Say what the viewer cannot already see.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 26. Humour
+<section id="25-one-place-later-language" class="guide-chapter guide-chapter--language" aria-labelledby="language-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">25</p>
+<div>
+<h2 id="language-title">One Place Later Language</h2>
+<p class="guide-chapter__summary">An occasional callback to the name, used lightly enough to keep its personality.</p>
+</div>
+</header>
 
-Humour should be dry and incidental.
+<div class="guide-chapter__content">
+<div class="guide-language-sequence" aria-label="Examples of One Place Later language">
+<p><span>One</span> coffee later</p>
+<p><span>One</span> train later</p>
+<p><span>One</span> hill later</p>
+<p><span>One</span> very questionable lunch later</p>
+<p><span>One</span> place later</p>
+</div>
 
-It comes from:
-
-reality\
-self-awareness\
-contrast\
-timing\
-small frustrations\
-travel logistics\
-text observations
-
-One well-timed line is stronger than constant jokes.
-
-Do not manufacture comedy.
-
----
-
-## 27. Cultural Observation
-
-Cultural comparison is welcome when it comes from specific lived experience.
-
-Useful territory:
-
-pace\
-roads\
-cycling\
-food habits\
-opening hours\
-public space\
-seasonal conditions\
-driving\
-coffee culture\
-density\
-family life\
-shopping
-
-Use personal language:
-
-**After living in Seoul, I'd forgotten how quiet a small French town can become after lunch.**
-
-Avoid broad claims such as:
-
-**Koreans always…**
-
-**French people are…**
-
-Use:
-
-personal observation\
-specific examples\
-visible evidence\
-research where factual claims matter
-
-Comparison should reveal something.
-
-It should not become the channel format.
+<div class="guide-takeaway">
+<p class="guide-label">Frequency rule</p>
+<p class="guide-takeaway__statement">Use it rarely. <span>It should feel like a natural callback, not a required gimmick.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 28. Editing Rhythm
+<section id="26-humour" class="guide-chapter guide-chapter--humour" aria-labelledby="humour-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">26</p>
+<div>
+<h2 id="humour-title">Humour</h2>
+<p class="guide-chapter__summary">Dry, incidental and found in what actually happened.</p>
+</div>
+</header>
 
-The channel should feel calm but never static.
+<div class="guide-chapter__content">
+<div class="guide-declaration">
+<p class="guide-label">Where humour comes from</p>
+<p>Reality, self-awareness and timing. <span>Not a performance layered over the moment.</span></p>
+</div>
 
-### Faster
+<ul class="guide-humour-sources" aria-label="Sources of humour">
+<li><span>01</span>reality</li>
+<li><span>02</span>self-awareness</li>
+<li><span>03</span>contrast</li>
+<li><span>04</span>timing</li>
+<li><span>05</span>small frustrations</li>
+<li><span>06</span>travel logistics</li>
+<li><span>07</span>text observations</li>
+</ul>
 
-getting ready\
-packing\
-airport movement\
-logistics\
-city movement\
-road travel\
-activity changes\
-transitions
-
-### Slower
-
-river reveals\
-family meals\
-food\
-landscapes\
-quiet conversations\
-arrival\
-meaningful views\
-emotional payoff\
-final reflection
-
-Long shots are welcome when there is something worth observing.
-
-Do not confuse slowness with sophistication.
-
----
-
-## 29. Transitions
-
-Preferred:
-
-match action\
-sound bridge\
-visual similarity\
-door closing → door opening\
-entering → exiting frame\
-continuous movement\
-object matches\
-environmental contrast\
-light change\
-geography change
-
-Travel offers useful possibilities:
-
-airport door → hotel door
-
-train window → car window
-
-Korea night → Europe morning
-
-city street → countryside road
-
-suitcase closing → car boot opening
-
-Avoid relying on:
-
-preset transitions\
-spin effects\
-zoom effects\
-constant whip pans\
-excessive speed ramps
-
-Craft should be felt more than displayed.
+<div class="guide-takeaway">
+<p class="guide-label">Comic restraint</p>
+<p class="guide-takeaway__statement">One well-timed line is stronger than constant jokes. <span>Do not manufacture comedy.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 30. Location, Geography and Time
+<section id="27-cultural-observation" class="guide-chapter guide-chapter--culture" aria-labelledby="culture-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">27</p>
+<div>
+<h2 id="culture-title">Cultural Observation</h2>
+<p class="guide-chapter__summary">Specific lived experience can reveal a contrast without reducing a culture to a claim.</p>
+</div>
+</header>
 
-Travel requires stronger orientation than home videos.
+<div class="guide-chapter__content">
+<div class="guide-culture-statement">
+<p class="guide-label">Personal and particular</p>
+<blockquote>After living in Seoul, I’d forgotten how quiet a small French town can become after lunch.</blockquote>
+</div>
 
-The viewer should understand:
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Build the observation from</p>
+<ul class="guide-checklist">
+<li>personal experience</li>
+<li>specific examples</li>
+<li>visible evidence</li>
+<li>research where factual claims matter</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid broad claims</p>
+<ul class="guide-claim-avoid">
+<li>“Koreans always…”</li>
+<li>“French people are…”</li>
+</ul>
+</div>
+</div>
 
-where we are\
-where we are going\
-why we are going there\
-whether this is transit or destination\
-when the location changes
+<div class="guide-observation-territory">
+<p class="guide-label">Useful territory</p>
+<ul class="guide-observation-list">
+<li>pace</li><li>roads</li><li>cycling</li><li>food habits</li>
+<li>opening hours</li><li>public space</li><li>seasonal conditions</li><li>driving</li>
+<li>coffee culture</li><li>density</li><li>family life</li><li>shopping</li>
+</ul>
+</div>
 
-Useful tools:
+<div class="guide-takeaway">
+<p class="guide-label">Comparison rule</p>
+<p class="guide-takeaway__statement">Comparison should reveal something. <span>It should not become the channel format.</span></p>
+</div>
+</div>
+</section>
 
-location cards\
-road signs\
-station signs\
-train boards\
-restrained maps\
-landscape changes\
-narration\
-time cards
+---
 
-Do not make viewers work to understand the itinerary.
+<section id="28-editing-rhythm" class="guide-chapter guide-chapter--rhythm" aria-labelledby="rhythm-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">28</p>
+<div>
+<h2 id="rhythm-title">Editing Rhythm</h2>
+<p class="guide-chapter__summary">Calm but never static: pace follows what the viewer needs from the moment.</p>
+</div>
+</header>
 
-Do not turn the vlog into a navigation tutorial.
+<div class="guide-chapter__content">
+<div class="guide-rhythm-line" aria-label="Editing rhythm from faster to slower">
+<span>faster</span><i aria-hidden="true"></i><span>slower</span>
+</div>
 
-### Location cards
+<div class="guide-rhythm-pair">
+<div>
+<p class="guide-label">Move through</p>
+<ul class="guide-checklist">
+<li>getting ready and packing</li>
+<li>airport movement and logistics</li>
+<li>city movement and road travel</li>
+<li>activity changes and transitions</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Stay with</p>
+<ul class="guide-checklist">
+<li>river reveals, landscapes and food</li>
+<li>family meals and quiet conversations</li>
+<li>arrival and meaningful views</li>
+<li>emotional payoff and final reflection</li>
+</ul>
+</div>
+</div>
 
-Examples:
+<div class="guide-takeaway">
+<p class="guide-label">Duration rule</p>
+<p class="guide-takeaway__statement">Long shots are welcome when there is something worth observing. <span>Do not confuse slowness with sophistication.</span></p>
+</div>
+</div>
+</section>
 
-**채그로**\
-Check Grow
+---
 
-**Amsterdam**\
-Netherlands
+<section id="29-transitions" class="guide-chapter guide-chapter--transitions" aria-labelledby="transitions-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">29</p>
+<div>
+<h2 id="transitions-title">Transitions</h2>
+<p class="guide-chapter__summary">Connect scenes through action, sound, similarity or change—not an effect placed on top.</p>
+</div>
+</header>
 
-**Aix-en-Provence**\
-France
+<div class="guide-chapter__content">
+<ol class="guide-transition-routes" aria-label="Travel transition examples">
+<li><span>airport door</span><b aria-hidden="true">→</b><strong>hotel door</strong></li>
+<li><span>train window</span><b aria-hidden="true">→</b><strong>car window</strong></li>
+<li><span>Korea night</span><b aria-hidden="true">→</b><strong>Europe morning</strong></li>
+<li><span>city street</span><b aria-hidden="true">→</b><strong>countryside road</strong></li>
+<li><span>suitcase closing</span><b aria-hidden="true">→</b><strong>car boot opening</strong></li>
+</ol>
 
-Preserve local spelling where useful.
+<div class="guide-guideline-pair">
+<div>
+<p class="guide-label">Preferred craft</p>
+<ul class="guide-checklist">
+<li>match action and continuous movement</li>
+<li>sound bridges and visual similarity</li>
+<li>entering then exiting frame</li>
+<li>object matches and environmental contrast</li>
+<li>light or geography change</li>
+</ul>
+</div>
+<div>
+<p class="guide-label">Avoid relying on</p>
+<ul class="guide-checklist guide-checklist--avoid">
+<li>preset transitions</li>
+<li>spin or zoom effects</li>
+<li>constant whip pans</li>
+<li>excessive speed ramps</li>
+</ul>
+</div>
+</div>
+
+<div class="guide-takeaway">
+<p class="guide-label">Craft rule</p>
+<p class="guide-takeaway__statement">The connection should carry the viewer forward. <span>Craft should be felt more than displayed.</span></p>
+</div>
+</div>
+</section>
+
+---
+
+<section id="30-location-geography-and-time" class="guide-chapter guide-chapter--orientation" aria-labelledby="orientation-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">30</p>
+<div>
+<h2 id="orientation-title">Location, Geography and Time</h2>
+<p class="guide-chapter__summary">Give travel enough orientation to feel effortless, without turning the film into directions.</p>
+</div>
+</header>
+
+<div class="guide-chapter__content">
+<div class="guide-orientation-questions">
+<p class="guide-label">The viewer should understand</p>
+<ol>
+<li><span>01</span>Where are we?</li>
+<li><span>02</span>Where are we going?</li>
+<li><span>03</span>Why are we going there?</li>
+<li><span>04</span>Is this transit or destination?</li>
+<li><span>05</span>When did the location change?</li>
+</ol>
+</div>
+
+<div class="guide-location-cards" aria-label="Location card examples">
+<div><strong lang="ko">채그로</strong><span>Check Grow</span></div>
+<div><strong>Amsterdam</strong><span>Netherlands</span></div>
+<div><strong>Aix-en-Provence</strong><span>France</span></div>
+</div>
+
+<div class="guide-orientation-tools">
+<p class="guide-label">Useful tools</p>
+<ul class="guide-observation-list">
+<li>location cards</li><li>road signs</li><li>station signs</li><li>train boards</li>
+<li>restrained maps</li><li>landscape changes</li><li>narration</li><li>time cards</li>
+</ul>
+</div>
+
+<div class="guide-takeaway">
+<p class="guide-label">Orientation rule</p>
+<p class="guide-takeaway__statement">Do not make viewers work to understand the itinerary. <span>Do not turn the vlog into a navigation tutorial.</span></p>
+<p>Preserve local spelling where useful.</p>
+</div>
+</div>
+</section>
 
 ### Maps
 

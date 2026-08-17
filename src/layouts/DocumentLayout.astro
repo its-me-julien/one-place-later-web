@@ -1407,6 +1407,263 @@ const { frontmatter } = Astro.props;
     color: var(--color-accent-strong);
   }
 
+  .guide-body :global(.guide-voice-examples) {
+    display: grid;
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-voice-examples > div) {
+    padding-block: var(--space-6);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-voice-examples blockquote),
+  .guide-body :global(.guide-culture-statement blockquote) {
+    max-width: 36rem;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    border: 0;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+  }
+
+  .guide-body :global(.guide-voice-examples__avoid blockquote) {
+    color: var(--color-text-muted);
+  }
+
+  .guide-body :global(.guide-language-sequence) {
+    display: grid;
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-language-sequence p) {
+    margin: 0;
+    padding-block: var(--space-4);
+    border-bottom: var(--border-default);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+
+  .guide-body :global(.guide-language-sequence p span) {
+    color: var(--color-accent-strong);
+  }
+
+  .guide-body :global(.guide-humour-sources) {
+    display: grid;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-top: var(--border-default);
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-humour-sources li) {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: var(--space-3);
+    margin: 0;
+    padding-block: var(--space-3);
+    border-bottom: var(--border-default);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .guide-body :global(.guide-humour-sources li span) {
+    color: var(--color-accent-strong);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    line-height: 2;
+  }
+
+  .guide-body :global(.guide-culture-statement) {
+    padding-block: var(--space-7);
+    border-top: var(--border-default);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-claim-avoid) {
+    display: grid;
+    gap: var(--space-3);
+    max-width: none;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-claim-avoid li) {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--text-lg);
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .guide-body :global(.guide-observation-territory),
+  .guide-body :global(.guide-orientation-tools) {
+    padding-block: var(--space-6);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-rhythm-line) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-3);
+    padding-block: var(--space-6);
+    border-top: var(--border-default);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-rhythm-line span) {
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .guide-body :global(.guide-rhythm-line i) {
+    position: relative;
+    display: block;
+    height: 0.15rem;
+    border-radius: 999px;
+    background: var(--color-border);
+  }
+
+  .guide-body :global(.guide-rhythm-line i::before),
+  .guide-body :global(.guide-rhythm-line i::after) {
+    position: absolute;
+    top: 50%;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    content: '';
+    transform: translateY(-50%);
+  }
+
+  .guide-body :global(.guide-rhythm-line i::before) {
+    left: 20%;
+    background: var(--color-accent-strong);
+  }
+
+  .guide-body :global(.guide-rhythm-line i::after) {
+    right: 0;
+    border: 1px solid var(--color-text-muted);
+    background: var(--color-surface);
+  }
+
+  .guide-body :global(.guide-rhythm-pair) {
+    display: grid;
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-rhythm-pair > div) {
+    padding-block: var(--space-6);
+  }
+
+  .guide-body :global(.guide-rhythm-pair > div + div) {
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-transition-routes) {
+    display: grid;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-top: var(--border-default);
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-transition-routes li) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: var(--space-3);
+    margin: 0;
+    padding-block: var(--space-3);
+    border-bottom: var(--border-default);
+    line-height: 1.4;
+  }
+
+  .guide-body :global(.guide-transition-routes span) {
+    color: var(--color-text-muted);
+  }
+
+  .guide-body :global(.guide-transition-routes b) {
+    color: var(--color-accent-strong);
+    font-weight: 400;
+  }
+
+  .guide-body :global(.guide-transition-routes strong) {
+    font-weight: 500;
+  }
+
+  .guide-body :global(.guide-orientation-questions) {
+    padding-block: var(--space-6);
+    border-top: var(--border-default);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-orientation-questions ol) {
+    display: grid;
+    max-width: none;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guide-body :global(.guide-orientation-questions li) {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: var(--space-3);
+    margin: 0;
+    padding-block: var(--space-3);
+    border-top: var(--border-default);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .guide-body :global(.guide-orientation-questions li span) {
+    color: var(--color-accent-strong);
+    font-size: var(--text-xs);
+    letter-spacing: 0.07em;
+    line-height: 2;
+  }
+
+  .guide-body :global(.guide-location-cards) {
+    display: grid;
+    margin-block: var(--space-7);
+    border-top: var(--border-default);
+  }
+
+  .guide-body :global(.guide-location-cards > div) {
+    display: flex;
+    min-height: 8rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-block: var(--space-4);
+    border-bottom: var(--border-default);
+  }
+
+  .guide-body :global(.guide-location-cards strong) {
+    font-size: var(--text-xl);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .guide-body :global(.guide-location-cards span) {
+    margin-top: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+
   .guide-body :global(.guide-direct-camera > div > p:nth-child(2)) {
     max-width: 34rem;
     margin-top: var(--space-4);
@@ -1758,6 +2015,85 @@ const { frontmatter } = Astro.props;
     .guide-body :global(.guide-asset-downloads) {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: var(--space-7);
+    }
+
+    .guide-body :global(.guide-voice-examples) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-voice-examples > div) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-voice-examples > div:nth-child(2)) {
+      padding-right: 0;
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-voice-examples > div:nth-child(3)) {
+      grid-column: 1 / -1;
+      padding-right: 0;
+    }
+
+    .guide-body :global(.guide-language-sequence p) {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+    }
+
+    .guide-body :global(.guide-humour-sources) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-humour-sources li:nth-child(odd)) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-humour-sources li:nth-child(even)) {
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-rhythm-pair) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-rhythm-pair > div) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-rhythm-pair > div + div) {
+      padding-right: 0;
+      padding-left: var(--space-6);
+      border-top: 0;
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-transition-routes) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-transition-routes li:nth-child(odd)) {
+      padding-right: var(--space-6);
+    }
+
+    .guide-body :global(.guide-transition-routes li:nth-child(even)) {
+      padding-left: var(--space-6);
+      border-left: var(--border-default);
+    }
+
+    .guide-body :global(.guide-location-cards) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-body :global(.guide-location-cards > div) {
+      padding-right: var(--space-5);
+      border-bottom: 0;
+    }
+
+    .guide-body :global(.guide-location-cards > div + div) {
+      padding-right: 0;
+      padding-left: var(--space-5);
+      border-left: var(--border-default);
     }
   }
 </style>
