@@ -3,7 +3,6 @@ import { Image } from 'astro:assets';
 import heroImage from '../assets/images/hero-seoul-motion.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 const title = 'One Place Later';
 const description =
   'Films about ordinary life in motion, from Seoul to wherever comes next.';
@@ -37,7 +36,7 @@ const heroAlt =
 
   <section class="about" id="about" aria-labelledby="about-title">
     <div class="l-wrapper about-grid">
-      <p class="eyebrow">About the films <span aria-hidden="true">→</span></p>
+      <p class="eyebrow">About the films</p>
 
       <div class="copy">
         <h2 id="about-title">
@@ -49,9 +48,6 @@ const heroAlt =
           <span class="route-signoff__arrow" aria-hidden="true">→</span>
           <span>The rest happens one place later.</span>
         </p>
-        <a class="youtube-link" href={youtubeUrl} target="_blank" rel="me noopener">
-          Watch on YouTube <span aria-hidden="true">↗</span>
-        </a>
       </div>
     </div>
   </section>
@@ -125,10 +121,6 @@ const heroAlt =
     text-transform: uppercase;
   }
 
-  .eyebrow span {
-    color: var(--color-accent-strong);
-  }
-
   .copy {
     max-width: var(--width-content);
   }
@@ -164,26 +156,6 @@ const heroAlt =
   .route-signoff__arrow {
     color: var(--color-accent-strong);
     font-weight: 500;
-  }
-
-  .youtube-link {
-    display: inline-flex;
-    min-height: 2.75rem;
-    align-items: center;
-    gap: var(--space-2);
-    margin-top: var(--space-7);
-    font-size: var(--text-sm);
-    font-weight: 500;
-    text-decoration-thickness: 1px;
-  }
-
-  .youtube-link span {
-    color: var(--color-accent-strong);
-    transition: transform var(--motion-fast) var(--ease-standard);
-  }
-
-  .youtube-link:hover span {
-    transform: translate(3px, -3px);
   }
 
   @keyframes hero-image-in {
