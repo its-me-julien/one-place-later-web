@@ -37,15 +37,20 @@ const heroAlt =
             <path
               class="hero-route__path"
               pathLength="1"
-              d="M 11 10 H 38 C 49 10 48 4 59 4 H 77 C 88 4 88 10 101 10"
+              d="M 11 12 H 40 C 49 12 50 5 59 5 H 78 C 88 5 89 12 101 12"
             />
-            <circle class="hero-route__destination-dot" cx="106" cy="10" r="2" />
+            <circle class="hero-route__destination-dot" cx="106" cy="12" r="1.75" />
           </svg>
         </span>
         <span class="hero-route__place hero-route__destination">Han River</span>
       </p>
-      <h1 class="hero-reveal">
-        <span>One Place Later</span>
+      <h1 aria-label="One Place Later">
+        <span class="hero-title__line" aria-hidden="true">
+          <span>One Place</span>
+        </span>
+        <span class="hero-title__line" aria-hidden="true">
+          <span>Later</span>
+        </span>
       </h1>
       <p class="hero-reveal hero-subtitle" lang="ko">
         <span>원 플레이스 레이터</span>
@@ -93,7 +98,7 @@ const heroAlt =
     max-width: none;
     object-fit: cover;
     object-position: 62% center;
-    animation: hero-image-in 1500ms var(--ease-standard) both;
+    animation: hero-image-in 1600ms var(--ease-standard) both;
   }
 
   .hero-copy {
@@ -135,11 +140,13 @@ const heroAlt =
   }
 
   .hero-route__origin {
-    animation: route-place-in 320ms 100ms var(--ease-standard) both;
+    --route-place-offset: -4px;
+    animation: route-place-in 300ms 80ms var(--ease-standard) both;
   }
 
   .hero-route__destination {
-    animation: route-place-in 320ms 820ms var(--ease-standard) both;
+    --route-place-offset: 4px;
+    animation: route-place-in 300ms 800ms var(--ease-standard) both;
   }
 
   .hero-route__line {
@@ -158,42 +165,50 @@ const heroAlt =
   .hero-route__path {
     fill: none;
     stroke: color-mix(in srgb, var(--color-text-on-dark) 72%, transparent);
-    stroke-width: 1.5;
+    stroke-width: 1.6;
     stroke-linecap: round;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: route-draw 650ms 300ms var(--ease-standard) forwards;
+    animation: route-draw 640ms 240ms var(--ease-standard) forwards;
   }
 
   .hero-route__origin-dot,
   .hero-route__destination-dot {
-    fill: var(--color-accent);
     transform-box: fill-box;
     transform-origin: center;
   }
 
   .hero-route__origin-dot {
-    animation: route-dot-in 260ms 140ms var(--ease-standard) both;
+    fill: var(--color-accent);
+    animation: route-dot-in 240ms 100ms var(--ease-standard) both;
   }
 
   .hero-route__destination-dot {
-    animation: route-dot-in 260ms 850ms var(--ease-standard) both;
+    fill: color-mix(in srgb, var(--color-text-on-dark) 78%, transparent);
+    animation: route-dot-in 220ms 820ms var(--ease-standard) both;
   }
 
+  .hero-title__line,
   .hero-reveal {
+    display: block;
     overflow: hidden;
   }
 
+  .hero-title__line > span,
   .hero-reveal > span {
     display: block;
-    animation: hero-type-in 620ms 780ms var(--ease-standard) both;
+    animation: hero-type-in 560ms 680ms var(--ease-standard) both;
+  }
+
+  .hero-title__line:nth-child(2) > span {
+    animation-delay: 760ms;
   }
 
   .hero-subtitle > span {
-    animation-duration: 480ms;
-    animation-delay: 980ms;
+    animation-duration: 440ms;
+    animation-delay: 1020ms;
   }
 
   .about {
@@ -270,8 +285,8 @@ const heroAlt =
 
   @keyframes hero-image-in {
     from {
-      opacity: 0.74;
-      transform: scale(1.02);
+      opacity: 0.9;
+      transform: scale(1.018);
     }
 
     to {
@@ -283,7 +298,7 @@ const heroAlt =
   @keyframes route-place-in {
     from {
       opacity: 0;
-      transform: translateY(5px);
+      transform: translateX(var(--route-place-offset));
     }
 
     to {
@@ -327,6 +342,7 @@ const heroAlt =
     .hero-route__place,
     .hero-route__origin-dot,
     .hero-route__destination-dot,
+    .hero-title__line > span,
     .hero-reveal > span {
       animation: none;
     }

@@ -103,6 +103,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Creative Field Guide | Replaced the default opening formula with six story-led opening shapes, made runtime and graphics need-led, consolidated planning into one canonical brief, separated enduring camera roles from the current kit appendix, and reframed away-from-home contrasts as specific lived transitions. | Release record |
 | 2026-08-17 | Creative Field Guide | Added a scene-level directing tool to Section 36 with a completed Road-to-River example, coverage and sound safeguards, a completion test, and an editable blank SVG for field or Figma use. | Release record |
 | 2026-08-17 | Homepage motion | Replaced the generic hero fade with a one-time route-led entrance connecting Gangnam to the Han River, followed by the English and Hangul titles, with an immediate reduced-motion state. | Release record |
+| 2026-08-17 | Homepage motion | Refined the hero signature with quieter image settling, a single Route Red origin, smoother responsive route geometry, and separately timed title lines. | Release record |
 
 ---
 
