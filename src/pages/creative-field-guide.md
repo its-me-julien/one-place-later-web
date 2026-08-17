@@ -1744,174 +1744,152 @@ version: v2.0
 
 ---
 
-## 36. Pre-Production Brief
+<section id="36-pre-production-brief" class="guide-chapter guide-chapter--brief" aria-labelledby="brief-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">36</p>
+<div>
+<h2 id="brief-title">Pre-Production Brief</h2>
+<p class="guide-chapter__summary">Answer only what will protect the story or prevent a practical problem.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<article class="guide-brief-sheet">
+<header><div><p class="guide-label">Working brief · 01</p><h3>Escaping Gangnam</h3></div><span>Saturday<br />Seoul</span></header>
+<section><span>Story</span><dl><div><dt>What happens?</dt><dd>Cycle from Gangnam to Check Grow.</dd></div><div><dt>What changes?</dt><dd>Road vigilance becomes river release.</dd></div><div><dt>Viewer waits for</dt><dd>The moment cycling becomes fun.</dd></div><div><dt>Final thought</dt><dd>The city feels different on the way home.</dd></div></dl></section>
+<section><span>Practical</span><dl><div><dt>Route</dt><dd>Gangnam → Han River → Mapo</dd></div><div><dt>Cannot miss</dt><dd>Road-to-river transition.</dd></div><div><dt>Conditions</dt><dd>Leave before heat and path traffic build.</dd></div><div><dt>Remain private</dt><dd>Home address and daily routines.</dd></div></dl></section>
+<section><span>Visual & sound</span><dl><div><dt>Contrast</dt><dd>Compressed roads → open river.</dd></div><div><dt>Creator presence</dt><dd>Leaving, riding, arriving.</dd></div><div><dt>Motif</dt><dd>Bicycle carried between places.</dd></div><div><dt>Capture</dt><dd>Traffic, tyres, wind, café room tone.</dd></div></dl></section>
+<section><span>Technical</span><dl><div><dt>Main camera</dt><dd>Action camera for movement.</dd></div><div><dt>Support</dt><dd>Phone for observations and arrivals.</dd></div><div><dt>Pack check</dt><dd>Mount · ND · batteries · storage</dd></div></dl></section>
+</article>
 
-Before filming, answer only what matters.
-
-### Story
-
-What is happening?
-
-Why is it interesting?
-
-What changes?
-
-What is the viewer waiting for?
-
-What is the final thought?
-
-### Practical
-
-Where are we filming?
-
-What access or permissions matter?
-
-What conditions or light matter?
-
-What route or timing matters?
-
-What absolutely cannot be missed?
-
-What can remain private or unfilmed?
-
-### Visual
-
-What is the key environmental contrast?
-
-What creator-presence shots are essential?
-
-What transitions might connect scenes?
-
-What recurring object or motif might help?
-
-### Sound
-
-What environmental sounds should be captured deliberately?
-
-### Technical
-
-Which camera suits each sequence?
-
-Any special mount required?
-
-Any ND requirement?
-
-Enough batteries and storage?
-
-Keep pre-production realistic.
-
-Do not overengineer an ordinary day.
+<div class="guide-takeaway">
+<p class="guide-label">Brief rule</p>
+<p class="guide-takeaway__statement">Keep pre-production realistic. <span>Do not overengineer an ordinary day.</span></p>
+</div>
+</div>
+</section>
 
 ---
 
-## 37. Filming Priority
+<section id="37-filming-priority" class="guide-chapter guide-chapter--priority" aria-labelledby="priority-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">37</p>
+<div>
+<h2 id="priority-title">Filming Priority</h2>
+<p class="guide-chapter__summary">Cover the film from essential to optional. Move down only when the level above is safe.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<ol class="guide-coverage-stack">
+<li><span>01 · Essential</span><div><h3>Story coverage</h3><p>Entrances · actions · transitions · exits</p></div><strong>Protect first</strong></li>
+<li><span>02 · Presence</span><div><h3>Creator inside the world</h3><p>Enough external footage to experience, not just observe.</p></div><strong>Then</strong></li>
+<li><span>03 · Place</span><div><h3>Environment</h3><p>Where are we? What does it feel like?</p></div><strong>Then</strong></li>
+<li><span>04 · Texture</span><div><h3>Details</h3><p>Specific fragments and editing glue.</p></div><strong>If useful</strong></li>
+<li><span>05 · Optional</span><div><h3>Special angles</h3><p>Only once the film already works.</p></div><strong>Last</strong></li>
+</ol>
 
-Shoot in this order:
+<div class="guide-coverage-check">
+<p class="guide-label">Before the clever shot</p>
+<div><span>Entrance</span><i aria-hidden="true"></i><strong>Covered</strong></div>
+<div><span>Action</span><i aria-hidden="true"></i><strong>Covered</strong></div>
+<div><span>Transition</span><i aria-hidden="true"></i><strong>Missing</strong></div>
+<div><span>Exit</span><i aria-hidden="true"></i><strong>Covered</strong></div>
+</div>
 
-### 1. Story coverage
-
-Entrances.
-
-Actions.
-
-Transitions.
-
-Exits.
-
-### 2. Creator presence
-
-Enough external footage to keep the creator inside the world.
-
-### 3. Environment
-
-Where are we?
-
-What does it feel like?
-
-### 4. Details
-
-Texture and editing glue.
-
-### 5. Special angles
-
-Only once the essentials are covered.
-
-Never sacrifice story coverage for a clever shot.
+<div class="guide-takeaway">
+<p class="guide-label">Priority rule</p>
+<p class="guide-takeaway__statement">Never sacrifice story coverage for a clever shot.</p>
+</div>
+</div>
+</section>
 
 ---
 
-## 38. The Shot Test
+<section id="38-the-shot-test" class="guide-chapter guide-chapter--shot-test" aria-labelledby="shot-test-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">38</p>
+<div>
+<h2 id="shot-test-title">The Shot Test</h2>
+<p class="guide-chapter__summary">Every additional shot must add information, feeling or progression.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-shot-question">
+<p class="guide-label">Before record</p>
+<p>What is this showing that I do not already have?</p>
+<div><span>Clear answer</span><b>→</b><strong>Capture it</strong></div>
+<div><span>Unclear answer</span><b>→</b><strong>Stop filming</strong></div>
+</div>
 
-Before capturing another shot, ask:
+<div class="guide-shot-comparison">
+<article><span>Already covered · 04 shots</span><div aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Another road</h3><p>Same direction. Same scale. Same information.</p><strong>Stop</strong></article>
+<article><span>New information · 01 shot</span><div aria-hidden="true"><i></i></div><h3>Road opens onto river</h3><p>The geography changes and the story moves.</p><strong>Capture</strong></article>
+</div>
 
-**What is this showing that I do not already have?**
-
-If the answer is unclear, stop filming versions of the same thing.
-
-This protects against:
-
-repetitive B-roll\
-endless roads\
-endless cycling\
-endless walking\
-ten coffees\
-too many landscapes\
-unnecessary 360 experiments
-
----
-
-## 39. The Scene Test
-
-Every scene should do at least one of these:
-
-advance the story\
-reveal character\
-reveal place\
-create contrast\
-provide useful context\
-change the emotional state\
-deliver payoff\
-provide atmosphere worth experiencing\
-set up a later callback
-
-If it does none:
-
-cut it.
+<div class="guide-repeat-list">
+<p class="guide-label">The test protects against</p>
+<ul><li>repetitive B-roll</li><li>endless roads</li><li>endless cycling</li><li>endless walking</li><li>ten coffees</li><li>too many landscapes</li><li>unnecessary 360 experiments</li></ul>
+</div>
+</div>
+</section>
 
 ---
 
-## 40. Travel Coverage Rule
+<section id="39-the-scene-test" class="guide-chapter guide-chapter--scene-test" aria-labelledby="scene-test-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">39</p>
+<div>
+<h2 id="scene-test-title">The Scene Test</h2>
+<p class="guide-chapter__summary">A scene earns its place by doing at least one clear job.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-scene-jobs">
+<article><span>01</span><strong>Advance story</strong></article><article><span>02</span><strong>Reveal character</strong></article><article><span>03</span><strong>Reveal place</strong></article><article><span>04</span><strong>Create contrast</strong></article><article><span>05</span><strong>Provide context</strong></article><article><span>06</span><strong>Change emotion</strong></article><article><span>07</span><strong>Deliver payoff</strong></article><article><span>08</span><strong>Provide atmosphere</strong></article><article><span>09</span><strong>Set up a callback</strong></article>
+</div>
 
-Travel creates a temptation to film everything.
+<div class="guide-scene-audit">
+<header><div><p class="guide-label">Scene audit · 04</p><h3>Leaving the road for the Han</h3></div><strong>Keep</strong></header>
+<div><span>Advance story</span><i aria-hidden="true"></i><b>Yes</b></div>
+<div><span>Reveal place</span><i aria-hidden="true"></i><b>Yes</b></div>
+<div><span>Create contrast</span><i aria-hidden="true"></i><b>Yes</b></div>
+<div><span>Everything else</span><i aria-hidden="true"></i><b>Not required</b></div>
+</div>
 
-Resist it.
+<div class="guide-scene-decision"><span>Does none</span><b>→</b><strong>Cut it.</strong></div>
+</div>
+</section>
 
-You do not need footage of every:
+---
 
-meal\
-road\
-town\
-building\
-view\
-hotel\
-station\
-attraction
+<section id="40-travel-coverage-rule" class="guide-chapter guide-chapter--travel-coverage" aria-labelledby="travel-coverage-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number">40</p>
+<div>
+<h2 id="travel-coverage-title">Travel Coverage Rule</h2>
+<p class="guide-chapter__summary">The trip is larger than the film. Choose the story of the day and let the rest remain lived experience.</p>
+</div>
+</header>
+<div class="guide-chapter__content">
+<div class="guide-day-focus">
+<header><p class="guide-label">Story of the day</p><span>Amsterdam · Day 02</span></header>
+<p>The first morning that no longer feels like arrival.</p>
+<div><span>Protect this</span><strong>Breakfast outside → familiar tram → unplanned walk</strong></div>
+</div>
 
-Identify the story of the day.
+<div class="guide-coverage-edit">
+<div><p class="guide-label">Keep</p><strong>3 moments</strong><ul><li>first coffee outside</li><li>taking the tram without checking</li><li>evening walk back</li></ul></div>
+<div><p class="guide-label">Maybe</p><strong>1 fragment</strong><ul><li>hotel window at 07:20</li></ul></div>
+<div><p class="guide-label">Leave unfilmed</p><strong>Most of the day</strong><ul><li>every meal</li><li>every road</li><li>every building</li><li>every view</li></ul></div>
+</div>
 
-Protect that story.
+<div class="guide-day-outcomes">
+<p class="guide-label">A day may become</p>
+<div><span>01</span><strong>A full film</strong></div><div><span>02</span><strong>Three useful minutes</strong></div><div><span>03</span><strong>A memory that stays private</strong></div>
+</div>
 
-Some days may produce a full vlog.
-
-Some may contribute three minutes to another film.
-
-Some may never appear.
-
-That is healthy.
-
-The trip exists first.
-
-The vlog comes second.
+<div class="guide-travel-close"><p>The trip exists first.</p><strong>The vlog comes second.</strong></div>
+</div>
+</section>
 
 ---
 
