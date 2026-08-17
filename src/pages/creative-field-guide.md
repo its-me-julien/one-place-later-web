@@ -1113,31 +1113,50 @@ version: v2.0
 </div>
 </div>
 
-<div class="guide-motion-language" aria-labelledby="motion-language-title">
+<div class="guide-motion-language guide-story-states" aria-labelledby="motion-language-title">
 <div class="guide-motion-language__introduction">
-<p class="guide-label">Motion and outcome</p>
-<h3 id="motion-language-title">One route.<br />Four states.</h3>
-<p>Pace changes the spacing. Story changes the route. Every graphic retains the rounded line and a small Route Red signal.</p>
+<p class="guide-label">Story state</p>
+<h3 id="motion-language-title">Friction.<br />Resolution.</h3>
+<p>The route either meets resistance or finds its way through. Use these only when the story genuinely turns.</p>
 </div>
 <div class="guide-motion-language__specimens">
 <figure>
-<img src="/one-place-later-fast-pace.svg" alt="Fast pace route made from compressed forward pulses" width="640" height="240" />
-<figcaption><span>01</span><strong>Fast Pace</strong><small>Compressed intervals and a decisive rise. Use for quick departures, dense movement and accelerating sequences.</small></figcaption>
-</figure>
-<figure>
-<img src="/one-place-later-slow-pace.svg" alt="Slow pace route with spacious pauses along the journey" width="640" height="240" />
-<figcaption><span>02</span><strong>Slow Pace</strong><small>Long breathing room and marked pauses. Use for waiting, observing and letting a place settle.</small></figcaption>
-</figure>
-<figure>
 <img src="/one-place-later-problem.svg" alt="Problem route interrupted before dropping to an unresolved point" width="640" height="240" />
-<figcaption><span>03</span><strong>Problem</strong><small>An interruption changes the expected line. Use when a plan breaks, access closes or the story meets resistance.</small></figcaption>
+<figcaption><span>01</span><strong>Problem</strong><small>An interruption changes the expected line. Use when a plan breaks, access closes or the story meets resistance.</small></figcaption>
 </figure>
 <figure>
-<img src="/one-place-later-success.svg" alt="Success route arriving at a clearly marked destination" width="640" height="240" />
-<figcaption><span>04</span><strong>Success</strong><small>A clean route reaches a distinct destination. Use for earned arrival, resolution and a question finally answered.</small></figcaption>
+<img src="/one-place-later-solution.svg" alt="Solution route arriving at a clearly marked destination" width="640" height="240" />
+<figcaption><span>02</span><strong>Solution</strong><small>A clean route reaches a distinct destination. Use for an earned resolution, a workable answer or a way forward.</small></figcaption>
 </figure>
 </div>
 <p class="guide-motion-language__rule"><strong>Do not animate these by default.</strong> In film, reveal the line with the edit: cut, wipe or draw only when timing carries meaning.</p>
+</div>
+
+<div class="guide-motion-language guide-editorial-signals" aria-labelledby="editorial-signals-title">
+<div class="guide-motion-language__introduction">
+<p class="guide-label">Editorial signals</p>
+<h3 id="editorial-signals-title">Four useful callouts.</h3>
+<p>Use these marks to orient, equip, clarify or let another voice enter. The label carries the meaning; the graphic gives it a recognisable place in the system.</p>
+</div>
+<div class="guide-motion-language__specimens">
+<figure>
+<img src="/one-place-later-location.svg" alt="Location route arriving at a map marker" width="640" height="240" />
+<figcaption><span>01</span><strong>Location</strong><small>Names where the viewer is now. Pair with a place, neighbourhood, route or arrival point.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-tool.svg" alt="Tool route becoming a rounded tool marker" width="640" height="240" />
+<figcaption><span>02</span><strong>Tool</strong><small>Introduces something practically useful: camera, mount, app, map, booking method or piece of kit.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-tip-info.svg" alt="Tip or information route reaching an information marker" width="640" height="240" />
+<figcaption><span>03</span><strong>Tip or Info</strong><small>Adds concise context the footage cannot supply: timing, access, cost, distance or one useful warning.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-quote.svg" alt="Quote route opening into a pair of quotation marks" width="640" height="240" />
+<figcaption><span>04</span><strong>Quote</strong><small>Brings in a specific voice. Pair with a short attributed line; never use it for decorative pull quotes.</small></figcaption>
+</figure>
+</div>
+<p class="guide-motion-language__rule"><strong>Signal once, then get out of the way.</strong> A callout should answer one question and leave before it competes with the scene.</p>
 </div>
 
 <div class="guide-transport-language" aria-labelledby="transport-language-title">
@@ -1204,10 +1223,12 @@ version: v2.0
 <li><a href="/one-place-later-square-mark.svg" download>Square mark <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-editorial-arrow.svg" download>Editorial arrow <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-route-divider.svg" download>Route divider <span>SVG ↓</span></a></li>
-<li><a href="/one-place-later-fast-pace.svg" download>Fast Pace route <span>SVG ↓</span></a></li>
-<li><a href="/one-place-later-slow-pace.svg" download>Slow Pace route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-problem.svg" download>Problem route <span>SVG ↓</span></a></li>
-<li><a href="/one-place-later-success.svg" download>Success route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-solution.svg" download>Solution route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-location.svg" download>Location marker <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-tool.svg" download>Tool marker <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-tip-info.svg" download>Tip or Info marker <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-quote.svg" download>Quote marker <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-walk.svg" download>Walking route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-bicycle.svg" download>Bicycle route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-transport-rail.svg" download>Rail route <span>SVG ↓</span></a></li>

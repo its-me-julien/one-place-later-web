@@ -350,10 +350,12 @@ YouTube ↗
 | `one-place-later-square-mark.svg` | Favicon, avatar and constrained square formats |
 | `one-place-later-editorial-arrow.svg` | Standalone Route Red arrow for directional editorial graphics |
 | `one-place-later-route-divider.svg` | Wide route transition or divider with origin and destination movement |
-| `one-place-later-fast-pace.svg` | Compressed route rhythm for acceleration and dense movement |
-| `one-place-later-slow-pace.svg` | Spacious route rhythm with intentional pauses |
 | `one-place-later-problem.svg` | Interrupted route for friction, delay or a broken plan |
-| `one-place-later-success.svg` | Completed route with a marked destination for earned resolution |
+| `one-place-later-solution.svg` | Completed route with a marked destination for a workable answer |
+| `one-place-later-location.svg` | Route-led location marker for place and arrival context |
+| `one-place-later-tool.svg` | Route-led tool marker for practical equipment and resources |
+| `one-place-later-tip-info.svg` | Route-led information marker for concise useful context |
+| `one-place-later-quote.svg` | Route-led quotation marker for short attributed lines |
 | `one-place-later-transport-walk.svg` | Human-scale walking route for local transitions and observation |
 | `one-place-later-transport-bicycle.svg` | Bicycle route for effort, terrain and open movement |
 | `one-place-later-transport-rail.svg` | Rail route for subway, metro and train journeys |
@@ -362,7 +364,9 @@ YouTube ↗
 
 Keep SVGs at their native proportions. The editorial arrow and route divider are graphic syntax, not replacement logos.
 
-The four state graphics extend the route language; they are not independent symbols or status icons. Pace comes from spacing. Outcome comes from route behaviour. Keep Route Red limited to the origin, pause, interruption or destination, and pair state graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
+Problem and Solution extend the route language; they are not independent status icons. Story state comes from route behaviour. Keep Route Red limited to the origin, interruption or destination, and pair both graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
+
+Location, Tool, Tip or Info, and Quote are editorial signals. Their labels carry meaning and their graphics create recognition. Each callout should answer one question and leave. Quotes must be attributed; tools should be genuinely relevant; information should be concise and useful.
 
 Transport assets use the same rule: the route leads and the vehicle remains secondary. Keep their native proportions, pair them with useful journey context, and do not use any transport asset as a logo. A single entrance or route reveal may support a film edit; looping vehicle animation is not part of the web language.
 

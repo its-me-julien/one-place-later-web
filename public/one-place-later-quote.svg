@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later quote graphic</title>
+  <desc id="description">A route from a red origin opens into a restrained pair of quotation marks.</desc>
+  <circle cx="36" cy="176" r="10" fill="#923D2D" />
+  <path d="M70 176h286c46 0 54-64 96-76" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <path d="M466 62c-28 13-42 35-42 66v42h54v-48h-28c0-19 8-34 25-46M566 62c-28 13-42 35-42 66v42h54v-48h-28c0-19 8-34 25-46" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="452" cy="100" r="7" fill="#C95C43" />
+</svg>

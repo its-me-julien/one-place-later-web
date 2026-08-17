@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later tip or information graphic</title>
+  <desc id="description">A route from a red origin reaches a rounded information marker.</desc>
+  <circle cx="36" cy="176" r="10" fill="#923D2D" />
+  <path d="M70 176h350c48 0 58-48 96-62" stroke="#57544F" stroke-width="10" stroke-linecap="round" />
+  <circle cx="552" cy="96" r="70" stroke="#57544F" stroke-width="9" />
+  <circle cx="552" cy="62" r="8" fill="#C95C43" />
+  <path d="M552 92v54" stroke="#57544F" stroke-width="11" stroke-linecap="round" />
+</svg>

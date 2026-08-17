@@ -321,20 +321,31 @@ The typographic arrow remains a piece of editorial visual grammar. Use it in cop
 
 Use both forms sparingly enough that movement remains meaningful.
 
-## Motion and outcome graphics
+## Story-state graphics
 
-The same route language can describe editorial tempo and story state without introducing a new icon family.
+The route language can describe a genuine turn in the story without introducing a separate status system.
 
 | State | Route behaviour | Appropriate use |
 | --- | --- | --- |
-| **Fast Pace** | Compressed intervals followed by a decisive rise | Quick departures, dense movement and accelerating sequences |
-| **Slow Pace** | Long spacing with visible pauses | Waiting, observation and moments allowed to settle |
 | **Problem** | A clear interruption changes the expected line | Broken plans, closed access, delay or resistance |
-| **Success** | A continuous route reaches a marked destination | Earned arrival, resolution or a question answered |
+| **Solution** | A continuous route reaches a marked destination | A workable answer, earned resolution or way forward |
 
-Pace is expressed through spacing and rhythm. Outcome is expressed through the behaviour of the route. Route Red remains a small signal: origin, pause, interruption or destination. It must not become a large status colour.
+Story state is expressed through route behaviour. Route Red remains a small signal: origin, interruption or destination. It must not become a large status colour.
 
 These graphics may be revealed by an edit when timing carries meaning, but should not loop, pulse or animate merely to attract attention. Always pair an unfamiliar state graphic with a text label or enough narrative context that colour is not carrying the meaning alone.
+
+## Editorial signals
+
+Four callouts support recurring practical information without turning the films into an interface.
+
+| Signal | Role | Use |
+| --- | --- | --- |
+| **Location** | Orient | Place, neighbourhood, route or arrival point |
+| **Tool** | Equip | Camera, mount, app, map, booking method or useful kit |
+| **Tip or Info** | Clarify | Timing, access, cost, distance, context or one warning |
+| **Quote** | Attribute | A short line from a specific person or source |
+
+The text label carries the meaning and the mark gives it a recognisable place in the system. Signal once, answer one question, and leave before the callout competes with the scene. Quote graphics require attribution; they are not decorative pull quotes.
 
 ## Methods of transport
 
