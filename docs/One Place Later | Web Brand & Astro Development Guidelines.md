@@ -342,6 +342,17 @@ YouTube ↗
 - `↗` identifies an external destination.
 - Use arrows only where direction is meaningful.
 
+## Production assets
+
+| Asset | Role |
+| --- | --- |
+| `one-place-later-route-arrow.svg` | Secondary route glyph for identity lockups |
+| `one-place-later-square-mark.svg` | Favicon, avatar and constrained square formats |
+| `one-place-later-editorial-arrow.svg` | Standalone Route Red arrow for directional editorial graphics |
+| `one-place-later-route-divider.svg` | Wide route transition or divider with origin and destination movement |
+
+Keep SVGs at their native proportions. The editorial arrow and route divider are graphic syntax, not replacement logos.
+
 ---
 
 # 11. Photography and Image Treatment

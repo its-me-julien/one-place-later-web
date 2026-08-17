@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 96" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later route divider</title>
+  <desc id="description">A red origin point connected to a low rounded stone route ending in a directional arrow.</desc>
+  <circle cx="18" cy="68" r="10" fill="#923D2D" />
+  <path d="M46 68h190c42 0 48-40 96-40h252M548 8l36 20-36 20" stroke="#57544F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
