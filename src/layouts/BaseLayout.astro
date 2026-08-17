@@ -10,9 +10,10 @@ interface Props {
   description: string;
   image?: string;
   imageAlt?: string;
+  robots?: string;
 }
 
-const { title, description, image, imageAlt = '' } = Astro.props;
+const { title, description, image, imageAlt = '', robots } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const socialImage = image ? new URL(image, Astro.site) : undefined;
 ---
@@ -23,6 +24,7 @@ const socialImage = image ? new URL(image, Astro.site) : undefined;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {robots && <meta name="robots" content={robots} />}
     <meta name="theme-color" content="#f2efe7" />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" href="/one-place-later-square-mark.svg?v=square-2" type="image/svg+xml" />

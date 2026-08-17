@@ -50,6 +50,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | Route | Status | Purpose | Current scope |
 | --- | --- | --- | --- |
 | `/` | Live | Editorial home for the channel | Sticky navigation, full-screen Seoul hero, short channel introduction, YouTube link, and footer destinations for YouTube and Instagram. No video embed yet. |
+| `/creative-field-guide/` | Internal reference | Full working system for story, filming, sound, editing, publishing, and review | Direct-link page using the site identity; intentionally omitted from navigation and marked `noindex, nofollow`. |
 | `/films` | Planned | Permanent archive of films | Build only when there is enough film content to browse. |
 | `/films/[slug]` | Planned | Permanent home for an individual film | Editorial context, poster-first YouTube playback, stills, and previous/next-film navigation. |
 | `/about` | Planned | Additional creator and channel context | Add only when the homepage introduction is no longer sufficient. |
@@ -80,6 +81,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Identity | Redrew the square mark from the main route geometry and unified every logo lockup around a Route Red origin with a surface-aware neutral path. | Release record |
 | 2026-08-17 | Homepage direction | Added the factual `Gangnam → Han River` hero caption, tuned the mobile crop to retain the cyclist, and documented the poster-first featured-film hero for the first release. | Release record |
 | 2026-08-17 | Guidelines | Consolidated the web brand and Astro guidelines into one decision-led standard, removing repetition and reconciling the tokens, staged architecture, identity behaviour and release QA with the live site. | Release record |
+| 2026-08-17 | Internal reference | Published the channel operating document as the unlisted, non-indexed **Creative Field Guide**, with a long-form editorial layout and section navigation. | Release record |
 
 ---
 
