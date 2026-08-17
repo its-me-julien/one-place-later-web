@@ -5,7 +5,8 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 <header class="site-header">
   <div class="l-wrapper inner">
     <a class="brand" href="/" aria-label="One Place Later, home">
-      One Place Later
+      <span>One Place Later</span>
+      <img class="arrow-mark" src="/one-place-later-arrow.svg" alt="" />
     </a>
 
     <nav aria-label="Primary navigation">
@@ -36,20 +37,33 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-5);
+    gap: var(--space-3);
   }
 
   .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-size: var(--text-sm);
     font-weight: 600;
     letter-spacing: -0.01em;
     text-decoration: none;
   }
 
+  .arrow-mark {
+    width: 2.5rem;
+    height: auto;
+    transition: transform var(--motion-base) var(--ease-standard);
+  }
+
+  .brand:hover .arrow-mark {
+    transform: translateX(3px);
+  }
+
   ul {
     display: flex;
     align-items: center;
-    gap: clamp(1.25rem, 3vw, 2.5rem);
+    gap: var(--space-4);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -78,5 +92,15 @@ const youtubeUrl = 'https://www.youtube.com/@OnePlaceLater';
 
   nav a:hover span {
     transform: translate(2px, -2px);
+  }
+
+  @media (min-width: 40rem) {
+    .inner {
+      gap: var(--space-5);
+    }
+
+    ul {
+      gap: clamp(1.25rem, 3vw, 2.5rem);
+    }
   }
 </style>

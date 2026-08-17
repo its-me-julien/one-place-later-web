@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 24"
+  fill="none"
+  aria-hidden="true"
+>
+  <circle cx="5" cy="12" r="2.5" fill="#c95c43" />
+  <path
+    d="M12 12h39M42 3l9 9-9 9"
+    stroke="#c95c43"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+    stroke-width="2.5"
+  />
+</svg>
