@@ -5,68 +5,90 @@ description: The working creative system behind One Place Later films, from stor
 version: v2.0
 ---
 
-## 1. Channel Identity
+<section id="1-channel-identity" class="guide-chapter guide-chapter--identity" aria-labelledby="channel-identity-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">01</p>
+<div>
+<h2 id="channel-identity-title">Channel Identity</h2>
+<p class="guide-chapter__summary">The fixed centre of every film, wherever it happens.</p>
+</div>
+</header>
 
-### Channel name
+<div class="guide-chapter__content">
+<div class="guide-nameplate">
+<p class="guide-label">Channel name</p>
+<p class="guide-nameplate__wordmark">One Place Later<span aria-hidden="true">.</span></p>
+</div>
 
-**One Place Later**
+<div class="guide-block">
+<h3>Core idea</h3>
+<p class="guide-lede">Thoughtful lifestyle and travel films about <strong>ordinary life in motion</strong>.</p>
+<div class="guide-copy">
+<p>The channel follows everyday routines, journeys and transitions closely enough to reveal what changes from one place, state or rhythm to another.</p>
+<p>South Korea is home. Travel expands the world of the channel rather than creating a separate genre.</p>
+<p>A film in Gangnam and a film in southern France should still feel unmistakably like <strong>One Place Later</strong>.</p>
+</div>
+</div>
 
-### Core idea
+<div class="guide-principles">
+<div class="guide-principle">
+<p class="guide-label">Brand line</p>
+<p class="guide-principle__statement">Ordinary life,<br />noticed in motion.</p>
+<p>This is primarily an internal creative standard. It does not need to appear everywhere publicly.</p>
+</div>
+<div class="guide-principle guide-principle--promise">
+<p class="guide-label">Brand promise</p>
+<p>The viewer should feel:</p>
+<blockquote>I spent time there. I was not simply shown the place.</blockquote>
+</div>
+</div>
+</div>
+</section>
 
-Thoughtful lifestyle and travel films about **ordinary life in motion**.
+<section id="2-the-idea-behind-one-place-later" class="guide-chapter guide-chapter--idea" aria-labelledby="idea-behind-title">
+<header class="guide-chapter__header">
+<p class="guide-chapter__number" aria-hidden="true">02</p>
+<div>
+<h2 id="idea-behind-title">The Idea Behind One Place Later</h2>
+<p class="guide-chapter__summary">The name describes more than travel.</p>
+</div>
+</header>
 
-The channel follows everyday routines, journeys and transitions closely enough to reveal what changes from one place, state or rhythm to another.
+<div class="guide-chapter__content">
+<div class="guide-meaning">
+<div class="guide-meaning__column">
+<h3>A place can be</h3>
+<ul class="guide-place-list">
+<li>a neighbourhood</li>
+<li>a café</li>
+<li>a river</li>
+<li>another country</li>
+<li>a family home</li>
+<li>a mountain</li>
+<li>a train station</li>
+</ul>
+</div>
 
-South Korea is home.
+<div class="guide-meaning__column">
+<h3>A place can also be a different state</h3>
+<ul class="guide-state-list">
+<li><span>busy</span><span aria-hidden="true">→</span><strong>calm</strong></li>
+<li><span>working</span><span aria-hidden="true">→</span><strong>off duty</strong></li>
+<li><span>hot</span><span aria-hidden="true">→</span><strong>relieved</strong></li>
+<li><span>foreign</span><span aria-hidden="true">→</span><strong>familiar</strong></li>
+<li><span>home</span><span aria-hidden="true">→</span><strong>away</strong></li>
+<li><span>movement</span><span aria-hidden="true">→</span><strong>stillness</strong></li>
+</ul>
+</div>
+</div>
 
-Travel expands the world of the channel rather than creating a separate genre.
-
-A film in Gangnam and a film in southern France should still feel unmistakably like **One Place Later**.
-
-### Brand line
-
-**Ordinary life, noticed in motion.**
-
-This is primarily an internal creative standard.
-
-It does not need to appear everywhere publicly.
-
-### Brand promise
-
-The viewer should feel:
-
-**I spent time there. I was not simply shown the place.**
-
----
-
-## 2. The Idea Behind One Place Later
-
-The name describes more than travel.
-
-A place can be:
-
-a neighbourhood\
-a café\
-a river\
-another country\
-a family home\
-a mountain\
-a train station
-
-But a place can also represent a different state:
-
-busy → calm\
-working → off duty\
-hot → relieved\
-foreign → familiar\
-home → away\
-movement → stillness
-
-The channel is interested in what changes between those states.
-
-The destination matters.
-
-The transition often matters just as much.
+<div class="guide-takeaway">
+<p class="guide-label">Working principle</p>
+<p>The channel is interested in what changes between those states.</p>
+<p class="guide-takeaway__statement">The destination matters. <span>The transition often matters just as much.</span></p>
+</div>
+</div>
+</section>
 
 ---
 

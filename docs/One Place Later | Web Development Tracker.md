@@ -82,6 +82,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | 2026-08-17 | Homepage direction | Added the factual `Gangnam → Han River` hero caption, tuned the mobile crop to retain the cyclist, and documented the poster-first featured-film hero for the first release. | Release record |
 | 2026-08-17 | Guidelines | Consolidated the web brand and Astro guidelines into one decision-led standard, removing repetition and reconciling the tokens, staged architecture, identity behaviour and release QA with the live site. | Release record |
 | 2026-08-17 | Internal reference | Published the channel operating document as the unlisted, non-indexed **Creative Field Guide**, with a long-form editorial layout and section navigation. | Release record |
+| 2026-08-17 | Creative Field Guide | Established the reusable chapter pattern in sections 1–2: numbered orientation, concise thesis, structured evidence, and one working takeaway, with responsive anchor positioning. | Release record |
 
 ---
 
