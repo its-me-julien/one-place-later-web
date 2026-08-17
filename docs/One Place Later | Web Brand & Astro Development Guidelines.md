@@ -354,10 +354,17 @@ YouTube ↗
 | `one-place-later-slow-pace.svg` | Spacious route rhythm with intentional pauses |
 | `one-place-later-problem.svg` | Interrupted route for friction, delay or a broken plan |
 | `one-place-later-success.svg` | Completed route with a marked destination for earned resolution |
+| `one-place-later-transport-walk.svg` | Human-scale walking route for local transitions and observation |
+| `one-place-later-transport-bicycle.svg` | Bicycle route for effort, terrain and open movement |
+| `one-place-later-transport-rail.svg` | Rail route for subway, metro and train journeys |
+| `one-place-later-transport-car.svg` | Car route for road travel and private transitions |
+| `one-place-later-transport-flight.svg` | Flight route for departure, distance and major change |
 
 Keep SVGs at their native proportions. The editorial arrow and route divider are graphic syntax, not replacement logos.
 
 The four state graphics extend the route language; they are not independent symbols or status icons. Pace comes from spacing. Outcome comes from route behaviour. Keep Route Red limited to the origin, pause, interruption or destination, and pair state graphics with labels or clear narrative context. Static use is the default. A timed line reveal is acceptable in film only when it supports the edit.
+
+Transport assets use the same rule: the route leads and the vehicle remains secondary. Keep their native proportions, pair them with useful journey context, and do not use any transport asset as a logo. A single entrance or route reveal may support a film edit; looping vehicle animation is not part of the web language.
 
 ---
 

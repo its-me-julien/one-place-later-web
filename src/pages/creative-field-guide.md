@@ -1053,7 +1053,7 @@ version: v2.0
 <p class="guide-chapter__number" aria-hidden="true">23</p>
 <div>
 <h2 id="graphic-language-title">Brand Graphic Language</h2>
-<p class="guide-chapter__summary">A production-ready editorial syntax for identity, movement, pace, friction, change and arrival.</p>
+<p class="guide-chapter__summary">A production-ready editorial syntax for identity, movement, pace, transport, friction, change and arrival.</p>
 </div>
 </header>
 
@@ -1140,6 +1140,37 @@ version: v2.0
 <p class="guide-motion-language__rule"><strong>Do not animate these by default.</strong> In film, reveal the line with the edit: cut, wipe or draw only when timing carries meaning.</p>
 </div>
 
+<div class="guide-transport-language" aria-labelledby="transport-language-title">
+<div class="guide-transport-language__introduction">
+<p class="guide-label">Methods of transport</p>
+<h3 id="transport-language-title">How the journey moves.</h3>
+<p>The route remains the subject. Each mode adds only enough detail to describe scale, rhythm and the kind of attention the journey allows.</p>
+</div>
+<div class="guide-transport-language__specimens">
+<figure>
+<img src="/one-place-later-transport-walk.svg" alt="One Place Later walking route graphic" width="480" height="240" />
+<figcaption><span>01</span><strong>Walk</strong><small>Human scale. Use for neighbourhood transitions, arrival on foot and details found by slowing down.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-transport-bicycle.svg" alt="One Place Later bicycle route graphic" width="480" height="240" />
+<figcaption><span>02</span><strong>Bicycle</strong><small>Open movement. Use when effort, terrain and the changing space between places belong to the story.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-transport-rail.svg" alt="One Place Later rail route graphic" width="480" height="240" />
+<figcaption><span>03</span><strong>Rail</strong><small>Shared rhythm. Use for subway, metro and train journeys shaped by stations, windows and waiting.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-transport-car.svg" alt="One Place Later car route graphic" width="480" height="240" />
+<figcaption><span>04</span><strong>Car</strong><small>Private transition. Use for road travel, family movement and changing landscapes between stops.</small></figcaption>
+</figure>
+<figure>
+<img src="/one-place-later-transport-flight.svg" alt="One Place Later flight route graphic" width="480" height="240" />
+<figcaption><span>05</span><strong>Flight</strong><small>Large change. Reserve for departure, distance and the dislocation between one home rhythm and another.</small></figcaption>
+</figure>
+</div>
+<p class="guide-transport-language__rule"><strong>Name the mode when it matters.</strong> Pair the mark with a route, time, distance or place. Never use a transport symbol as the channel logo.</p>
+</div>
+
 <div class="guide-colour-field" aria-label="Brand colour reference">
 <div class="guide-colour-field__carbon">
 <p class="guide-label">Carbon</p>
@@ -1177,6 +1208,11 @@ version: v2.0
 <li><a href="/one-place-later-slow-pace.svg" download>Slow Pace route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-problem.svg" download>Problem route <span>SVG ↓</span></a></li>
 <li><a href="/one-place-later-success.svg" download>Success route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-transport-walk.svg" download>Walking route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-transport-bicycle.svg" download>Bicycle route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-transport-rail.svg" download>Rail route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-transport-car.svg" download>Car route <span>SVG ↓</span></a></li>
+<li><a href="/one-place-later-transport-flight.svg" download>Flight route <span>SVG ↓</span></a></li>
 </ul>
 </div>
 

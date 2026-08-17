@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later walking graphic</title>
+  <desc id="description">Alternating rounded steps move from a red origin toward a directional route arrow.</desc>
+  <circle cx="36" cy="180" r="9" fill="#923D2D" />
+  <path d="M68 180h92M320 84h106M394 58l32 26-32 26" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M184 168l22-15M230 137l22-15M276 106l22-15" stroke="#8C8B84" stroke-width="13" stroke-linecap="round" />
+  <circle cx="206" cy="153" r="5" fill="#C95C43" />
+</svg>

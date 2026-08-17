@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later bicycle graphic</title>
+  <desc id="description">A rounded line bicycle travels from a red origin along an open route.</desc>
+  <circle cx="36" cy="188" r="9" fill="#923D2D" />
+  <path d="M68 188h340M376 164l32 24-32 24" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="178" cy="154" r="36" stroke="#57544F" stroke-width="8" />
+  <circle cx="302" cy="154" r="36" stroke="#57544F" stroke-width="8" />
+  <path d="M178 154l48-68 34 68h-82l48-68h50M260 154l42-70M286 84h22M210 74h28" stroke="#57544F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="260" cy="154" r="6" fill="#C95C43" />
+</svg>

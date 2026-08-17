@@ -336,6 +336,20 @@ Pace is expressed through spacing and rhythm. Outcome is expressed through the b
 
 These graphics may be revealed by an edit when timing carries meaning, but should not loop, pulse or animate merely to attract attention. Always pair an unfamiliar state graphic with a text label or enough narrative context that colour is not carrying the meaning alone.
 
+## Methods of transport
+
+Transport graphics describe how the journey moves. They extend the route syntax and never replace the wordmark or secondary route glyph.
+
+| Mode | Editorial meaning | Strong context |
+| --- | --- | --- |
+| **Walk** | Human scale and close observation | Neighbourhood movement, arrival on foot, small details |
+| **Bicycle** | Effort, flow and exposure to changing space | River routes, terrain and movement as story |
+| **Rail** | Shared rhythm structured by infrastructure | Subway, metro, train, stations, windows and waiting |
+| **Car** | Private transition across a changing landscape | Road travel, family movement and travel between stops |
+| **Flight** | Large distance and a break between rhythms | Departure, long travel and the dislocation between homes |
+
+Keep each vehicle subordinate to its route. Use the minimum recognisable geometry, rounded Stone strokes and one Route Red point. Pair the graphic with a route, time, distance, place or mode label when it adds useful orientation. Flight is a storytelling asset, not a logo direction.
+
 ---
 
 # 12. Colour

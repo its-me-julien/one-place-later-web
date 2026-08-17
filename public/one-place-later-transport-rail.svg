@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later rail graphic</title>
+  <desc id="description">A restrained rounded train moves along a route from a red origin.</desc>
+  <circle cx="36" cy="190" r="9" fill="#923D2D" />
+  <path d="M68 190h342M378 166l32 24-32 24" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M142 76c0-18 15-32 33-32h122c22 0 40 18 40 40v82H142V76Z" stroke="#57544F" stroke-width="8" stroke-linejoin="round" />
+  <path d="M171 72h64v48h-64zM255 72h45c10 0 18 8 18 18v30h-63V72ZM160 140h160" stroke="#57544F" stroke-width="8" stroke-linejoin="round" />
+  <circle cx="181" cy="174" r="12" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
+  <circle cx="298" cy="174" r="12" fill="#F2EFE7" stroke="#57544F" stroke-width="8" />
+  <circle cx="318" cy="140" r="6" fill="#C95C43" />
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One Place Later flight graphic</title>
+  <desc id="description">A minimal aircraft crosses a rising route from a red origin toward a destination arrow.</desc>
+  <circle cx="36" cy="190" r="9" fill="#923D2D" />
+  <path d="M68 190h92c52 0 64-104 124-104h126M378 62l32 24-32 24" stroke="#57544F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M238 78l-35-40h24l50 40h54c17 0 31 6 45 18-14 12-28 18-45 18h-54l-50 40h-24l35-40-44-9-20 18h-18l13-27-13-27h18l20 18 44-9Z" fill="#57544F" stroke="#57544F" stroke-width="4" stroke-linejoin="round" />
+  <circle cx="284" cy="86" r="6" fill="#C95C43" />
+</svg>
