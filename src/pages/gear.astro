@@ -1,23 +1,58 @@
 ---
+import type { ImageMetadata } from 'astro';
+import { Picture } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+import gearSocial from '../assets/gear/gear-social.png';
+import goNdFilters from '../assets/gear/go-ultra-insta360-nd-filter.png';
+import goPivotStand from '../assets/gear/insta360-GO-Ultra-Pivot-Stand.webp';
+import extendedStick from '../assets/gear/insta360-extended-3m-stick.webp';
+import goHeroCamera from '../assets/gear/insta360-go-ultra-action-camera.webp';
+import lunaCamera from '../assets/gear/insta360-luna-ultra-pocket-camera-gimbal-white-transparent.png';
+import micPro from '../assets/gear/insta360-sound-mic-pro.png';
+import tripodFeet from '../assets/gear/insta360-tripod-feet.webp';
+import goCamera from '../assets/gear/insta360-ultra-go-image.png';
+import x6Camera from '../assets/gear/insta360-x6-360-action-camera-nobg.png';
+import lunaNdFilters from '../assets/gear/nisi-insta360-luna-ultra-nd-cpl-vnd.png';
+import x6NdFilters from '../assets/gear/x6-insta360-nd-filter.png';
 
 const title = 'The Field Kit | One Place Later';
 const description =
-  'Three cameras and a small supporting kit we use to film ordinary life from inside it, beside it, and all around it.';
+  'The small camera and sound kit we use to film ordinary life in motion—from close POV to composed frames and immersive routes.';
 
-const cameras = [
+interface FieldStill {
+  image: ImageMetadata;
+  alt: string;
+  position?: string;
+}
+
+interface Camera {
+  number: string;
+  name: string;
+  perspective: string;
+  heading: string;
+  description: string;
+  uses: string[];
+  modifier: string;
+  image: ImageMetadata;
+  imageClass: string;
+  imageAlt: string;
+  fieldStill?: FieldStill;
+}
+
+const cameras: Camera[] = [
   {
     number: '01',
     name: 'Insta360 GO Ultra',
     perspective: 'Close',
     heading: 'Inside the moment.',
     description:
-      'We use it for point-of-view footage, discreet coverage and the quick shots that would disappear while a larger camera was still coming out of the bag.',
-    uses: ['POV', 'Quick shots', 'Small spaces'],
+      'We use it for close behaviour, discreet coverage, processes and quick details—the views that disappear while a larger camera is still coming out of the bag.',
+    uses: ['POV', 'Quick details', 'Small spaces'],
     modifier: 'camera--close',
-    image: '/gear/insta360-ultra-go-image.png',
-    imageClass: 'camera__image--go',
-    imageAlt: 'Insta360 GO Ultra camera and Action Pod, shown together in black.',
+    image: goCamera,
+    imageClass: 'camera__visual--go',
+    imageAlt: 'Insta360 GO Ultra camera shown in black.',
   },
   {
     number: '02',
@@ -25,11 +60,11 @@ const cameras = [
     perspective: 'Composed',
     heading: 'Let the scene hold.',
     description:
-      'This is our cinematic camera. Mostly on a tripod, it gives a place enough time and space for movement to happen inside the frame.',
-    uses: ['Cinematic scenes', 'Tripod', 'Deliberate frames'],
+      'Mostly on a tripod, we use it for deliberate compositions where movement can happen inside a frame that stays still.',
+    uses: ['Tripod scenes', 'Deliberate frames', 'Movement within'],
     modifier: 'camera--composed',
-    image: '/gear/insta360-luna-ultra-pocket-camera-gimbal-white-transparent.png',
-    imageClass: 'camera__image--luna',
+    image: lunaCamera,
+    imageClass: 'camera__visual--luna',
     imageAlt: 'White Insta360 Ultra Luna camera with an articulated gimbal head.',
   },
   {
@@ -38,11 +73,11 @@ const cameras = [
     perspective: 'All around',
     heading: 'Move through it.',
     description:
-      'We take it on the go: moving with a street, a bicycle or a journey, then finding a cinematic angle that was not obvious at the time.',
-    uses: ['Immersion', 'On the go', 'Unexpected angles'],
+      'We use it for moving routes, geography and seeing ourselves inside an environment—then reframe only when the angle adds something to the place.',
+    uses: ['Immersion', 'Moving routes', 'Selective reframing'],
     modifier: 'camera--around',
-    image: '/gear/insta360-x6-360-action-camera-nobg.png',
-    imageClass: 'camera__image--x6',
+    image: x6Camera,
+    imageClass: 'camera__visual--x6',
     imageAlt: 'Black Insta360 X6 360 action camera, shown upright from the front.',
   },
 ];
@@ -52,21 +87,21 @@ const featuredAccessories = [
     number: '01',
     name: 'GO Ultra Pivot Stand',
     purpose: 'A small, deliberate place to leave the camera.',
-    image: '/gear/insta360-GO-Ultra-Pivot-Stand.webp',
+    image: goPivotStand,
     imageAlt: 'Insta360 GO Ultra Pivot Stand in black.',
   },
   {
     number: '02',
     name: 'All-Purpose Tripod',
     purpose: 'A stable base when the frame needs to stay put.',
-    image: '/gear/insta360-tripod-feet.webp',
+    image: tripodFeet,
     imageAlt: 'Black Insta360 tripod with three folded feet.',
   },
   {
     number: '03',
     name: 'Extended 3m Selfie Stick',
-    purpose: 'Height, distance and a viewpoint that does not announce itself.',
-    image: '/gear/insta360-extended-3m-stick.webp',
+    purpose: 'Height, distance and a viewpoint the route otherwise hides.',
+    image: extendedStick,
     imageAlt: 'Black Insta360 extended 3m selfie stick.',
   },
 ];
@@ -75,31 +110,36 @@ const ndKits = [
   {
     camera: 'GO Ultra',
     name: 'GO Ultra ND Filter Set',
-    image: '/gear/go-ultra-insta360-nd-filter.png',
+    image: goNdFilters,
     imageAlt: 'Insta360 GO Ultra camera with three ND filters in front.',
     detail: 'ND8 · ND16 · ND32',
-    purpose: 'For cinematic motion blur, richer colour and a calmer exposure in changing light.',
+    purpose: 'Changing light, quick movement and long-exposure colour.',
   },
   {
     camera: 'X6',
     name: 'X6 ND Filter Kit',
-    image: '/gear/x6-insta360-nd-filter.png',
+    image: x6NdFilters,
     imageAlt: 'Insta360 X6 ND64 filter viewed from the side.',
     detail: 'ND16 · ND32 · ND64',
-    purpose: 'For holding daylight exposure when the camera is moving with the scene.',
+    purpose: 'Daylight control while moving through the scene.',
   },
   {
     camera: 'Ultra Luna',
     name: 'NiSi Professional Kit',
-    image: '/gear/nisi-insta360-luna-ultra-nd-cpl-vnd.png',
+    image: lunaNdFilters,
     imageAlt: 'NiSi filter kit for Insta360 Ultra Luna with CPL, VND, and Black Mist filters.',
     detail: 'CPL · VND 1–5 stops · Black Mist',
-    purpose: 'For controlling reflections and exposure, then softening contrast when the light asks for it.',
+    purpose: 'Reflections, variable exposure and softer contrast when the composition calls for it.',
   },
 ];
 ---
 
-<BaseLayout {title} {description}>
+<BaseLayout
+  {title}
+  {description}
+  image={gearSocial.src}
+  imageAlt="Insta360 GO Ultra beside the words Three ways of seeing on the One Place Later field-kit poster."
+>
   <header class="gear-hero" aria-labelledby="gear-title">
     <figure
       class="gear-hero__kit"
@@ -109,15 +149,26 @@ const ndKits = [
       <span class="gear-hero__index" aria-hidden="true">00</span>
       <span class="gear-hero__guide gear-hero__guide--horizontal" aria-hidden="true"></span>
       <span class="gear-hero__guide gear-hero__guide--vertical" aria-hidden="true"></span>
-      <img class="gear-hero__camera--go" src="/gear/insta360-go-ultra-action-camera.webp" alt="" decoding="async" />
+      <div class="gear-hero__camera">
+        <Picture
+          src={goHeroCamera}
+          formats={['avif', 'webp']}
+          widths={[480, 768, 960, 1200]}
+          sizes="(max-width: 30rem) 31rem, (max-width: 72rem) 56vw, 48rem"
+          alt=""
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
     </figure>
 
     <div class="l-wrapper gear-hero__copy">
       <p class="gear-kicker"><span aria-hidden="true"></span>The field kit</p>
       <h1 id="gear-title">Three ways<br />of seeing.</h1>
       <p class="gear-hero__intro">
-        One camera gets close. One waits. One sees everything around it. We use
-        each for a different relationship with the place.
+        One camera gets close. One waits. One sees the wider route. We choose
+        each for the relationship it creates with the place.
       </p>
     </div>
   </header>
@@ -126,10 +177,11 @@ const ndKits = [
     <div class="l-wrapper gear-intro__grid">
       <p class="section-label">Close <span aria-hidden="true">→</span> Composed <span aria-hidden="true">→</span> All around</p>
       <div>
-        <h2 id="gear-intro-title">The perspective comes first.</h2>
+        <h2 id="gear-intro-title">Choose the perspective first.</h2>
         <p>
-          This is not a list of specifications. It is the small set of tools I
-          reach for when a moment needs a particular point of view.
+          Then choose the smallest camera that can make it honestly. We keep
+          the kit light so we can move quickly, stay less intrusive, and keep
+          our attention on the place.
         </p>
       </div>
     </div>
@@ -140,17 +192,47 @@ const ndKits = [
       {
         cameras.map((camera) => (
           <article class:list={['camera', camera.modifier]}>
-            <figure class:list={['camera__placeholder', 'camera__image', camera.imageClass]}>
-              <img src={camera.image} alt={camera.imageAlt} loading="eager" decoding="async" />
+            <figure
+              class:list={[
+                'camera__visual',
+                camera.imageClass,
+                { 'camera__visual--with-still': Boolean(camera.fieldStill) },
+              ]}
+              style={`--field-position: ${camera.fieldStill?.position ?? 'center'}`}
+            >
+              {camera.fieldStill && (
+                <div class="camera__field-still">
+                  <Picture
+                    src={camera.fieldStill.image}
+                    formats={['avif', 'webp']}
+                    widths={[480, 768, 960, 1200]}
+                    sizes="(max-width: 47.99rem) calc(100vw - 3rem), 50vw"
+                    alt={camera.fieldStill.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              )}
+              <div class="camera__product">
+                <Picture
+                  src={camera.image}
+                  formats={['avif', 'webp']}
+                  widths={[480, 768, 960]}
+                  sizes="(max-width: 47.99rem) calc(100vw - 4rem), 46vw"
+                  alt={camera.fieldStill ? '' : camera.imageAlt}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </figure>
 
             <div class="camera__copy">
               <p class="camera__meta">
                 <span>{camera.number}</span>
                 <span>{camera.perspective}</span>
+                <span>{camera.name}</span>
               </p>
-              <h2>{camera.name}</h2>
-              <p class="camera__heading">{camera.heading}</p>
+              <h2>{camera.heading}</h2>
               <p class="camera__description">{camera.description}</p>
               <ul aria-label={`${camera.name} uses`}>
                 {camera.uses.map((use) => <li>{use}</li>)}
@@ -166,10 +248,11 @@ const ndKits = [
     <div class="l-wrapper sound__inner">
       <div class="sound__copy">
         <p class="section-label">Sound</p>
-        <h2 id="sound-title">Mic Pro</h2>
-        <p class="sound__statement">Clean, immediate sound.</p>
+        <h2 id="sound-title">Let the place be heard.</h2>
+        <p class="sound__product">Mic Pro</p>
         <p class="sound__description">
-          For voices and details that should feel as close as the picture.
+          We use Mic Pro to keep voices, tyres, wind, rooms and small details
+          close—then leave enough space for silence.
         </p>
       </div>
 
@@ -177,31 +260,48 @@ const ndKits = [
         <div class="sound__levels" aria-hidden="true">
           <span></span><span></span><span></span>
         </div>
-        <img
-          src="/gear/insta360-sound-mic-pro.png"
+        <Picture
+          src={micPro}
+          formats={['avif', 'webp']}
+          widths={[480, 768, 960]}
+          sizes="(max-width: 47.99rem) calc(100vw - 3rem), 52vw"
           alt="Insta360 Mic Pro charging case, transmitter, and two wireless microphones."
-          loading="eager"
+          loading="lazy"
           decoding="async"
         />
       </figure>
     </div>
   </section>
 
-  <section class="accessories" aria-labelledby="accessories-title">
+  <section class="supporting" aria-labelledby="supporting-title">
     <div class="l-wrapper">
-      <div class="accessories__heading">
-        <p class="section-label">Supporting kit</p>
-        <h2 id="accessories-title">Everything around the frame.</h2>
-      </div>
+      <header class="supporting__heading">
+        <p class="section-label">Supporting the shot</p>
+        <div>
+          <h2 id="supporting-title">Small supports.<br />Specific jobs.</h2>
+          <p>
+            We carry only what changes a shot: somewhere to place the camera,
+            a stable base, or extra reach when the route needs it.
+          </p>
+        </div>
+      </header>
 
-      <div class="accessory-gallery">
+      <div class="support-rail">
         {
           featuredAccessories.map((accessory) => (
-            <article class:list={['accessory-feature', `accessory-feature--${accessory.number}`]}>
-              <figure class="accessory-feature__image">
-                <img src={accessory.image} alt={accessory.imageAlt} loading="eager" decoding="async" />
+            <article class:list={['support-item', `support-item--${accessory.number}`]}>
+              <figure class="support-item__image">
+                <Picture
+                  src={accessory.image}
+                  formats={['avif', 'webp']}
+                  widths={[240, 360, 480]}
+                  sizes="(max-width: 47.99rem) 8rem, 30vw"
+                  alt={accessory.imageAlt}
+                  loading="lazy"
+                  decoding="async"
+                />
               </figure>
-              <div class="accessory-feature__copy">
+              <div class="support-item__copy">
                 <p>{accessory.number}</p>
                 <h3>{accessory.name}</h3>
                 <p>{accessory.purpose}</p>
@@ -211,47 +311,59 @@ const ndKits = [
         }
       </div>
 
-    </div>
-  </section>
-
-  <section class="filters" aria-labelledby="filters-title">
-    <div class="l-wrapper">
-      <div class="filters__heading">
-        <p class="section-label">Light control</p>
-        <div>
-          <h2 id="filters-title">Keep the movement.</h2>
-          <p>
-            We film at 4K, 30 frames per second, then use the right filter to
-            let the light move through the frame with a little more calm.
+      <section class="light-control" aria-labelledby="light-title">
+        <header class="light-control__heading">
+          <div class="light-control__copy">
+            <p class="section-label">Light and motion</p>
+            <h3 id="light-title">Hold the motion.</h3>
+            <p>
+              At 4K and 30 frames per second, we use filters to control
+              exposure when natural motion matters—not to force blur into
+              every shot.
+            </p>
+          </div>
+          <p class="light-control__setting" aria-label="4K at 30 frames per second">
+            <span>4K</span><i aria-hidden="true">/</i><span>30</span>
           </p>
-        </div>
-      </div>
+        </header>
 
-      <ol class="filter-kits">
-        {
-          ndKits.map((kit, index) => (
-            <li class:list={['filter-kit', `filter-kit--${index + 1}`]}>
-              <figure class="filter-kit__image">
-                <img src={kit.image} alt={kit.imageAlt} loading="eager" decoding="async" />
-              </figure>
-              <p class="filter-kit__camera">{kit.camera}</p>
-              <h3>{kit.name}</h3>
-              <p class="filter-kit__set">{kit.detail}</p>
-              <p class="filter-kit__purpose">{kit.purpose}</p>
-            </li>
-          ))
-        }
-      </ol>
+        <ol class="filter-rail">
+          {
+            ndKits.map((kit, index) => (
+              <li class:list={['filter-item', `filter-item--${index + 1}`]}>
+                <figure class="filter-item__image">
+                  <Picture
+                    src={kit.image}
+                    formats={['avif', 'webp']}
+                    widths={[320, 480, 720]}
+                    sizes="(max-width: 47.99rem) 8rem, 30vw"
+                    alt={kit.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <div class="filter-item__copy">
+                  <p class="filter-item__camera">{kit.camera}</p>
+                  <h4>{kit.name}</h4>
+                  <p class="filter-item__set">{kit.detail}</p>
+                  <p class="filter-item__purpose">{kit.purpose}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
     </div>
   </section>
 
   <section class="gear-cta" data-surface="dark" aria-labelledby="gear-cta-title">
     <div class="l-wrapper gear-cta__inner">
-      <p class="gear-cta__label">Built for the way we film.</p>
-      <h2 id="gear-cta-title">Small enough to bring.</h2>
+      <p class="gear-cta__label">Why the kit stays small</p>
+      <h2 id="gear-cta-title">Less setup.<br />More time in the place.</h2>
       <p class="gear-cta__copy">
-        We choose lighter, less intrusive equipment for filming on the go—easy
-        to bring into most situations, and ready when something happens.
+        We choose small, light, less intrusive tools so we can move quickly,
+        film in ordinary situations, and stop the equipment from becoming the
+        event.
       </p>
       <a href="https://www.youtube.com/@OnePlaceLater" target="_blank" rel="me noopener">
         See the kit in motion <span aria-hidden="true">↗</span>
@@ -278,33 +390,31 @@ const ndKits = [
     margin: 0;
     overflow: hidden;
     background: #292925;
-    animation: placeholder-in 900ms var(--ease-standard) both;
   }
 
   .gear-hero__kit::before {
     position: absolute;
-    content: '';
-  }
-
-  .gear-hero__kit::before {
+    z-index: 2;
     inset: var(--space-5);
     border: 1px solid color-mix(in srgb, var(--color-text-on-dark) 22%, transparent);
+    content: '';
+    pointer-events: none;
   }
 
   .gear-hero__guide {
-    top: 50%;
     position: absolute;
     z-index: -1;
     background: color-mix(in srgb, var(--color-text-on-dark) 13%, transparent);
   }
 
   .gear-hero__guide--horizontal {
+    top: 50%;
     right: var(--space-5);
     left: var(--space-5);
     height: 1px;
     transform: scaleX(0);
     transform-origin: left;
-    animation: guide-draw 800ms 300ms var(--ease-standard) forwards;
+    animation: guide-draw 620ms 120ms var(--ease-standard) forwards;
   }
 
   .gear-hero__guide--vertical {
@@ -327,17 +437,18 @@ const ndKits = [
     transform: translateY(-50%);
   }
 
-  .gear-hero__camera--go {
+  .gear-hero__camera {
     position: absolute;
-    max-width: none;
-    animation: media-in 900ms var(--ease-standard) both;
-  }
-
-  .gear-hero__camera--go {
     right: clamp(-7rem, 4vw, 4rem);
     bottom: clamp(-6rem, -4vw, -1rem);
     width: min(56vw, 48rem);
-    animation-delay: 120ms;
+    animation: media-in 620ms 80ms var(--ease-standard) both;
+  }
+
+  .gear-hero__camera picture,
+  .gear-hero__camera img {
+    width: 100%;
+    height: auto;
   }
 
   .gear-hero__copy {
@@ -363,7 +474,7 @@ const ndKits = [
     align-items: center;
     gap: var(--space-3);
     margin-bottom: var(--space-4);
-    animation: copy-in 500ms 260ms var(--ease-standard) both;
+    animation: copy-in 420ms 40ms var(--ease-standard) both;
   }
 
   .gear-kicker span {
@@ -378,7 +489,7 @@ const ndKits = [
     font-weight: 500;
     line-height: 0.88;
     letter-spacing: -0.055em;
-    animation: copy-in 620ms 340ms var(--ease-standard) both;
+    animation: copy-in 480ms 80ms var(--ease-standard) both;
   }
 
   .gear-hero__intro {
@@ -388,20 +499,21 @@ const ndKits = [
     color: color-mix(in srgb, var(--color-text-on-dark) 78%, transparent);
     font-size: var(--text-base);
     line-height: 1.5;
-    animation: copy-in 520ms 480ms var(--ease-standard) both;
+    animation: copy-in 440ms 120ms var(--ease-standard) both;
   }
 
   .gear-intro {
     padding-block: var(--space-9);
   }
 
-  .gear-intro__grid {
+  .gear-intro__grid,
+  .supporting__heading {
     display: grid;
     gap: var(--space-7);
   }
 
   .gear-intro__grid > *,
-  .accessories__heading > * {
+  .supporting__heading > * {
     min-width: 0;
   }
 
@@ -415,7 +527,7 @@ const ndKits = [
   }
 
   .gear-intro h2,
-  .accessories h2,
+  .supporting h2,
   .gear-cta h2 {
     font-size: var(--text-2xl);
     font-weight: 400;
@@ -426,7 +538,8 @@ const ndKits = [
     max-width: 15ch;
   }
 
-  .gear-intro h2 + p {
+  .gear-intro h2 + p,
+  .supporting__heading h2 + p {
     max-width: 42rem;
     margin-top: var(--space-5);
     color: var(--color-text-muted);
@@ -459,7 +572,7 @@ const ndKits = [
     position: relative;
     display: grid;
     gap: var(--space-6);
-    padding: 0 0 var(--space-9) var(--space-6);
+    padding: 0 0 clamp(5rem, 9vw, 8rem) var(--space-6);
   }
 
   .camera:last-child {
@@ -478,98 +591,58 @@ const ndKits = [
     content: '';
   }
 
-  .camera__placeholder {
+  .camera__visual {
     position: relative;
+    min-height: clamp(20rem, 95vw, 25rem);
     margin: 0;
     overflow: hidden;
-    color: var(--color-text-on-dark);
     background: transparent;
   }
 
-  .camera__placeholder {
-    aspect-ratio: 4 / 5;
-  }
-
-  .camera--composed .camera__placeholder {
-    aspect-ratio: 2 / 3;
-  }
-
-  .camera--around .camera__placeholder {
-    aspect-ratio: 1;
-  }
-
-  .camera__placeholder::before,
-  .camera__placeholder::after {
-    position: absolute;
-    content: '';
-  }
-
-  .camera__image {
-    display: grid;
-    place-items: center;
-  }
-
-  .camera__image::before,
-  .camera__image::after {
-    display: none;
-  }
-
-  .camera__image img {
+  .camera__product,
+  .camera__product picture,
+  .camera__product img,
+  .camera__field-still,
+  .camera__field-still picture,
+  .camera__field-still img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    max-width: none;
+  }
+
+  .camera__product img {
     object-fit: contain;
-    transition: transform var(--motion-slow) var(--ease-standard);
+    padding: clamp(0.75rem, 3vw, 2.5rem);
   }
 
-  .camera__image:hover img {
-    transform: scale(1.025);
+  .camera__field-still img {
+    object-fit: cover;
+    object-position: var(--field-position);
   }
 
-  .camera__image--go img {
-    padding: clamp(1rem, 3vw, 3rem);
+  .camera__visual--with-still {
+    aspect-ratio: 3 / 2;
+    min-height: 0;
   }
 
-  .camera__image--luna img {
-    padding: clamp(1rem, 3vw, 3rem);
+  .camera__visual--with-still .camera__product {
+    inset: auto var(--space-4) var(--space-4) auto;
+    width: min(42%, 18rem);
+    height: min(64%, 20rem);
   }
 
-  .camera__image--x6 img {
-    padding: clamp(1rem, 3vw, 3rem);
+  .camera__visual--with-still .camera__product img {
+    padding: 0;
+    object-position: right bottom;
   }
 
-  .camera__placeholder::before {
-    inset: var(--space-4);
-    border: 1px solid color-mix(in srgb, var(--color-text-on-dark) 28%, transparent);
+  .camera__visual--luna .camera__product img {
+    padding-block: 0.5rem;
   }
 
-  .camera__placeholder::after {
-    top: 50%;
-    left: 50%;
-    width: min(32%, 8rem);
-    aspect-ratio: 1;
-    border: 1px solid color-mix(in srgb, var(--color-text-on-dark) 30%, transparent);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .camera__frame-mark {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    width: 1px;
-    height: 12%;
-    background: var(--color-accent);
-  }
-
-  .camera__frame-mark--top {
-    top: 0;
-  }
-
-  .camera__frame-mark--bottom {
-    bottom: 0;
+  .camera__visual--x6 .camera__product img {
+    padding: clamp(1.5rem, 5vw, 4rem);
   }
 
   .camera__copy {
@@ -579,8 +652,9 @@ const ndKits = [
 
   .camera__meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: var(--space-3);
+    gap: var(--space-2) var(--space-3);
     margin-bottom: var(--space-5);
     color: var(--color-text-muted);
     font-size: var(--text-xs);
@@ -599,18 +673,17 @@ const ndKits = [
     background: var(--color-accent-strong);
   }
 
-  .camera h2 {
-    max-width: 12ch;
-    font-size: var(--text-xl);
-    font-weight: 500;
-    letter-spacing: -0.025em;
+  .camera__meta span:last-child {
+    flex-basis: 100%;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
   }
 
-  .camera__heading {
-    margin-top: var(--space-5);
+  .camera h2 {
+    max-width: 12ch;
     font-size: var(--text-2xl);
     font-weight: 400;
-    line-height: 1.06;
+    line-height: 1.02;
     letter-spacing: -0.04em;
   }
 
@@ -659,10 +732,11 @@ const ndKits = [
   }
 
   .sound__copy {
-    max-width: 28rem;
+    max-width: 31rem;
   }
 
   .sound h2 {
+    max-width: 10ch;
     margin-top: var(--space-5);
     font-size: clamp(3rem, 7vw, 6.5rem);
     font-weight: 400;
@@ -670,16 +744,15 @@ const ndKits = [
     letter-spacing: -0.055em;
   }
 
-  .sound__statement {
+  .sound__product {
     margin-top: var(--space-6);
-    font-size: var(--text-xl);
-    line-height: 1.06;
-    letter-spacing: -0.035em;
+    font-size: var(--text-lg);
+    font-weight: 500;
   }
 
   .sound__description {
-    max-width: 30ch;
-    margin-top: var(--space-4);
+    max-width: 35ch;
+    margin-top: var(--space-3);
     color: var(--color-text-muted);
   }
 
@@ -689,19 +762,17 @@ const ndKits = [
     margin: 0;
   }
 
+  .sound__visual picture,
   .sound__visual img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    max-width: none;
-    object-fit: contain;
-    animation: media-in 800ms 160ms var(--ease-standard) both;
-    transition: transform var(--motion-slow) var(--ease-standard);
   }
 
-  .sound__visual:hover img {
-    transform: scale(1.025);
+  .sound__visual img {
+    object-fit: contain;
+    animation: media-in 620ms 80ms var(--ease-standard) both;
   }
 
   .sound__levels {
@@ -728,160 +799,60 @@ const ndKits = [
     width: clamp(1.5rem, 3vw, 3rem);
   }
 
-  .accessories {
+  .supporting {
     padding-block: var(--space-9);
     background: var(--color-bg-soft);
   }
 
-  .accessories__heading {
-    display: grid;
-    gap: var(--space-5);
+  .supporting__heading {
     margin-bottom: var(--space-7);
   }
 
-  .accessories h2 {
-    max-width: 15ch;
+  .supporting__heading h2 {
+    max-width: 12ch;
   }
 
-  .accessory-gallery {
+  .support-rail {
     display: grid;
-    gap: var(--space-7);
+    gap: var(--space-6);
+    padding-top: var(--space-6);
+    border-top: var(--border-default);
   }
 
-  .accessory-feature__image {
+  .support-item {
+    display: grid;
+    grid-template-columns: minmax(7rem, 38%) minmax(0, 1fr);
+    gap: var(--space-5);
+    min-width: 0;
+    align-items: center;
+  }
+
+  .support-item__image {
     position: relative;
-    aspect-ratio: 4 / 3;
+    height: 9rem;
     margin: 0;
-    background: transparent;
   }
 
-  .accessory-feature__image img {
-    position: absolute;
-    inset: 0;
+  .support-item__image picture,
+  .support-item__image img {
     width: 100%;
     height: 100%;
-    max-width: none;
-    object-fit: contain;
-    padding: var(--space-4);
-    transition: transform var(--motion-slow) var(--ease-standard);
   }
 
-  .accessory-feature--03 .accessory-feature__image img {
+  .support-item__image img {
+    object-fit: contain;
+  }
+
+  .support-item--03 .support-item__image img {
     padding-block: 0;
   }
 
-  .accessory-feature:hover .accessory-feature__image img {
-    transform: scale(1.025);
-  }
-
-  .accessory-feature__copy {
-    display: grid;
-    gap: var(--space-2);
-    padding-top: var(--space-4);
-  }
-
-  .accessory-feature__copy > p:first-child {
-    color: var(--color-accent-strong);
-    font-size: var(--text-xs);
-    font-weight: 500;
-  }
-
-  .accessory-feature h3 {
-    font-size: var(--text-lg);
-    font-weight: 500;
-    letter-spacing: -0.02em;
-  }
-
-  .accessory-feature h3 a {
-    display: inline-flex;
-    min-height: 2.75rem;
-    align-items: center;
-    gap: var(--space-2);
-    text-decoration-color: color-mix(in srgb, currentColor 36%, transparent);
-  }
-
-  .accessory-feature h3 a > span:first-of-type {
-    color: var(--color-accent-strong);
-    transition: transform var(--motion-fast) var(--ease-standard);
-  }
-
-  .accessory-feature h3 a:hover > span:first-of-type,
-  .accessory-feature h3 a:focus-visible > span:first-of-type {
-    transform: translate(2px, -2px);
-  }
-
-  .accessory-feature__copy > p:last-child {
-    max-width: 28ch;
-    color: var(--color-text-muted);
-    font-size: var(--text-sm);
-  }
-
-  .filters {
-    padding-block: var(--space-9);
-    background: var(--color-bg);
-  }
-
-  .filters__heading {
-    display: grid;
-    gap: var(--space-5);
-    margin-bottom: var(--space-7);
-  }
-
-  .filters h2 {
-    max-width: 11ch;
-    font-size: var(--text-2xl);
-    font-weight: 400;
-    letter-spacing: -0.04em;
-  }
-
-  .filters__heading div > p {
-    max-width: 38rem;
-    margin-top: var(--space-4);
-    color: var(--color-text-muted);
-  }
-
-  .filter-kits {
-    display: grid;
-    gap: var(--space-7);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .filter-kit {
+  .support-item__copy {
     min-width: 0;
   }
 
-  .filter-kit__image {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    margin: 0;
-  }
-
-  .filter-kit__image img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    object-fit: contain;
-    transition: transform var(--motion-slow) var(--ease-standard);
-  }
-
-  .filter-kit--2 .filter-kit__image img {
-    transform: scale(1.12);
-  }
-
-  .filter-kit:hover .filter-kit__image img {
-    transform: scale(1.025);
-  }
-
-  .filter-kit--2:hover .filter-kit__image img {
-    transform: scale(1.15);
-  }
-
-  .filter-kit__camera {
-    margin-top: var(--space-4);
+  .support-item__copy > p:first-child,
+  .filter-item__camera {
     color: var(--color-accent-strong);
     font-size: var(--text-xs);
     font-weight: 500;
@@ -889,27 +860,113 @@ const ndKits = [
     text-transform: uppercase;
   }
 
-  .filter-kit h3 {
+  .support-item h3,
+  .filter-item h4 {
     margin-top: var(--space-2);
     font-size: var(--text-lg);
     font-weight: 500;
     letter-spacing: -0.02em;
   }
 
-  .filter-kit__set {
+  .support-item__copy > p:last-child,
+  .filter-item__purpose {
+    max-width: 28ch;
+    margin-top: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+
+  .light-control {
+    margin-top: var(--space-9);
+    padding-top: var(--space-8);
+    border-top: var(--border-default);
+  }
+
+  .light-control__heading {
+    display: grid;
+    gap: var(--space-6);
+    align-items: end;
+  }
+
+  .light-control h3 {
+    max-width: 10ch;
+    margin-top: var(--space-4);
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+  }
+
+  .light-control__copy > p:last-child {
+    max-width: 38rem;
+    margin-top: var(--space-4);
+    color: var(--color-text-muted);
+  }
+
+  .light-control__setting {
+    display: flex;
+    align-items: baseline;
+    gap: 0.16em;
+    font-size: clamp(4rem, 14vw, 9rem);
+    font-weight: 400;
+    line-height: 0.72;
+    letter-spacing: -0.075em;
+    white-space: nowrap;
+  }
+
+  .light-control__setting i {
+    color: var(--color-accent-strong);
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .filter-rail {
+    display: grid;
+    gap: var(--space-6);
+    margin: var(--space-8) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .filter-item {
+    display: grid;
+    grid-template-columns: minmax(7rem, 38%) minmax(0, 1fr);
+    gap: var(--space-5);
+    min-width: 0;
+    align-items: center;
+  }
+
+  .filter-item__image {
+    position: relative;
+    height: 9rem;
+    margin: 0;
+    overflow: clip;
+  }
+
+  .filter-item__image picture,
+  .filter-item__image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .filter-item__image img {
+    object-fit: contain;
+  }
+
+  .filter-item--2 .filter-item__image img {
+    transform: scale(1.15);
+  }
+
+  .filter-item__copy {
+    min-width: 0;
+  }
+
+  .filter-item__set {
     margin-top: var(--space-2);
     color: var(--color-text-muted);
     font-size: var(--text-xs);
     font-weight: 500;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  }
-
-  .filter-kit__purpose {
-    max-width: 30ch;
-    margin-top: var(--space-3);
-    color: var(--color-text-muted);
-    font-size: var(--text-sm);
   }
 
   .gear-cta {
@@ -933,13 +990,13 @@ const ndKits = [
   }
 
   .gear-cta h2 {
-    max-width: 13ch;
+    max-width: 14ch;
     font-size: clamp(2.75rem, 7vw, 6.5rem);
     line-height: 0.95;
   }
 
   .gear-cta__copy {
-    max-width: 37rem;
+    max-width: 39rem;
     margin-top: var(--space-5);
     color: color-mix(in srgb, var(--color-text-on-dark) 76%, transparent);
     font-size: var(--text-base);
@@ -967,6 +1024,14 @@ const ndKits = [
     transform: translate(3px, -3px);
   }
 
+  #gear-intro-title,
+  #sound-title,
+  #supporting-title,
+  #light-title,
+  #gear-cta-title {
+    scroll-margin-top: calc(var(--header-height) + var(--space-5));
+  }
+
   .u-visually-hidden {
     position: absolute;
     width: 1px;
@@ -978,13 +1043,6 @@ const ndKits = [
     border: 0;
   }
 
-  @keyframes placeholder-in {
-    from {
-      opacity: 0;
-      transform: scale(1.025);
-    }
-  }
-
   @keyframes guide-draw {
     to {
       transform: scaleX(1);
@@ -994,14 +1052,14 @@ const ndKits = [
   @keyframes media-in {
     from {
       opacity: 0;
-      transform: translateY(2rem);
+      transform: translateY(1.25rem);
     }
   }
 
   @keyframes copy-in {
     from {
       opacity: 0;
-      transform: translateY(1.25rem);
+      transform: translateY(0.8rem);
     }
   }
 
@@ -1012,7 +1070,8 @@ const ndKits = [
   }
 
   @media (min-width: 48rem) {
-    .gear-intro__grid {
+    .gear-intro__grid,
+    .supporting__heading {
       grid-template-columns: minmax(12rem, 0.75fr) minmax(0, 1.5fr);
       align-items: start;
     }
@@ -1032,30 +1091,31 @@ const ndKits = [
       left: calc(50% - 0.25rem);
     }
 
-    .camera__placeholder {
+    .camera__visual {
       grid-column: 1 / span 6;
+      min-height: clamp(30rem, 52vw, 42rem);
     }
 
     .camera__copy {
       grid-column: 8 / -1;
     }
 
-    .camera--composed .camera__placeholder {
-      grid-column: 6 / -1;
+    .camera--composed .camera__visual {
+      grid-column: 7 / -1;
       grid-row: 1;
     }
 
     .camera--composed .camera__copy {
-      grid-column: 1 / span 4;
+      grid-column: 1 / span 5;
       grid-row: 1;
     }
 
-    .camera--around .camera__placeholder {
-      grid-column: 1 / span 7;
+    .camera--around .camera__visual {
+      grid-column: 1 / span 6;
     }
 
     .camera--around .camera__copy {
-      grid-column: 9 / -1;
+      grid-column: 8 / -1;
     }
 
     .sound__inner {
@@ -1064,7 +1124,7 @@ const ndKits = [
     }
 
     .sound__copy {
-      grid-column: 1 / span 4;
+      grid-column: 1 / span 5;
     }
 
     .sound__visual {
@@ -1072,22 +1132,30 @@ const ndKits = [
       grid-row: 1;
     }
 
-    .accessories__heading {
-      grid-template-columns: minmax(12rem, 0.75fr) minmax(0, 1.5fr);
-    }
-
-    .filters__heading {
-      grid-template-columns: minmax(12rem, 0.75fr) minmax(0, 1.5fr);
-    }
-
-    .accessory-gallery {
+    .support-rail,
+    .filter-rail {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: var(--space-5);
     }
 
-    .filter-kits {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: var(--space-5);
+    .support-item,
+    .filter-item {
+      display: block;
+    }
+
+    .support-item__image,
+    .filter-item__image {
+      height: clamp(10rem, 18vw, 14rem);
+    }
+
+    .support-item__copy,
+    .filter-item__copy {
+      padding-top: var(--space-4);
+    }
+
+    .light-control__heading {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: var(--space-7);
     }
   }
 
@@ -1108,7 +1176,7 @@ const ndKits = [
       padding-top: var(--space-8);
     }
 
-    .gear-hero__camera--go {
+    .gear-hero__camera {
       right: -8rem;
       bottom: -1rem;
       width: 31rem;
@@ -1131,28 +1199,40 @@ const ndKits = [
       padding-left: var(--space-5);
     }
 
-    .camera--close .camera__placeholder {
-      aspect-ratio: auto;
-      min-height: 26rem;
-    }
-
-    .camera--composed .camera__placeholder,
-    .camera--around .camera__placeholder {
-      aspect-ratio: auto;
-      min-height: 18rem;
-    }
-
     .gear-intro h2,
     .sound h2,
-    .accessories h2,
-    .filters h2,
+    .supporting h2,
+    .light-control h3,
     .gear-cta h2 {
       overflow-wrap: anywhere;
     }
 
+    .sound__levels {
+      top: 7%;
+    }
+
+    .light-control__setting {
+      font-size: clamp(4rem, 25vw, 6.5rem);
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .gear-hero__guide--horizontal,
+    .gear-hero__camera,
+    .gear-kicker,
+    .gear-hero h1,
+    .gear-hero__intro,
+    .sound__visual img,
+    .camera-sequence__inner::before {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .gear-hero__guide--horizontal,
+    .camera-sequence__inner::before {
+      transform: none;
+    }
+
     .camera-sequence__inner::before {
       transform: scaleY(1);
     }
