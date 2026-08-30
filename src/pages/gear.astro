@@ -47,7 +47,7 @@ const cameras: Camera[] = [
     perspective: 'Close',
     heading: 'Inside the moment.',
     description:
-      'We use it for close behaviour, discreet coverage, processes and quick details—the views that disappear while a larger camera is still coming out of the bag.',
+      'We use it for unusual views from inside the moment: close behaviour, discreet coverage and quick details.',
     uses: ['POV', 'Quick details', 'Small spaces'],
     modifier: 'camera--close',
     image: goCamera,
@@ -60,7 +60,7 @@ const cameras: Camera[] = [
     perspective: 'Composed',
     heading: 'Let the scene hold.',
     description:
-      'Mostly on a tripod, we use it for deliberate compositions where movement can happen inside a frame that stays still.',
+      'We use it for deliberate compositions where movement can happen inside a frame that stays still.',
     uses: ['Tripod scenes', 'Deliberate frames', 'Movement within'],
     modifier: 'camera--composed',
     image: lunaCamera,
@@ -73,7 +73,7 @@ const cameras: Camera[] = [
     perspective: 'All around',
     heading: 'Move through it.',
     description:
-      'We use it for moving routes, geography and seeing ourselves inside an environment—then reframe only when the angle adds something to the place.',
+      'We use it to capture everything while we move—and to place ourselves inside the environment. We film first, then find the frame later.',
     uses: ['Immersion', 'Moving routes', 'Selective reframing'],
     modifier: 'camera--around',
     image: x6Camera,
@@ -86,21 +86,21 @@ const featuredAccessories = [
   {
     number: '01',
     name: 'GO Ultra Pivot Stand',
-    purpose: 'A small, deliberate place to leave the camera.',
+    purpose: 'A small, seriously sticky place to leave the camera.',
     image: goPivotStand,
     imageAlt: 'Insta360 GO Ultra Pivot Stand in black.',
   },
   {
     number: '02',
     name: 'All-Purpose Tripod',
-    purpose: 'A stable base when the frame needs to stay put.',
+    purpose: 'A stable base for the selfie stick when the frame needs to stay put.',
     image: tripodFeet,
     imageAlt: 'Black Insta360 tripod with three folded feet.',
   },
   {
     number: '03',
     name: 'Extended 3m Selfie Stick',
-    purpose: 'Height, distance and a viewpoint the route otherwise hides.',
+    purpose: 'Bigger and heavier than the rest, but indispensable for high viewpoints and perspectives we cannot reach by hand.',
     image: extendedStick,
     imageAlt: 'Black Insta360 extended 3m selfie stick.',
   },
@@ -113,7 +113,6 @@ const ndKits = [
     image: goNdFilters,
     imageAlt: 'Insta360 GO Ultra camera with three ND filters in front.',
     detail: 'ND8 · ND16 · ND32',
-    purpose: 'Changing light, quick movement and long-exposure colour.',
   },
   {
     camera: 'X6',
@@ -121,7 +120,6 @@ const ndKits = [
     image: x6NdFilters,
     imageAlt: 'Insta360 X6 ND64 filter viewed from the side.',
     detail: 'ND16 · ND32 · ND64',
-    purpose: 'Daylight control while moving through the scene.',
   },
   {
     camera: 'Ultra Luna',
@@ -129,7 +127,6 @@ const ndKits = [
     image: lunaNdFilters,
     imageAlt: 'NiSi filter kit for Insta360 Ultra Luna with CPL, VND, and Black Mist filters.',
     detail: 'CPL · VND 1–5 stops · Black Mist',
-    purpose: 'Reflections, variable exposure and softer contrast when the composition calls for it.',
   },
 ];
 ---
@@ -167,7 +164,7 @@ const ndKits = [
       <p class="gear-kicker"><span aria-hidden="true"></span>The field kit</p>
       <h1 id="gear-title">Three ways<br />of seeing.</h1>
       <p class="gear-hero__intro">
-        One camera gets close. One waits. One sees the wider route. We choose
+        One camera gets close. One waits. One sees the whole scene. We choose
         each for the relationship it creates with the place.
       </p>
     </div>
@@ -179,9 +176,9 @@ const ndKits = [
       <div>
         <h2 id="gear-intro-title">Choose the perspective first.</h2>
         <p>
-          Then choose the smallest camera that can make it honestly. We keep
-          the kit light so we can move quickly, stay less intrusive, and keep
-          our attention on the place.
+          Then choose the most practical camera for telling it honestly. We
+          keep the kit light so we can move quickly, stay less intrusive, and
+          keep our attention on what is happening.
         </p>
       </div>
     </div>
@@ -251,8 +248,9 @@ const ndKits = [
         <h2 id="sound-title">Let the place be heard.</h2>
         <p class="sound__product">Mic Pro</p>
         <p class="sound__description">
-          We use Mic Pro to keep voices, tyres, wind, rooms and small details
-          close—then leave enough space for silence.
+          We use Mic Pro to keep our voices clear without losing the place
+          around us: wind, street sound and the small details that pull the
+          viewer in.
         </p>
       </div>
 
@@ -278,10 +276,10 @@ const ndKits = [
       <header class="supporting__heading">
         <p class="section-label">Supporting the shot</p>
         <div>
-          <h2 id="supporting-title">Small supports.<br />Specific jobs.</h2>
+          <h2 id="supporting-title">Small supports.<br />More ways to see.</h2>
           <p>
-            We carry only what changes a shot: somewhere to place the camera,
-            a stable base, or extra reach when the route needs it.
+            Different perspectives often begin with where we can place the
+            camera—in the space, above it or moving through it.
           </p>
         </div>
       </header>
@@ -317,9 +315,8 @@ const ndKits = [
             <p class="section-label">Light and motion</p>
             <h3 id="light-title">Hold the motion.</h3>
             <p>
-              At 4K and 30 frames per second, we use filters to control
-              exposure when natural motion matters—not to force blur into
-              every shot.
+              At 4K and 30 frames per second, filters let us control exposure
+              while keeping motion natural.
             </p>
           </div>
           <p class="light-control__setting" aria-label="4K at 30 frames per second">
@@ -346,7 +343,6 @@ const ndKits = [
                   <p class="filter-item__camera">{kit.camera}</p>
                   <h4>{kit.name}</h4>
                   <p class="filter-item__set">{kit.detail}</p>
-                  <p class="filter-item__purpose">{kit.purpose}</p>
                 </div>
               </li>
             ))
@@ -359,11 +355,10 @@ const ndKits = [
   <section class="gear-cta" data-surface="dark" aria-labelledby="gear-cta-title">
     <div class="l-wrapper gear-cta__inner">
       <p class="gear-cta__label">Why the kit stays small</p>
-      <h2 id="gear-cta-title">Less setup.<br />More time in the place.</h2>
+      <h2 id="gear-cta-title">Less setup.<br />More time filming.</h2>
       <p class="gear-cta__copy">
-        We choose small, light, less intrusive tools so we can move quickly,
-        film in ordinary situations, and stop the equipment from becoming the
-        event.
+        We choose small, light tools so we can move quickly, film more, and
+        stay present in the place.
       </p>
       <a href="https://www.youtube.com/@OnePlaceLater" target="_blank" rel="me noopener">
         See the kit in motion <span aria-hidden="true">↗</span>
@@ -868,8 +863,7 @@ const ndKits = [
     letter-spacing: -0.02em;
   }
 
-  .support-item__copy > p:last-child,
-  .filter-item__purpose {
+  .support-item__copy > p:last-child {
     max-width: 28ch;
     margin-top: var(--space-2);
     color: var(--color-text-muted);
