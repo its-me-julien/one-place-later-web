@@ -1,7 +1,7 @@
 ---
 title: Codex film workflow
-description: "A concise editing workflow for Codex: one project folder, a living brief, an approved timeline and batch approval for heavy work."
-version: "1.1"
+description: "The Codex film workflow: three project documents, a living brief, an approved timeline and batch approval for heavy work."
+version: "1.2"
 updated: "2026-10-12"
 ---
 
@@ -14,6 +14,8 @@ Use **one root folder per video project**, with subfolders only as needed:
 ```text
 video-project/
   brief.md       # story, footage review, selections, approvals, next action
+  ai-brief.md    # concise AI understanding of the main brief
+  video-page.md  # audience-facing copy for the video page
   footage/       # originals, optionally grouped by day or location
   resolve/       # project files and timeline versions
   review/        # proxies, transcripts and review exports when useful
@@ -21,11 +23,33 @@ video-project/
   exports/       # final video and subtitles
 ```
 
-Reuse an existing project folder and its structure. If originals must remain elsewhere, reference them in `brief.md`; do not copy or move large media merely to match this layout. Preserve originals and existing Resolve links.
+Reuse an existing project folder and its structure. The file names above describe their roles; reuse an existing main brief or webpage rather than creating a competing source of truth. Record where each of the three documents lives. If originals must remain elsewhere, reference them in the main brief; do not copy or move large media merely to match this layout. Preserve originals and existing Resolve links.
 
-At session start, read `brief.md`, inspect the available files and basic metadata, and check the actual Resolve/MCP tools. Record relevant limitations. Metadata access or timeline control does not prove that you can watch footage or listen to sound.
+At session start, read the main brief and check whether the AI brief and video page reflect its current version. Inspect the available files and basic metadata, and check the actual Resolve/MCP tools. Record relevant limitations. Metadata access or timeline control does not prove that you can watch footage or listen to sound.
 
 ## 2. Review footage and maintain the brief
+
+### Three documents per video project
+
+**Create, craft and maintain all three documents as part of the film workflow:**
+
+| Document | Purpose | Visibility |
+| --- | --- | --- |
+| Main brief | The detailed, human-readable project brief: story, factual context, scene plan, proposed narration, review decisions and next action. Reuse the existing project page when present. | Private. |
+| AI brief · `.md` | Codex's concise understanding of the main brief, optimised for resuming work: premise, viewer promise, confirmed facts, proposed structure, sound/narration intent, constraints, open questions and next action. | Private, including any download URL. |
+| Video page | A simple introduction for viewers: title, a short inviting description, factual location or route, a real poster and the video when available. | Private preview until release is authorised; public after publication. |
+
+The **main brief is the source of truth**. The AI brief is a derived interpretation, not a second independent plan. Identify the source and version/date it reflects; distinguish confirmed facts, proposals and unanswered questions. Do not invent footage reviews, approvals, dialogue or feelings. Keep raw file paths, transcripts and detailed review inventories in the local project records rather than website content.
+
+Write the video page for someone deciding whether to watch. Use concise, natural, marketing-friendly copy that presents the film without explaining how it was made. Exclude shot lists, editing directions, prompts, AI instructions, approvals and private project information. Use only details suitable for public disclosure. Do not claim the film is finished or available, or invent its duration, publication date, poster or video URL.
+
+For an unpublished film, keep the audience-facing page under the protected project area (for example, `/film-plans/<slug>/video/`) or local-only. Do not serve a draft at a public `/films/` URL: `noindex` is not access control. After the user approves the final copy and authorises release, publish the page at its permanent public film URL with the actual video. Keep both briefs private.
+
+List the three destinations together in the private workspace project entry: **Main brief**, **AI brief · Markdown**, and **Video page · Preview / Published**. Use a stable project identifier so additional projects follow the same structure. Verify that private pages and downloads require login and that the public page contains no production details.
+
+### Keep the documents in sync
+
+Create the three documents when establishing the project. After an authorised change to the story, structure or confirmed facts, update the main brief first, refresh the AI brief, and revise the audience-facing copy only where the viewer-facing promise changes. Check them again at picture lock and before release. Routine document drafting and editing does not require a media-processing approval; preserve the existing creative reviews and release approval.
 
 Start with existing previews and manageable local review of raw footage. Review picture **and** sound; use representative clips across locations, speech, movement and quiet observation. Review promising moments in more detail, including surrounding action. Avoid full-library transcoding, transcription or cloud analysis by default.
 
@@ -70,19 +94,19 @@ Heavy operations run within the approved work packages above. Do not turn each r
 | Stage | Action | Result / review |
 | --- | --- | --- |
 | 01. Prepare project | Establish folder, backup status, delivery settings and colour management. | Usable project and preserved sources. |
-| 02. Establish brief | Define story, length, factual context and personal perspective. | Working brief. |
-| 03. Review and select | Inspect raw footage and sound; update coverage, ranges and AI notes. | Evidence-linked selections. |
+| 02. Establish brief | Define story, length, factual context and personal perspective. Craft the main brief, derived AI Markdown brief and private preview of the video page. | Three linked project documents; user reviews the direction and open questions. |
+| 03. Review and select | Inspect raw footage and sound; update coverage, ranges and AI notes. Refresh the AI brief when understanding changes. | Evidence-linked selections and a current AI brief. |
 | 04. Propose timeline | Outline scenes, pacing and sound intentions from the reviewed material. | User approves direction and next heavy batch. |
 | 05. Assemble story cut | Build around meaningful actions, real dialogue and natural sound. | Rough cut; user reviews story and repetition. |
 | 06. Validate script | Write with the user and test phrasing and timing against the cut. | User approves exact words. |
 | 07. Generate narration | Within the approved batch, generate one passage at a time. | User approves each audio result before the next passage. |
 | 08. Refine cut | Use approved voice clips; adjust pauses, scene lengths and transitions. | Fine cut with proposed sound cues. |
 | 09. Add music / effects | Agree cue briefs; generate within the sound batch and audition in context. | User approves selected cues. |
-| 10. Lock picture | Settle shot order and timing; save the reviewed version. | User approves picture lock. |
+| 10. Lock picture | Settle shot order and timing; save the reviewed version. Reconcile both briefs and the video page with the actual film. | User approves picture lock; project documents reflect the locked direction. |
 | 11. Grade colour | Balance exposure/white balance, match shots and refine the look. | Reviewed treatment and scene continuity. |
 | 12. Add captions / graphics | Verify speech, translations, locations and restrained branding. | Readable, accurate text and graphics. |
 | 13. Mix sound | Clean dialogue selectively; balance ambience, voice and music; check sync. | Clear mix measured for agreed delivery. |
-| 14. Export and review | Render within the finishing batch; inspect the actual export and archive. | User approves release; publishing requires authorisation. |
+| 14. Export and review | Render within the finishing batch; inspect the actual export and archive. Verify final audience copy, real video link, metadata and privacy boundaries. | User approves the film and public page; publish only with release authorisation. |
 
 ## 5. Editorial and finishing rules
 
@@ -96,6 +120,8 @@ Read the [AI creative direction](/ai/brand.md) for these decisions. Consult the 
 ## 6. Verify, record and resume
 
 After a batch, verify outputs and update the brief with the result, review decisions and next action. Reuse proxies, transcripts and approved assets unless the source or relevant settings change. Save new timeline versions; if a locked cut changes, recheck only affected captions, cues and finishing.
+
+Before ending a session, record the current locations/versions of all three documents, any pending creative approval and whether the video page is a private preview or published. Report actual verification separately from proposed work. Resume from the main brief and its current AI summary rather than recreating them.
 
 Before release, watch and listen to the exported file completely. Check missing media, temporary assets, colour, speech clarity, sync, captions and final frame. State any review limitation; metadata or a successful render is not proof of viewing quality.
 

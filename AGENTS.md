@@ -6,6 +6,10 @@ workflow published at `/ai/guideline`, with plain Markdown at `/ai/guideline.md`
 
 Use one folder and living brief per video. Follow its timeline and batch
 approvals, sequential narration reviews, source preservation and verification.
+Create and maintain three linked project documents: the private main brief,
+its concise AI Markdown interpretation, and a simple audience-facing video page.
+Keep the main brief authoritative and both derived documents in sync. Keep the
+video page as a private preview until the user approves and authorises release.
 Keep private project records outside public website content. The protocol does
 not require media-processing approval for routine authorised website work.
 
