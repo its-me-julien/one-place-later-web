@@ -8,7 +8,11 @@ Use one folder and living brief per video. Follow its timeline and batch
 approvals, sequential narration reviews, source preservation and verification.
 Create and maintain three linked project documents: the private main brief,
 its concise AI Markdown interpretation, and a simple audience-facing video page.
-Keep the main brief authoritative and both derived documents in sync. Keep the
+Author the three documents locally in the video project folder; the local main
+brief is authoritative. Git and Cloudflare hold website copies. Keep derived
+documents in sync. For the current project, edit `projects/back-to-korea/` first
+and run `npm run projects:sync` to refresh website copies. Browser edits are
+drafts until saved into the local source. Keep the
 video page as a private preview until the user approves and authorises release.
 Keep private project records outside public website content. The protocol does
 not require media-processing approval for routine authorised website work.

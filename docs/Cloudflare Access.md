@@ -30,3 +30,7 @@ where Access requests an email code before serving the private library.
 The library groups creative guides, AI workflow downloads and film plans.
 Private HTML pages link back to the workspace; its Sign out link uses
 `/cdn-cgi/access/logout`. Public footer navigation includes Login.
+
+Project document links now include the AI Markdown brief and the unpublished
+video preview under `/film-plans/<id>/`. These inherit the protected prefix.
+Local source and website copy handling is described in `Local Film Projects.md`.

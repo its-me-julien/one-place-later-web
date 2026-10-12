@@ -149,7 +149,7 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
         <h1>The way back.</h1>
         <div class="header-bottom">
           <p>The document arrives. One last walk, one night with family, and the journey back to your wife in Korea.</p>
-          <p class="metadata">Draft 03 · Suggested cut: 5–7 minutes<br />English narration · Natural family dialogue</p>
+          <p class="metadata">Draft 04 · Suggested cut: 5–7 minutes<br />English narration · Natural family dialogue</p>
         </div>
         <div class="header-actions"><a class="plan-action" id="resume-plan" href="#scenes">Open scene plan <span aria-hidden="true">→</span></a><a href="#narration">Work on the narration</a></div>
       </div>
@@ -193,6 +193,17 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
         </div>
       </section>
 
+      <section class="plan-section" aria-label="Production note">
+        <div class="section-heading"><p class="eyebrow">Project setup</p><h2>A few decisions<br />before the cut.</h2></div>
+        <div class="section-copy"><details><summary>Production notes</summary><ul>
+          <li><strong>Audience / promise:</strong> One Place Later viewers; experience the journey from waiting in France to being together again in Korea.</li>
+          <li><strong>Length:</strong> roughly 5–7 minutes, revised after footage review.</li>
+          <li><strong>Coverage:</strong> use the scene plan and essentials below; actual footage and missing coverage have not been reviewed here.</li>
+          <li><strong>Delivery:</strong> resolution, aspect ratio, frame rate, colour pipeline and subtitle languages remain to be confirmed from the media and intended release.</li>
+          <li><strong>Local media / backup:</strong> location and backup status remain to be confirmed before processing.</li>
+        </ul></details></div>
+      </section>
+
       <section id="opening" class="plan-section" aria-labelledby="opening-title">
         <div class="section-heading"><p class="eyebrow">02 / First minute</p><h2 id="opening-title">A short intro.<br />Then move.</h2></div>
         <div class="section-copy">
@@ -215,7 +226,7 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
       <section id="narration" class="scene-section" aria-labelledby="narration-title">
         <div class="scene-intro"><p class="eyebrow">03 / Voice-over workshop</p><h2 id="narration-title">Your voice.<br />Your way home.</h2><p>A first-person draft for your cloned voice. The journey supplies the structure; your own memories and feelings will make it personal.</p></div>
         <p class="narration-intro">The draft follows the facts you shared. The personal prompts are suggestions, outside the copied script. Add only what feels true, and change any sentence you would never say out loud.</p>
-        <div class="narration-toolbar"><p id="narration-length">{narrationWordCount} words · roughly {Math.round(narrationWordCount / 130 * 60)} seconds of speech at 130 words/minute</p><button type="button" data-copy="narration-full" class="copy-button" hidden>Copy full narration</button></div>
+        <div class="narration-toolbar"><p id="narration-length">{narrationWordCount} words · roughly {Math.round(narrationWordCount / 130 * 60)} seconds of speech at 130 words/minute</p><button type="button" data-copy="narration-full" class="copy-button" hidden>Copy full narration</button><button type="button" id="download-narration" class="copy-button" hidden>Download draft</button></div>
         <p class="reference" id="narration-save-status">Edit the passages below, then copy the words you want to narrate. Copy controls appear when JavaScript is available.</p>
         <ol class="narration-list">
           {narration.map((passage, index) => (
@@ -235,9 +246,9 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
         <details class="narration-reading"><summary>Read the whole narration</summary><div id="narration-full">{narration.map(item => item.text).join('\n\n')}</div></details>
         <details class="narration-method"><summary>Generate and edit with ElevenLabs</summary>
           <ol>
-            <li>Read the draft aloud once. Replace awkward phrases with the words you naturally use, then copy one scene into ElevenLabs with your cloned voice selected.</li>
+            <li>Read the draft aloud once. Replace awkward phrases with the words you naturally use, save the intended changes into the local main brief and approve the exact words before generating audio.</li>
             <li>Start with ordinary punctuation. Audition the opening first, including “Cassagnoles” in a test sentence. Choose a delivery that sounds like you speaking to one person.</li>
-            <li>Keep the same voice and model across the passages. Compare each new generation with the previous one for pace, pronunciation and tone.</li>
+            <li>Keep the approved voice and suitable model/settings consistent. Generate and review one passage at a time; continue only after approval. Use supported context/stitching and timing output where helpful.</li>
             <li>Save the clips in scene order, for example “01-opening” and “02-village”. Place them against a rough picture edit; shorten the script when the images need room.</li>
             <li>Add longer silences in your video editor. Keep the real greetings, conversations and place sounds audible, and leave space around them.</li>
           </ol>
@@ -426,7 +437,7 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
       item.textContent = narrationInputs.find(input => input.dataset.narration === item.dataset.printNarration)?.value ?? '';
     });
     if (narrationSaveStatus) narrationSaveStatus.textContent = canSaveNarration
-      ? 'Edits are saved in this browser only. Copy your script to keep a separate version. Copy buttons include spoken words only.'
+      ? 'Browser draft only. Download or copy your changes, then save them into the local project brief with Codex. Copy buttons include spoken words only.'
       : 'Edits last for this visit; browser saving is unavailable. Copy your script before leaving. Copy buttons include spoken words only.';
   }
   narrationInputs.forEach(input => input.addEventListener('input', () => {
@@ -434,6 +445,20 @@ const narrationWordCount = narration.map(item => item.text).join(' ').trim().spl
     try { localStorage.setItem(narrationStorageKey, JSON.stringify(narrationOverrides)); canSaveNarration = true; }
     catch { canSaveNarration = false; }
     updateNarration();
+  const scenesForDownload = narrationInputs.map(input => (input.getAttribute('aria-label') ?? '').replace(/^Narration for scene \d+: /, ''));
+  const downloadNarration = document.querySelector<HTMLButtonElement>('#download-narration');
+  if (downloadNarration) {
+    downloadNarration.hidden = false;
+    downloadNarration.addEventListener('click', () => {
+      const passages = narrationInputs.map((input, index) => `## Scene ${index + 1}: ${scenesForDownload[index]}\n\n${input.value.trim()}`).join('\n\n');
+      const text = `# The Way Back — narration draft\n\nBrowser draft. Ask Codex to save intended changes into the local main brief; this download is not script approval.\n\n${passages}\n`;
+      const url = URL.createObjectURL(new Blob([text], { type: 'text/markdown;charset=utf-8' }));
+      const link = document.createElement('a');
+      link.href = url; link.download = 'back-to-korea-narration-draft.md';
+      document.body.append(link); link.click(); link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+  }
   }));
   updateNarration();
 

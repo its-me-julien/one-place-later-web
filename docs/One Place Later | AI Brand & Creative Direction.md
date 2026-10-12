@@ -1,6 +1,6 @@
 # One Place Later — AI Creative Direction
 
-Version 1.0 · Updated 2026-10-12
+Version 1.1 · Updated 2026-10-12
 
 Use this reference for film ideas, narration, editing, titles and graphics. Follow current user instructions first. Consult the full `One Place Later | Brand & Creative Direction.md` only when additional detail is needed; use the web development guidelines for website implementation.
 
@@ -9,7 +9,7 @@ Use this reference for film ideas, narration, editing, titles and graphics. Foll
 - **Premise:** notice what changes between places, routines or states. Korea is home; travel starts from that perspective.
 - **Standard:** make ordinary life worth noticing without pretending it is extraordinary. Give viewers an experience of being there.
 - Find a real contrast or development: home/away, noise/quiet, effort/reward, familiar/newly noticed. Do not manufacture conflict or feelings.
-- Build scenes through **Establish → Action → Detail → Perspective → Exit**. Make place, activity and the reason to keep watching clear.
+- Use **Establish → Action → Detail → Perspective → Exit** as a scene-building prompt, not a required shot order. Make place, activity and the reason to keep watching clear.
 - Keep the creator present through actions and interactions. Use direct-to-camera when it adds something; avoid constant presenting.
 - Let pace follow the experience. A thoughtful film need not be slow. Prefer meaningful actions and specific details over decorative footage.
 - Resolve competing choices in this order: **Story → Experience → Personality → Clarity → Aesthetics**. Graphics and attractive shots must still preserve clarity.
@@ -43,7 +43,7 @@ Voice example: “We didn't really have a plan for lunch. This usually improves 
 ## Titles and thumbnails
 
 - Titles express a truthful change, contrast, observation, situation or meaningful destination. Avoid generic itinerary labels and hype.
-- Thumbnails show **person + place + situation** with one clear subject, genuine body language and a readable environment. The creator need not fill the frame.
+- Use **person + place + situation** as a thumbnail starting point, with one clear subject and a readable environment. A landscape, object or action may communicate the film better; the creator does not have to appear.
 - Default to no thumbnail text; use **1–3 words** only when helpful. Avoid reaction faces, circles, arrows, collages, heavy borders, logos and text repeating the title.
 
 ## Final check

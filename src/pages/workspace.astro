@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { guideChapters } from '../data/guideChapters';
+import { filmProjects } from '../data/filmProjects';
 ---
 
 <BaseLayout title="Private workspace | One Place Later" description="Creative guides, AI workflow and working film plans for One Place Later." robots="noindex, nofollow">
@@ -37,7 +38,18 @@ import { guideChapters } from '../data/guideChapters';
 
     <section id="plans" class="library-section" aria-labelledby="plans-title">
       <div class="section-heading"><p class="number" aria-hidden="true">03</p><h2 id="plans-title">Film plans</h2><p>Projects in progress, with scenes and narration to work through.</p></div>
-      <div class="section-content"><a class="resource" href="/film-plans/back-to-korea/"><div><p class="meta">Cassagnoles → Amsterdam → Seoul</p><h3>Back to Korea</h3><p>Scene plan, capture checklist and narration workshop.</p></div><span aria-hidden="true">→</span></a></div>
+      <div class="section-content"><ul class="projects">{filmProjects.map(project => (
+        <li class="project">
+          <div class="project-heading"><h3>{project.title}</h3><span class="meta">{project.stage}</span></div>
+          <p class="meta">{project.route}</p>
+          <p>{project.summary}</p>
+          <nav class="project-documents" aria-label={`${project.title} documents`}>
+            <a href={`/film-plans/${project.id}/`}>Main brief <span aria-hidden="true">→</span></a>
+            <a href={`/film-plans/${project.id}/ai-brief.md`} download={`${project.id}-ai-brief.md`}>AI brief · Markdown <span aria-hidden="true">↓</span></a>
+            <a href={`/film-plans/${project.id}/video/`}>Video page · {project.videoStatus} <span aria-hidden="true">→</span></a>
+          </nav>
+        </li>
+      ))}</ul></div>
     </section>
   </article>
 </BaseLayout>
@@ -72,5 +84,12 @@ import { guideChapters } from '../data/guideChapters';
   .chapters a:hover strong { text-decoration: underline; }
   .downloads { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-3); font-size: var(--text-sm); }
   .downloads a { display: inline-flex; min-height: 2.75rem; align-items: center; gap: var(--space-2); }
+  .projects { list-style: none; padding: 0; margin: 0; }
+  .project { padding-block: var(--space-4) var(--space-5); }
+  .project + .project { border-top: var(--border-default); }
+  .project-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: var(--space-3); }
+  .project > p { margin-top: var(--space-3); color: var(--color-text-muted); }
+  .project-documents { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-4); font-size: var(--text-sm); }
+  .project-documents a { display: inline-flex; align-items: center; min-height: 2.75rem; gap: var(--space-2); }
   @media (min-width: 48rem) { .library-section { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-7); } }
 </style>

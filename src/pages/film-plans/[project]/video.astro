@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { filmProjects } from '../../../data/filmProjects';
+export function getStaticPaths() {
+  const pages = import.meta.glob('../../../project-documents/*/video-page.md', { eager: true });
+  return filmProjects.map(project => {
+    const page = pages[`../../../project-documents/${project.id}/video-page.md`];
+    if (!page) throw new Error(`Missing video page for ${project.id}`);
+    return { params: { project: project.id }, props: { page } };
+  });
+}
+const { page } = Astro.props;
+const { Content, frontmatter } = page;
+---
+<BaseLayout title={`${frontmatter.title} | One Place Later`} description={frontmatter.description} robots="noindex, nofollow">
+  <article class="video l-wrapper">
+    <p class="preview">Private preview · Not published</p>
+    <header><p class="route">{frontmatter.route}</p><h1>{frontmatter.title}</h1></header>
+    <div class="introduction"><Content /></div>
+  </article>
+</BaseLayout>
+<style>
+  .video { max-width: var(--width-content); padding-block: var(--space-8) var(--space-9); }
+  .preview { color: var(--color-text-muted); font-size: var(--text-sm); padding-bottom: var(--space-5); border-bottom: var(--border-default); }
+  header { padding-top: var(--space-7); }
+  .route { font-size: var(--text-sm); color: var(--color-text-muted); }
+  h1 { margin-top: var(--space-4); font-size: var(--text-3xl); font-weight: 500; letter-spacing: -0.05em; }
+  .introduction { max-width: 42ch; margin-top: var(--space-6); font-size: var(--text-lg); }
+</style>
