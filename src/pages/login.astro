@@ -4,26 +4,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Login | One Place Later" description="Sign in to the One Place Later private workspace." robots="noindex, nofollow">
   <section class="login l-wrapper" aria-labelledby="login-title">
-    <p class="eyebrow">One Place Later / Workspace</p>
-    <h1 id="login-title">Behind the films.</h1>
-    <p class="intro">A private home for creative guides, working plans and the AI workflow.</p>
-    <div class="entry">
-      <h2>Private workspace</h2>
-      <p>Sign in with your approved email address. We’ll send you a one-time code, then take you to the library.</p>
-      <a class="signin" href="/workspace/">Sign in <span aria-hidden="true">→</span></a>
-    </div>
+    <h1 id="login-title">Private workspace</h1>
+    <a class="signin" href="/workspace/">Sign in <span aria-hidden="true">→</span></a>
     <a class="home" href="/">Back to the website <span aria-hidden="true">↗</span></a>
   </section>
 </BaseLayout>
 
 <style>
   .login { max-width: var(--width-content); padding-block: var(--space-9); }
-  .eyebrow { color: var(--color-text-muted); font-size: var(--text-sm); }
-  h1 { margin-top: var(--space-4); font-size: var(--text-3xl); font-weight: 500; letter-spacing: -0.055em; }
-  .intro { max-width: 34rem; margin-top: var(--space-5); color: var(--color-text-muted); font-size: var(--text-lg); }
-  .entry { max-width: 34rem; margin-top: var(--space-7); padding-top: var(--space-6); border-top: var(--border-default); }
-  h2 { font-size: var(--text-xl); font-weight: 500; }
-  .entry p { margin-top: var(--space-4); color: var(--color-text-muted); }
+  h1 { font-size: var(--text-2xl); font-weight: 500; letter-spacing: -0.04em; }
   .signin { display: inline-flex; align-items: center; gap: var(--space-5); min-height: 2.75rem; margin-top: var(--space-5); padding: var(--space-3) var(--space-5); background: var(--color-text); color: var(--color-bg); border-radius: var(--radius-sm); text-decoration: none; }
   .signin:hover { text-decoration: underline; }
   .home { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: var(--space-6); gap: var(--space-2); font-size: var(--text-sm); }
