@@ -76,6 +76,7 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 | Date | Area | Change | Reference |
 | --- | --- | --- | --- |
+| 2026-10-12 | Resolve / workflow v1.4 | Added task-specific Resolve AI and automation guidance, simple project saving and original-media rendering checks. Assume the latest Resolve version; all generated audio stays with ElevenLabs. | Codex film workflow |
 | 2026-10-12 | Local project documents / workflow v1.3 | Created the current AI brief and protected video preview; connected all three project documents. Local authoring is authoritative, with website sync, browser draft export and simpler story/release reviews. ElevenLabs guidance selects the appropriate API per task. | Local Film Projects.md |
 | 2026-10-12 | Domain and private workspace | Connected oneplacelater.com; protected guides, AI pages, film plans and workspace for the two approved emails; added public login entry and organised library. Gear remains public. Alternate Worker and preview URLs disabled. | Cloudflare Access; production release |
 | 2026-10-12 | AI creative direction | Added a simplified brand reference and `/ai/brand.md`, with default discovery through `AGENTS.md` and the AI film workflow. Trimmed repeated philosophy, examples and specialist channel setup; preserved the full document. | Local draft |

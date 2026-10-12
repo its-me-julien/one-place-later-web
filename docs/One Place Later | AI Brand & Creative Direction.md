@@ -1,6 +1,6 @@
 # One Place Later — AI Creative Direction
 
-Version 1.1 · Updated 2026-10-12
+Version 1.2 · Updated 2026-10-12
 
 Use this reference for film ideas, narration, editing, titles and graphics. Follow current user instructions first. Consult the full `One Place Later | Brand & Creative Direction.md` only when additional detail is needed; use the web development guidelines for website implementation.
 
@@ -27,6 +27,7 @@ Voice example: “We didn't really have a plan for lunch. This usually improves 
 ## Sound and colour
 
 - Prioritise recorded environments, dialogue and silence. Use sound bridges to connect scenes, such as footsteps becoming suitcase wheels.
+- Generate any new voice, narration, music or sound effects with ElevenLabs. Use Resolve for editing, selective cleanup and mixing. Both generation and optional AI picture tools should serve a real need.
 - Music supports movement, release or reflection; it should not run continuously or dictate every feeling.
 - Preserve natural seasonal colour and believable skin tones. Match shots within scenes without forcing different places through one LUT. The graphic palette is not a footage-grading target.
 

@@ -29,7 +29,7 @@ A journey from a family stay in Cassagnoles, through one night with family in Am
 
 ## Sound, narration and constraints
 
-Build with recorded dialogue, footsteps, packing sounds, cabin sound and home ambience. Use sound bridges when supported by the recordings. Music, generated narration, effects and graphics are optional. The draft passages and timings are proposals, not an approved script or edit. Keep personal-observation prompts separate from spoken words. Review generated narration one passage at a time; never advance past an unapproved passage.
+Build with recorded dialogue, footsteps, packing sounds, cabin sound and home ambience. Use sound bridges when supported by the recordings. Music, generated narration, effects and graphics are optional. Any generated audio must come from ElevenLabs; use Resolve only for needed editing, cleanup, mixing and other verified tools. The draft passages and timings are proposals, not an approved script or edit. Keep personal-observation prompts separate from spoken words. Review generated narration one passage at a time; never advance past an unapproved passage.
 
 ## Open questions and next action
 

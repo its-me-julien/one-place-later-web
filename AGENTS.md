@@ -17,6 +17,11 @@ video page as a private preview until the user approves and authorises release.
 Keep private project records outside public website content. The protocol does
 not require media-processing approval for routine authorised website work.
 
+Assume the user runs the latest Resolve Studio; avoid repeated version audits.
+Use Resolve AI and automation only for needed, verified operations. All generated
+audio (voice, narration, music and effects) must come from ElevenLabs. Resolve
+may edit, clean and mix recorded or generated audio.
+
 For editorial choices, read `docs/One Place Later | AI Brand & Creative Direction.md`
 first (also served at `/ai/brand.md`). Read the full brand document only for
 additional detail. Use `docs/One Place Later | Web Brand & Astro Development Guidelines.md`
