@@ -1,0 +1,641 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const sections = [
+  ['idea', 'Overview'], ['opening', 'Opening'], ['narration', 'Narration'], ['scenes', 'Scenes'],
+  ['capture', 'Checklist'], ['edit', 'Edit'], ['title', 'Title'],
+];
+
+const scenes = [
+  {
+    place: 'Cassagnoles · family house', title: 'The wait ends.', time: '0:00–0:25',
+    purpose: 'Give the journey a reason before showing the journey.',
+    shots: ['Start with the document and your face in the same shot. Make its meaning clear in the first line.', 'One short piece to camera while you are already packing. Put the document away and finish the action.', 'A bag closing, then you stepping outside. If the document arrived earlier, film getting ready to leave.'],
+    sound: 'Room tone, paper, the bag zip. Let the first sentence land before music enters.',
+    line: 'To camera: “My Korean spouse visa finally came through. My wife’s already back in Korea, so now I can go home.”',
+    transition: 'The zip finishes. Cut to the front door opening.',
+    complete: 'We know what arrived, who you are going back to, and that the journey is beginning.',
+  },
+  {
+    place: 'Cassagnoles · village walk', title: 'One last walk.', time: '0:25–1:25',
+    purpose: 'Show what this place means to you, as well as how quiet it is.',
+    shots: ['A quiet street with you walking through it. Let the shot establish the scale of the village.', 'One detail connected to your stay: somewhere you walked together, a familiar turn, or something outside the family house. Choose a real connection.', 'Add the holiday context over the walk. Leave one stretch of footsteps without speech, then head back to collect your bag.'],
+    sound: 'Footsteps and the village as it sounds that day. Hold one shot long enough to hear the quiet.',
+    line: 'Voice-over: “I’m staying with my family in Cassagnoles. It’s a tiny village in the south of France. There aren’t any shops here.” Then leave room for the place. Add one personal observation only if you have one.',
+    transition: 'Your footsteps become the wheels of your suitcase.',
+    complete: 'The village feels like somewhere you have spent time, and we understand why you stayed after your wife left.',
+  },
+  {
+    place: 'France → Amsterdam', title: 'Actually leaving.', time: '1:25–2:00',
+    purpose: 'Move from the quiet of the village into the rhythm of travel.',
+    shots: ['Bag into the car or the transport you actually use. One real goodbye.', 'One departure-airport establishing shot, the gate, boarding.', 'A window view or touchdown in Amsterdam. Keep this first flight brief.'],
+    sound: 'Suitcase wheels, terminal noise, one boarding announcement if it is clear.',
+    line: '“I’m stopping in Amsterdam for one night to see family. Then Korea.”',
+    transition: 'Cut from arriving with your bag to someone opening the door in Amsterdam.',
+    complete: 'We have left France and know why Amsterdam is part of the route.',
+  },
+  {
+    place: 'Amsterdam · one night with family', title: 'A pause with family.', time: '2:00–3:15',
+    purpose: 'Give the film a second family moment before you return to your wife.',
+    shots: ['The hello and the bag set down. Establish who you are with in a short caption or one natural introduction.', 'Follow one shared action through a beginning and an end: making dinner, sitting down to eat, or walking together. Keep a real exchange within it.', 'A morning detail and a goodbye. Let the time together determine how much of the city appears.'],
+    sound: 'A natural exchange, cutlery, a kettle, a laugh. Keep a few seconds of real conversation.',
+    line: 'To camera, if needed: “I’ve only got tonight here. I fly to Korea tomorrow.” Then keep the conversation that actually happens with your family.',
+    transition: 'A bag lifted from the floor takes us back into travel.',
+    complete: 'We have experienced a small moment with your family, beyond seeing a montage of the visit.',
+  },
+  {
+    place: 'Amsterdam · departure airport', title: 'The next flight is home.', time: '3:15–3:40',
+    purpose: 'Bring the destination back into focus after the family stop.',
+    shots: ['The departure board or gate showing the actual destination.', 'You waiting, with your bag. One brief thought if you have something to say.', 'The jet bridge or aircraft doorway.'],
+    sound: 'Gate ambience, wheels, footsteps changing on the jet bridge.',
+    line: 'No planned line. The destination on the gate and your movement into the aircraft can carry this beat. Keep a spoken thought only if it adds something new.',
+    transition: 'The cabin hum begins over the last airport image.',
+    complete: 'The family stop is over and the Korea-bound flight is beginning.',
+  },
+  {
+    place: 'Amsterdam → Korea · flight', title: 'Time in between.', time: '3:40–4:25',
+    purpose: 'Let the distance register without documenting every hour.',
+    shots: ['One departure image: take-off or the view after departure, if visible.', 'One human detail from the time on board: a meal, trying to sleep, or your reflection in the window.', 'A later image that shows something has changed: cabin lighting, daylight, or activity before landing. Use the actual progression.'],
+    sound: 'Engine hum, a tray clicking shut, a little silence in the narration.',
+    line: 'Leave most of this scene without voice-over. Record a thought if one arrives; decide later whether it earns its place.',
+    transition: 'The first view of Korea changes the pace. Let the landing sound lead.',
+    complete: 'We feel that time and distance have passed. Move on once those three images have done their work.',
+  },
+  {
+    place: 'Seoul arrival · airport to home', title: 'Familiar again.', time: '4:25–5:15',
+    purpose: 'Turn arrival into recognition: this is the way home.',
+    shots: ['Touchdown or the first terminal view after landing.', 'One short arrival sequence: collect the bag, leave the terminal, begin the actual journey home.', 'One familiar action: finding your usual route, recognising a street, or approaching your building. If your wife meets you at the airport, the reunion belongs here.'],
+    sound: 'Arrival announcement, luggage wheels, then the sound of your transport home.',
+    line: 'Let your actions show familiarity. If you speak, name the particular thing you recognised or noticed; find the words there.',
+    transition: 'Compress the commute, then slow down before the front door.',
+    complete: 'Arrival has become the last stretch home. If you have already met your wife, the final scene can simply let that reunion settle.',
+  },
+  {
+    place: 'Home · Korea', title: 'Together again.', time: '5:15–6:00',
+    purpose: 'Let us experience being back together, then let the film settle into home life.',
+    shots: ['Capture the first hello wherever you actually meet, if you both want it filmed. Let the camera observe from one position.', 'A small shared action at home: sitting down together, making something to drink, or unpacking while you talk. Follow what happens.', 'If it fits naturally, finish on the bag being set down or shoes by the door. This is a callback after the human moment.'],
+    sound: 'The door, the greeting, home ambience. Let music fall away for the last moment.',
+    line: 'Keep your actual greeting, in the language you normally use together. No scripted final sentence is needed. Subtitle it in English if useful.',
+    transition: 'Hold for a few seconds after the action ends. Cut to black.',
+    complete: 'The opening’s promise has been met: you are together again, and the journey can end.',
+  },
+];
+
+const essentials = [
+  'The document + a clean opening that names the spouse visa and your wife.',
+  'A village wide shot + footsteps + one detail connected to your stay.',
+  'The goodbye in France + departure and arrival in Amsterdam.',
+  'One shared family moment in Amsterdam + the morning goodbye.',
+  'The Korea-bound gate + boarding.',
+  'Departure, a human detail on board + one change during the flight.',
+  'Arrival + one familiar detail on the journey home.',
+  'The real reunion, wherever it happens + one shared moment at home.',
+];
+const sceneKeys = ['document', 'village', 'france-departure', 'amsterdam-family', 'korea-departure', 'flight', 'arrival', 'home'];
+const narration = [
+  {
+    text: "My Korean spouse visa finally came through. My wife’s already back in Korea, and now I can go home.\n\nBut first, one last walk here, and a night with family in Amsterdam.",
+    placement: 'Begin over the document and packing. If you say the visa line to camera, keep that recording and skip the same words in the voice-over.',
+    personal: 'What was your first reaction to the approval? Suggested line, only if true: “Mostly, I’m relieved. I can finally make plans.”',
+  },
+  {
+    text: "This is Cassagnoles, a tiny village in the south of France. No shops. Just a short walk before I leave.\n\nWe came here a few weeks ago for a holiday. I’m French, and my wife is Korean. It was her first time in the south of France.\n\nShe went back to Korea before me. I stayed at my family’s house while I waited for the embassy. So this last part of the trip has been on my own.",
+    placement: 'Start with footsteps before the first sentence. Use a real holiday clip for the backstory if you have one. Finish the passage, then let the village be heard.',
+    personal: 'Add one memory from her visit and one thing you will miss. Suggested shape: “We walked past here together. She noticed ___. I’ll miss ___.”',
+  },
+  {
+    text: "The first flight takes me to Amsterdam. I’m stopping there for one night to see family before the longer flight to Korea.\n\nThere’s still a little bit of this trip left before I get home.",
+    placement: 'Let the goodbye in France play first. Put these words over the departure and short flight; stop before the Amsterdam hello.',
+    personal: 'If the goodbye stayed with you, name the small thing that made it difficult. Keep this brief so the airport does not become another backstory scene.',
+  },
+  {
+    text: "One night isn’t a long visit. But it gives us an evening together before I leave again in the morning.\n\nTomorrow, I’ll be on my way to my wife. Tonight, I’m here with family.",
+    placement: 'Use the first paragraph as you settle in. Leave the meal, laughter or conversation clear. The second paragraph can close the evening if it fits the footage.',
+    personal: 'What did you actually talk about or do together? One specific detail will say more than a general line about the importance of family.',
+  },
+  {
+    text: "Back at the airport. This time, the flight is to Korea.\n\nThe holiday, the waiting, the night in Amsterdam. Now there’s just this flight, and the journey from the airport to our home.",
+    placement: 'Use over the gate and boarding. Let the cabin hum begin before the next passage.',
+    personal: 'What are you most looking forward to doing with your wife? Suggested shape: “The first thing I want to do when I get back is ___.”',
+  },
+  {
+    text: "I’m thirty-seven. I’m French, married to a Korean woman, and on my way back to the life we share in Korea.\n\nThat’s what this journey is leading to. Getting back to her, and getting on with our life together.",
+    placement: 'Let take-off happen without speech. Place the reflection over a quieter middle stretch of the flight, then leave room for time to pass.',
+    personal: 'This is the place for a real reflection about your life. What has living in Korea changed for you? Replace the broad second paragraph with your own answer when you have one.',
+  },
+  {
+    text: "Back in Korea. The flight is over, and I’m on the last stretch home.\n\nWhen we left for France, we travelled together. This time I’m coming back on my own. But we’ll be together again soon.",
+    placement: 'Wait until after the landing sound. Finish before you meet your wife. If she meets you at the airport, move or cut the second paragraph so it does not play after the reunion.',
+    personal: 'Name one thing you actually recognise on the way home. Suggested shape: “When I saw ___, it started to feel like I was back.”',
+  },
+  {
+    text: "A few weeks ago, we left for a holiday in France. I stayed a little longer than she did.\n\nNow I’m back. We’re together again.",
+    placement: 'Keep the first hello in real sound. This short ending is optional over a later shared moment or the bag being put down. End with home sound, rather than another explanation.',
+    personal: 'Does the greeting and shared moment already say enough? If so, leave this passage empty and finish without narration.',
+  },
+];
+const narrationWordCount = narration.map(item => item.text).join(' ').trim().split(/\s+/).length;
+---
+
+<BaseLayout title="Film 01 — The way back | One Place Later" description="A working film plan: the visa document arrives, one last walk in Cassagnoles, a night with family in Amsterdam, and the journey home to Korea." robots="noindex, nofollow">
+  <article class="film-plan">
+    <header class="plan-header" data-surface="dark">
+      <div class="l-wrapper">
+        <div class="header-top">
+          <p class="eyebrow">Film 01 / Working plan</p>
+          <a href="/creative-field-guide/">Creative Field Guide <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="route">Cassagnoles <span aria-hidden="true">→</span> Amsterdam <span aria-hidden="true">→</span> Seoul</p>
+        <h1>The way back.</h1>
+        <div class="header-bottom">
+          <p>The document arrives. One last walk, one night with family, and the journey back to your wife in Korea.</p>
+          <p class="metadata">Draft 03 · Suggested cut: 5–7 minutes<br />English narration · Natural family dialogue</p>
+        </div>
+        <div class="header-actions"><a class="plan-action" id="resume-plan" href="#scenes">Open scene plan <span aria-hidden="true">→</span></a><a href="#narration">Work on the narration</a></div>
+      </div>
+    </header>
+
+    <nav class="section-nav" aria-label="Film plan sections">
+      <div class="l-wrapper">
+        <div class="nav-links">{sections.map(([id, label]) => <a href={`#${id}`} data-section={id}>{label}</a>)}</div>
+        <label class="section-picker">Jump to<select id="section-picker" aria-label="Jump to a film plan section">{sections.map(([id, label]) => <option value={id}>{label}</option>)}</select></label>
+        <button type="button" id="print-plan">Print plan <span aria-hidden="true">↗</span></button>
+      </div>
+    </nav>
+
+    <div class="l-wrapper plan-body">
+      <section id="idea" class="plan-section" aria-labelledby="idea-title">
+        <div class="section-heading"><p class="eyebrow">01 / Direction</p><h2 id="idea-title">The story.</h2></div>
+        <div class="section-copy">
+          <p class="lead">The visa document starts the movement. Getting back to your wife gives that movement meaning.</p>
+          <p>Use the scene plan while filming. Open a scene for its shots, sound and dialogue, then mark it captured when you have enough.</p>
+          <details><summary>Background & working brief</summary>
+          <p>You are French, 37, and married to a Korean woman. You came to France together a few weeks ago for a holiday—her first time in the south of France. She has already returned to Korea. You stayed at your family’s house in Cassagnoles while waiting for the Korean embassy to approve your F6 spouse visa.</p>
+          <p>Begin with the document that made departure possible. Let the film move through three different rhythms: the stillness of the village, a brief evening with family in Amsterdam, and the familiarity of arriving home.</p>
+          <dl class="working-brief">
+            <div><dt>Surface / underneath</dt><dd>A journey from France to Korea. Underneath: the pause ends, and you can be together again.</dd></div>
+            <div><dt>Central question</dt><dd>What does going home feel like once the wait is over?</dd></div>
+            <div><dt>Change</dt><dd>The waiting has ended. By the end of the film, you are back with your wife and settling into home life.</dd></div>
+            <div><dt>Viewer promise</dt><dd>Come along from this quiet village to being back together in Korea.</dd></div>
+            <div><dt>Directing line</dt><dd>Follow an ordinary journey made meaningful by the wait that came before it.</dd></div>
+            <div><dt>Essential scenes</dt><dd>Document, village, departure, Amsterdam family, Korea-bound airport, flight, arrival, home.</dd></div>
+            <div><dt>Essential sound</dt><dd>Paper and a zip; village footsteps; terminals; family conversation; cabin hum; the home greeting.</dd></div>
+            <div><dt>Ending thought</dt><dd>The journey is over when ordinary life starts again.</dd></div>
+          </dl>
+          <p class="reference">Built from the <a href="/creative-field-guide/working-system/#56-the-one-place-later-working-brief">One Place Later working brief</a>.</p>
+          </details>
+          <details class="review-notes"><summary>Director & dialogue review</summary><ul>
+            <li><strong>Make the opening specific.</strong> “This document” left the viewer guessing. Name the Korean spouse visa and mention your wife in the first breath; that gives the route a human purpose.</li>
+            <li><strong>Give the village a personal connection.</strong> Quiet streets establish place. One detail connected to your stay makes the walk belong to this particular film.</li>
+            <li><strong>Let each travel scene do a different job.</strong> The first airport gets us away from France; Amsterdam gives us time with family; the next gate points us home; the long flight makes the distance felt. Cut repeated boarding and window shots.</li>
+            <li><strong>Resolve with the people.</strong> The reunion delivers the promise. The bag can close the visual pattern after that moment has happened.</li>
+          </ul><p>These are revisions to a pre-production plan. The final pace and dialogue will depend on the footage and conversations you bring back.</p></details>
+        </div>
+      </section>
+
+      <section id="opening" class="plan-section" aria-labelledby="opening-title">
+        <div class="section-heading"><p class="eyebrow">02 / First minute</p><h2 id="opening-title">A short intro.<br />Then move.</h2></div>
+        <div class="section-copy">
+          <div class="quote-heading"><p class="label">To camera · about 10 seconds</p><button type="button" data-copy="opening-copy" class="copy-button" hidden>Copy opening</button></div>
+          <blockquote id="opening-copy">“My Korean spouse visa finally came through. My wife’s already back in Korea, so now I can go home.”</blockquote>
+          <p>Film one conversational take while packing, with the document in hand. Finish putting it away so the words lead into an action. Use this wording once the document confirms your visa has been granted; name the actual document if it represents a different step.</p>
+          <ol class="opening-beats">
+            <li><span>00–12 sec</span><p>You, the document, the opening line. Start speaking within the first couple of seconds.</p></li>
+            <li><span>12–25 sec</span><p>Put the document away, close the bag, step outside. Let the sounds carry the action.</p></li>
+            <li><span>25–40 sec</span><p>The village walk begins. Orient us with the Cassagnoles line from the scene plan.</p></li>
+            <li><span>40–60 sec</span><p>Add the holiday context over the walk. A real clip of you together can sit here if you have one.</p></li>
+          </ol>
+          <div class="quote-heading"><p class="label">Short backstory option · about 20 seconds</p><button type="button" data-copy="voiceover-copy" class="copy-button" hidden>Copy voice-over</button></div>
+          <blockquote id="voiceover-copy" class="secondary-quote">“We came to France a few weeks ago for a holiday. It was my wife’s first time in the south of France. She went back before me. I stayed with my family while I waited for the embassy.”</blockquote>
+          <p>This is a shorter alternative to the village passage in the <a href="#narration">full narration draft</a>. Use one version. A small caption, “F6 · Korean spouse visa”, can name the visa category.</p>
+          <details><summary>How to make the words your own</summary><p>Remember three things for the opening: the visa came through, your wife is already in Korea, and you are going home. Say them in your own phrasing. Leave the longer holiday context for voice-over, which you can record after the trip.</p><p>For family scenes, keep the language you normally speak together and subtitle where needed. Record a clean first take, then one looser take; choose the one that sounds like you are talking to a person.</p></details>
+        </div>
+      </section>
+
+      <section id="narration" class="scene-section" aria-labelledby="narration-title">
+        <div class="scene-intro"><p class="eyebrow">03 / Voice-over workshop</p><h2 id="narration-title">Your voice.<br />Your way home.</h2><p>A first-person draft for your cloned voice. The journey supplies the structure; your own memories and feelings will make it personal.</p></div>
+        <p class="narration-intro">The draft follows the facts you shared. The personal prompts are suggestions, outside the copied script. Add only what feels true, and change any sentence you would never say out loud.</p>
+        <div class="narration-toolbar"><p id="narration-length">{narrationWordCount} words · roughly {Math.round(narrationWordCount / 130 * 60)} seconds of speech at 130 words/minute</p><button type="button" data-copy="narration-full" class="copy-button" hidden>Copy full narration</button></div>
+        <p class="reference" id="narration-save-status">Edit the passages below, then copy the words you want to narrate. Copy controls appear when JavaScript is available.</p>
+        <ol class="narration-list">
+          {narration.map((passage, index) => (
+            <li><details class="narration-card" open={index === 0}>
+              <summary><span class="scene-number">{String(index + 1).padStart(2, '0')}</span><span><strong>{scenes[index].title}</strong><span class="narration-place">{scenes[index].place}</span></span></summary>
+              <div class="narration-content">
+                <div class="quote-heading"><label class="label" for={`narration-${sceneKeys[index]}`}>Spoken words · editable</label><button type="button" data-copy={`narration-${sceneKeys[index]}`} class="copy-button" hidden>Copy scene {index + 1}</button></div>
+                <textarea id={`narration-${sceneKeys[index]}`} data-narration={sceneKeys[index]} rows="7" spellcheck="true" aria-label={`Narration for scene ${index + 1}: ${scenes[index].title}`}>{passage.text}</textarea>
+                <div class="narration-print" data-print-narration={sceneKeys[index]}>{passage.text}</div>
+                <p class="narration-placement"><strong>In the edit</strong> {passage.placement}</p>
+                <p class="personal-prompt"><strong>Make it personal</strong> {passage.personal}</p>
+                <a class="next-scene" href={`#scene-${sceneKeys[index]}`}>See shots for this scene <span aria-hidden="true">→</span></a>
+              </div>
+            </details></li>
+          ))}
+        </ol>
+        <details class="narration-reading"><summary>Read the whole narration</summary><div id="narration-full">{narration.map(item => item.text).join('\n\n')}</div></details>
+        <details class="narration-method"><summary>Generate and edit with ElevenLabs</summary>
+          <ol>
+            <li>Read the draft aloud once. Replace awkward phrases with the words you naturally use, then copy one scene into ElevenLabs with your cloned voice selected.</li>
+            <li>Start with ordinary punctuation. Audition the opening first, including “Cassagnoles” in a test sentence. Choose a delivery that sounds like you speaking to one person.</li>
+            <li>Keep the same voice and model across the passages. Compare each new generation with the previous one for pace, pronunciation and tone.</li>
+            <li>Save the clips in scene order, for example “01-opening” and “02-village”. Place them against a rough picture edit; shorten the script when the images need room.</li>
+            <li>Add longer silences in your video editor. Keep the real greetings, conversations and place sounds audible, and leave space around them.</li>
+          </ol>
+          <p>ElevenLabs’ pause and delivery controls depend on the model; its documentation describes punctuation and model-specific tags. This script uses plain spoken text. <a href="https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices" target="_blank" rel="noopener noreferrer">ElevenLabs delivery guidance ↗</a></p>
+        </details>
+      </section>
+
+      <section id="scenes" class="scene-section" aria-labelledby="scenes-title">
+        <div class="scene-intro"><p class="eyebrow">04 / Scene plan</p><h2 id="scenes-title">Eight scenes.<br />One journey.</h2><p>Open the scene you are filming. Timings show its place in the suggested six-minute edit. The <a href="#narration">narration workshop</a> supplies the longer voice-over; speech notes here guide what to capture on location.</p></div>
+        <div class="scene-toolbar"><p data-progress aria-live="polite">0 of 8 scenes captured</p><div class="scene-controls" hidden><button type="button" id="expand-scenes">Expand all</button><button type="button" id="collapse-scenes">Collapse all</button></div></div>
+        <ol class="scene-list">
+          {scenes.map((scene, index) => (
+            <li class="scene">
+              <details class="scene-card" id={`scene-${sceneKeys[index]}`}>
+              <summary><span class="scene-number">{String(index + 1).padStart(2, '0')}</span><span class="scene-summary-copy"><strong>{scene.title}</strong><span>{scene.place}</span></span><span class="scene-summary-meta"><span title="Suggested edit timing">{scene.time}</span><span class="scene-status" data-scene-status={sceneKeys[index]}>To capture</span></span></summary>
+              <div class="scene-content">
+                <h3 class="scene-detail-title">Scene {index + 1} · {scene.title}</h3><p class="scene-purpose">{scene.purpose}</p>
+                <div class="scene-columns">
+                  <div><h4>Capture</h4><ul>{scene.shots.map(shot => <li>{shot}</li>)}</ul></div>
+                  <div class="scene-notes"><div><h4>Listen for</h4><p>{scene.sound}</p></div><div><h4>On location · speech / silence</h4><p>{scene.line}</p></div><div><h4>Into the next scene</h4><p>{scene.transition}</p></div></div>
+                </div>
+                <p class="scene-complete"><strong>The scene is complete when</strong> {scene.complete}</p>
+                <label class="scene-check"><input type="checkbox" data-capture={sceneKeys[index]} aria-label={`Footage captured: ${scene.title}`} /><span>Footage captured for this scene</span></label>
+                {index < scenes.length - 1 && <a class="next-scene" href={`#scene-${sceneKeys[index + 1]}`}>Next: {scenes[index + 1].title} <span aria-hidden="true">→</span></a>}
+              </div>
+              </details>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section id="capture" class="plan-section" aria-labelledby="capture-title">
+        <div class="section-heading"><p class="eyebrow">05 / Field checklist</p><h2 id="capture-title">Get the scene.<br />Then be there.</h2></div>
+        <div class="section-copy">
+          <p>For each place, get a view that orients us, an action, a detail, and clean sound. Hold shots for roughly 8–12 seconds so there is room to edit. Leave a moment before and after the action.</p>
+          <p class="checklist-progress" data-progress>0 of 8 scenes captured</p>
+          <ul class="capture-list">{essentials.map((item, i) => <li><label><input type="checkbox" data-capture={sceneKeys[i]} aria-label={`Checklist: ${scenes[i].title}`} /><span>{item}</span></label><a href={`#scene-${sceneKeys[i]}`} aria-label={`Open scene ${i + 1}: ${scenes[i].title}`}>Scene {String(i + 1).padStart(2, '0')} <span aria-hidden="true">↗</span></a></li>)}</ul>
+          <p class="reference" id="save-status">Checklist progress lasts for this visit. You can also print the plan.</p>
+          <details><summary>When filming gets awkward</summary><p>In Amsterdam, hands, a shared table and voices can carry the family scene if people prefer to stay off camera. Agree with your wife beforehand about filming the arrival. One camera position is enough; let the hello happen once. An off-camera greeting and a shared moment afterwards can still make the return felt.</p><p>Keep passport details, document numbers, addresses and boarding-pass barcodes out of frame. Film the arrival through the public terminal and the journey home; there is no need for a shot of immigration.</p></details>
+          <p class="small-note">Location copy follows your brief: Cassagnoles, fewer than 1,000 people, no shops. The draft narration uses “tiny village”; check any population caption before adding a number to the film. Name the actual departure and arrival airports once your itinerary is fixed.</p>
+        </div>
+      </section>
+
+      <section id="edit" class="plan-section" aria-labelledby="edit-title">
+        <div class="section-heading"><p class="eyebrow">06 / Editing direction</p><h2 id="edit-title">Let the rhythm<br />change.</h2></div>
+        <div class="section-copy">
+          <p class="lead">Still village. Moving airports. Warm family pause. Long flight. Familiar home.</p>
+          <p class="reference">For Codex-assisted editing, follow the <a href="/ai/guideline">AI film workflow</a>: review the material progressively, approve heavy processing before it starts, and validate each narration clip before generating the next.</p>
+          <p>Build the first cut with real sound before adding music. Let footsteps, suitcase wheels and cabin hum carry us between places. Keep one unhurried village shot and one unhurried home shot; the travel between them can move faster.</p>
+          <p>Keep the Amsterdam evening substantial enough to feel like a visit. Use a single meaningful conversation or shared action. On the flights, choose a few moments that show time passing rather than repeating window views.</p>
+          <p>The narration workshop gives you a continuous first-person story in short passages. Use its word count as a speech estimate, then measure the actual generated audio. Spread the passages across the 5–7 minute film; keep gaps for the village, family exchanges, take-off and reunion. You can cut a whole passage if the scene works without it.</p><p>Record the opening to camera or narrate it over packing. Use one version in the edit. Leave family scenes in their natural language, with subtitles as needed, and cut any voice-over that repeats what the image already tells us.</p>
+          <p>Use simple location text when we change places: “Cassagnoles, France”, “Amsterdam · one night”, then “Seoul, South Korea”. Use the actual Korean airport name on an airport caption. Keep dates, times and route labels factual.</p>
+          <p>If the footage supports five good minutes, make five. If a family moment needs more room, let it breathe. Aim for 5–7 minutes and let the material decide.</p>
+          <div class="ending"><p class="label">Ending sequence</p><p>The first hello, wherever you meet. A small shared moment at home. Then, if it belongs in the sequence, the bag or shoes by the door.</p><p class="ending-line">Give the reunion time.<br />Let home life finish the film.</p></div>
+        </div>
+      </section>
+
+      <section id="title" class="plan-section" aria-labelledby="title-title">
+        <div class="section-heading"><p class="eyebrow">07 / Publishing idea</p><h2 id="title-title">Name the<br />real story.</h2></div>
+        <div class="section-copy">
+          <p class="label">Recommended working title</p><p class="title-option">Finally Going Home to Korea</p><p>It tells viewers what changes and where you are heading. The opening supplies the visa context.</p>
+          <ul class="title-alternatives"><li><strong>The Way Back to Korea</strong><span>Quieter, more editorial.</span></li><li><strong>My Spouse Visa Came Through. I’m Going Home to Korea.</strong><span>Names the trigger and the destination; use once approval is confirmed.</span></li><li><strong>From a Quiet French Village to Seoul</strong><span>Leads with the contrast between places.</span></li></ul>
+          <h3 class="minor-title">Thumbnail to capture</h3><p>One real frame of you with your travel bag outside the family house. The village supplies the setting; your face supplies the human connection. Keep it uncluttered, with no text or a small “BACK TO KOREA”.</p><p>Choose from actual footage after the edit. Let the document appear in the opening, where its meaning can be explained.</p>
+          <p class="closing-note">This is a filming plan. The finished film page can follow when the video, poster and actual journey details are ready.</p>
+        </div>
+      </section>
+    </div>
+    <p id="plan-feedback" class="plan-feedback" role="status" hidden></p>
+  </article>
+</BaseLayout>
+
+<script>
+  const plan = document.querySelector<HTMLElement>('.film-plan');
+  const sceneCards = Array.from(document.querySelectorAll<HTMLDetailsElement>('.scene-card'));
+  const captureInputs = Array.from(document.querySelectorAll<HTMLInputElement>('[data-capture]'));
+  const sceneKeys = [...new Set(captureInputs.map(input => input.dataset.capture!))];
+  const captured: Record<string, boolean> = {};
+  const storageKey = 'one-place-later:back-to-korea:capture:v1';
+  const saveStatus = document.querySelector('#save-status');
+  let canSave = true;
+  try {
+    const stored: unknown = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
+    if (stored && typeof stored === 'object') {
+      for (const key of sceneKeys) captured[key] = (stored as Record<string, unknown>)[key] === true;
+    }
+  } catch { canSave = false; }
+
+  function updateProgress() {
+    const count = sceneKeys.filter(key => captured[key]).length;
+    captureInputs.forEach(input => { input.checked = captured[input.dataset.capture!] === true; });
+    document.querySelectorAll<HTMLElement>('[data-scene-status]').forEach(status => {
+      const done = captured[status.dataset.sceneStatus!] === true;
+      status.textContent = done ? 'Captured' : 'To capture';
+      status.dataset.captured = String(done);
+    });
+    document.querySelectorAll('[data-progress]').forEach(progress => {
+      progress.textContent = `${count} of ${sceneKeys.length} scenes captured`;
+    });
+    if (saveStatus) saveStatus.textContent = canSave
+      ? 'Progress is saved in this browser. The scene checkboxes and this checklist stay in sync.'
+      : 'Progress lasts for this visit; this browser could not save it. Print the plan to keep a copy.';
+    const resume = document.querySelector<HTMLAnchorElement>('#resume-plan');
+    const nextKey = sceneKeys.find(key => !captured[key]);
+    if (resume) {
+      resume.href = count > 0 && nextKey ? `#scene-${nextKey}` : '#scenes';
+      resume.textContent = count > 0 && nextKey ? `Continue with scene ${sceneKeys.indexOf(nextKey) + 1} →` : 'Open scene plan →';
+    }
+  }
+
+  captureInputs.forEach(input => input.addEventListener('change', () => {
+    captured[input.dataset.capture!] = input.checked;
+    try { localStorage.setItem(storageKey, JSON.stringify(captured)); canSave = true; }
+    catch { canSave = false; }
+    updateProgress();
+  }));
+  updateProgress();
+  plan?.classList.add('is-enhanced');
+  document.documentElement.style.scrollBehavior = 'auto';
+  document.querySelector<HTMLElement>('.scene-controls')?.removeAttribute('hidden');
+  document.querySelector('#expand-scenes')?.addEventListener('click', () => sceneCards.forEach(card => { card.open = true; }));
+  document.querySelector('#collapse-scenes')?.addEventListener('click', () => sceneCards.forEach(card => { card.open = false; }));
+
+  const nav = document.querySelector<HTMLElement>('.section-nav');
+  const siteHeader = document.querySelector<HTMLElement>('.site-header');
+  const picker = document.querySelector<HTMLSelectElement>('#section-picker');
+  const navLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-section]'));
+  function updateActiveSection() {
+    const offset = (siteHeader?.offsetHeight ?? 68) + (nav?.offsetHeight ?? 60) + 48;
+    let active = navLinks[0]?.dataset.section;
+    navLinks.forEach(link => {
+      const section = document.getElementById(link.dataset.section!);
+      if (section && section.getBoundingClientRect().top <= offset) active = link.dataset.section;
+    });
+    navLinks.forEach(link => {
+      if (link.dataset.section === active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+    if (picker && active) picker.value = active;
+  }
+  const measureNavigation = () => {
+    plan?.style.setProperty('--plan-header-height', `${siteHeader?.offsetHeight ?? 68}px`);
+    plan?.style.setProperty('--plan-nav-height', `${nav?.offsetHeight ?? 60}px`);
+    updateActiveSection();
+  };
+  const sizeObserver = new ResizeObserver(measureNavigation);
+  if (siteHeader) sizeObserver.observe(siteHeader);
+  if (nav) sizeObserver.observe(nav);
+  let scrollScheduled = false;
+  window.addEventListener('scroll', () => {
+    if (scrollScheduled) return;
+    scrollScheduled = true;
+    requestAnimationFrame(() => { updateActiveSection(); scrollScheduled = false; });
+  }, { passive: true });
+  picker?.addEventListener('change', () => { location.hash = picker.value; });
+  function revealLinkedScene() {
+    const card = sceneCards.find(item => `#${item.id}` === location.hash);
+    if (card) { card.open = true; requestAnimationFrame(() => card.scrollIntoView({ block: 'start' })); }
+  }
+  window.addEventListener('hashchange', revealLinkedScene);
+  measureNavigation();
+  revealLinkedScene();
+
+  const narrationInputs = Array.from(document.querySelectorAll<HTMLTextAreaElement>('[data-narration]'));
+  const narrationStorageKey = 'one-place-later:back-to-korea:narration:v1';
+  const narrationOverrides: Record<string, string> = {};
+  const narrationSaveStatus = document.querySelector('#narration-save-status');
+  let canSaveNarration = true;
+  try {
+    const stored: unknown = JSON.parse(localStorage.getItem(narrationStorageKey) ?? '{}');
+    if (stored && typeof stored === 'object') {
+      narrationInputs.forEach(input => {
+        const key = input.dataset.narration!;
+        const value = (stored as Record<string, unknown>)[key];
+        if (typeof value === 'string') { narrationOverrides[key] = value; input.value = value; }
+      });
+    }
+  } catch { canSaveNarration = false; }
+  function updateNarration() {
+    const text = narrationInputs.map(input => input.value.trim()).filter(Boolean).join('\n\n');
+    const preview = document.querySelector('#narration-full');
+    if (preview) preview.textContent = text;
+    const count = text ? text.split(/\s+/).length : 0;
+    const length = document.querySelector('#narration-length');
+    if (length) length.textContent = `${count} words · roughly ${Math.round(count / 130 * 60)} seconds of speech at 130 words/minute`;
+    document.querySelectorAll<HTMLElement>('[data-print-narration]').forEach(item => {
+      item.textContent = narrationInputs.find(input => input.dataset.narration === item.dataset.printNarration)?.value ?? '';
+    });
+    if (narrationSaveStatus) narrationSaveStatus.textContent = canSaveNarration
+      ? 'Edits are saved in this browser only. Copy your script to keep a separate version. Copy buttons include spoken words only.'
+      : 'Edits last for this visit; browser saving is unavailable. Copy your script before leaving. Copy buttons include spoken words only.';
+  }
+  narrationInputs.forEach(input => input.addEventListener('input', () => {
+    narrationOverrides[input.dataset.narration!] = input.value;
+    try { localStorage.setItem(narrationStorageKey, JSON.stringify(narrationOverrides)); canSaveNarration = true; }
+    catch { canSaveNarration = false; }
+    updateNarration();
+  }));
+  updateNarration();
+
+  const feedback = document.querySelector<HTMLElement>('#plan-feedback');
+  let feedbackTimeout: ReturnType<typeof setTimeout>;
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach(button => {
+    button.hidden = false;
+    button.addEventListener('click', async () => {
+      const source = document.getElementById(button.dataset.copy!);
+      if (!source || !feedback) return;
+      try {
+        const text = source instanceof HTMLTextAreaElement ? source.value : source.textContent ?? '';
+        await navigator.clipboard.writeText(text.trim().replace(/^[“”]|[“”]$/g, ''));
+        feedback.textContent = button.dataset.copy === 'opening-copy' ? 'Opening copied.' : button.dataset.copy === 'narration-full' ? 'Full narration copied.' : 'Voice-over copied.';
+      } catch { feedback.textContent = 'Copy unavailable. Select the passage to copy it.'; }
+      clearTimeout(feedbackTimeout);
+      feedback.hidden = false;
+      feedbackTimeout = setTimeout(() => { feedback.hidden = true; }, 4000);
+    });
+  });
+
+  let closedBeforePrint: HTMLDetailsElement[] = [];
+  window.addEventListener('beforeprint', () => {
+    closedBeforePrint = Array.from(document.querySelectorAll<HTMLDetailsElement>('.film-plan details:not([open])'));
+    closedBeforePrint.forEach(detail => { detail.open = true; });
+  });
+  window.addEventListener('afterprint', () => closedBeforePrint.forEach(detail => { detail.open = false; }));
+  document.querySelector('#print-plan')?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  [hidden] { display: none !important; }
+  .plan-header { padding-block: var(--space-6); }
+  .header-top, .header-bottom { display: flex; justify-content: space-between; gap: var(--space-6); }
+  .header-top { align-items: baseline; margin-bottom: var(--space-5); }
+  .header-top a { font-size: var(--text-sm); }
+  .header-top a span, .route span { color: var(--color-accent); }
+  .eyebrow, .label, .metadata { font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; }
+  .eyebrow, .label { font-weight: 500; color: var(--color-text-muted); }
+  .plan-header .eyebrow, .metadata { color: color-mix(in srgb, var(--color-text-on-dark) 75%, transparent); }
+  .route { font-size: var(--text-sm); margin-bottom: var(--space-3); }
+  .route span { padding-inline: 0.4em; }
+  h1 { font-size: var(--text-2xl); line-height: 1.05; letter-spacing: -0.04em; }
+  .header-bottom { margin-top: var(--space-4); align-items: end; }
+  .header-bottom > p:first-child { max-width: 34rem; font-size: var(--text-lg); line-height: 1.4; }
+  .metadata { line-height: 1.8; flex-shrink: 0; }
+  .header-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3) var(--space-5); margin-top: var(--space-5); font-size: var(--text-sm); }
+  .header-actions a { display: inline-flex; min-height: 2.75rem; align-items: center; }
+  .plan-action { padding: var(--space-2) var(--space-4); background: var(--color-text-on-dark); color: var(--color-text); text-decoration: none; gap: var(--space-3); font-weight: 500; }
+  .section-nav { position: sticky; top: var(--plan-header-height, var(--header-height)); z-index: 19; border-bottom: var(--border-default); background: var(--color-bg); }
+  .section-nav .l-wrapper { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-2); }
+  .nav-links { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-5); }
+  .nav-links a { text-decoration: none; border-bottom: 2px solid transparent; }
+  .nav-links a[aria-current] { border-color: var(--color-accent-strong); font-weight: 600; }
+  .section-picker { display: none; align-items: center; gap: var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+  .section-picker select { min-height: 2.75rem; padding: var(--space-2) var(--space-3); border: var(--border-default); border-radius: var(--radius-sm); color: var(--color-text); background: var(--color-bg); font-size: var(--text-sm); }
+  .section-nav a, .section-nav button { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: var(--text-sm); }
+  .section-nav button { margin-left: auto; padding: 0; border: 0; background: none; color: var(--color-text); cursor: pointer; gap: 0.5rem; }
+  .section-nav button span { color: var(--color-accent-strong); }
+  .plan-body { max-width: var(--width-content); }
+  .plan-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-7); padding-block: var(--space-7); border-bottom: var(--border-default); }
+  section[id], .scene-card { scroll-margin-top: calc(var(--plan-header-height, var(--header-height)) + var(--plan-nav-height, 60px) + var(--space-4)); }
+  h2 { margin-top: var(--space-4); font-size: var(--text-2xl); letter-spacing: -0.04em; line-height: 1.05; }
+  .section-copy > * + * { margin-top: var(--space-5); }
+  .section-copy { max-width: 46rem; }
+  .lead { font-size: var(--text-lg); line-height: 1.45; }
+  .working-brief { margin: var(--space-6) 0 0; }
+  .working-brief > div { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: var(--space-4); padding-block: var(--space-4); border-top: var(--border-default); }
+  dt { font-size: var(--text-sm); color: var(--color-text-muted); }
+  dd { margin: 0; font-size: var(--text-sm); }
+  .reference, .small-note { color: var(--color-text-muted); font-size: var(--text-sm); }
+  blockquote { padding-left: var(--space-5); border-left: 2px solid var(--color-accent-strong); font-size: var(--text-xl); line-height: 1.35; letter-spacing: -0.025em; }
+  .secondary-quote { font-size: var(--text-lg); }
+  .quote-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); }
+  .copy-button, .scene-controls button { min-height: 2.75rem; padding: var(--space-2) var(--space-3); border: var(--border-default); background: transparent; border-radius: var(--radius-sm); color: var(--color-text); font-size: var(--text-sm); cursor: pointer; }
+  .copy-button:hover, .scene-controls button:hover { background: var(--color-bg-soft); }
+  .narration-intro { max-width: 48rem; margin-bottom: var(--space-5); }
+  .narration-toolbar { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+  .narration-toolbar > p { font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+  .narration-list { list-style: none; padding: 0; margin-top: var(--space-5); }
+  .narration-card { border-bottom: 0; }
+  .narration-list li:last-child .narration-card { border-bottom: var(--border-default); }
+  .narration-card > summary { display: grid; grid-template-columns: 2rem minmax(0, 1fr) 1rem; gap: var(--space-3); align-items: center; min-height: 4.5rem; list-style: none; }
+  .narration-card > summary::-webkit-details-marker { display: none; }
+  .narration-card > summary::after { content: '+'; color: var(--color-text-muted); }
+  .narration-card[open] > summary::after { content: '−'; }
+  .narration-card strong { font-weight: 500; }
+  .narration-place { display: block; font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-1); }
+  .narration-content { padding-block: var(--space-3) var(--space-5); }
+  .narration-content textarea { display: block; box-sizing: border-box; width: 100%; min-height: 12rem; resize: vertical; margin-block: var(--space-3) var(--space-4); padding: var(--space-4); border: var(--border-default); border-radius: var(--radius-sm); background: var(--color-bg); color: var(--color-text); font: inherit; line-height: 1.6; }
+  .narration-placement, .personal-prompt { font-size: var(--text-sm); max-width: 48rem; }
+  .narration-placement strong, .personal-prompt strong { display: block; margin-bottom: var(--space-1); }
+  .personal-prompt { margin-top: var(--space-4); border-left: 2px solid var(--color-accent-strong); padding-left: var(--space-4); }
+  .narration-reading, .narration-method { margin-top: var(--space-5); }
+  #narration-full, .narration-print { white-space: pre-wrap; }
+  #narration-full { margin-block: var(--space-4); max-width: 46rem; }
+  .narration-print { display: none; }
+  .narration-method ol { padding-left: 1.2em; margin-block: var(--space-4); max-width: 48rem; }
+  .narration-method li + li { margin-top: var(--space-3); }
+  .opening-beats { list-style: none; padding: 0; }
+  .opening-beats li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--space-4); border-top: var(--border-default); padding-block: var(--space-4); }
+  .opening-beats span { color: var(--color-accent-strong); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+  details { border-block: var(--border-default); padding-block: var(--space-3); }
+  summary { cursor: pointer; padding-block: var(--space-2); font-weight: 500; }
+  details > p, details > blockquote { margin-block: var(--space-4); }
+  .review-notes ul { padding-left: 1.2em; margin-block: var(--space-4); }
+  .review-notes li + li { margin-top: var(--space-3); }
+  .scene-section { padding-block: var(--space-7); border-bottom: var(--border-default); }
+  .scene-intro { display: grid; grid-template-columns: 1fr 2fr; column-gap: var(--space-7); margin-bottom: var(--space-6); }
+  .scene-intro .eyebrow { grid-column: 1 / -1; }
+  .scene-intro > p:last-child { align-self: end; max-width: 38rem; }
+  .scene-list { padding: 0; margin: 0; list-style: none; }
+  .scene-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-4); font-size: var(--text-sm); }
+  .scene-controls { display: flex; gap: var(--space-2); }
+  .scene { border-top: var(--border-default); }
+  .scene:last-child { border-bottom: var(--border-default); }
+  .scene-card { border: 0; padding: 0; }
+  .scene-card > summary { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto 1rem; align-items: center; gap: var(--space-4); padding-block: var(--space-5); list-style: none; }
+  .scene-card > summary::-webkit-details-marker { display: none; }
+  .scene-card > summary::after { content: '+'; font-size: var(--text-lg); color: var(--color-text-muted); }
+  .scene-card[open] > summary::after { content: '−'; }
+  .scene-number { color: var(--color-accent-strong); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+  .scene-summary-copy, .scene-summary-meta { display: grid; gap: var(--space-1); }
+  .scene-summary-copy strong { font-size: var(--text-lg); font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; }
+  .scene-summary-copy > span { font-size: var(--text-sm); font-weight: 400; color: var(--color-text-muted); }
+  .scene-summary-meta { text-align: right; font-size: var(--text-xs); color: var(--color-text-muted); font-variant-numeric: tabular-nums; font-weight: 400; }
+  .scene-status[data-captured="true"] { color: var(--color-accent-strong); font-weight: 600; }
+  .scene-content { padding: 0 0 var(--space-6) 3rem; }
+  h3 { font-size: var(--text-xl); letter-spacing: -0.025em; }
+  .scene-detail-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .scene-purpose { margin-top: var(--space-3); max-width: 40rem; }
+  .scene-complete { margin-top: var(--space-6); padding-top: var(--space-4); border-top: var(--border-default); font-size: var(--text-sm); color: var(--color-text-muted); }
+  .scene-complete strong { color: var(--color-text); font-weight: 500; }
+  .scene-columns { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-7); margin-top: var(--space-6); }
+  h4 { margin: 0 0 var(--space-2); color: var(--color-text-muted); font-weight: 500; font-size: var(--text-sm); }
+  .scene-columns ul { margin: 0; padding-left: 1.1em; }
+  .scene-columns li + li { margin-top: var(--space-3); }
+  .scene-notes { display: grid; gap: var(--space-5); }
+  .scene-columns p, .scene-columns li { font-size: var(--text-sm); line-height: 1.6; }
+  .scene-check { display: flex; align-items: center; gap: var(--space-3); min-height: 2.75rem; margin-top: var(--space-4); cursor: pointer; font-size: var(--text-sm); }
+  .scene-check input { width: 1.2rem; height: 1.2rem; accent-color: var(--color-accent-strong); }
+  .next-scene { display: inline-flex; min-height: 2.75rem; align-items: center; gap: var(--space-3); margin-top: var(--space-3); font-size: var(--text-sm); }
+  .capture-list { list-style: none; padding: 0; }
+  .capture-list li { border-top: var(--border-default); padding-block: var(--space-2); }
+  .capture-list li > a { display: inline-flex; align-items: center; min-height: 2.75rem; margin-left: 2.2rem; font-size: var(--text-sm); gap: var(--space-2); }
+  .checklist-progress { font-weight: 500; font-size: var(--text-sm); }
+  .capture-list label { display: flex; gap: var(--space-4); padding-block: var(--space-4); cursor: pointer; }
+  .capture-list input { width: 1.2rem; height: 1.2rem; flex-shrink: 0; margin-top: 0.25rem; accent-color: var(--color-accent-strong); }
+  .capture-list input:checked + span { text-decoration: line-through; color: var(--color-text-muted); }
+  .ending { margin-top: var(--space-7); padding-top: var(--space-6); border-top: var(--border-default); }
+  .ending > p + p { margin-top: var(--space-4); }
+  .ending-line { font-size: var(--text-lg); letter-spacing: -0.02em; }
+  .title-option { font-size: var(--text-xl); letter-spacing: -0.025em; line-height: 1.25; }
+  .title-alternatives { list-style: none; padding: 0; }
+  .title-alternatives li { display: grid; gap: var(--space-1); border-top: var(--border-default); padding-block: var(--space-4); }
+  .title-alternatives strong { font-weight: 500; }
+  .title-alternatives span { color: var(--color-text-muted); font-size: var(--text-sm); }
+  .minor-title { font-size: var(--text-lg); margin-top: var(--space-7); }
+  .closing-note { border-top: var(--border-default); padding-top: var(--space-5); color: var(--color-text-muted); font-size: var(--text-sm); }
+  .plan-section:last-child { border-bottom: 0; }
+  .plan-feedback { position: fixed; z-index: 30; bottom: var(--space-5); left: 50%; transform: translateX(-50%); max-width: calc(100% - 2rem); width: max-content; padding: var(--space-3) var(--space-5); background: var(--color-surface-dark); color: var(--color-text-on-dark); font-size: var(--text-sm); border-radius: var(--radius-sm); box-shadow: 0 2px 12px #0002; }
+  @media (max-width: 47.999rem) {
+    .header-top, .header-bottom { flex-direction: column; align-items: start; gap: var(--space-4); }
+    .header-top { margin-bottom: var(--space-4); flex-direction: row; flex-wrap: wrap; }
+    .header-bottom { gap: var(--space-3); }
+    .header-bottom > p:first-child { font-size: var(--text-base); }
+    .metadata { font-size: var(--text-xs); }
+    .plan-section, .scene-intro { grid-template-columns: minmax(0, 1fr); }
+    .scene-intro { gap: var(--space-4); }
+    .scene-intro h2 { margin-top: 0; }
+    .scene-card > summary { grid-template-columns: 1.5rem minmax(0, 1fr) auto 0.75rem; gap: var(--space-2); }
+    .scene-summary-copy strong { font-size: var(--text-base); }
+    .scene-summary-copy > span { font-size: var(--text-xs); }
+    .scene-content { padding-left: 0; }
+    .scene-columns { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+    .working-brief > div { grid-template-columns: minmax(0, 1fr); gap: var(--space-2); }
+    .section-nav .l-wrapper { gap: var(--space-3); }
+    .is-enhanced .nav-links { display: none; }
+    .is-enhanced .section-picker { display: flex; }
+    .section-nav button { margin-left: 0; }
+  }
+  @media print {
+    :global(.site-header), :global(.site-footer), :global(.u-skip-link), .section-nav, .header-top a, .header-actions, .scene-controls, .copy-button, .next-scene, .capture-list li > a, .plan-feedback { display: none !important; }
+    .plan-header { color: var(--color-text); background: none; padding-block: 1rem 2rem; }
+    .plan-header .eyebrow, .metadata { color: var(--color-text-muted); }
+    .header-top { margin-bottom: 1rem; }
+    h1 { font-size: 3rem; }
+    .plan-section, .scene-section { padding-block: 2rem; }
+    .plan-section { display: block; }
+    .section-heading { margin-bottom: 1.5rem; }
+    .section-copy { max-width: none; }
+    .scene { break-inside: avoid; }
+    .scene-content { padding-left: 0; }
+    .scene-card > summary::after { display: none; }
+    .scene-card > summary { grid-template-columns: 2rem minmax(0, 1fr) auto; }
+    .scene-check { display: none; }
+    .narration-content textarea, .narration-reading, #narration-save-status { display: none !important; }
+    .narration-print { display: block; margin-block: var(--space-4); }
+    #save-status { display: none; }
+    details > * { display: block; }
+    summary { list-style: none; }
+    blockquote, .opening-beats li, .capture-list li { break-inside: avoid; }
+    h2, h3, h4 { break-after: avoid; }
+  }
+</style>

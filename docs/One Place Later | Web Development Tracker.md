@@ -1,7 +1,7 @@
 # One Place Later
 ## Web Development Tracker
 
-Last updated: 2026-08-17
+Last updated: 2026-10-12
 
 ---
 
@@ -51,7 +51,12 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 | Route | Status | Purpose | Current scope |
 | --- | --- | --- | --- |
 | `/` | Live | Editorial home for the channel | Sticky navigation, full-screen Seoul hero, short channel introduction, YouTube link, and footer destinations for YouTube and Instagram. No video embed yet. |
-| `/creative-field-guide/` | Internal reference | Full working system for story, filming, sound, editing, publishing, and review | Direct-link page using the site identity; intentionally omitted from navigation and marked `noindex, nofollow`. |
+| `/creative-field-guide/` | Private / live | Full working system for story, filming, sound, editing, publishing, and review | Protected by Cloudflare Access; linked from the private workspace and marked `noindex, nofollow`. |
+| `/ai/guideline` | Private / live | Codex film editing protocol | Concise canonical Markdown: one folder and living brief per video, footage-review coverage and AI notes, overall timeline approval before heavy work, batch approvals, sequential narration review and dedicated colour finishing. Plain Markdown at `/ai/guideline.md`; repository `AGENTS.md` points future sessions to the source. Protected by Cloudflare Access and linked from the private workspace. |
+| `/ai/brand.md` | Private / live | AI creative reference | Short Markdown version of Brand & Creative Direction; retains actionable story, voice, sound, colour, graphics and publishing rules. `AGENTS.md` and the AI workflow use it as the default editorial reference. Full source document preserved. Protected by Cloudflare Access. |
+| `/film-plans/back-to-korea/` | Private draft / live | First-film production plan | Cassagnoles → Amsterdam → Seoul; compact header, sticky section navigation, expandable scenes, an eight-scene editable narration workshop with browser-saved drafts, spoken-text copy controls, personal prompts and ElevenLabs workflow guidance, synchronized scene/checklist progress, and a print view. Omitted from public navigation and marked `noindex, nofollow`; this does not restrict access. Protected by Cloudflare Access. |
+| `/login/` | Public / live | Workspace sign-in entry | Leads through email-code login to the protected library. |
+| `/workspace/` | Private / live | Organised private library | Creative guides and chapters, AI workflow downloads, film plans, and sign out. |
 | `/films` | Planned | Permanent archive of films | Build only when there is enough film content to browse. |
 | `/films/[slug]` | Planned | Permanent home for an individual film | Editorial context, poster-first YouTube playback, stills, and previous/next-film navigation. |
 | `/about` | Planned | Additional creator and channel context | Add only when the homepage introduction is no longer sufficient. |
@@ -69,6 +74,10 @@ Do not use it for small wording changes, routine dependency updates, or isolated
 
 | Date | Area | Change | Reference |
 | --- | --- | --- | --- |
+| 2026-10-12 | Domain and private workspace | Connected oneplacelater.com; protected guides, AI pages, film plans and workspace for the two approved emails; added public login entry and organised library. Gear remains public. Alternate Worker and preview URLs disabled. | Cloudflare Access; production release |
+| 2026-10-12 | AI creative direction | Added a simplified brand reference and `/ai/brand.md`, with default discovery through `AGENTS.md` and the AI film workflow. Trimmed repeated philosophy, examples and specialist channel setup; preserved the full document. | Local draft |
+| 2026-10-12 | AI film workflow | Added `/ai/guideline` and a plain Markdown endpoint from one source. Refined v1.1 to use one project folder, a brief tracking reviewed/selected footage and short AI notes, approval of the overall timeline and work batches, dedicated grading and export QC. Added repository discovery instructions for Codex. | Local draft |
+| 2026-10-11 | First-film planning | Added a direct-link production page for the visa-document-triggered journey from Cassagnoles via one night with family in Amsterdam to home in Korea. Includes an editable source, shot priorities, proposed narration, timing sketch and publishing ideas. | Local draft |
 | 2026-08-17 | Foundation | Created the Astro site, GitHub repository, and Cloudflare Worker release path. | `fdbc0ed` |
 | 2026-08-17 | Homepage | Released the first editorial homepage, semantic layout system, generated Seoul hero, accessibility baseline, metadata, and favicon. | `6202f5c` |
 | 2026-08-17 | Channel language | Established `night rides` as the active content category in place of generic weather language. | `67b2194` |

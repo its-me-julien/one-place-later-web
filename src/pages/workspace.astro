@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { guideChapters } from '../data/guideChapters';
+---
+
+<BaseLayout title="Private workspace | One Place Later" description="Creative guides, AI workflow and working film plans for One Place Later." robots="noindex, nofollow">
+  <article class="workspace l-wrapper">
+    <header class="workspace-header">
+      <div>
+        <p class="eyebrow">One Place Later / Private workspace</p>
+        <h1>Behind the films.</h1>
+        <p class="intro">The references and working plans that bring each film together.</p>
+      </div>
+      <a class="signout" href="/cdn-cgi/access/logout">Sign out <span aria-hidden="true">↗</span></a>
+    </header>
+    <nav class="index" aria-label="Workspace sections">
+      <a href="#creative">Creative guides</a>
+      <a href="#ai">AI workflow</a>
+      <a href="#plans">Film plans</a>
+    </nav>
+
+    <section id="creative" class="library-section" aria-labelledby="creative-title">
+      <div class="section-heading"><p class="number" aria-hidden="true">01</p><h2 id="creative-title">Creative guides</h2><p>Perspective, story and the craft of making a film.</p></div>
+      <div class="section-content">
+        <a class="resource" href="/creative-field-guide/"><div><h3>Creative Field Guide</h3><p>The complete working reference, from channel identity to publishing.</p></div><span aria-hidden="true">→</span></a>
+        <details><summary>Browse the chapters</summary><ul class="chapters">{guideChapters.map(chapter => <li><a href={`/creative-field-guide/${chapter.slug}/`}><strong>{chapter.title}</strong><span>{chapter.summary}</span><span class="arrow" aria-hidden="true">→</span></a></li>)}</ul></details>
+      </div>
+    </section>
+
+    <section id="ai" class="library-section" aria-labelledby="ai-title">
+      <div class="section-heading"><p class="number" aria-hidden="true">02</p><h2 id="ai-title">AI workflow</h2><p>The creative direction and operating rules for working with Codex.</p></div>
+      <div class="section-content">
+        <a class="resource" href="/ai/guideline/"><div><h3>Codex film workflow</h3><p>Project preparation, approvals, editing stages and verification.</p></div><span aria-hidden="true">→</span></a>
+        <div class="downloads"><a href="/ai/guideline.md" download>Workflow · Markdown <span aria-hidden="true">↓</span></a><a href="/ai/brand.md" download>Creative direction · Markdown <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+
+    <section id="plans" class="library-section" aria-labelledby="plans-title">
+      <div class="section-heading"><p class="number" aria-hidden="true">03</p><h2 id="plans-title">Film plans</h2><p>Projects in progress, with scenes and narration to work through.</p></div>
+      <div class="section-content"><a class="resource" href="/film-plans/back-to-korea/"><div><p class="meta">Cassagnoles → Amsterdam → Seoul</p><h3>Back to Korea</h3><p>Scene plan, capture checklist and narration workshop.</p></div><span aria-hidden="true">→</span></a></div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .workspace { max-width: var(--width-content); padding-block: var(--space-8); }
+  .workspace-header { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: var(--space-5); }
+  .eyebrow, .meta { color: var(--color-text-muted); font-size: var(--text-sm); }
+  h1 { margin-top: var(--space-4); font-size: var(--text-3xl); font-weight: 500; letter-spacing: -0.055em; }
+  .intro { max-width: 38rem; margin-top: var(--space-5); color: var(--color-text-muted); font-size: var(--text-lg); }
+  .signout { display: inline-flex; align-items: center; min-height: 2.75rem; gap: var(--space-2); font-size: var(--text-sm); }
+  .index { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-6); margin-block: var(--space-7); }
+  .index a { display: inline-flex; min-height: 2.75rem; align-items: center; }
+  .library-section { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); border-top: var(--border-default); padding-block: var(--space-6) var(--space-7); scroll-margin-top: calc(var(--header-height) + var(--space-5)); }
+  .number { color: var(--color-accent-strong); font-size: var(--text-sm); }
+  h2 { margin-top: var(--space-3); font-size: var(--text-xl); font-weight: 500; }
+  .section-heading > p:last-child { margin-top: var(--space-4); color: var(--color-text-muted); max-width: 30ch; }
+  .resource { display: flex; justify-content: space-between; align-items: start; gap: var(--space-5); padding-block: var(--space-4); text-decoration: none; }
+  h3 { font-size: var(--text-lg); font-weight: 500; line-height: 1.3; }
+  .resource p:not(.meta) { max-width: 48ch; margin-top: var(--space-3); color: var(--color-text-muted); }
+  .resource > span, .arrow { color: var(--color-accent-strong); }
+  .resource:hover h3, .resource:focus-visible h3 { text-decoration: underline; text-underline-offset: 0.2em; }
+  .meta { margin-bottom: var(--space-3); }
+  details { margin-top: var(--space-4); }
+  summary { min-height: 2.75rem; padding-block: var(--space-3); cursor: pointer; }
+  .chapters { list-style: none; padding: 0; margin-top: var(--space-3); }
+  .chapters li { border-top: var(--border-default); }
+  .chapters a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-4); padding-block: var(--space-4); text-decoration: none; }
+  .chapters strong { font-weight: 500; }
+  .chapters a > span:not(.arrow) { grid-column: 1; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .chapters .arrow { grid-column: 2; grid-row: 1; }
+  .chapters a:hover strong { text-decoration: underline; }
+  .downloads { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-3); font-size: var(--text-sm); }
+  .downloads a { display: inline-flex; min-height: 2.75rem; align-items: center; gap: var(--space-2); }
+  @media (min-width: 48rem) { .library-section { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-7); } }
+</style>

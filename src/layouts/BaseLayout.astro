@@ -56,8 +56,18 @@ const socialImage = image ? new URL(image, Astro.site) : undefined;
     <a class="u-skip-link" href="#main">Skip to content</a>
     <SiteHeader />
     <main id="main">
+      {['/creative-field-guide', '/ai', '/film-plans'].some(path => Astro.url.pathname === path || Astro.url.pathname.startsWith(`${path}/`)) && (
+        <nav class="workspace-return l-wrapper" aria-label="Private workspace">
+          <a href="/workspace/">← Private workspace</a>
+        </nav>
+      )}
       <slot />
     </main>
     <SiteFooter />
   </body>
 </html>
+
+<style>
+  .workspace-return { padding-top: var(--space-4); }
+  .workspace-return a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: var(--text-sm); }
+</style>
